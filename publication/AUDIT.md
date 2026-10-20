@@ -8,9 +8,9 @@ Lean-kernel audit.
 
 The twelve Paper I manuscript/companion files (EN/ES; MD/TeX/PDF) and the
 selected ZIP, SHA sidecar and seal were imported byte for byte from private
-review commit `2c99ea261d0af6261e173975b4f6264f8334004d`.
+review commit `31c5059d5f89db92fbec7c5dd5901696316c8194`.
 [INTAKE.json](INTAKE.json) records the hashes of all fifteen files.
-No Lean, mathematical manuscript or generated document was edited.
+These are the audited header-correction edition, copied without further editing. No Lean build was performed. Mathematical proof bodies are preserved.
 
 The previous private navigation citation dated Paper I 19 October; the
 new repository's citation metadata uses the actual manuscript date,
@@ -28,7 +28,7 @@ python scripts/build_site.py
 
 The first two commands must succeed. The last must currently fail with
 `RELEASE HELD` and must not create a production output. The checks cover
-all imported hashes, the 3,237 internal archive hashes, exact licence texts,
+all imported hashes, the 3,240 internal archive hashes, exact licence texts,
 all repository-manifest entries, local Markdown/HTML links, selected archive
 inventory and the bounded site allowlist.
 
@@ -44,10 +44,7 @@ The [visual review](VISUAL_REVIEW.md) records browser inspection.
   affected document audits and manifests.
 - Manuscript public-distribution rights remain to be recorded; the original
   software packaging uses Apache-2.0 with third-party notices preserved.
-- The [author-header review](AUTHORSHIP_REVIEW.md) confirms 1,008 missing
-  headers, 59 surname errors and one tool attribution in the selected
-  source archive. A verified comment-only patch is prepared privately;
-  it has not been applied to the selected ZIP or its build receipts.
+- The [author-header review](AUTHORSHIP_REVIEW.md) is closed: all 1,070 project files have correct attribution. Historical source hashes are reconstructed and checked against unchanged receipts.
 - The final joint audit and public-release authorization remain pending.
 
 Historical audits and superseded editions remain in the private review

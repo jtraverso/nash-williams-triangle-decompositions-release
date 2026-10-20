@@ -1,36 +1,11 @@
-# Author-header review — Paper I
+# Author-header review — PASS
 
-The author name for the owner's formal development is
-**Juan Pablo Traverso Gianini**, with **Gianini**, not *Giannini*.
-Use that exact name in the source headers, README and submission metadata.
-Aristotle is acknowledged as a computational tool, not listed as a human
-author. Mathematical results retain their original attributions.
+All **1,070** project sources in `PAPER_I_LEAN_20261020_ALIGNED_v3` identify **Juan Pablo Traverso Gianini** and Apache-2.0. This corrects 1,008 missing headers, 59 misspellings and one tool attribution; two headers were already correct. Mathematical attribution and dependency licences remain unchanged.
 
-Inspection of the selected `PAPER_I_LEAN_20261020_ALIGNED_v2` found:
+Every byte after the initial ordinary header comment is preserved. The archive's `attribution/source_changes.json` reconstructs the exact historical source bytes; `tools/verify_attribution.py` checks 1,070 receipts, 1,671 project-import hash links and all 3,240 internal hashes. No historical compiler receipt was rewritten. No Lean/Lake build is asserted for the corrected source hashes.
 
-| Header category | Files |
-|---|---:|
-| Missing copyright/author header | 1,008 |
-| Misspelling “Giannini” | 59 |
-| “Aristotle contributors” / `Authors: Aristotle` | 1 |
-| Correct author name | 2 |
+Archive SHA-256: `bfa42bd57e6d9c2ac918bbf6fe2c2ba7c01894d1d8387d92e81b090020a6aaff`.
 
-The source-root Apache-2.0 licence already exists. The findings concern
-per-file omissions and attribution errors, not a missing root licence.
+[Full internal report and document evidence](https://github.com/jtraverso/nash-williams-private-review/blob/31c5059d5f89db92fbec7c5dd5901696316c8194/audit/paper-i-authorship-v3-20261020/FINAL_REPORT.md). Access requires permission to the private research repository.
 
-A correction patch for 1,068 files has been prepared and applied successfully
-to a disposable copy. All 1,070 resulting source hashes were checked.
-Every byte outside the initial ordinary header comment is preserved.
-The existing two correct files, third-party dependency licences and
-mathematical citations remain unchanged.
-
-The [full inventory, patch and reproduction script](https://github.com/jtraverso/nash-williams-private-review/tree/4f9191b/audit/paper-i-authorship-20261020)
-are kept privately. They are preparation records, not earlier public editions.
-
-**The selected ZIP remains unchanged.** Existing build evidence applies to
-its original bytes. Applying the patch requires a new source artifact and
-SHA-256, explicit documentation of the header-only change, and verification
-evidence appropriate to the final artifact. No Lean/Lake build was run here.
-
-`author_headers_reconciled` remains false in the release state until that
-integration is complete. Public release remains held.
+`author_headers_reconciled` is true. The coordinated public release remains held for Paper II and the other final-release checks.

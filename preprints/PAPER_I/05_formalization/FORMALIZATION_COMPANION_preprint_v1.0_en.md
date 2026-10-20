@@ -10,23 +10,23 @@ title: 'Triangle decompositions I: Formalization and reproducibility companion'
 
 ## Abstract
 
-This companion records the formal scope and reproducibility evidence for Paper I. The selected aligned freeze records a complete clean compilation of 1,070 project modules and six final axiom queries. We identify the final theorem, fractional results, typed replacement inputs, exact audit target, source alignment and pinned dependencies. The record distinguishes this local compilation from independent reproduction and from the separate Paper II validation. The present editorial update inspects the supplied evidence without running Lean again.
+This companion records the formal scope and reproducibility evidence for Paper I. The selected archive preserves the clean-build evidence for 1,070 project modules and six final axiom queries, and corrects the author headers in its sources. A reversible hash record relates the corrected sources to the compiled bytes; no new Lean build is asserted. We identify the final theorem, fractional results, typed replacement inputs, exact audit target, source alignment and pinned dependencies. The record distinguishes this local compilation from independent reproduction and from the separate Paper II validation. The present editorial update inspects the supplied evidence without running Lean again.
 
 ## 1. Scope and source identity
 
 Paper I formalizes the theorem of Delcourt and Postle [3, Theorem 1.8] that every sufficiently large triangle-divisible graph of minimum degree at least three quarters of its order has a triangle decomposition. The formal development also includes their fractional theorem and stability results. This companion identifies the declarations, the replacement inputs used in the integral proof, and the evidence attached to one fixed source snapshot. It is a technical record, not a substitute for the mathematical proofs in Papers I and II.
 
-The clean compilation finished successfully. Its explicit target was `RequestProject.NW18.AuditPaperIIAssembly`, and the final theorem is `NashWilliams18.PaperI.nash_williams_via_paperII`. All 1,070 project modules in the target’s import closure have successful receipts. Their source hashes and project-import object hashes form one consistent chain. The six final axiom queries and proof-dependency audit passed.
+The historical clean compilation, before the header correction, finished successfully. Its explicit target was `RequestProject.NW18.AuditPaperIIAssembly`, and the final theorem is `NashWilliams18.PaperI.nash_williams_via_paperII`. All 1,070 project modules in the target’s import closure have successful receipts. Their source hashes and project-import object hashes form one consistent chain. The six final axiom queries and proof-dependency audit passed.
 
 These statements concern that target, not every file in the archive or the entire current Paper II tree. Paper I uses the specialized Paper II inputs in this frozen snapshot. The separate incremental Paper II validation recorded in `PAPER_II_LEAN_20261019_v1` passed, including the seventeen conserved families and census exhaustiveness. It is not needed to certify the recorded Paper I snapshot.
 
-The selected source freeze is `PAPER_I_LEAN_20261020_ALIGNED_v2`. Its archive SHA-256 is
+The selected source freeze is `PAPER_I_LEAN_20261020_ALIGNED_v3`. Its archive SHA-256 is
 
-`c04ca7dd432322fa65eab196d58954252f8e0f377222bd57a6a0c94ee82e116e`.
+`bfa42bd57e6d9c2ac918bbf6fe2c2ba7c01894d1d8387d92e81b090020a6aaff`.
 
 Preprint 1.0 is the publication-series version of this technical document. The earlier private-review documents and the companion stored inside the original archive retain their own version labels. The present document does not overwrite those records or alter the archive. Its release metadata and document hashes are recorded separately.
 
-The selected freeze records compilation from an empty project output directory, without reusing project objects from earlier builds. The earlier `PAPER_I_LEAN_20261017_v1` remains historical evidence; its final incremental pass rebuilt five modules. Neither record is an independent reproduction by another party. Section 6 describes resumptions within the clean campaign and the use of cached Mathlib build products.
+The preserved build record describes compilation from an empty project output directory, without reusing project objects from earlier builds. The earlier `PAPER_I_LEAN_20261017_v1` remains historical evidence; its final incremental pass rebuilt five modules. Neither record is an independent reproduction by another party. Section 6 describes resumptions within the clean campaign and the use of cached Mathlib build products.
 
 ## 2. Mathematical statement and definitions
 
@@ -113,7 +113,7 @@ Each reported exactly `propext`, `Classical.choice`, and `Quot.sound`. None repo
 
 The dependency audit reports `PASS_PAPERII_PROOF_DEPENDENCIES`. Among its required constants are the F0 theorem, `idealized_F12`, the F3 bridge, `nearlyComplete_F123`, `completeInverseCertLocalBound_general`, and `UniversalProducer.producerTarget_of_threeStepLinks`. Among the forbidden constants are `NashWilliams18.Theorem1316Statement`, the old `nash_williams` declaration, the alternative F1 vortex route, and the former F3 consumer. The complete lists are in the frozen audit source.
 
-The v2 archive seal reports `PASS_LICENSE_ONLY_REPACKAGE`; the recorded clean-build evidence from v1 is unchanged. The internal `evidence/verification.json` has SHA-256
+The v3 archive seal reports `PASS_HEADER_ONLY_REVISION`. Its 1,070 source headers identify Juan Pablo Traverso Gianini. The historical clean-build evidence is unchanged and applies to the reconstructed pre-correction sources, not to the current source hashes. The internal `evidence/verification.json` has SHA-256
 
 `d83783e3a0dbcc7d3bf1a465460b3996c0889dc6371d362d766e0e48f6583497`.
 
@@ -125,7 +125,7 @@ The toolchain is `leanprover/lean4:v4.35.0-rc3`. Mathlib is pinned to `c55e6e786
 
 The selected closure has 1,070 modules: 251 in `RequestProject` and 819 in `PartitionedTriangleAbsorption`, including its root module. The archive contains exactly these project sources. It does not certify the full Paper II development.
 
-The alignment starts from the earlier Paper I and Paper II freezes. The 623 previously shared modules take their Paper II source. This resolves the four differences in `TypedRefinerF0.PermCount`, `TypedRefinerF0.Estimates`, `TypedRefinerF0.RobustHall` and `BlowupB.PaddedGeneral.RealInverse.RoutedPaper`. The 194 Paper I-only modules in that namespace retain their sources. The four-colour application moves, without changing its contents or declaration names, from `RequestProject.NW18.FourColourPaperII` to `PartitionedTriangleAbsorption.PaperII.FourColourApplication`; the import in `Case128Reduction` follows that move. The resulting import closure has one additional module. The alignment manifest records the source origins and edits; it does not claim that every module in the full aligned development was compiled by the Paper I target.
+Before the header-only revision, the alignment starts from the earlier Paper I and Paper II freezes. The 623 previously shared modules take their Paper II source. This resolves the four differences in `TypedRefinerF0.PermCount`, `TypedRefinerF0.Estimates`, `TypedRefinerF0.RobustHall` and `BlowupB.PaddedGeneral.RealInverse.RoutedPaper`. The 194 Paper I-only modules in that namespace retain their sources. The four-colour application moves, without changing its contents or declaration names, from `RequestProject.NW18.FourColourPaperII` to `PartitionedTriangleAbsorption.PaperII.FourColourApplication`; the import in `Case128Reduction` follows that move. The resulting import closure has one additional module. The alignment manifest records the source origins and edits; it does not claim that every module in the full aligned development was compiled by the Paper I target.
 
 The clean build began with an empty project output directory. It ran in several invocations of `tools/build.py paper_I`, resumed after resource adjustments. Resumed invocations accepted only objects with successful receipts from this campaign and matching source and object hashes. No project objects from the earlier freezes were reused. The final audit target compiled all six queries and the proof-dependency check.
 
@@ -137,7 +137,7 @@ The archive preserves the actual campaign scripts. They use Windows-specific mem
 
 To repeat the recorded workflow, first inspect `tools/align.py` and `tools/build.py` and provide isolated workspace locations for their archive, source and output paths. Supply the two source archives identified in `evidence/environment.json`, verify their hashes, and install the pinned toolchain. `align.py` reconstructs the aligned source tree and the phase-specific build plan from those archives. Provide Mathlib and the eight supporting packages at their locked revisions, with the corresponding cached build products. Check those revisions before invoking the builder.
 
-The campaign operations are:
+The following operations reproduce the historical alignment. To compile the corrected edition, use its supplied `source/` tree with the pinned dependencies and new receipts; do not overwrite it by rerunning the historical alignment script. The campaign operations are:
 
 ```text
 elan toolchain install leanprover/lean4:v4.35.0-rc3
@@ -147,15 +147,15 @@ python tools/build.py paper_I --workers 4 --threads 3 --memory-mb 5000
 
 These commands require the path and dependency preparation just described. The initial invocation must use an empty project output directory. A continuation of the same campaign may use `--resume`; that option is not a substitute for the initial clean start. `tools/make_freeze.py` verifies the source, object and import-hash chain and packages a new record. It must run in a separate output location rather than overwrite the selected archive.
 
-The historical evidence can be inspected without Lean: verify the outer archive digest and its internal `SHA256SUMS.txt`, compare source hashes with receipts, and compare each recorded import hash with the imported module's receipt. Compiled objects are omitted, so their bytes cannot be rechecked from the archive alone; the producer checked them at sealing. This editorial revision performs those static evidence checks and does not repeat the recorded compilation.
+The historical evidence can be inspected without Lean by running `python tools/verify_attribution.py` from the extracted archive root. The script verifies the current hashes and uses `attribution/source_changes.json` to reconstruct each exact pre-correction source from its original header and unchanged body. It compares those reconstructed hashes with all 1,070 historical receipts and checks the 1,671 project-import hash links and the internal manifest. Compiled objects are omitted, so their bytes cannot be rechecked from the archive alone; the producer checked them during the original sealing. No new compilation or object identity for the corrected source hashes is asserted.
 
 ## 8. Reading the archive
 
 `evidence/ALIGNMENT_MANIFEST.json` identifies the source origins and alignment edits. `evidence/build_plan.json` gives the target, its 1,070-module topological order and project imports. `evidence/receipts/` contains source, dependency and object fingerprints; `evidence/module_logs/` contains compiler output for every module. `evidence/final_audit.log` holds the six final queries and dependency success marker. `evidence/verification.json` records the checks made at sealing; `evidence/early_module_recheck.txt` records the 23-module comparison.
 
-`source/` contains the selected closure and pinned build configuration; `tools/` contains the campaign scripts. `SHA256SUMS.txt` binds 3,237 internal files. The archive contains 3,238 files including that manifest, and its external sidecar gives the ZIP digest. Manuscripts and companions remain separate from this Lean archive.
+`source/` contains the selected closure and pinned build configuration; `tools/` contains the campaign scripts. `SHA256SUMS.txt` binds 3,240 internal files. The archive contains 3,241 files including that manifest, and its external sidecar gives the ZIP digest. Manuscripts and companions remain separate from this Lean archive.
 
-Version v2 adds `LICENSE`, `source/LICENSE`, `LICENSING.md` and the nine original dependency licence files in `dependencies/licenses/`. The author’s original packaging materials use Apache-2.0; the source licence is restored from the original Paper II freeze. Existing dependency licences and attribution notices remain applicable, including the MIT licence of Cli. Every pre-existing file except the regenerated `SHA256SUMS.txt` is byte-identical to v1: sources, build configuration, campaign scripts and all proof evidence are unchanged. The v1 identifiers in the historical README and evidence still identify the original compilation. This licence-only repackaging does not record a new build.
+Version v3 adds 1,008 missing author headers, corrects 59 instances of the surname and replaces one attribution to a computational tool with Juan Pablo Traverso Gianini. Two headers were already correct. All 1,070 files now identify that author and Apache-2.0. Every byte after the initial ordinary header comment is preserved, including declarations, proofs and provenance comments. The nine dependency licence texts and all 2,147 pre-existing proof-evidence files are unchanged. `attribution/source_changes.json` binds the old and new hashes; `tools/verify_attribution.py` checks the reversible mapping. The original build README is preserved in `evidence/BUILD_README.md`. The current README and `LICENSING.md` explain this scope; `SHA256SUMS.txt` is regenerated. Cli retains MIT and the other supplied dependency texts retain Apache-2.0.
 
 The English and Spanish documents share the same declarations, mathematical statements, scope and limitations. They use the local Paper I LaTeX template. Document compilation and rendered-page inspection are separate from inspection of the recorded Lean proof evidence.
 
@@ -169,11 +169,11 @@ Certo [5] and Jacobian [6] were used to explore finite instances, check identiti
 
 The author remains responsible for the arguments, citations, code and presentation. No AI system is listed as an author.
 
-The selected aligned sources and evidence are in [the archive at commit `49235c3bf89f`](https://github.com/jtraverso/nash-williams-private-review/blob/49235c3bf89f00b6f75e69c409e18c05c0e2a6f3/archives/PAPER_I_LEAN_20261020_ALIGNED_v2.zip). This reference requires repository access and does not assert public availability. The earlier source archive remains unchanged as a historical record; the current manuscript and companion are separate files.
+The selected aligned sources and evidence are in [the archive at commit `afa9f4a06b0e`](https://github.com/jtraverso/nash-williams-private-review/blob/afa9f4a06b0e5ad84ba07faefe3c1880c1005ae7/archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip). This reference requires repository access and does not assert public availability. The earlier source archive remains unchanged as a historical record; the current manuscript and companion are separate files.
 
 Paper II preprint 1.0 [2] gives the three-step-link refiner and quantitative assembly in Appendix B, the semidense theorem in Appendix C and the PAR/BAL constructions in Appendix E. Appendix H supplies written proofs of the compatible library and general auxiliary constructions; finite family certificates remain explicit source data. The earlier proof dossiers are retained in [7]. Paper I now uses the aligned sources for its selected typed inputs, checked within its own clean closure. This does not extend its validation to all of Paper II.
 
-The selected formal evidence is the complete local clean compilation recorded in the aligned archive. This editorial update checks that record without running a new build. It does not claim independent reproduction. The selected archive now includes source and dependency licence texts; public distribution still requires final author approval. This document and its manuscript remain private until the coordinated release is approved.
+The selected formal evidence remains the historical complete local clean compilation. The author-header revision is verified by byte comparison and reversible source reconstruction; it is not a compilation of the corrected source hashes or independent reproduction. Source and dependency licence texts are included. This document and its manuscript remain private until the coordinated release is approved.
 
 ## Appendix. Main Lean declarations
 

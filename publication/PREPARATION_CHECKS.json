@@ -1,33 +1,37 @@
 {
-  "status": "PASS_PRIVATE_PREPARATION",
-  "date": "2026-10-20",
-  "mathematics_changed": false,
-  "lean_build_run": false,
-  "public_release": false,
-  "production_output_created": false,
-  "prior_editions_included": false,
+  "status": "PASS_PREPARATION_WITH_RELEASE_HELD",
+  "source": "Paper I v3 corrected-header intake",
   "checks": [
     {
-      "command": "python scripts/verify_repository.py",
+      "command": [
+        "python",
+        "scripts/verify_repository.py"
+      ],
       "exit_code": 0,
-      "stdout": "{\n  \"status\": \"PASS_PREPARATION\",\n  \"imported_files\": 15,\n  \"archive_hashes\": 3237,\n  \"repository_hashes\": 78,\n  \"local_links\": 131,\n  \"scope\": \"Static packaging only; no Lean/Lake, no deployment.\"\n}\n",
+      "stdout": "{\n  \"status\": \"PASS_PREPARATION\",\n  \"imported_files\": 15,\n  \"archive_hashes\": 3240,\n  \"repository_hashes\": 79,\n  \"local_links\": 132,\n  \"scope\": \"Static packaging only; no Lean/Lake, no deployment.\"\n}\n",
       "stderr": ""
     },
     {
-      "command": "python scripts/build_site.py --preview",
+      "command": [
+        "python",
+        "scripts/build_site.py",
+        "--preview"
+      ],
       "exit_code": 0,
-      "stdout": "{\n  \"status\": \"PASS_PREPARATION\",\n  \"imported_files\": 15,\n  \"archive_hashes\": 3237,\n  \"repository_hashes\": 78,\n  \"local_links\": 131,\n  \"scope\": \"Static packaging only; no Lean/Lake, no deployment.\"\n}\n{\"output\": \"_preview\", \"files\": 71, \"local_links\": 131, \"uploaded\": false, \"preview\": true}\n",
+      "stdout": "{\n  \"status\": \"PASS_PREPARATION\",\n  \"imported_files\": 15,\n  \"archive_hashes\": 3240,\n  \"repository_hashes\": 79,\n  \"local_links\": 132,\n  \"scope\": \"Static packaging only; no Lean/Lake, no deployment.\"\n}\n{\"output\": \"_preview\", \"files\": 71, \"local_links\": 132, \"uploaded\": false, \"preview\": true}\n",
       "stderr": ""
     },
     {
-      "command": "python scripts/build_site.py",
+      "command": [
+        "python",
+        "scripts/build_site.py"
+      ],
       "exit_code": 1,
       "stdout": "",
-      "stderr": "RELEASE HELD: public_release_authorized, paper_ii_final_received, final_joint_audit_pass, public_references_reconciled, manuscript_licence_recorded, author_headers_reconciled\n"
+      "stderr": "RELEASE HELD: public_release_authorized, paper_ii_final_received, final_joint_audit_pass, public_references_reconciled, manuscript_licence_recorded\n"
     }
   ],
-  "browser_evidence": "publication/web-qa/checks.json",
-  "open_gate": "HOLD_FOR_PAPER_II",
-  "author_headers_reconciled": false,
-  "authorship_review": "publication/AUTHORSHIP_REVIEW.md"
+  "lean_build_executed": false,
+  "author_headers_reconciled": true,
+  "uploaded": false
 }

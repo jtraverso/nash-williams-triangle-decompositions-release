@@ -5,7 +5,7 @@ Current state: **HOLD_FOR_PAPER_II**. Website preparation is not publication.
 1. Receive Paper II's final manuscript and companion in EN/ES and MD/TeX/PDF,
    its selected source freeze, SHA-256, licences, build and axiom evidence.
    Do not infer its status from Paper I's dependency closure.
-2. Import only that final package. Update Paper I–II cross-references and
+2. Import only that final package. Update Paper Iâ€“II cross-references and
    companions against the final public source locations. Preserve protected
    mathematics and sources; regenerate document artifacts only if edited.
 3. Close the joint editorial, bibliography, visual, provenance and integrity
@@ -14,8 +14,8 @@ Current state: **HOLD_FOR_PAPER_II**. Website preparation is not publication.
    public derivative needs redaction.
 4. Record manuscript distribution rights and Paper II's third-party licences.
    Apache-2.0 already governs the original packaging code.
-   Reconcile the [Paper I author-header correction](AUTHORSHIP_REVIEW.md)
-   with the final source archive, its hashes and verification scope.
+   The [Paper I author-header correction](AUTHORSHIP_REVIEW.md) is complete
+   in v3, with reversible hashes and preserved historical build evidence.
    Apply the same attribution inventory to the incoming Paper II package.
 5. Update CFF/BibTeX, document tables, `PUBLICATION_INDEX.json`, the site
    allowlist and checksums. Run `python scripts/verify_repository.py`.

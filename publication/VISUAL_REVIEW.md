@@ -1,11 +1,11 @@
 # Website visual review
 
 Review scope: the new HTML series guide and the two paper pages.
-Manuscript PDFs are byte-identical copies and are not rebuilt in this task.
+Manuscript PDFs are byte-identical copies of the newly audited bilingual edition; the document-render review is recorded in the private research repository.
 
 **PASS_VISUAL_PREPARATION.** The series page, Paper I page and Paper II page
-were inspected as full-page screenshots at desktop (1280 × 900 viewport)
-and mobile (390 × 844 viewport) sizes. All six captures were read.
+were inspected as full-page screenshots at desktop (1280 Ã— 900 viewport)
+and mobile (390 Ã— 844 viewport) sizes. All six captures were read.
 
 The navigation, bilingual prose, document table, source links and pending
 Paper II notice are legible. No horizontal overflow, missing image, clipped

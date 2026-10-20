@@ -15,7 +15,7 @@ Sigue la división de casos de Delcourt–Postle y presenta las construcciones d
 
 ## Formalization and scope / Formalización y alcance
 
-The selected archive is `PAPER_I_LEAN_20261020_ALIGNED_v2`: 1,070 project modules, six final axiom queries, Lean 4.35.0-rc3. The existing clean-build evidence uses pinned Mathlib products and reports only `propext`, `Classical.choice` and `Quot.sound` in those queries. No Lean/Lake build was performed during repository preparation. This does not certify the full Paper II development.
+The selected archive is `PAPER_I_LEAN_20261020_ALIGNED_v3`: 1,070 project modules, six final axiom queries, Lean 4.35.0-rc3. The existing clean-build evidence uses pinned Mathlib products and reports only `propext`, `Classical.choice` and `Quot.sound` in those queries. No Lean/Lake build was performed during repository preparation. This does not certify the full Paper II development.
 
 - [Validation](02_validation/README.md).
 - [Reproducibility](03_reproducibility/README.md).
@@ -30,3 +30,5 @@ Private preparation. Joint public release waits for Paper II and the
 The documents retain their selected bytes, including private-review references. Public references must be reconciled before launch.
 
 [Series](../../README.md) · [Web page](index.html)
+
+All 1,070 project source headers now identify Juan Pablo Traverso Gianini and Apache-2.0. Only header comments differ from the compiled edition. The archive includes a reversible source-hash mapping, static verifier and unchanged historical receipts. [Attribution check](../../publication/AUTHORSHIP_REVIEW.md).

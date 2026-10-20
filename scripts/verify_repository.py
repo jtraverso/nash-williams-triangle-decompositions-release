@@ -68,13 +68,15 @@ def verify():
         for doc in paper['documents']:
             assert set(doc['files']) == {'pdf', 'tex', 'md'}
             assert all((ROOT/p).is_file() for p in doc['files'].values())
-    freeze = 'PAPER_I_LEAN_20261020_ALIGNED_v2'
+    freeze = 'PAPER_I_LEAN_20261020_ALIGNED_v3'
     with zipfile.ZipFile(ROOT/f'archives/{freeze}.zip') as z:
         lines = z.read(freeze+'/SHA256SUMS.txt').decode().splitlines()
         for line in lines:
             expected, name = line.split('  ', 1)
             assert hashlib.sha256(z.read(freeze+'/'+name)).hexdigest() == expected, name
-        assert len(lines) == 3237
+        assert len(lines) == 3240
+        from verify_header_revision import verify as verify_headers
+        assert verify_headers(lambda name: z.read(freeze+'/'+name))['modules'] == 1070
         assert (ROOT/'LICENSE').read_bytes() == z.read(freeze+'/LICENSE')
         for p in (ROOT/'LICENSES').glob('*.txt'):
             assert p.read_bytes() == z.read(freeze+'/dependencies/licenses/'+p.name)
