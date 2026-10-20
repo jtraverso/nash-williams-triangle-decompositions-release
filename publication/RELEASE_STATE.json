@@ -1,5 +1,5 @@
 {
-  "status": "AUTHORIZED_FOR_PUBLICATION",
+  "status": "PUBLISHED_GITHUB_AND_ZENODO",
   "public_release_authorized": true,
   "paper_ii_final_received": true,
   "final_joint_audit_pass": true,
@@ -8,7 +8,9 @@
   "author_headers_reconciled": true,
   "first_public_edition_only": true,
   "cloudflare_connected": false,
-  "zenodo_published": false,
+  "zenodo_published": true,
   "authorization_date": "2026-10-20",
-  "authorization_scope": "Public GitHub series repository and both reserved Zenodo deposits, preprint 1.0."
+  "authorization_scope": "Public GitHub series repository and both reserved Zenodo deposits, preprint 1.0.",
+  "github_public": true,
+  "publication_date": "2026-10-20"
 }

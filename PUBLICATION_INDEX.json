@@ -2,7 +2,7 @@
   "series": "Triangle decompositions",
   "author": "Juan Pablo Traverso Gianini",
   "repository": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release",
-  "public_release": false,
+  "public_release": true,
   "version": "1.0",
   "doi": null,
   "website_url": null,
@@ -11,7 +11,7 @@
       "id": "PAPER_I",
       "title": "Triangle decompositions I: Formalizing the Nash–Williams theorem in Lean",
       "version": "1.0",
-      "status": "AUDITED_PREPRINT_1.0",
+      "status": "PUBLISHED_PREPRINT_1.0",
       "manuscript_date": "2026-10-20",
       "documents": [
         {
@@ -52,13 +52,15 @@
         }
       ],
       "source_archive": "archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip",
-      "doi": "10.5281/zenodo.23428173"
+      "doi": "10.5281/zenodo.23428173",
+      "record_url": "https://zenodo.org/records/23428173",
+      "concept_doi": "10.5281/zenodo.23428172"
     },
     {
       "id": "PAPER_II",
       "title": "Triangle decompositions II: Robust absorption for typed triangles",
       "version": "1.0",
-      "status": "AUDITED_PREPRINT_1.0",
+      "status": "PUBLISHED_PREPRINT_1.0",
       "manuscript_date": "2026-10-20",
       "documents": [
         {
@@ -99,7 +101,9 @@
         }
       ],
       "source_archive": "archives/PAPER_II_LEAN_20261020_ALIGNED_v4.zip",
-      "doi": "10.5281/zenodo.23502224"
+      "doi": "10.5281/zenodo.23502224",
+      "record_url": "https://zenodo.org/records/23502224",
+      "concept_doi": "10.5281/zenodo.23502223"
     }
   ]
 }
