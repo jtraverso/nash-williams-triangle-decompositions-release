@@ -630,7 +630,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 ] [2] [3] [4] [5] [6] [7] [8] [9]
 [10] [11] [12] [13] [14] [15] [16] [17]
 LaTeX Font Info:    Font shape `TU/lmmono10-regular.otf(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 573.
+(Font)              scaled to size 10.0pt on input line 577.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmmono10-regular.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -649,4 +649,4 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ] [64] [65] [66] [67] [68] [69]
 [70] (PAPER_II_preprint_v1.0_en.aux) )
-Output written on PAPER_II_preprint_v1.0_en.xdv (70 pages, 1839552 bytes).
+Output written on PAPER_II_preprint_v1.0_en.xdv (70 pages, 1842476 bytes).

@@ -5,32 +5,36 @@
     {
       "source": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.md",
       "baseline_sha256": "ab4b989540c0ee2c16a9c515d149a91a8b78c6995864605fbfa4de87482d9969",
-      "current_sha256": "8b0cf39135424d6fe93ba42c29881c5b7c1e413005016fea32fd9bb0c672716d",
+      "current_sha256": "43c7be4f78bf9dc1b212149fa2e4f67a103eb1571865a55684c66b229d5d9bd8",
       "display_mathematics_unchanged": true,
+      "translation_normalization": "Spanish prose in A.6.1 and E.4.1 only",
       "inline_insertions": [],
       "scope": "Bibliography, attribution, resource-evidence description, source locators and terminology; existing equations and proof steps retained."
     },
     {
       "source": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.md",
       "baseline_sha256": "3b268914f37c26921029a60a1352f8cb0e04085ca58ec9efdcedddfe799e86a8",
-      "current_sha256": "81dff94deaeb4278a2104ee97e3b719d45c87738480facafd6fedd8a60a3850e",
+      "current_sha256": "dc0aaed0a8ae19a931b0113efab869fb8f359066b423f3c0a4ccea59d36c209f",
       "display_mathematics_unchanged": true,
+      "translation_normalization": "Spanish prose in A.6.1 and E.4.1 only",
       "inline_insertions": [],
       "scope": "Bibliography, attribution, resource-evidence description, source locators and terminology; existing equations and proof steps retained."
     },
     {
       "source": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md",
       "baseline_sha256": "a4623bd504823426ee56702d974146a5fbc7a7f5641e58614d963685d772c564",
-      "current_sha256": "9c5b87fca67ee86bc777e927b40a6e913e877a05e329fde8043f935883590ff0",
+      "current_sha256": "3fcdced7ba32a465d854d87cb18b503b052e1f0a492530beda491bc27108fc79",
       "display_mathematics_unchanged": true,
+      "translation_normalization": "Spanish prose in A.6.1 and E.4.1 only",
       "inline_insertions": [],
       "scope": "Bibliography, attribution, resource-evidence description, source locators and terminology; existing equations and proof steps retained."
     },
     {
       "source": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md",
       "baseline_sha256": "e93ad775d951a64e1d6bafd7c5663702eca9b5ed3727ef973035bab393a6533d",
-      "current_sha256": "574df0bae4bd645f37e7458d6167c088dee0fd2a0b961ab0b3ab2de3fd41fb24",
+      "current_sha256": "463411179fe035c48bf2c3170818108b7961ee8a024e2bcb28edd25746a8f36a",
       "display_mathematics_unchanged": true,
+      "translation_normalization": "Spanish prose in A.6.1 and E.4.1 only",
       "inline_insertions": [],
       "scope": "Bibliography, attribution, resource-evidence description, source locators and terminology; existing equations and proof steps retained."
     }

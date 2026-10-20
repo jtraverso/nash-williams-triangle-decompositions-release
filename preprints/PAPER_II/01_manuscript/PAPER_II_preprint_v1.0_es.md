@@ -10,7 +10,9 @@ date: '20 de octubre de 2026'
 
 **Preprint 1.0 — 20 de octubre de 2026.**
 
-**DOI:** https://doi.org/10.5281/zenodo.23502224.
+**DOI:** <https://doi.org/10.5281/zenodo.23502224>.
+
+Copyright © 2026 Juan Pablo Traverso Gianini. Este documento se distribuye bajo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 ## Resumen
 
@@ -59,7 +61,7 @@ El texto principal enuncia los resultados, demuestra las deducciones para grafos
 
 Las letras de los apéndices son independientes de los Teoremas A–D. En ellos $F$ denota la misma familia que $\mathcal F$ en el texto principal, y sus ecuaciones llevan el prefijo correspondiente. Las tablas finitas están en las fuentes congeladas, ubicadas en [8, Secciones 7–8]; el resultado para todas las familias utiliza datos explícitos de certificados.
 
-Las versiones inglesa y española contienen el texto principal y los seis apéndices completos, con la misma numeración y las mismas expresiones matemáticas.
+Las versiones inglesa y española contienen el texto principal y los ocho apéndices completos (A–H), con la misma numeración y las mismas expresiones matemáticas.
 
 ## 2. Tipos, divisibilidad y condiciones sobre el grafo
 
@@ -691,7 +693,7 @@ El autor es responsable de los argumentos, las citas, el código y la presentaci
 
 ## Referencias
 
-[1] J. P. Traverso Gianini, *Triangle decompositions I: Formalizing the Nash–Williams theorem in Lean*, preprint 1.0 (2026). https://doi.org/10.5281/zenodo.23428173. [Documento](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/blob/main/preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.md).
+[1] J. P. Traverso Gianini, *Triangle decompositions I: Formalizing the Nash–Williams theorem in Lean*, preprint 1.0 (2026). <https://doi.org/10.5281/zenodo.23428173>. [Documento](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/blob/main/preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.md).
 
 [2] M. Delcourt y L. Postle, *A Proof of Nash-Williams' Conjecture*, arXiv:2606.11178v1 (2026). https://arxiv.org/abs/2606.11178v1.
 
@@ -701,9 +703,9 @@ El autor es responsable de los argumentos, las citas, el código y la presentaci
 
 [5] P. Keevash, *The existence of designs II*, arXiv:1802.05900 (2018). https://arxiv.org/abs/1802.05900.
 
-[6] L. de Moura y S. Ullrich, *The Lean 4 Theorem Prover and Programming Language*, CADE 28 (2021), 625–635. https://doi.org/10.1007/978-3-030-79876-5_37.
+[6] L. de Moura y S. Ullrich, *The Lean 4 Theorem Prover and Programming Language*, CADE 28 (2021), 625–635. <https://doi.org/10.1007/978-3-030-79876-5_37>.
 
-[7] The mathlib Community, *The Lean Mathematical Library*, CPP 2020, 367–381. https://doi.org/10.1145/3372885.3373824.
+[7] The mathlib Community, *The Lean Mathematical Library*, CPP 2020, 367–381. <https://doi.org/10.1145/3372885.3373824>.
 
 [8] J. P. Traverso Gianini, *Formalization and reproducibility companion to Triangle decompositions II*, preprint 1.0 (2026), correspondiente al freeze `PAPER_II_LEAN_20261020_ALIGNED_v4`. El complemento identifica el archivo inmutable de las fuentes y su huella SHA-256. [Documento](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/blob/main/preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md).
 
@@ -712,27 +714,27 @@ El autor es responsable de los argumentos, las citas, el código y la presentaci
 [10] *Jacobian*, repositorio de software. https://github.com/morluto/jacobian.
 
 
-[11] B. Barber, D. Kühn, A. Lo, D. Osthus y A. Taylor, *Clique decompositions of multipartite graphs and completion of Latin squares*, Journal of Combinatorial Theory, Series A 151 (2017), 146–201. https://doi.org/10.1016/j.jcta.2017.04.005.
+[11] B. Barber, D. Kühn, A. Lo, D. Osthus y A. Taylor, *Clique decompositions of multipartite graphs and completion of Latin squares*, Journal of Combinatorial Theory, Series A 151 (2017), 146–201. <https://doi.org/10.1016/j.jcta.2017.04.005>.
 
-[12] R. Montgomery, *Fractional clique decompositions of dense partite graphs*, Combinatorics, Probability and Computing 26 (2017), 911–943. https://doi.org/10.1017/S0963548317000165. https://arxiv.org/abs/1603.01039.
+[12] R. Montgomery, *Fractional clique decompositions of dense partite graphs*, Combinatorics, Probability and Computing 26 (2017), 911–943. <https://doi.org/10.1017/S0963548317000165>. https://arxiv.org/abs/1603.01039.
 
-[13] B. Barber, D. Kühn, A. Lo y D. Osthus, *Edge-decompositions of graphs with high minimum degree*, Advances in Mathematics 288 (2016), 337–385. https://doi.org/10.1016/j.aim.2015.09.032.
+[13] B. Barber, D. Kühn, A. Lo y D. Osthus, *Edge-decompositions of graphs with high minimum degree*, Advances in Mathematics 288 (2016), 337–385. <https://doi.org/10.1016/j.aim.2015.09.032>.
 
 [14] S. Glock, D. Kühn, A. Lo y D. Osthus, *The existence of designs via iterative absorption: hypergraph F-designs for arbitrary F*, arXiv:1611.06827v3 (2020). https://arxiv.org/abs/1611.06827v3.
 
 [15] P. Keevash, *The existence of designs*, arXiv:1401.3665v4 (2024; primera versión 2014). https://arxiv.org/abs/1401.3665v4.
 
-[16] V. Rödl, *On a packing and covering problem*, European Journal of Combinatorics 6 (1985), 69–78. https://doi.org/10.1016/S0195-6698(85)80023-8.
+[16] V. Rödl, *On a packing and covering problem*, European Journal of Combinatorics 6 (1985), 69–78. <https://doi.org/10.1016/S0195-6698(85)80023-8>.
 
-[17] P. Frankl y V. Rödl, *Near perfect coverings in graphs and hypergraphs*, European Journal of Combinatorics 6 (1985), 317–326. https://doi.org/10.1016/S0195-6698(85)80045-7.
+[17] P. Frankl y V. Rödl, *Near perfect coverings in graphs and hypergraphs*, European Journal of Combinatorics 6 (1985), 317–326. <https://doi.org/10.1016/S0195-6698(85)80045-7>.
 
-[18] N. Pippenger y J. Spencer, *Asymptotic behavior of the chromatic index for hypergraphs*, Journal of Combinatorial Theory, Series A 51 (1989), 24–42. https://doi.org/10.1016/0097-3165(89)90074-5.
+[18] N. Pippenger y J. Spencer, *Asymptotic behavior of the chromatic index for hypergraphs*, Journal of Combinatorial Theory, Series A 51 (1989), 24–42. <https://doi.org/10.1016/0097-3165(89)90074-5>.
 
-[19] P. E. Haxell y V. Rödl, *Integer and fractional packings in dense graphs*, Combinatorica 21 (2001), 13–38. https://doi.org/10.1007/s004930170003.
+[19] P. E. Haxell y V. Rödl, *Integer and fractional packings in dense graphs*, Combinatorica 21 (2001), 13–38. <https://doi.org/10.1007/s004930170003>.
 
-[20] S. Ehard, S. Glock y F. Joos, *Pseudorandom hypergraph matchings*, Combinatorics, Probability and Computing 29 (2020), 868–885. https://doi.org/10.1017/S0963548320000280.
+[20] S. Ehard, S. Glock y F. Joos, *Pseudorandom hypergraph matchings*, Combinatorics, Probability and Computing 29 (2020), 868–885. <https://doi.org/10.1017/S0963548320000280>.
 
-[21] S. Boucheron, G. Lugosi y P. Massart, *Concentration Inequalities: A Nonasymptotic Theory of Independence*, Oxford University Press (2013), Capítulo 2. https://doi.org/10.1093/acprof:oso/9780199535255.001.0001.
+[21] S. Boucheron, G. Lugosi y P. Massart, *Concentration Inequalities: A Nonasymptotic Theory of Independence*, Oxford University Press (2013), Capítulo 2. <https://doi.org/10.1093/acprof:oso/9780199535255.001.0001>.
 
 \clearpage
 
@@ -1019,7 +1021,7 @@ El siguiente enunciado de ensamblaje separa la construcción de un catálogo de 
 **Proposición A.6.1.** Sean $X,R\subseteq G$ disjuntos en aristas y sea $(B_j)_{j=1}^M$ un catálogo fijo de subgrafos de $X\cup R$ compatibles sobre los enteros, cada uno con a lo sumo $K$ aristas. Supongamos que, para todo $L\subseteq X$ admisible, incluido $L=\varnothing$, una subcolección del catálogo particiona $R\cup L$ en piezas disjuntas en aristas. Supongamos que
 $$
 \Delta(X\cup R)\le D_0,\qquad
-\sum_j d_{B_j}(v)\le\Lambda\quad\hbox{for every }v.
+\sum_j d_{B_j}(v)\le\Lambda\quad\hbox{para todo }v.
 \tag{A.6.1}
 $$
 Ponemos $C=C(F,K)$ y $c=30C$. Supongamos que la disponibilidad para cuatro vecinos es al menos $a$ y elijamos $T>0,D$ tales que
@@ -1833,7 +1835,7 @@ Procesamos los vértices cuyas etiquetas pertenecen a $B_c$. En un vértice actu
 El invariante esencial de tamaño es
 
 $$
-\mathcal V(P)=e(P)+g\sum_{y\ \mathrm{pending}}|b_y(P)/2|.
+\mathcal V(P)=e(P)+g\sum_{y\ \mathrm{pendiente}}|b_y(P)/2|.
 \tag{E.4.1}
 $$
 
@@ -1983,7 +1985,7 @@ Las tablas BAL especifican, para cada componente reducida, los signos efectivos,
 
 El conjunto congelado tiene 271 representantes PAR y 357 representantes BAL en estas rutas (301 sin carga adicional, 52 con una carga y cuatro con torsión), además de 120 representantes cubiertos previamente. Los diecisiete representantes restantes con leyes de conservación utilizan la construcción del Apéndice F. La enumeración finita completa, el transporte por permutaciones y el teorema de cobertura son objetos demostrados por separado en la versión congelada. La cobertura exhaustiva utiliza el certificado finito separado y el argumento de transporte de la Sección 9; no se deduce simplemente sumando estos conteos.
 
-Para cada componente, las constantes terminales y de la inversa real son finitas. Tomar máximos sobre sus componentes, que son finitas, y después sobre las tablas finitas de familias fija todos los parámetros antes de elegir un anfitrión. Aplicamos el ensamblaje de inversa real, reserva y cobertura descendente de la Sección B.6 (con las escalas flexibles (E.6.2) en el caso BAL). Convierte estos absorbedores universales y pesos regulares en una descomposición exacta. Reetiquetar de vuelta da el resultado afirmado para anfitriones típicos de cada familia PAR/BAL. Junto con el Apéndice F y el teorema del censo, esto proporciona la parte constructiva del Teorema D.La inversa real de la Proposición A.2.1 se aplica sobre el anfitrión original de cuatro etiquetas; dividir etiquetas para el absorbedor de componentes no requiere aplicar esa proposición a más de cuatro etiquetas.
+Para cada componente, las constantes terminales y de la inversa real son finitas. Tomar máximos sobre sus componentes, que son finitas, y después sobre las tablas finitas de familias fija todos los parámetros antes de elegir un anfitrión. Aplicamos el ensamblaje de inversa real, reserva y cobertura descendente de la Sección B.6 (con las escalas flexibles (E.6.2) en el caso BAL). Convierte estos absorbedores universales y pesos regulares en una descomposición exacta. Reetiquetar de vuelta da el resultado afirmado para anfitriones típicos de cada familia PAR/BAL. Junto con el Apéndice F y el teorema del censo, esto proporciona la parte constructiva del Teorema D. La inversa real de la Proposición A.2.1 se aplica sobre el anfitrión original de cuatro etiquetas; dividir etiquetas para el absorbedor de componentes no requiere aplicar esa proposición a más de cuatro etiquetas.
 
 \bigskip
 
@@ -2006,79 +2008,79 @@ Recíprocamente, esta propiedad implica (2.7). Dada la cota inferior $\gamma n$ 
 
 ## Apéndice F. Un catálogo fijo para las familias con leyes de conservación
 
-En todo este apéndice, un digrafo cíclico tiene tres clases de vértices y cada arco va de la clase i a la clase i+1 módulo 3. Los digrafos no tienen arcos repetidos. El grado d(v) significa **grado de entrada más grado de salida**. Una circulación con signos es un vector entero sobre los arcos cuyas sumas entrante y saliente son iguales en cada vértice. Una pieza positiva es un conjunto no vacío de arcos equilibrado en ese mismo sentido. No tiene por qué ser un único ciclo. Su tamaño es su número de arcos.
+En todo este apéndice, un digrafo cíclico tiene tres clases de vértices y cada arco va de la clase $i$ a la clase $i+1$ módulo 3. Los digrafos no tienen arcos repetidos. El grado $d(v)$ significa **grado de entrada más grado de salida**. Una circulación con signos es un vector entero sobre los arcos cuyas sumas entrante y saliente son iguales en cada vértice. Una pieza positiva es un conjunto no vacío de arcos equilibrado en ese mismo sentido. No tiene por qué ser un único ciclo. Su tamaño es su número de arcos.
 
-Para un catálogo finito C de piezas, su carga en v es
+Para un catálogo finito $C$ de piezas, su carga en $v$ es
 
 $$
 \operatorname{load}_{\mathcal C}(v)=\sum_{P\in\mathcal C}d_P(v).
 $$
 
-Esto cuenta el catálogo completo, no sólo las piezas seleccionadas para un grafo residual concreto. Todas las reservas y catálogos que siguen se eligen antes del residuo L. Sólo la partición elegida del catálogo depende de L.
+Esto cuenta el catálogo completo, no sólo las piezas seleccionadas para un grafo residual concreto. Todas las reservas y catálogos que siguen se eligen antes del residuo $L$. Sólo la partición elegida del catálogo depende de $L$.
 
 ### F.1. Redondeo entero y una inversa bilateral
 
-Orientamos arbitrariamente las aristas de un grafo simple finito y denotamos por B su matriz de incidencia con signos, con una columna $e_{v}-e_{u}$ para una arista orientada de u a v.
+Orientamos arbitrariamente las aristas de un grafo simple finito y denotamos por $B$ su matriz de incidencia con signos, con una columna $e_{v}-e_{u}$ para una arista orientada de $u$ a $v$.
 
-**Redondeo de flujos.** Si Bf es entero, existe un vector entero z con $Bz=Bf$ y $\lfloor f_e\rfloor\le z_e\le\lceil f_e\rceil$ para cada arista e. En particular, $|z_{e}-f_{e}|<1$.
+**Redondeo de flujos.** Si $Bf$ es entero, existe un vector entero $z$ con $Bz=Bf$ y $\lfloor f_e\rfloor\le z_e\le\lceil f_e\rceil$ para cada arista $e$. En particular, $|z_{e}-f_{e}|<1$.
 
-Para verlo, consideramos las aristas en las que f no es entero. Ningún vértice tiene exactamente una arista incidente de ese tipo: su ecuación de incidencia tendría un lado izquierdo no entero y un lado derecho entero. Si queda alguna de esas aristas, su grafo subyacente contiene, por tanto, un ciclo. Añadimos un múltiplo con signo de su vector de incidencia cíclica. Esto preserva Bf. Aumentamos el múltiplo hasta que una arista alcance por primera vez un extremo entero de su intervalo permitido. Ninguna otra coordenada sale de su intervalo y desaparece al menos una coordenada no entera. Las coordenadas anteriormente enteras no cambian. La iteración termina y demuestra la afirmación.
+Para verlo, consideramos las aristas en las que $f$ no es entero. Ningún vértice tiene exactamente una arista incidente de ese tipo: su ecuación de incidencia tendría un lado izquierdo no entero y un lado derecho entero. Si queda alguna de esas aristas, su grafo subyacente contiene, por tanto, un ciclo. Añadimos un múltiplo con signo de su vector de incidencia cíclica. Esto preserva $Bf$. Aumentamos el múltiplo hasta que una arista alcance por primera vez un extremo entero de su intervalo permitido. Ninguna otra coordenada sale de su intervalo y desaparece al menos una coordenada no entera. Las coordenadas anteriormente enteras no cambian. La iteración termina y demuestra la afirmación.
 
-Supongamos que G satisface la desigualdad de corte
+Supongamos que $G$ satisface la desigualdad de corte
 
 $$
 |\partial_G S|\ge h\min\{|S|,|V(G)\setminus S|\},\qquad h>0.\tag{F.1}
 $$
 
-Todo vector real g de suma cero con $|g_{v}|\le M$ tiene una preimagen real bajo B de norma supremo a lo sumo M/h. En efecto,
+Todo vector real $g$ de suma cero con $|g_{v}|\le M$ tiene una preimagen real bajo $B$ de norma supremo a lo sumo $M/h$. En efecto,
 
 $$
 \left|\sum_{v\in S}g_v\right|\le M\min\{|S|,|V(G)\setminus S|\}\le(M/h)|\partial_G S|.
 $$
 
-Estas desigualdades de corte implican la afirmación sobre flujos. Para completar la prueba, la imagen de la caja $[-M/h,M/h]^E$ bajo B es un conjunto convexo compacto. Si g estuviera fuera, un potencial separador p satisfaría
+Estas desigualdades de corte implican la afirmación sobre flujos. Para completar la prueba, la imagen de la caja $[-M/h,M/h]^E$ bajo $B$ es un conjunto convexo compacto. Si $g$ estuviera fuera, un potencial separador $p$ satisfaría
 
 $$
 \langle p,g\rangle>(M/h)\sum_{uv\in E}|p_u-p_v|.
 $$
 
-Restamos una constante a p, lo que no cambia el lado izquierdo, y expresamos p como suma de indicadores de sus conjuntos de nivel anidados multiplicados por diferencias consecutivas de nivel. Aplicamos la desigualdad de corte a cada término y sumamos. Obtenemos la desigualdad opuesta, una contradicción. Si g es entero, podemos redondear como antes sin cambiar su divergencia.
+Restamos una constante a $p$, lo que no cambia el lado izquierdo, y expresamos $p$ como suma de indicadores de sus conjuntos de nivel anidados multiplicados por diferencias consecutivas de nivel. Aplicamos la desigualdad de corte a cada término y sumamos. Obtenemos la desigualdad opuesta, una contradicción. Si $g$ es entero, podemos redondear como antes sin cambiar su divergencia.
 
-**Inversa bilateral.** Sean A y B grafos conexos con constantes de expansión $h_{A},h_{B}$. Si X es una matriz entera con sumas de filas y columnas nulas y $|X_{ab}|\le M$, entonces
+**Inversa bilateral.** Sean $A$ y $B$ grafos conexos con constantes de expansión $h_{A},h_{B}$. Si $X$ es una matriz entera con sumas de filas y columnas nulas y $|X_{ab}|\le M$, entonces
 
 $$
 B_A Z B_B^{\mathsf T}=X,\qquad |Z_{ef}|<\frac{2M}{h_Ah_B}+2.\tag{F.2}
 $$
 
-para una matriz entera Z.
+para una matriz entera $Z$.
 
-Levantamos primero cada columna de X a través de $B_{A}$, obteniendo columnas $u_{b}$ acotadas por $M/h_{A}$. Pongamos $s_b=u_b-\operatorname{mean}_{b\prime}u_{b\prime}$. Entonces $B_{A}$ $s_{b}=X_{b}$, pues las filas de X suman cero; las filas de la matriz s también suman cero y $|s_{eb}|\le 2M/h_{A}$. Levantamos cada fila a través de $B_{B}$. Esto da una matriz real C con
+Levantamos primero cada columna de $X$ a través de $B_{A}$, obteniendo columnas $u_{b}$ acotadas por $M/h_{A}$. Pongamos $s_b=u_b-\operatorname{mean}_{b\prime}u_{b\prime}$. Entonces $B_{A}$ $s_{b}=X_{b}$, pues las filas de $X$ suman cero; las filas de la matriz $s$ también suman cero y $|s_{eb}|\le 2M/h_{A}$. Levantamos cada fila a través de $B_{B}$. Esto da una matriz real $C$ con
 
 $$
 B_A C B_B^{\mathsf T}=X,\qquad |C_{ef}|\le\frac{2M}{h_Ah_B}.\tag{F.3}
 $$
 
-También existe una preimagen entera $C_{0}$, sin afirmar una cota de norma: expresamos X como suma de $X_{ab}(e_a-e_{a_0})(e_b-e_{b_0})^{\mathsf T}$, para raíces fijas $a_0,b_0$, y levantamos las dos diferencias mediante caminos en A y B.
+También existe una preimagen entera $C_{0}$, sin afirmar una cota de norma: expresamos $X$ como suma de $X_{ab}(e_a-e_{a_0})(e_b-e_{b_0})^{\mathsf T}$, para raíces fijas $a_0,b_0$, y levantamos las dos diferencias mediante caminos en $A$ y $B$.
 
-Redondeamos C preservando su imagen bilateral. Elegimos un árbol generador de A. Sea P la aplicación que envía un vector de aristas al único vector soportado en ese árbol con la misma incidencia. Así, $B_AP=B_A$ y P se anula en $\ker B_A$. Pongamos
+Redondeamos $C$ preservando su imagen bilateral. Elegimos un árbol generador de $A$. Sea $P$ la aplicación que envía un vector de aristas al único vector soportado en ese árbol con la misma incidencia. Así, $B_AP=B_A$ y $P$ se anula en $\ker B_A$. Pongamos
 
 $$
 D=C-C_0,\qquad V=PD,\qquad U=D-V.
 $$
 
-Entonces $B_AU=0$. Además, $B_A D B_B^{\mathsf T}=0$, por lo que $P(DB_B^{\mathsf T})=0$ y, en consecuencia, $VB_B^{\mathsf T}=0$. Redondeamos cada columna de U como flujo de divergencia cero en A y cada fila de V como flujo de divergencia cero en B. Las matrices enteras resultantes $U_{Z},V_{Z}$ conservan esas identidades y cambian cada entrada en menos de uno. Por tanto, $Z=C_{0}+U_{Z}+V_{Z}$ demuestra (F.2). No se utiliza ninguna cota sobre P. En particular, este argumento no supone que un producto tensorial de matrices de incidencia sea totalmente unimodular.
+Entonces $B_AU=0$. Además, $B_A D B_B^{\mathsf T}=0$, por lo que $P(DB_B^{\mathsf T})=0$ y, en consecuencia, $VB_B^{\mathsf T}=0$. Redondeamos cada columna de $U$ como flujo de divergencia cero en $A$ y cada fila de $V$ como flujo de divergencia cero en $B$. Las matrices enteras resultantes $U_{Z},V_{Z}$ conservan esas identidades y cambian cada entrada en menos de uno. Por tanto, $Z=C_{0}+U_{Z}+V_{Z}$ demuestra (F.2). No se utiliza ninguna cota sobre $P$. En particular, este argumento no supone que un producto tensorial de matrices de incidencia sea totalmente unimodular.
 
 ### F.2. Un expansor de grado acotado para cada tamaño
 
-Para cada $n\ge 1$ existe un grafo simple G sobre n vértices con grado máximo a lo sumo ocho y expansión $h=1/20$. El caso de un vértice es inmediato. Para n mayor, tomamos cuatro permutaciones uniformes independientes y formamos la unión no dirigida de sus aristas de permutación, descartando lazos y repeticiones.
+Para cada $n\ge 1$ existe un grafo simple $G$ sobre $n$ vértices con grado máximo a lo sumo ocho y expansión $h=1/20$. El caso de un vértice es inmediato. Para $n$ mayor, tomamos cuatro permutaciones uniformes independientes y formamos la unión no dirigida de sus aristas de permutación, descartando lazos y repeticiones.
 
-Damos el argumento de conteo con su estimación numérica. Fijemos un conjunto S de tamaño $1\le s\le n/2$ y pongamos $r=\lfloor (s-1)/20\rfloor$. Una permutación con a lo sumo r imágenes que salen de S envía S a $S\cup R$ para algún conjunto R de r elementos fuera de S. Su probabilidad es a lo sumo
+Damos el argumento de conteo con su estimación numérica. Fijemos un conjunto $S$ de tamaño $1\le s\le n/2$ y pongamos $r=\lfloor (s-1)/20\rfloor$. Una permutación con a lo sumo $r$ imágenes que salen de $S$ envía $S$ a $S\cup R$ para algún conjunto $R$ de $r$ elementos fuera de $S$. Su probabilidad es a lo sumo
 
 $$
 \binom nr\binom{s+r}s\big/\binom ns.
 $$
 
-Por tanto, la probabilidad de que algún conjunto de s elementos falle para las cuatro permutaciones es a lo sumo
+Por tanto, la probabilidad de que algún conjunto de $s$ elementos falle para las cuatro permutaciones es a lo sumo
 
 $$
 U_s=\binom ns\left[\binom nr\binom{s+r}s\big/\binom ns\right]^4.
@@ -2102,11 +2104,11 @@ $$
 U_s^{20}\le[60^5\cdot27\cdot\alpha^{55}]^s\le(2^{-20})^s,
 $$
 
-porque $\alpha\le 1/2$ y $60^{5}\cdot 27\le 2^{35}$. Sumar $2^{-s}$ en el intervalo finito $1\le s\le \lfloor n/2\rfloor$ da un número estrictamente menor que uno. Por tanto, existe una tupla de permutaciones que sirve para todos esos conjuntos. Para cada S, alguna permutación tiene al menos $r+1\ge s/20$ imágenes salientes. Éstas dan aristas distintas de la frontera simple, incluso tras descartar repeticiones entre permutaciones. Tomar complementos demuestra (F.1) para todos los conjuntos. Cada permutación aporta a lo sumo dos aristas incidentes por vértice, lo que da grado a lo sumo ocho. La desigualdad de corte también implica conexidad.
+porque $\alpha\le 1/2$ y $60^{5}\cdot 27\le 2^{35}$. Sumar $2^{-s}$ en el intervalo finito $1\le s\le \lfloor n/2\rfloor$ da un número estrictamente menor que uno. Por tanto, existe una tupla de permutaciones que sirve para todos esos conjuntos. Para cada $S$, alguna permutación tiene al menos $r+1\ge s/20$ imágenes salientes. Éstas dan aristas distintas de la frontera simple, incluso tras descartar repeticiones entre permutaciones. Tomar complementos demuestra (F.1) para todos los conjuntos. Cada permutación aporta a lo sumo dos aristas incidentes por vértice, lo que da grado a lo sumo ocho. La desigualdad de corte también implica conexidad.
 
 ### F.3. Un relleno con signos acotado en el anfitrión cíclico completo
 
-Sea Q un grafo con tres clases A,B,C, cada una indexada por $\mathbb Z/n\mathbb Z$, y todos los arcos cíclicos entre clases consecutivas. Fijamos una orientación del grafo G de la Sección F.2 sobre el conjunto de índices. Para índices a,b,c, escribimos
+Sea $Q$ un grafo con tres clases $A,B,C$, cada una indexada por $\mathbb Z/n\mathbb Z$, y todos los arcos cíclicos entre clases consecutivas. Fijamos una orientación del grafo $G$ de la Sección F.2 sobre el conjunto de índices. Para índices $a,b,c$, escribimos
 
 $$
 t(a,b,c)=[A_aB_b]+[B_bC_c]+[C_cA_a].
@@ -2114,32 +2116,32 @@ $$
 
 Utilizamos las siguientes circulaciones fijas con signos como caras:
 
-1. los $n^{2}$ triángulos latinos t(a,b,a+b);
-2. para cada arista orientada $f\to s$ de G y cada a, los dos movimientos
+1. los $n^{2}$ triángulos latinos $t(a,b,a+b)$;
+2. para cada arista orientada $f\to s$ de $G$ y cada $a$, los dos movimientos
 
 $$
 \begin{aligned}m_B(e,a)&=t(a,s,a+f)-t(a,f,a+f),\\m_C(e,a)&=t(a,f-a,s)-t(a,f-a,f);\end{aligned}
 $$
 
-3. en cada uno de los tres bloques de clases consecutivas, los rectángulos $(e_s-e_f)(e_{s\prime}-e_{f\prime})^{\mathsf T}$ indexados por dos aristas orientadas de G.
+3. en cada uno de los tres bloques de clases consecutivas, los rectángulos $(e_s-e_f)(e_{s\prime}-e_{f\prime})^{\mathsf T}$ indexados por dos aristas orientadas de $G$.
 
-Cada cara es no nula, tiene coeficientes en {-1,0,1} y a lo sumo cuatro arcos no nulos. Los movimientos tienen cuatro arcos, no seis, porque se cancela un lado triangular común. El único cambio de perfil saliente de $m_{B}$ es $e_{s}-e_{f}$ en la clase B; el de $m_{C}$ es $e_{s}-e_{f}$ en la clase C. Cada rectángulo tiene sumas de filas y columnas nulas y, por tanto, perfil saliente cero en cada clase.
+Cada cara es no nula, tiene coeficientes en $\{-1,0,1\}$ y a lo sumo cuatro arcos no nulos. Los movimientos tienen cuatro arcos, no seis, porque se cancela un lado triangular común. El único cambio de perfil saliente de $m_{B}$ es $e_{s}-e_{f}$ en la clase $B$; el de $m_{C}$ es $e_{s}-e_{f}$ en la clase $C$. Cada rectángulo tiene sumas de filas y columnas nulas y, por tanto, perfil saliente cero en cada clase.
 
-Hay a lo sumo $57n^{2}$ caras: G tiene a lo sumo $4n$ aristas, por lo que los tres conteos son $n^{2}$, a lo sumo $8n^{2}$ y a lo sumo $48n^{2}$. Para un arco fijo, las cotas del número de caras incidentes en los cuatro grupos (triángulos, movimientos B, movimientos C y rectángulos) son, respectivamente,
+Hay a lo sumo $57n^{2}$ caras: $G$ tiene a lo sumo $4n$ aristas, por lo que los tres conteos son $n^{2}$, a lo sumo $8n^{2}$ y a lo sumo $48n^{2}$. Para un arco fijo, las cotas del número de caras incidentes en los cuatro grupos (triángulos, movimientos $B$, movimientos $C$ y rectángulos) son, respectivamente,
 
 $$
 3,\quad32,\quad32,\quad256.\tag{F.4}
 $$
 
-Para los movimientos, elegir cuál de sus dos extremos variables coincide con un índice fijo reduce el conteo a las aristas incidentes de G, con a lo sumo cuatro elecciones de este tipo; fijada esta arista, el índice restante queda determinado. Para los rectángulos, elegimos un extremo de cada arista orientada, obteniendo la cota segura $(2\cdot 8)^{2}$. La cota tres para las caras latinas es deliberadamente holgada. Estos conteos siguen siendo válidos si distintas caras indexadas tienen el mismo vector de arcos.
+Para los movimientos, elegir cuál de sus dos extremos variables coincide con un índice fijo reduce el conteo a las aristas incidentes de $G$, con a lo sumo cuatro elecciones de este tipo; fijada esta arista, el índice restante queda determinado. Para los rectángulos, elegimos un extremo de cada arista orientada, obteniendo la cota segura $(2\cdot 8)^{2}$. La cota tres para las caras latinas es deliberadamente holgada. Estos conteos siguen siendo válidos si distintas caras indexadas tienen el mismo vector de arcos.
 
-Sea L cualquier subgrafo equilibrado de Q. Denotamos sus grados salientes en las tres clases por $d_{A},d_{B},d_{C}$. Sus sumas coinciden y cada grado es a lo sumo n. Elegimos
+Sea $L$ cualquier subgrafo equilibrado de $Q$. Denotamos sus grados salientes en las tres clases por $d_{A},d_{B},d_{C}$. Sus sumas coinciden y cada grado es a lo sumo $n$. Elegimos
 
 $$
 z_{ab}=\begin{cases}1,&\text{si el representante de }b-a\pmod n\text{ es }<d_A(a),\\0,&\text{en otro caso.}\end{cases}
 $$
 
-La suma de cadenas $z_{ab}$ t(a,b,a+b) tiene el perfil A requerido. Sus errores de perfil B y C tienen suma cero y valor absoluto a lo sumo n. Por la Sección F.1, cada error tiene un flujo entero en G con coeficientes de valor absoluto menor que $20n+1$. Dividimos cada coeficiente en n sumandos enteros de valor absoluto a lo sumo 21. Los utilizamos como coeficientes de $m_{B}(e,a)$ y $m_{C}(e,a)$, respectivamente. Las dos correcciones sólo afectan a sus perfiles respectivos. Obtenemos una circulación con signos Y con exactamente el perfil saliente de L en las tres clases.
+La suma de cadenas $z_{ab}$ $t(a,b,a+b)$ tiene el perfil A requerido. Sus errores de perfil $B$ y $C$ tienen suma cero y valor absoluto a lo sumo $n$. Por la Sección F.1, cada error tiene un flujo entero en $G$ con coeficientes de valor absoluto menor que $20n+1$. Dividimos cada coeficiente en $n$ sumandos enteros de valor absoluto a lo sumo 21. Los utilizamos como coeficientes de $m_{B}(e,a)$ y $m_{C}(e,a)$, respectivamente. Las dos correcciones sólo afectan a sus perfiles respectivos. Obtenemos una circulación con signos $Y$ con exactamente el perfil saliente de $L$ en las tres clases.
 
 Por (F.4), el uso absoluto de caras sobre cualquier arco en esta construcción es a lo sumo
 
@@ -2159,27 +2161,27 @@ $$
 T=3+2\cdot21\cdot32+1078401\cdot256.\tag{F.5}
 $$
 
-Las caras y T se fijaron antes de L. Los coeficientes del relleno dependen de L.
+Las caras y $T$ se fijaron antes de $L$. Los coeficientes del relleno dependen de $L$.
 
 ### F.4. Convertir rellenos con signos en un catálogo positivo
 
-Fijemos D subconjunto de Q. Para cada arco $e=u\to v$ de Q, introducimos T caminos positivos de u a v de longitud cuatro y T caminos negativos de v a u de longitud cinco, todos con vértices internos privados. Los caminos distintos tienen vértices internos y arcos distintos. Sus longitudes tienen los residuos apropiados módulo tres, por lo que todos son cíclicos. Sea R su unión, disjunta de D.
+Fijemos $D\subseteq Q$. Para cada arco $e=u\to v$ de $Q$, introducimos $T$ caminos positivos de $u$ a $v$ de longitud cuatro y $T$ caminos negativos de $v$ a $u$ de longitud cinco, todos con vértices internos privados. Los caminos distintos tienen vértices internos y arcos distintos. Sus longitudes tienen los residuos apropiados módulo tres, por lo que todos son cíclicos. Sea $R$ su unión, disjunta de $D$.
 
 El catálogo consta de tres tipos de piezas positivas equilibradas:
 
 - para cada cara, cada signo y cada elección de un canal sobre cada uno de sus arcos no nulos, sustituimos cada arco con signo por un camino en su dirección indicada;
-- para cada arco de Q, la unión de cualquier canal positivo con cualquier canal negativo;
-- para cada e en D, e junto con el canal negativo de índice cero de e.
+- para cada arco de $Q$, la unión de cualquier canal positivo con cualquier canal negativo;
+- para cada $e\in D$, $e$ junto con el canal negativo de índice cero de $e$.
 
 Sustituir una circulación entera por caminos dirigidos preserva el equilibrio. Cada pieza enumerada es no vacía y contiene a lo sumo 20 arcos. En particular, no se afirma que el primer tipo sea un único ciclo dirigido; el equilibrio es la propiedad utilizada por la construcción posterior.
 
-Demostramos cobertura exacta, no sólo cobertura de L. Dado L equilibrado subconjunto de D, tomamos el relleno de la Sección F.3 y expandimos sus coeficientes en apariciones unitarias con signos. En un arco e, sean $p_{e},n_{e}$ sus conteos positivos y negativos. Entonces
+Demostramos cobertura exacta, no sólo cobertura de $L$. Dado $L$ equilibrado subconjunto de $D$, tomamos el relleno de la Sección F.3 y expandimos sus coeficientes en apariciones unitarias con signos. En un arco $e$, sean $p_{e},n_{e}$ sus conteos positivos y negativos. Entonces
 
 $$
 p_e-n_e=\mathbf1_L(e),\qquad p_e+n_e\le T.
 $$
 
-Para e en L, seleccionamos primero la pieza del tercer tipo que utiliza el canal negativo cero. Asignamos canales positivos distintos a las $p_{e}$ apariciones positivas y canales negativos restantes distintos a las $n_{e}$ apariciones negativas. Hay espacio suficiente, pues $n_{e}+1_{L}(e)=p_{e}\le T$. Tanto los canales positivos como los negativos no asignados son $T-p_{e}$, por lo que los emparejamos y seleccionamos las piezas del segundo tipo. Las piezas del primer tipo realizan las apariciones de caras con signo. Cada arco de $R\cup L$ se utiliza ahora exactamente una vez. Las piezas así seleccionadas son distintas, pues son no vacías y disjuntas en arcos. Forman, por tanto, un subconjunto del catálogo fijo, no un multiconjunto que requiera copias adicionales de un arco físico.
+Para $e\in L$, seleccionamos primero la pieza del tercer tipo que utiliza el canal negativo cero. Asignamos canales positivos distintos a las $p_{e}$ apariciones positivas y canales negativos restantes distintos a las $n_{e}$ apariciones negativas. Hay espacio suficiente, pues $n_{e}+1_{L}(e)=p_{e}\le T$. Tanto los canales positivos como los negativos no asignados son $T-p_{e}$, por lo que los emparejamos y seleccionamos las piezas del segundo tipo. Las piezas del primer tipo realizan las apariciones de caras con signo. Cada arco de $R\cup L$ se utiliza ahora exactamente una vez. Las piezas así seleccionadas son distintas, pues son no vacías y disjuntas en arcos. Forman, por tanto, un subconjunto del catálogo fijo, no un multiconjunto que requiera copias adicionales de un arco físico.
 
 El catálogo tiene tamaño a lo sumo $C_{\rm card}n^2$ y carga por vértice a lo sumo $C_{\rm load}n$, donde las constantes congeladas son
 
@@ -2187,7 +2189,7 @@ $$
 \begin{aligned}C_{\rm card}&=114T^4+9T^2+9,\\C_{\rm load}&=(646T^4+T^2+1)(120T+22),\\C_d&=C_{\rm card}+C_{\rm load}.\end{aligned}\tag{F.6}
 $$
 
-Para la primera estimación hay a lo sumo $2\cdot 57n^{2}\cdot T^{4}$ piezas de caras, $9n^{2}\cdot T^{2}$ piezas de canales emparejados y $9n^{2}$ piezas de entrada. Las cotas $9n^{2}$ cuentan todos los pares ordenados, por lo que sobreestiman de forma segura los arcos de Q.
+Para la primera estimación hay a lo sumo $2\cdot 57n^{2}\cdot T^{4}$ piezas de caras, $9n^{2}\cdot T^{2}$ piezas de canales emparejados y $9n^{2}$ piezas de entrada. Las cotas $9n^{2}$ cuentan todos los pares ordenados, por lo que sobreestiman de forma segura los arcos de $Q$.
 
 Para la estimación de carga, un arco físico pertenece a lo sumo a $2\cdot 323\cdot T^{4}+T^{2}+1$ piezas del catálogo. Un vértice base incide con a lo sumo $6n$ arcos de referencia. Contar a lo sumo cinco arcos por canal y permitir una ficha de canal adicional para un vértice privado da a lo sumo
 
@@ -2195,51 +2197,51 @@ $$
 2[5(2T\cdot6n+1)+6n]\le(120T+22)n.
 $$
 
-arcos físicos incidentes, para $n\ge 1$. Contar dos veces los pares (pieza, arco incidente) demuestra (F.6). Estas cotas deliberadamente holgadas cubren tanto los vértices base como los privados. Cualquier digrafo cíclico D sobre N vértices se inserta en Q con N índices por clase; añadir vértices preserva los originales. La fórmula (F.6) da una reserva y un catálogo fijos con número de piezas $\le C_dN^2$ y carga $\le C_dN$. Para $N=0$ usamos la reserva y el catálogo vacíos. Esto demuestra la construcción densa con piezas de tamaño veinte; no es una hipótesis adicional.
+arcos físicos incidentes, para $n\ge 1$. Contar dos veces los pares (pieza, arco incidente) demuestra (F.6). Estas cotas deliberadamente holgadas cubren tanto los vértices base como los privados. Cualquier digrafo cíclico $D$ sobre $N$ vértices se inserta en $Q$ con $N$ índices por clase; añadir vértices preserva los originales. La fórmula (F.6) da una reserva y un catálogo fijos con número de piezas $\le C_dN^2$ y carga $\le C_dN$. Para $N=0$ usamos la reserva y el catálogo vacíos. Esto demuestra la construcción densa con piezas de tamaño veinte; no es una hipótesis adicional.
 
 ### F.5. Reducir una entrada de grado diecisiete a carga de orden raíz cuadrada
 
-Sea Y cíclico con $d_{Y}(v)\le 17$ y $m=|Y|>0$. Pongamos
+Sea $Y$ cíclico con $d_{Y}(v)\le 17$ y $m=|Y|>0$. Pongamos
 
 $$
 s=\lfloor\sqrt{2m}\rfloor+1,\quad M=307+290s,\quad A_0=9\cdot597^2\cdot8.\tag{F.7}
 $$
 
-Asignamos el soporte de Y a M grupos de cada color, cada uno con a lo sumo s vértices, de modo que arcos distintos de Y tengan pares ordenados de grupos distintos. Procesamos los vértices uno a uno. Además de la capacidad de los grupos, mantenemos que los vértices a distancia no dirigida a lo sumo dos reciben índices de grupo diferentes. En un vértice nuevo, los índices de grupo prohibidos están acotados por:
+Asignamos el soporte de $Y$ a $M$ grupos de cada color, cada uno con a lo sumo $s$ vértices, de modo que arcos distintos de $Y$ tengan pares ordenados de grupos distintos. Procesamos los vértices uno a uno. Además de la capacidad de los grupos, mantenemos que los vértices a distancia no dirigida a lo sumo dos reciben índices de grupo diferentes. En un vértice nuevo, los índices de grupo prohibidos están acotados por:
 
 - $17+17^{2}=306$ por vértices a distancia a lo sumo dos;
 - $17^2s=289s$ por arcos existentes cuyo par de grupos coincidiría con el de un arco hacia un vecino procesado anteriormente;
-- a lo sumo s-1 grupos llenos, pues el soporte procesado tiene tamaño menor que $s^{2}$.
+- a lo sumo $s-1$ grupos llenos, pues el soporte procesado tiene tamaño menor que $s^{2}$.
 
-Para el segundo conteo, un grupo contiene a lo sumo s vértices antiguos, cada uno incidente con a lo sumo diecisiete arcos; hay a lo sumo diecisiete vecinos pertinentes. Los arcos nuevos distintos no pueden coincidir entre sí porque sus extremos antiguos tienen índices de grupo diferentes. Tampoco pueden coincidir las orientaciones opuestas en el vértice nuevo: los colores de sus extremos son distintos. Como M supera la suma de las tres exclusiones, siempre queda un grupo disponible. Esto establece la asignación afirmada, en lugar de limitarse a suponer un cociente simple.
+Para el segundo conteo, un grupo contiene a lo sumo $s$ vértices antiguos, cada uno incidente con a lo sumo diecisiete arcos; hay a lo sumo diecisiete vecinos pertinentes. Los arcos nuevos distintos no pueden coincidir entre sí porque sus extremos antiguos tienen índices de grupo diferentes. Tampoco pueden coincidir las orientaciones opuestas en el vértice nuevo: los colores de sus extremos son distintos. Como $M$ supera la suma de las tres exclusiones, siempre queda un grupo disponible. Esto establece la asignación afirmada, en lugar de limitarse a suponer un cociente simple.
 
-Sea p(v) el grupo de v y sea D el cociente cíclico, con un centro por grupo. La aplicación e->(p(tail e),p(head e)) es inyectiva. Hay $N=3M$ centros y a lo sumo $17s$ arcos de entrada incidentes con cada centro. Como $s^{2}\le 8m$ y $M\le 597s$,
+Sea $p(v)$ el grupo de $v$ y sea $D$ el cociente cíclico, con un centro por grupo. La aplicación $e\mapsto(p(\operatorname{tail}e),p(\operatorname{head}e))$ es inyectiva. Hay $N=3M$ centros y a lo sumo $17s$ arcos de entrada incidentes con cada centro. Como $s^{2}\le 8m$ y $M\le 597s$,
 
 $$
 N^2\le A_0m,\qquad(\text{incidencia del centro})^2\le A_0m.\tag{F.8}
 $$
 
-Aplicamos la Sección F.4 a D. Para cada arco original $e=u\to v$ introducimos cinco vértices privados y los siguientes caminos:
+Aplicamos la Sección F.4 a $D$. Para cada arco original $e=u\to v$ introducimos cinco vértices privados y los siguientes caminos:
 
 $$
 \begin{aligned}P_e&:v\to x_0\to u,\\O_e&:u\to x_1\to x_2\to p(u),\\I_e&:p(v)\to x_3\to x_4\to v,\\Q_e&:p(u)\to p(v).\end{aligned}
 $$
 
-Los colores de p(u),p(v) son los de u,v. Por tanto, los caminos indicados son cíclicos. El ciclo base $P_{e}+O_{e}+Q_{e}+I_{e}$ tiene longitud nueve. La reserva consta de todos estos ciclos base y de la reserva densa sobre los centros. Su catálogo contiene el catálogo denso y:
+Los colores de $p(u),p(v)$ son los de $u,v$. Por tanto, los caminos indicados son cíclicos. El ciclo base $P_{e}+O_{e}+Q_{e}+I_{e}$ tiene longitud nueve. La reserva consta de todos estos ciclos base y de la reserva densa sobre los centros. Su catálogo contiene el catálogo denso y:
 
-- el triángulo $e+P_{e}$, para cada e en Y;
-- el ciclo base de longitud nueve para cada e;
+- el triángulo $e+P_{e}$, para cada $e\in Y$;
+- el ciclo base de longitud nueve para cada $e$;
 - $I_{e}+O_{f}$, un ciclo de longitud seis, siempre que $head(e)=tail(f)$.
 
-Dado L equilibrado subconjunto de Y, seleccionamos el ciclo base para cada e fuera de L y el triángulo para cada e en L. En cada vértice antiguo emparejamos sus arcos entrantes de L con sus arcos salientes de L y utilizamos los ciclos de seis correspondientes. Los arcos restantes son exactamente la reserva densa más Q(L). Este último es equilibrado, pues la aplicación de grupos preserva las sumas de divergencias, y es un subgrafo de D por inyectividad. La Sección F.4 particiona este resto. Todas las selecciones son disjuntas en arcos y todas las piezas pertenecen al catálogo fijado antes de L.
+Dado $L$ equilibrado subconjunto de $Y$, seleccionamos el ciclo base para cada $e$ fuera de $L$ y el triángulo para cada $e\in L$. En cada vértice antiguo emparejamos sus arcos entrantes de $L$ con sus arcos salientes de $L$ y utilizamos los ciclos de seis correspondientes. Los arcos restantes son exactamente la reserva densa más $Q(L)$. Este último es equilibrado, pues la aplicación de grupos preserva las sumas de divergencias, y es un subgrafo de $D$ por inyectividad. La Sección F.4 particiona este resto. Todas las selecciones son disjuntas en arcos y todas las piezas pertenecen al catálogo fijado antes de $L$.
 
-Hay a lo sumo $17m$ pares ordenados compatibles (e,f), por lo que el tamaño total del catálogo es a lo sumo (19+C_d A_0)m. El siguiente cálculo de carga registra la cota más fuerte que necesitaremos para los vértices que se identificarán. En un vértice w, sea $S_{w}$ la suma de sus grados en todos los ciclos base de nueve. Los triángulos contribuyen a lo sumo $S_{w}+d_{Y}(w)$, los ciclos base a lo sumo $S_{w}$ y los ciclos de seis a lo sumo $34S_{w}$: un arco puede ser el primer o segundo miembro de a lo sumo diecisiete pares. El catálogo denso contribuye a lo sumo $C_{d}$ N y no contiene vértices antiguos. En particular, $S_{v}=2d_{Y}(v)$ en un vértice antiguo y, por tanto,
+Hay a lo sumo $17m$ pares ordenados compatibles $(e,f)$, por lo que el tamaño total del catálogo es a lo sumo $(19+C_d A_0)m$. El siguiente cálculo de carga registra la cota más fuerte que necesitaremos para los vértices que se identificarán. En un vértice $w$, sea $S_{w}$ la suma de sus grados en todos los ciclos base de nueve. Los triángulos contribuyen a lo sumo $S_{w}+d_{Y}(w)$, los ciclos base a lo sumo $S_{w}$ y los ciclos de seis a lo sumo $34S_{w}$: un arco puede ser el primer o segundo miembro de a lo sumo diecisiete pares. El catálogo denso contribuye a lo sumo $C_{d}$ $N$ y no contiene vértices antiguos. En particular, $S_{v}=2d_{Y}(v)$ en un vértice antiguo y, por tanto,
 
 $$
 \operatorname{load}(v)\le73d_Y(v)\quad\text{para cada vértice antiguo}.\tag{F.9}
 $$
 
-En un vértice general, sea ell su incidencia como centro si es un centro, y cero en otro caso. El número de ciclos base que lo contienen es a lo sumo 17+ell, lo que da
+En un vértice general, sea $\ell$ su incidencia como centro si es un centro, y cero en otro caso. El número de ciclos base que lo contienen es a lo sumo $17+\ell$, lo que da
 
 $$
 \operatorname{load}(w)\le1241+(72+C_d)(\ell+N).
@@ -2251,29 +2253,29 @@ $$
 C_m=19+C_dA_0+1241+(72+C_d)(2A_0).\tag{F.10}
 $$
 
-acota, por tanto, el tamaño del catálogo por $C_{m}$ m y da $\operatorname{load}(w)^2\le C_m^2m$ en cada vértice. Cada pieza tiene tamaño a lo sumo veinte. Para $m=0$, el catálogo vacío satisface las mismas afirmaciones. La distinción entre (F.9) y la cota de orden raíz cuadrada es esencial: una cota de orden raíz cuadrada por puerto sería insuficiente tras asignar muchos puertos a una misma raíz física.
+acota, por tanto, el tamaño del catálogo por $C_{m}$ $m$ y da $\operatorname{load}(w)^2\le C_m^2m$ en cada vértice. Cada pieza tiene tamaño a lo sumo veinte. Para $m=0$, el catálogo vacío satisface las mismas afirmaciones. La distinción entre (F.9) y la cota de orden raíz cuadrada es esencial: una cota de orden raíz cuadrada por puerto sería insuficiente tras asignar muchos puertos a una misma raíz física.
 
 ### F.6. Una red fija de ocho permutaciones en cada raíz
 
-Para cada conjunto finito P existen ocho permutaciones tales que, para todo S subconjunto de P, el número total de canales dirigidos de permutación que salen de S, contados con sus etiquetas de permutación, es al menos
+Para cada conjunto finito $P$ existen ocho permutaciones tales que, para todo $S\subseteq P$, el número total de canales dirigidos de permutación que salen de $S$, contados con sus etiquetas de permutación, es al menos
 
 $$
 \min\{|S|,|P\setminus S|\}.\tag{F.11}
 $$
 
-Aquí los canales paralelos se conservan como canales distintos; no es el grafo simple de la Sección F.2. Para $|P|\le 1$ la afirmación es inmediata. Sea $n=|P|$ y fijemos S con $1\le s\le n/2$, $p=s/n$. Para una permutación uniforme, sea I el número de imágenes de S que permanecen en S. Sus momentos factoriales satisfacen
+Aquí los canales paralelos se conservan como canales distintos; no es el grafo simple de la Sección F.2. Para $|P|\le 1$ la afirmación es inmediata. Sea $n=|P|$ y fijemos $S$ con $1\le s\le n/2$, $p=s/n$. Para una permutación uniforme, sea $I$ el número de imágenes de $S$ que permanecen en $S$. Sus momentos factoriales satisfacen
 
 $$
 \mathbb E\binom Ik=\frac{\binom sk^2}{\binom nk}\le\binom skp^k.
 $$
 
-Así, E $\lambda^{I}$ $\le (1+p(\lambda-1))^{s}$ para $\lambda\ge 1$. Si ocho permutaciones independientes tienen menos de s canales salientes, su conteo interno total supera $7s$. La desigualdad de Markov con $\lambda=4/p$, seguida de $\binom{n}{s}\le (3/p)^{s}$, acota la probabilidad de un conjunto de s elementos que falle por
+Así, $\mathbb E$ $\lambda^{I}$ $\le (1+p(\lambda-1))^{s}$ para $\lambda\ge 1$. Si ocho permutaciones independientes tienen menos de $s$ canales salientes, su conteo interno total supera $7s$. La desigualdad de Markov con $\lambda=4/p$, seguida de $\binom{n}{s}\le (3/p)^{s}$, acota la probabilidad de un conjunto de $s$ elementos que falle por
 
 $$
 \left[3(5-p)^8p^6/4^7\right]^s\le2^{-s}.
 $$
 
-Para la última desigualdad, $p^{3}(5-p)^{4}$ es creciente para $0<p\le 1/2$ y es menor que 52 en ese intervalo, mientras que $3\cdot 52^{2}<4^{7}/2$. La suma sobre s es estrictamente menor que uno. Por tanto, alguna tupla sirve para todos los conjuntos pequeños. El conteo saliente a través de un corte coincide con el de su complemento para cada permutación, lo que demuestra (F.11).
+Para la última desigualdad, $p^{3}(5-p)^{4}$ es creciente para $0<p\le 1/2$ y es menor que 52 en ese intervalo, mientras que $3\cdot 52^{2}<4^{7}/2$. La suma sobre $s$ es estrictamente menor que uno. Por tanto, alguna tupla sirve para todos los conjuntos pequeños. El conteo saliente a través de un corte coincide con el de su complemento para cada permutación, lo que demuestra (F.11).
 
 Descartamos los puntos fijos y damos capacidad unitaria a cada canal restante. Los grados de entrada y salida son ambos a lo sumo ocho. Si los enteros $b_{p}$ satisfacen $|b_{p}|\le 1$ y suman $b_{p}=0$, entonces
 
@@ -2281,11 +2283,11 @@ $$
 \left|\sum_{p\in S}b_p\right|\le\min\{|S|,|P\setminus S|\}.
 $$
 
-Por (F.11), se cumplen todas las condiciones de corte dirigido para encaminar este desequilibrio. Por tanto, un flujo entero de capacidad unitaria selecciona canales con la divergencia requerida. Esta última afirmación también se deduce directamente añadiendo una fuente y un sumidero para las demandas positivas y negativas y aumentando el flujo por caminos residuales: si el aumento se detiene antes de encaminar toda la demanda, el conjunto alcanzable desde la fuente viola precisamente una de estas desigualdades de corte. Las capacidades enteras mantienen cada canal seleccionado con valor cero o uno. La red sirve para todos esos b; no se elige después de conocer b.
+Por (F.11), se cumplen todas las condiciones de corte dirigido para encaminar este desequilibrio. Por tanto, un flujo entero de capacidad unitaria selecciona canales con la divergencia requerida. Esta última afirmación también se deduce directamente añadiendo una fuente y un sumidero para las demandas positivas y negativas y aumentando el flujo por caminos residuales: si el aumento se detiene antes de encaminar toda la demanda, el conjunto alcanzable desde la fuente viola precisamente una de estas desigualdades de corte. Las capacidades enteras mantienen cada canal seleccionado con valor cero o uno. La red sirve para todos esos $b$; no se elige después de conocer $b$.
 
 ### F.7. Puertos de raíces y catálogo completo
 
-Sea X un digrafo cíclico arbitrario y pongamos $x=|X|$. Dividimos cada arco de entrada en dos puertos distintos, uno asignado a su raíz de origen y otro a su raíz de destino. La entrada levantada es un emparejamiento sobre $2x$ puertos. Un puerto conserva el color de su raíz. En cada raíz aplicamos la Sección F.6 a su conjunto de puertos. Sustituimos cada canal de la red elegida por un camino privado de longitud tres cuyos extremos son sus puertos. Los extremos tienen el mismo color, por lo que el camino es cíclico. Sea N la unión de todos los caminos de red e I la entrada levantada.
+Sea $X$ un digrafo cíclico arbitrario y pongamos $x=|X|$. Dividimos cada arco de entrada en dos puertos distintos, uno asignado a su raíz de origen y otro a su raíz de destino. La entrada levantada es un emparejamiento sobre $2x$ puertos. Un puerto conserva el color de su raíz. En cada raíz aplicamos la Sección F.6 a su conjunto de puertos. Sustituimos cada canal de la red elegida por un camino privado de longitud tres cuyos extremos son sus puertos. Los extremos tienen el mismo color, por lo que el camino es cíclico. Sea $N$ la unión de todos los caminos de red e $I$ la entrada levantada.
 
 Cada puerto tiene grado total de red a lo sumo dieciséis, cada vértice interno de red tiene grado dos y el emparejamiento levantado añade a lo sumo uno. Por tanto,
 
@@ -2293,9 +2295,9 @@ $$
 \max_v d_{N\cup I}(v)\le17,\qquad |N\cup I|\le49x.\tag{F.12}
 $$
 
-En efecto, hay a lo sumo ocho canales por puerto, cada uno con tres arcos, de modo que $|N|\le 24\cdot (2x)$. Las redes quedan fijadas para X. Si L subconjunto de X es equilibrado, su levantamiento tiene divergencia en {-1,0,1} en cada puerto y la suma de divergencias en cada fibra de raíz es cero. La Sección F.6 selecciona canales completos cuyos caminos A cancelan esas divergencias. Así, A unión I(L) es equilibrado, con A subconjunto de N.
+En efecto, hay a lo sumo ocho canales por puerto, cada uno con tres arcos, de modo que $|N|\le 24\cdot (2x)$. Las redes quedan fijadas para $X$. Si $L\subseteq X$ es equilibrado, su levantamiento tiene divergencia en $\{-1,0,1\}$ en cada puerto y la suma de divergencias en cada fibra de raíz es cero. La Sección F.6 selecciona canales completos cuyos caminos $A$ cancelan esas divergencias. Así, $A\cup I(L)$ es equilibrado, con $A\subseteq N$.
 
-Aplicamos una vez la Sección F.5 a $Y=N\cup I$, obteniendo una reserva R disjunta de Y y su catálogo fijo. Ampliamos este catálogo con cada camino individual de canal de N. Dado L, usamos primero la partición mesoscópica para A unión I(L). Después añadimos los caminos individuales de canal no seleccionados en A. Esto particiona
+Aplicamos una vez la Sección F.5 a $Y=N\cup I$, obteniendo una reserva $R$ disjunta de $Y$ y su catálogo fijo. Ampliamos este catálogo con cada camino individual de canal de $N$. Dado $L$, usamos primero la partición mesoscópica para $A\cup I(L)$. Después añadimos los caminos individuales de canal no seleccionados en $A$. Esto particiona
 
 $$
 R\cup N\cup I(L).\tag{F.13}
@@ -2311,7 +2313,7 @@ $$
 \operatorname{load}(v)\le73\cdot17+16=1257.\tag{F.14}
 $$
 
-Para un vértice mesoscópico realmente nuevo u no hay piezas adicionales de canales, por lo que $load(u)^{2}\le C_{m}^{2}\cdot 49x$. Las cotas restantes son
+Para un vértice mesoscópico realmente nuevo $u$ no hay piezas adicionales de canales, por lo que $load(u)^{2}\le C_{m}^{2}\cdot 49x$. Las cotas restantes son
 
 $$
 \begin{aligned}|\mathcal C|&\le(49C_m+16)x,\\\sum_{P\in\mathcal C}|P|&\le(980C_m+48)x.\end{aligned}\tag{F.15}
@@ -2319,23 +2321,23 @@ $$
 
 y cada pieza tiene a lo sumo veinte arcos. La segunda cota mantiene separados los tamaños veinte y tres; no es necesario sustituir ambos por veinte.
 
-Hay exactamente $d_{X}(r)$ puertos asignados a una raíz física r. La precarga total del catálogo transportada por esos puertos es, por tanto, a lo sumo
+Hay exactamente $d_{X}(r)$ puertos asignados a una raíz física $r$. La precarga total del catálogo transportada por esos puertos es, por tanto, a lo sumo
 
 $$
 1257d_X(r).\tag{F.16}
 $$
 
-y no 1257 veces el número total de arcos de entrada. Los vértices internos de red no están fijados a r. Éste es el presupuesto de raíces que utiliza la inserción física ponderada. Tomar L vacío en (F.13) también demuestra que el soporte del catálogo contiene R unión N, condición necesaria al definir sus pesos de arcos.
+y no 1257 veces el número total de arcos de entrada. Los vértices internos de red no están fijados a $r$. Éste es el presupuesto de raíces que utiliza la inserción física ponderada. Tomar $L$ vacío en (F.13) también demuestra que el soporte del catálogo contiene $R\cup N$, condición necesaria al definir sus pesos de arcos.
 
 Las ecuaciones (F.12)–(F.16) completan la construcción del catálogo abstracto. Junto con una realización física inyectiva en arcos y el absorbedor terminal demostrado en el Apéndice A, proporcionan la entrada abstracta necesaria para la construcción de familias con leyes de conservación. Esta afirmación se refiere a esa entrada; las pruebas separadas PAR/BAL y semidensa se desarrollan en los Apéndices E y C, respectivamente.
 
 ### F.8. Por qué las piezas satisfacen las condiciones terminales de divisibilidad
 
-Para el núcleo de tres colores, el único tipo triangular es 012. En un vértice de color i de una pieza cíclica equilibrada P, los números de vecinos de colores i-1 e i+1 coinciden: son sus grados entrante y saliente. Su perfil local es, por tanto, un múltiplo entero del perfil de esquina de 012. Sumar el equilibrio sobre cada clase de color también muestra que los números de arcos en los tres bloques de clases consecutivas coinciden. En consecuencia, el vector global de conteos de aristas es un múltiplo entero de (1,1,1). Así, P satisface ambas condiciones de divisibilidad entera; el argumento no se basa sólo en la divisibilidad del número total de aristas.
+Para el núcleo de tres colores, el único tipo triangular es 012. En un vértice de color $i$ de una pieza cíclica equilibrada $P$, los números de vecinos de colores $i-1$ e $i+1$ coinciden: son sus grados entrante y saliente. Su perfil local es, por tanto, un múltiplo entero del perfil de esquina de 012. Sumar el equilibrio sobre cada clase de color también muestra que los números de arcos en los tres bloques de clases consecutivas coinciden. En consecuencia, el vector global de conteos de aristas es un múltiplo entero de $(1,1,1)$. Así, $P$ satisface ambas condiciones de divisibilidad entera; el argumento no se basa sólo en la divisibilidad del número total de aristas.
 
 Tras la sustitución física de este artículo, vale el mismo razonamiento porque cada pieza es equilibrada y cíclica, incluidos los canales adicionales cuyos extremos se identificaron con su raíz común. Cada pieza tiene a lo sumo ochenta aristas físicas. Por tanto, el resultado de certificados enteros acotados del Apéndice A puede utilizarse con la cota única de tamaño ochenta. Su certificado se construye en el anfitrión completo permitido; no debe afirmarse que todos sus triángulos auxiliares pertenecen ya al anfitrión incompleto. En su lugar, la construcción terminal se inserta mediante extensión. Su grafo no tiene aristas entre dos raíces antiguas y su construcción ordena los vértices nuevos con a lo sumo cuatro vecinos expuestos previamente, como se demuestra en el Apéndice A. Las desigualdades de disponibilidad y evitación de ese apéndice son las condiciones utilizadas para esta inserción.
 
-Finalmente, aplicamos el lema de ensamblaje de catálogo fijo al catálogo físico. Sus entradas son el número de piezas y la carga de todo el catálogo, no la carga de una selección residual concreta. Las construcciones terminales y sus inserciones físicas se fijan para todas las piezas antes de seleccionar L. La partición para L elige entonces una de las dos descomposiciones de cada construcción ya insertada. Esto explica exactamente dónde intervienen (F.15), (F.16) y la estimación de carga física; no introduce un absorbedor nuevo dependiente de L. La elección cuantitativa de las escalas del anfitrión sigue siendo la de la construcción congelada y del lema de realización física de la Sección 8.
+Finalmente, aplicamos el lema de ensamblaje de catálogo fijo al catálogo físico. Sus entradas son el número de piezas y la carga de todo el catálogo, no la carga de una selección residual concreta. Las construcciones terminales y sus inserciones físicas se fijan para todas las piezas antes de seleccionar $L$. La partición para $L$ elige entonces una de las dos descomposiciones de cada construcción ya insertada. Esto explica exactamente dónde intervienen (F.15), (F.16) y la estimación de carga física; no introduce un absorbedor nuevo dependiente de $L$. La elección cuantitativa de las escalas del anfitrión sigue siendo la de la construcción congelada y del lema de realización física de la Sección 8.
 
 ## Apéndice G. Enunciados auxiliares y sus aplicaciones
 
@@ -2669,4 +2671,3 @@ Un bloque influye en como máximo dos testigos. Si su influencia es $c_i$, enton
 
 Hay como máximo $4n^2$ consultas y $n$ condiciones de grado. Ponemos $c_0=\rho^3\omega^2/48$. La probabilidad de fallo es a lo sumo $5n^2e^{-c_0n}$. Si $n\ge2^{27}\rho^{-9}\omega^{-6}$, entonces $c_0^3n>30$ y $e^{c_0n}>(c_0n)^3/6$ hace esta cota menor que uno. El grafo seleccionado es descomponible y tiene la cota de grado requerida; su oferta de consultas supera incluso $\rho^2\omega n/12$. Junto con las reducciones explícitas de G.3 y G.5, esto completa las demostraciones auxiliares.
 
-Copyright © 2026 Juan Pablo Traverso Gianini. Este documento se distribuye bajo [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

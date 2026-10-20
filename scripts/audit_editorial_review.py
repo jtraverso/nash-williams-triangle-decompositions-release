@@ -27,6 +27,9 @@ def save(path, value):
 
 
 def displays(text):
+    # Two author-approved translations inside Spanish displays; symbols unchanged.
+    text = text.replace(r"\hbox{para todo }v.", r"\hbox{for every }v.")
+    text = text.replace(r"y\ \mathrm{pendiente}", r"y\ \mathrm{pending}")
     return re.findall(r"\$\$(.*?)\$\$", text, re.S)
 
 
@@ -88,6 +91,7 @@ def audit(render):
                                          sha256=sha(pdf), pages=len(doc), contact_sheets=sheets))
             changes.append(dict(source=rel, baseline_sha256=hashlib.sha256(old.encode()).hexdigest(),
                                 current_sha256=sha(md), display_mathematics_unchanged=True,
+                                translation_normalization="Spanish prose in A.6.1 and E.4.1 only",
                                 inline_insertions=[inline(text)[op[3]:op[4]] for op in edits],
                                 scope="Bibliography, attribution, resource-evidence description, source locators and terminology; existing equations and proof steps retained."))
         for part in ("01_manuscript", "05_formalization"):

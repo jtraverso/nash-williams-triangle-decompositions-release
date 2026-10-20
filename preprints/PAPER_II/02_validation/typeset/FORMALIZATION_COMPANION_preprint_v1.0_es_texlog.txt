@@ -629,7 +629,7 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    Font shape `TU/lmmono10-regular.otf(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 45.
+(Font)              scaled to size 10.95pt on input line 47.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmmono10-regular.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
@@ -638,9 +638,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ]
 LaTeX Font Info:    Font shape `TU/lmmono10-regular.otf(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 84.
+(Font)              scaled to size 10.0pt on input line 86.
  [2] [3] [4] [5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 303--305
+Underfull \hbox (badness 10000) in paragraph at lines 307--309
 []\TU/lmroman10-regular.otf(0)/b/n/10.95 G.2\TU/lmroman10-regular.otf(0)/m/n/10
 .95 : \TU/lmmono10-regular.otf(0)/m/n/10.95 BlowupB/PaddedNibble/TypedEffective
 Consumer.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular.otf(
@@ -648,7 +648,7 @@ Consumer.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular.otf(
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 307--309
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
 []\TU/lmroman10-regular.otf(0)/b/n/10.95 G.2\TU/lmroman10-regular.otf(0)/m/n/10
 .95 : \TU/lmmono10-regular.otf(0)/m/n/10.95 BlowupB/PaddedNibble/Nibble/Polynom
 ialThreshold.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular.
@@ -656,7 +656,7 @@ otf(0)/m/n/10.95 packingPolyn
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--313
+Underfull \hbox (badness 10000) in paragraph at lines 315--317
 []\TU/lmroman10-regular.otf(0)/b/n/10.95 G.2\TU/lmroman10-regular.otf(0)/m/n/10
 .95 : \TU/lmmono10-regular.otf(0)/m/n/10.95 BlowupB/PaddedNibble/ReserveConstru
 ction.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular.otf(0)/
@@ -664,7 +664,7 @@ m/n/10.95 exists_reserve_of_
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--315
+Underfull \hbox (badness 10000) in paragraph at lines 317--319
 []\TU/lmroman10-regular.otf(0)/b/n/10.95 G.3\TU/lmroman10-regular.otf(0)/m/n/10
 .95 : \TU/lmmono10-regular.otf(0)/m/n/10.95 BlowupB/PaddedNibble/TypedEffective
 Consumer.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular.otf(
@@ -672,7 +672,7 @@ Consumer.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular.otf(
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--317
+Underfull \hbox (badness 10000) in paragraph at lines 319--321
 []\TU/lmroman10-regular.otf(0)/b/n/10.95 B.3/G.4\TU/lmroman10-regular.otf(0)/m/
 n/10.95 : \TU/lmmono10-regular.otf(0)/m/n/10.95 BlowupB/UniversalProducer/Route
 dEvenProducer.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular
@@ -683,5 +683,5 @@ dEvenProducer.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
 ) )
-Output written on FORMALIZATION_COMPANION_preprint_v1.0_es.xdv (9 pages, 281136
+Output written on FORMALIZATION_COMPANION_preprint_v1.0_es.xdv (9 pages, 282460
  bytes).

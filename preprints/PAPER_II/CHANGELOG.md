@@ -40,3 +40,7 @@ Removed the obsolete reference to a superseded manuscript archive in both compan
 ## Canonical repository migration
 
 Updated canonical source links to `jtraverso/nash-williams-triangle-decompositions-release`. The first public edition remains preprint 1.0. The mathematical text and selected Lean archives are unchanged.
+
+## Final editorial corrections before the coordinated release
+
+Preprint 1.0 is retained. DOI URLs are now active links in all document formats. Paper II also corrects Spanish residual text, the appendix count, the section 7 page break, and mathematical typesetting in Appendix F; its article and companion carry the licence on the first page. The mathematical results and frozen Lean sources are unchanged. Evidence is recorded in `publication/FINAL_EDITORIAL_CHECKS.json` and the per-paper visual audit.

@@ -99,7 +99,7 @@ def main():
                           (r"(\\subsubsection\{(?:Proposition|Proposición) 4\.2)",24),
                           (r"(\\subsubsection\{4\.3\.)",9),
                           (r"(\\textbf\{(?:Table|Tabla) 1\.\})",12),
-                          (r"(\\subsection\{(?:2|3|4|5)\. )",9)]:
+                          (r"(\\subsection\{(?:2|3|4|5|7)\. )",9)]:
             texbody=re.sub(pattern,lambda m:"\n\\Needspace{"+str(n)+"\\baselineskip}\n"+m[1],texbody)
         bib=re.search(r"\\subsection\{(?:References|Referencias)\}[^\n]*\n",texbody)
         if bib:

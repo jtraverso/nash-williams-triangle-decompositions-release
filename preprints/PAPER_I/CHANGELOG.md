@@ -18,3 +18,7 @@ Restored the Spanish attribution to Keevash and the cross-reference to Paper II 
 ## Canonical repository migration
 
 Updated canonical source links to `jtraverso/nash-williams-triangle-decompositions-release`. The first public edition remains preprint 1.0. The mathematical text and selected Lean archives are unchanged.
+
+## Final editorial corrections before the coordinated release
+
+Preprint 1.0 is retained. DOI URLs are now active links in all document formats. The mathematical results and frozen Lean sources are unchanged. Evidence is recorded in `publication/FINAL_EDITORIAL_CHECKS.json` and the per-paper visual audit.

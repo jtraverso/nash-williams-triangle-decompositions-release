@@ -628,20 +628,20 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    Font shape `TU/lmmono10-regular.otf(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 45.
+(Font)              scaled to size 10.95pt on input line 47.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmmono10-regular.otf' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 1297) in paragraph at lines 45--46
+Underfull \hbox (badness 1297) in paragraph at lines 47--48
 \TU/lmroman10-regular.otf(0)/m/n/10.95 Three explicit targets were compiled in 
 the aligned campaign: \TU/lmmono10-regular.otf(0)/m/n/10.95 PartitionedTriangle
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 \TU/lmmono10-regular.otf(0)/m/n/10.95 Absorption.PaperII.Core\TU/lmroman10-regu
 lar.otf(0)/m/n/10.95 , \TU/lmmono10-regular.otf(0)/m/n/10.95 PartitionedTriangl
 eAbsorption.PaperII.Families\TU/lmroman10-regular.otf(0)/m/n/10.95 , and
@@ -651,15 +651,15 @@ eAbsorption.PaperII.Families\TU/lmroman10-regular.otf(0)/m/n/10.95 , and
 
 ]
 LaTeX Font Info:    Font shape `TU/lmmono10-regular.otf(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 84.
+(Font)              scaled to size 10.0pt on input line 86.
  [2] [3]
-Underfull \hbox (badness 1708) in paragraph at lines 132--133
+Underfull \hbox (badness 1708) in paragraph at lines 134--135
 []\TU/lmroman10-regular.otf(0)/m/n/10.95 This checks all current source hashes,
  reconstructs the exact historical sources from
  []
 
 [4] [5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 303--305
+Underfull \hbox (badness 10000) in paragraph at lines 307--309
 []\TU/lmroman10-regular.otf(0)/b/n/10.95 G.2\TU/lmroman10-regular.otf(0)/m/n/10
 .95 : \TU/lmmono10-regular.otf(0)/m/n/10.95 BlowupB/PaddedNibble/TypedEffective
 Consumer.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular.otf(
@@ -667,7 +667,7 @@ Consumer.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular.otf(
  []
 
 
-Underfull \hbox (badness 4913) in paragraph at lines 307--309
+Underfull \hbox (badness 4913) in paragraph at lines 311--313
 []\TU/lmroman10-regular.otf(0)/b/n/10.95 G.2\TU/lmroman10-regular.otf(0)/m/n/10
 .95 : \TU/lmmono10-regular.otf(0)/m/n/10.95 BlowupB/PaddedNibble/Nibble/Polynom
 ialThreshold.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular.
@@ -675,7 +675,7 @@ otf(0)/m/n/10.95 packingPolyn
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--313
+Underfull \hbox (badness 10000) in paragraph at lines 315--317
 []\TU/lmroman10-regular.otf(0)/b/n/10.95 G.2\TU/lmroman10-regular.otf(0)/m/n/10
 .95 : \TU/lmmono10-regular.otf(0)/m/n/10.95 BlowupB/PaddedNibble/ReserveConstru
 ction.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular.otf(0)/
@@ -683,7 +683,7 @@ m/n/10.95 exists_reserve_of_
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 313--315
+Underfull \hbox (badness 2326) in paragraph at lines 317--319
 []\TU/lmroman10-regular.otf(0)/b/n/10.95 G.3\TU/lmroman10-regular.otf(0)/m/n/10
 .95 : \TU/lmmono10-regular.otf(0)/m/n/10.95 BlowupB/PaddedNibble/TypedEffective
 Consumer.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular.otf(
@@ -691,7 +691,7 @@ Consumer.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular.otf(
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 315--317
+Underfull \hbox (badness 1454) in paragraph at lines 319--321
 []\TU/lmroman10-regular.otf(0)/b/n/10.95 B.3/G.4\TU/lmroman10-regular.otf(0)/m/
 n/10.95 : \TU/lmmono10-regular.otf(0)/m/n/10.95 BlowupB/UniversalProducer/Route
 dEvenProducer.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular
@@ -699,5 +699,5 @@ dEvenProducer.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular
  []
 
 [8] [9] (FORMALIZATION_COMPANION_preprint_v1.0_en.aux) )
-Output written on FORMALIZATION_COMPANION_preprint_v1.0_en.xdv (9 pages, 263176
+Output written on FORMALIZATION_COMPANION_preprint_v1.0_en.xdv (9 pages, 264492
  bytes).

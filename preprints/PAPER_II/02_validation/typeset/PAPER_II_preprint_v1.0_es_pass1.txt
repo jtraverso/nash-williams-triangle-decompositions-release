@@ -1,6 +1,6 @@
 note: Running TeX ...
 note: Rerunning TeX because "PAPER_II_preprint_v1.0_es.aux" changed ...
 note: Running xdvipdfmx ...
-note: Writing `<REPO>\preprints\PAPER_II\01_manuscript\PAPER_II_preprint_v1.0_es.pdf` (399.9287109375 KiB)
-note: Writing `<REPO>\preprints\PAPER_II\01_manuscript\PAPER_II_preprint_v1.0_es.aux` (28.01953125 KiB)
-note: Writing `<REPO>\preprints\PAPER_II\01_manuscript\PAPER_II_preprint_v1.0_es.log` (24.7197265625 KiB)
+note: Writing `<REPO>\preprints\PAPER_II\01_manuscript\PAPER_II_preprint_v1.0_es.log` (24.724609375 KiB)
+note: Writing `<REPO>\preprints\PAPER_II\01_manuscript\PAPER_II_preprint_v1.0_es.pdf` (403.056640625 KiB)
+note: Writing `<REPO>\preprints\PAPER_II\01_manuscript\PAPER_II_preprint_v1.0_es.aux` (28.021484375 KiB)

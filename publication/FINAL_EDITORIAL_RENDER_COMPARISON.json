@@ -1,0 +1,226 @@
+{
+  "baseline_commit": "2e9b44e159b832a9f9bff2b874b7e3a18081c531",
+  "documents": [
+    {
+      "path": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.pdf",
+      "pdf_sha256": "a3a0406029fcfece04d8713db06eab92901fb3591169b02e836ae21bae09df46",
+      "pages": 19,
+      "changed_pages": [
+        1,
+        19
+      ],
+      "detail_pages": [
+        1
+      ]
+    },
+    {
+      "path": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.pdf",
+      "pdf_sha256": "7f545bbe02f4b2e7d8bebca924e393bbfc82c71e6298e6ec2f683e754172794b",
+      "pages": 20,
+      "changed_pages": [
+        1,
+        20
+      ],
+      "detail_pages": [
+        1,
+        5
+      ]
+    },
+    {
+      "path": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf",
+      "pdf_sha256": "0de79ed4d6b920d16835fd93362b1d09c944f6e5b536de223d1b21c7ee7ea08e",
+      "pages": 9,
+      "changed_pages": [
+        1,
+        7,
+        9
+      ],
+      "detail_pages": [
+        1
+      ]
+    },
+    {
+      "path": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf",
+      "pdf_sha256": "f8dfb73aa0c20dac70790c8cd85ea2f9ff8e838dcdcd1f4b7bdc32ac51c169c8",
+      "pages": 9,
+      "changed_pages": [
+        1,
+        8,
+        9
+      ],
+      "detail_pages": [
+        1
+      ]
+    },
+    {
+      "path": "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.pdf",
+      "pdf_sha256": "5f7eef757877bd66462dff3ae1fde9df119acabcadac036d50676c3dff4f18d7",
+      "pages": 70,
+      "changed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        70
+      ],
+      "detail_pages": [
+        1,
+        18,
+        19,
+        27,
+        28,
+        45,
+        56,
+        57,
+        63,
+        66
+      ]
+    },
+    {
+      "path": "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.pdf",
+      "pdf_sha256": "b13bf4a5be9ce622a8d2c2346d239fa32b577931bf649e1a9a33cc5f158bc312",
+      "pages": 74,
+      "changed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ],
+      "detail_pages": [
+        1,
+        13,
+        20,
+        29,
+        30,
+        49,
+        61,
+        66,
+        69
+      ]
+    },
+    {
+      "path": "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf",
+      "pdf_sha256": "c9e326cdc072f0737f0bd3998327f88bca227da3e4b3106d9b2dc7bb85bc11db",
+      "pages": 9,
+      "changed_pages": [
+        1,
+        9
+      ],
+      "detail_pages": [
+        1,
+        4,
+        5,
+        8
+      ]
+    },
+    {
+      "path": "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf",
+      "pdf_sha256": "368759908fe650d82ff266938b05d4857eff50aa36e88b1de5ba748f4fb8c7e1",
+      "pages": 9,
+      "changed_pages": [
+        1,
+        9
+      ],
+      "detail_pages": [
+        1,
+        4,
+        5,
+        8
+      ]
+    }
+  ]
+}
