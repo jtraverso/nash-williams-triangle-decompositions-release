@@ -55,7 +55,7 @@ The main text states the decomposition results, proves the nearly complete deduc
 | Obtain physical certificates and exact weights in the semidense host | Appendix C | Theorem C |
 | Split disconnected links and correct component invariants | Appendices D–E | Theorem D |
 | Construct one conserved catalogue with bounded total load | Appendix F and Section 8 | The seventeen conserved cases |
-| Prove the auxiliary constructions and their constants | Appendix H | B.3–B.4, C.5a and G.2–G.4 |
+| Prove the auxiliary constructions and their constants | Appendix H | B.3–B.4, C.5a, G.2 and G.4 |
 
 The letters attached to appendices are independent of Theorems A–D. In the appendices $F$ denotes the same type family as $\mathcal F$ in the main text. Their equations carry an appendix prefix. The finite family tables are in the frozen sources, located in [8, Sections 7–8]; the theorem for all families is a theorem with explicit finite certificate data, not a classification obtained without such data.
 
@@ -696,7 +696,7 @@ The author remains responsible for the arguments, citations, code and presentati
 
 [7] The mathlib Community, *The Lean Mathematical Library*, CPP 2020, 367–381. https://doi.org/10.1145/3372885.3373824.
 
-[8] J. P. Traverso Gianini, *Formalization and reproducibility companion to Triangle decompositions II*, preprint 1.0 (2026), accompanying source freeze `PAPER_II_LEAN_20261020_ALIGNED_v4`. Private immutable source reference supplied with this version. [Document](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md).
+[8] J. P. Traverso Gianini, *Formalization and reproducibility companion to Triangle decompositions II*, preprint 1.0 (2026), accompanying source freeze `PAPER_II_LEAN_20261020_ALIGNED_v4`. The companion identifies the immutable source archive and its SHA-256 hash. [Document](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md).
 
 [9] J. P. Traverso Gianini, *Certo*, software repository. https://github.com/jtraverso/certo-math.
 
@@ -1343,7 +1343,7 @@ in $\mathcal Q_F$ is zero. We retain this abelian group, including torsion.
 
 ### B.3. A fixed even library, followed by physical routing
 
-We first recall the ordinary refiner in the form used here. The input $X$ is a loopless graph on $W$ with $\Delta(X)\le2\rho n$. Its precise scope and source are given in Appendix G.4. On a vertex
+We first recall the ordinary refiner in the form used here. Throughout B.3, $n$ is the ambient order, whereas H.6 first uses the local order $N=|W|$. Its concluding rescaling gives the ambient-parameter formulation below; in particular, $M=2^h$ in (B.3.2). The input $X$ is a loopless graph on $W$ with $\Delta(X)\le2\rho n$. Its precise scope and source are given in Appendix G.4. On a vertex
 set $W$, its auxiliary graph may be complete. For positive parameters
 $\lambda,\rho$ with
 
@@ -3497,7 +3497,7 @@ Indeed at most $S/T$ vertices have load at least $T$. Choose the first and last 
 
 ## Appendix H. Proofs of the auxiliary constructions
 
-This appendix supplies the constructions used in C.5a and G.2–G.4. A library is an indexed family: two indices are retained even if their edge sets agree. Its load is the sum of the degrees over all indices. Every remainder and every library below is fixed before the divisible residue is selected.
+This appendix supplies the auxiliary constructions used in C.5a, G.2 and G.4; the cover-down reduction is given separately in G.3. A library is an indexed family: two indices are retained even if their edge sets agree. Its load is the sum of the degrees over all indices. Every remainder and every library below is fixed before the divisible residue is selected.
 
 ### H.1. Parity chains
 

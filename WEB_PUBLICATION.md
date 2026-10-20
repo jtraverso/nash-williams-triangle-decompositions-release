@@ -27,7 +27,7 @@ available. `BROWSER_PATH` optionally selects a local Chromium executable.
 The script writes six screenshots and their input hashes under
 `publication/web-qa/`; it makes no external requests.
 
-## Future Pages configuration — do not connect yet
+## Pages configuration
 
 | Setting | Prepared value |
 |---|---|
@@ -68,8 +68,8 @@ References:
 
 ## First public edition only
 
-No prior versions or `superseded` directory are included. If the private
-preparation history contains replaced release candidates by launch time,
-export the final verified tree to a fresh initial public history before
-changing visibility. The private review repository retains the full record.
-This repository currently remains private.
+The selected files constitute the first public edition; no prior editions or
+`superseded` directory are included. The research repository retains the
+development record. Commit attribution uses the GitHub account `jtraverso`
+and its GitHub-provided no-reply address.
+Both papers, their bilingual companions and their selected source archives are available in this repository. Repository visibility is controlled by GitHub settings; changing visibility requires no change to the manuscripts.

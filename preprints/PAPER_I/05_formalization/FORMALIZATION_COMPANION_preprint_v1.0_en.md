@@ -173,7 +173,7 @@ Certo [5] and Jacobian [6] were used to explore finite instances, check identiti
 
 The author remains responsible for the arguments, citations, code and presentation. No AI system is listed as an author.
 
-The selected aligned sources and evidence are in [the immutable source archive](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/4cd4b445bd263162a618be9a3babefbc51340cf7/archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip). The mathematical article and this companion are separate documents in the Paper I deposit, https://doi.org/10.5281/zenodo.23428173.
+The selected aligned sources and evidence are in [the immutable source archive](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/0d652cde7d8d1f58cb6dd264b30fd3e6dc60f4f7/archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip). The mathematical article and this companion are separate documents in the Paper I deposit, https://doi.org/10.5281/zenodo.23428173.
 
 Paper II preprint 1.0 [2] gives the three-step-link refiner and quantitative assembly in Appendix B, the semidense theorem in Appendix C and the PAR/BAL constructions in Appendix E. Appendix H supplies written proofs of the compatible library and general auxiliary constructions; finite family certificates remain explicit source data. The selected Paper II source record and its provenance are identified in [7]. Paper I now uses the aligned sources for its selected typed inputs, checked within its own clean closure. This does not extend its validation to all of Paper II.
 
@@ -222,7 +222,7 @@ For Corollary 4.3, the assembly passes `roundUnivSpec124_holds` through `roundSp
 
 [6] *Jacobian*, software repository. https://github.com/morluto/jacobian.
 
-[7] J. P. Traverso Gianini, *Triangle decompositions II: source archive*, `PAPER_II_LEAN_20261020_ALIGNED_v4` (2026). SHA-256 `677faa70a76444a000b8c2192a45d0ab0e39f8899825c004fdf6cbe52bb755cc`. [Source archive](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/e14248179ae6c9d8c0b24f4541e5087afca6e5c4/archives/PAPER_II_LEAN_20261020_ALIGNED_v4.zip). https://doi.org/10.5281/zenodo.23502224.
+[7] J. P. Traverso Gianini, *Triangle decompositions II: source archive*, `PAPER_II_LEAN_20261020_ALIGNED_v4` (2026). SHA-256 `677faa70a76444a000b8c2192a45d0ab0e39f8899825c004fdf6cbe52bb755cc`. [Source archive](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/d6d020982ebf3f3cd8c104b6befc6c094850b3e7/archives/PAPER_II_LEAN_20261020_ALIGNED_v4.zip). https://doi.org/10.5281/zenodo.23502224.
 
 [8] C. St. J. A. Nash-Williams, *An unsolved problem concerning decomposition of graphs into triangles*, in *Combinatorial Theory and its Applications III*, North-Holland, Amsterdam (1970), 1179–1183.
 

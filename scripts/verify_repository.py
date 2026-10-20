@@ -95,6 +95,12 @@ def verify():
     for paper in idx['papers']:
         if not paper['source_archive']:
             continue
+        archive_path = ROOT/paper['source_archive']
+        sidecar = archive_path.with_name(archive_path.name + '.sha256')
+        raw = sidecar.read_bytes()
+        assert b'\r' not in raw, ('sidecar must use LF', sidecar)
+        checksum, filename = raw.decode('ascii').strip().split('  ', 1)
+        assert filename == archive_path.name and digest(archive_path) == checksum
         freeze = Path(paper['source_archive']).stem
         with zipfile.ZipFile(ROOT/paper['source_archive']) as z:
             lines = z.read(freeze+'/SHA256SUMS.txt').decode().splitlines()

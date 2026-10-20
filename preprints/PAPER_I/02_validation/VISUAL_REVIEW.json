@@ -1,14 +1,58 @@
 {
   "status": "PASS_VISUAL_REVIEW",
-  "total_pages": 57,
+  "date": "2026-10-20",
+  "reviewer": "Codex internal editorial audit",
   "pdf_hashes": {
-    "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.pdf": "afc90dd5587050bea71dc2e6f0ed2c426d0f6ac3828a3757bd3c42b2429538e7",
-    "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.pdf": "b8c5f03aef16b3f6d9b4ef669a4661522a39bcc6c059ea5e45262da912e36df4",
-    "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf": "b01f58056931ecd161f12a41f5dc8b6df5c60305b7696153a354244ff6b7b879",
-    "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf": "1cef01b3e2719707c0c6be242d4b071e794d0b5cc7f8d9a38e06eb0c5c993f92"
+    "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.pdf": "6035d2c15b4c046b8fa7d1aa38ea97677dfe53fc42ad3b7d9b846d4c5b1f64c4",
+    "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.pdf": "fb1536dfb0627bee314120a66e14ddf086a3e356586a8871950141ed3607f069",
+    "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf": "fe65d1fc81ddfc3220f736dba4ee52206f8268484f9986b05db436fde2728a08",
+    "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf": "ceb98621670dcf0adbde4064c641c62e8e835c37880730ff7ca92acfeec49bbf"
   },
-  "coverage": "All 57 pages inspected through eight contact sheets. Changed bibliography and source-record pages inspected enlarged after final corrections; quantitative Appendix A.4 and dependency-audit passages also inspected enlarged.",
+  "pages_reviewed": 57,
+  "images": [
+    {
+      "path": "preprints/PAPER_I/02_validation/renders/FORMALIZATION_COMPANION_preprint_v1.0_en/contact-001.jpg",
+      "sha256": "d0df7078b955a5826b5d9980df1ce6396b1507abb538bbe11904938c2a255f71"
+    },
+    {
+      "path": "preprints/PAPER_I/02_validation/renders/FORMALIZATION_COMPANION_preprint_v1.0_es/contact-001.jpg",
+      "sha256": "0e8a4d0918d6021ca1af116f504a2ee6a5428f6e89439fde07fb62d693f22c29"
+    },
+    {
+      "path": "preprints/PAPER_I/02_validation/renders/PAPER_I_preprint_v1.0_en/contact-001.jpg",
+      "sha256": "e16d1d97addd6f7ed273b1f0ea0083c43acce130d500bc8f15f5fc1c5633567d"
+    },
+    {
+      "path": "preprints/PAPER_I/02_validation/renders/PAPER_I_preprint_v1.0_en/contact-010.jpg",
+      "sha256": "8588fdb4ca9054d01b2206723e8108d480b48d4216515620e83d0c46b05af022"
+    },
+    {
+      "path": "preprints/PAPER_I/02_validation/renders/PAPER_I_preprint_v1.0_en/contact-019.jpg",
+      "sha256": "d00cbfbd832ba2dcf20338e2fc87834c2ba1337a77d383895786028ac2b97cae"
+    },
+    {
+      "path": "preprints/PAPER_I/02_validation/renders/PAPER_I_preprint_v1.0_es/contact-001.jpg",
+      "sha256": "7be63a97d09bf1f9ee7c9e1ace9f3b48e1d8355bc163327e23e57abbed6e2dcd"
+    },
+    {
+      "path": "preprints/PAPER_I/02_validation/renders/PAPER_I_preprint_v1.0_es/contact-010.jpg",
+      "sha256": "4a099f5865fb5473e6dba9e58fe2e80ab45a4836957ae04d90860b527d669aea"
+    },
+    {
+      "path": "preprints/PAPER_I/02_validation/renders/PAPER_I_preprint_v1.0_es/contact-019.jpg",
+      "sha256": "027d55c485ff80f301c123b9efac7f6f68cba19ed6f8b0b3a99f3b8fc18ee09a"
+    },
+    {
+      "path": "preprints/PAPER_I/02_validation/renders/PAPER_I_preprint_v1.0_es/detail-005.png",
+      "sha256": "29be2a40e0ef0f1a8108129bbcf4312552c5ceb7844afa1e6e024ac9486715d2"
+    }
+  ],
+  "criteria": [
+    "All pages inspected through contact sheets",
+    "Retained detail images inspected at readable page resolution",
+    "No clipping, overlap, broken glyphs or margin overflow",
+    "Corrected references and formal correspondence legible"
+  ],
   "findings": [],
-  "iteration": "Final bibliography separation and Spanish companion DOI corrected; affected PDFs regenerated and reinspected.",
-  "scope": "Internal AI-assisted editorial and layout inspection; not independent mathematical peer review."
+  "scope": "Layout and editorial review; not a new mathematical proof audit."
 }

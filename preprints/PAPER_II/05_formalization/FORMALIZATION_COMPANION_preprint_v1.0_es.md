@@ -20,7 +20,7 @@ La campaña local terminada registra `PASS_CLEAN_ALIGNED_BUILD`; no es una repro
 
 ## 2. Fuentes congeladas
 
-El archivo de fuentes seleccionado es `PAPER_II_LEAN_20261020_ALIGNED_v4.zip`, en [la referencia inmutable de las fuentes](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/e14248179ae6c9d8c0b24f4541e5087afca6e5c4/archives/PAPER_II_LEAN_20261020_ALIGNED_v4.zip). Su SHA-256 es:
+El archivo de fuentes seleccionado es `PAPER_II_LEAN_20261020_ALIGNED_v4.zip`, en [la referencia inmutable de las fuentes](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/d6d020982ebf3f3cd8c104b6befc6c094850b3e7/archives/PAPER_II_LEAN_20261020_ALIGNED_v4.zip). Su SHA-256 es:
 
 `677faa70a76444a000b8c2192a45d0ab0e39f8899825c004fdf6cbe52bb755cc`.
 
@@ -84,11 +84,11 @@ Para una comprobación estática, se extrae el archivo seleccionado y se ejecuta
 
 `python tools/verify_attribution.py`
 
-Esto comprueba las huellas actuales de todas las fuentes, reconstruye las fuentes históricas exactas mediante `attribution/source_changes.json`, comprueba 1.510 recibos históricos satisfactorios y 3.096 vínculos de huellas de objetos importados del proyecto y verifica el manifiesto interno. No ejecuta Lean. Los 3.028 archivos de evidencia existentes permanecen idénticos byte a byte al predecesor limpio.
+Esto comprueba las huellas actuales de todas las fuentes, reconstruye las fuentes históricas exactas mediante `attribution/source_changes.json`, comprueba 1.510 recibos históricos satisfactorios y 3.096 vínculos de huellas de objetos importados del proyecto y verifica el manifiesto interno. No ejecuta Lean. Los 3.029 archivos de evidencia existentes permanecen idénticos byte a byte al predecesor limpio.
 
 `evidence/verification.json` registra el resultado de la campaña, incluidas quince consultas con axiomas estándar. `evidence/build_plan.json` da el orden topológico. Cada módulo tiene un recibo en `evidence/receipts/` y salida del compilador en `evidence/module_logs/`; `evidence/entry_audit.log` reúne las salidas de las tres entradas. Al preparar el archivo, las huellas de fuentes coincidían con los recibos y todos los objetos compilados en disco coincidían con sus huellas registradas. El archivo no contiene objetos compilados.
 
-La campaña se ejecutó en varias invocaciones, retomando sólo objetos con recibos válidos de esa campaña. La última invocación de Paper II registra 517 módulos compilados entonces y 370 reutilizados de invocaciones anteriores de la misma campaña limpia, que suman los 887 módulos de la fase de Paper II. Esos 370 no proceden de una caché del proyecto de otra campaña. Se ampliaron los límites de memoria para algunos módulos grandes; cambiaron los límites de recursos, no las fuentes matemáticas. Los primeros 23 módulos se recompilaron contra la copia final de Mathlib de la misma revisión, con bytes de salida idénticos, según `evidence/early_module_recheck.txt`. Son partes de una única campaña limpia local, no replicaciones independientes.
+La campaña se ejecutó en varias invocaciones, retomando sólo objetos con recibos válidos de esa campaña. La última invocación de Paper II registra 517 módulos compilados entonces y 370 reutilizados de invocaciones anteriores de la misma campaña limpia, que suman los 887 módulos de la fase de Paper II. Esos 370 no proceden de una caché del proyecto de otra campaña. Los 517 módulos compilados en la última invocación usaron el límite de memoria ampliado; cambiaron los límites de recursos, no las fuentes matemáticas. Los primeros 23 módulos se recompilaron contra la copia final de Mathlib de la misma revisión, con bytes de salida idénticos, según `evidence/early_module_recheck.txt`. Son partes de una única campaña limpia local, no replicaciones independientes.
 
 Para una compilación nueva se instala `leanprover/lean4:v4.35.0-rc3`, se prepara Mathlib en `c55e6e786f49471c72fbddbec5415808896aec1e` y las revisiones registradas de dependencias, y se obtiene su caché con `lake exe cache get`. Se conserva el archivo de dependencias; no se ejecuta `lake update`. Se compila el árbol `source/` suministrado en un directorio de resultados separado y se generan recibos nuevos. Los programas históricos `tools/build.py` y `tools/align.py` usan rutas fijas de Windows y requieren adaptación; son registros de la campaña, no un reproductor portable de un solo comando. En particular, el programa de alineación reconstruye las fuentes anteriores a la corrección y no debe sobrescribir el árbol corregido seleccionado. Las instrucciones originales de la campaña permanecen en `evidence/BUILD_README.md`.
 
@@ -200,7 +200,8 @@ El Apéndice G del manuscrito enuncia los resultados auxiliares utilizados en el
 - **G.2**: `BlowupB/PaddedNibble/ReserveConstruction.lean`; `exists_reserve_of_decomposition`.
 - **G.3**: `BlowupB/PaddedNibble/TypedEffectiveConsumer.lean`; `typed_cover_down_absorption_effective`.
 - **B.3/G.4**: `BlowupB/UniversalProducer/RoutedEvenProducer.lean`; `evenRefinerProducer_routed`.
-- **G.4**: `BlowupB/StructuralF3General/RefinerF0/RobustSlots.lean`; `exists_robust`.
+- **G.4/H.5, C.5a**: `TypedRefinerF0/RobustSlots.lean`; `exists_robust`.
+- **B.3/G.4/H.6**: `UniversalRefiner/Main.lean`; `exists_universal_refiner`.
 - **G.5**: `BlowupB/LatinCore/WeightedPathStep.lean`; `exists_weighted_path`.
 - **B.4**: `BlowupB/UniversalProducer/IterLayers.lean`; `iterate_layers`.
 - **B.6**: `BlowupB/PaddedF12/HostGap.lean`; `degree_gap_of_guarded`.

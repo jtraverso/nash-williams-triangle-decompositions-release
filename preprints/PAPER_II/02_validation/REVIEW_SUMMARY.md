@@ -14,7 +14,7 @@ The selected formalization is `PAPER_II_LEAN_20261020_ALIGNED_v4.zip`, SHA-256:
 677faa70a76444a000b8c2192a45d0ab0e39f8899825c004fdf6cbe52bb755cc
 ```
 
-Its 1,510 project sources and 3,028 evidence files are preserved from the selected header-corrected archive. Revision v4 changes only the README and internal manifest; the remaining 4,560 files are byte-identical to v2. Static verification reconstructs the historical source bytes, checks the successful receipts and imported-object hash links, and verifies the archive manifest. This document revision did not run Lean again and is not an independent reproduction of the recorded campaign.
+Its 1,510 project sources and 3,029 evidence files are preserved from the selected header-corrected archive. Revision v4 changes only the README and internal manifest; the remaining 4,560 files are byte-identical to v2. Static verification reconstructs the historical source bytes, checks the successful receipts and imported-object hash links, and verifies the archive manifest. This document revision did not run Lean again and is not an independent reproduction of the recorded campaign.
 
 The companion distinguishes the fifteen final axiom queries from the theorem-to-source correspondence table. In particular, the balanced theorem has a successful compilation receipt but no separate final query is claimed. The historical campaign's final Paper II invocation compiled 517 modules and reused 370 from that same campaign.
 

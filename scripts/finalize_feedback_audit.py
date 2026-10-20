@@ -12,8 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def save(path, value):
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n",
-                    encoding="utf8")
+    path.write_bytes((json.dumps(value, ensure_ascii=False, indent=2) + "\n").encode("utf8"))
 
 
 def run(*args):

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "github_account": "jtraverso",
+  "author": "Juan Pablo Traverso Gianini",
+  "email": "13575211+jtraverso@users.noreply.github.com",
+  "history_rewrite": [
+    {
+      "previous_commit": "187a150c911989bd6997141bf2a99ed2b0a13d0b",
+      "replacement_commit": "6445fe9fd39a18e4c3183d018d084bec4a518481",
+      "tree_unchanged": true
+    },
+    {
+      "previous_commit": "0f70ee9138f53175e55a78c8b2833306d859a113",
+      "replacement_commit": "b20f94238352013e6cc7a2032a1092f2a7ca04af",
+      "tree_unchanged": true
+    },
+    {
+      "previous_commit": "4cd4b445bd263162a618be9a3babefbc51340cf7",
+      "replacement_commit": "0d652cde7d8d1f58cb6dd264b30fd3e6dc60f4f7",
+      "tree_unchanged": true
+    },
+    {
+      "previous_commit": "e14248179ae6c9d8c0b24f4541e5087afca6e5c4",
+      "replacement_commit": "d6d020982ebf3f3cd8c104b6befc6c094850b3e7",
+      "tree_unchanged": true
+    },
+    {
+      "previous_commit": "cb1ee86d4583fa73e08d26ba8324e83a9f2459ae",
+      "replacement_commit": "230fb9a427f010f90bf2afe103a465d55be9097a",
+      "tree_unchanged": true
+    }
+  ],
+  "scope": "Reachable history of the official series repository. Pre-rewrite backup retained locally outside the release; immutable source links updated to replacement commits."
+}

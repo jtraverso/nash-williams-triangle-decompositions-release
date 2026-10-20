@@ -142,7 +142,7 @@ La limpieza de la rama 12.8 cubre los vértices excepcionales y las aristas inte
 
 ### 3.2. Los resultados tipados de Paper II
 
-Sea $V(G)=V_0\sqcup\cdots\sqcup V_{t-1}$, con aplicación de partes $p$. El tipo de un triángulo es el multiconjunto de las etiquetas de sus tres partes. Dada una familia $\mathcal F$ de tipos permitidos, un par de etiquetas está permitido si aparece en alguno de esos tipos. Una $\mathcal F$-descomposición utiliza solamente triángulos de esos tipos. Consideramos
+Sea $V(G)=V_0\sqcup\cdots\sqcup V_{t-1}$, con aplicación de partes $p$. El tipo de un triángulo es el multiconjunto de las etiquetas de sus tres partes. Dada una familia $\mathcal F$ de tipos permitidos, un par de etiquetas está permitido si aparece en alguno de esos tipos. Una $\mathcal F$-descomposición utiliza solamente triángulos de esos tipos. El marco general de retículos para descomposiciones con datos de etiquetas prescritos se debe a Keevash [19]. Paper II [1, Sección 2.3] distingue ese marco de las hipótesis tipadas explícitas utilizadas aquí. Consideramos
 $$
 \begin{aligned}
 \mathcal F_0&=\{001,011\},\\

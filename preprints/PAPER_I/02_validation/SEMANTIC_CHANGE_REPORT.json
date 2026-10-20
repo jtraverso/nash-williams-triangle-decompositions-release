@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "baseline_commit": "230fb9a427f010f90bf2afe103a465d55be9097a",
+  "documents": [
+    {
+      "source": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.md",
+      "baseline_sha256": "ab4b989540c0ee2c16a9c515d149a91a8b78c6995864605fbfa4de87482d9969",
+      "current_sha256": "ab4b989540c0ee2c16a9c515d149a91a8b78c6995864605fbfa4de87482d9969",
+      "display_mathematics_unchanged": true,
+      "inline_insertions": [],
+      "scope": "Bibliography, attribution, resource-evidence description, source locators and terminology; existing equations and proof steps retained."
+    },
+    {
+      "source": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.md",
+      "baseline_sha256": "3b268914f37c26921029a60a1352f8cb0e04085ca58ec9efdcedddfe799e86a8",
+      "current_sha256": "87791a1b85bd95ddfc7ece82a6982a25537aacaf9a26c2dcfe798939d8d5e229",
+      "display_mathematics_unchanged": true,
+      "inline_insertions": [],
+      "scope": "Bibliography, attribution, resource-evidence description, source locators and terminology; existing equations and proof steps retained."
+    },
+    {
+      "source": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md",
+      "baseline_sha256": "a4623bd504823426ee56702d974146a5fbc7a7f5641e58614d963685d772c564",
+      "current_sha256": "9aad3be95577bbfaf5cd70279739899edd67410ecda2e943e5bb5b82ed720179",
+      "display_mathematics_unchanged": true,
+      "inline_insertions": [],
+      "scope": "Bibliography, attribution, resource-evidence description, source locators and terminology; existing equations and proof steps retained."
+    },
+    {
+      "source": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md",
+      "baseline_sha256": "e93ad775d951a64e1d6bafd7c5663702eca9b5ed3727ef973035bab393a6533d",
+      "current_sha256": "906c1372e7ec3e198ca429b429ed4186438cd96de00835861b7b223ab56e82bb",
+      "display_mathematics_unchanged": true,
+      "inline_insertions": [],
+      "scope": "Bibliography, attribution, resource-evidence description, source locators and terminology; existing equations and proof steps retained."
+    }
+  ],
+  "lean_sources_changed": false,
+  "lean_build_executed": false
+}

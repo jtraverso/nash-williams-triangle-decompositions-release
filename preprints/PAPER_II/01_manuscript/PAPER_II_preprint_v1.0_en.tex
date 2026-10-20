@@ -115,7 +115,7 @@ Refine and eliminate global charges & Appendix B & Theorem A \\
 Obtain physical certificates and exact weights in the semidense host & Appendix C & Theorem C \\
 Split disconnected links and correct component invariants & Appendices D--E & Theorem D \\
 Construct one conserved catalogue with bounded total load & Appendix F and Section 8 & The seventeen conserved cases \\
-Prove the auxiliary constructions and their constants & Appendix H & B.3--B.4, C.5a and G.2--G.4 \\
+Prove the auxiliary constructions and their constants & Appendix H & B.3--B.4, C.5a, G.2 and G.4 \\
 \end{longtable}
 }
 
@@ -570,7 +570,7 @@ The author remains responsible for the arguments, citations, code and presentati
 
 {[}7{]} The mathlib Community, \emph{The Lean Mathematical Library}, CPP 2020, 367--381. https://doi.org/10.1145/3372885.3373824.
 
-{[}8{]} J. P. Traverso Gianini, \emph{Formalization and reproducibility companion to Triangle decompositions II}, preprint 1.0 (2026), accompanying source freeze \texttt{PAPER\_\allowbreak{}II\_\allowbreak{}LEA\allowbreak{}N\_\allowbreak{}20261020\_\allowbreak{}A\allowbreak{}LIGNED\_\allowbreak{}v4}. Private immutable source reference supplied with this version. \href{https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md}{Document}.
+{[}8{]} J. P. Traverso Gianini, \emph{Formalization and reproducibility companion to Triangle decompositions II}, preprint 1.0 (2026), accompanying source freeze \texttt{PAPER\_\allowbreak{}II\_\allowbreak{}LEA\allowbreak{}N\_\allowbreak{}20261020\_\allowbreak{}A\allowbreak{}LIGNED\_\allowbreak{}v4}. The companion identifies the immutable source archive and its SHA-256 hash. \href{https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md}{Document}.
 
 {[}9{]} J. P. Traverso Gianini, \emph{Certo}, software repository. https://github.com/jtraverso/certo-math.
 
@@ -827,7 +827,7 @@ Equations (B.2.1)--(B.2.2) prove that local divisibility is precisely even total
 
 \subsubsection{B.3. A fixed even library, followed by physical routing}\label{b.3.-a-fixed-even-library-followed-by-physical-routing}
 
-We first recall the ordinary refiner in the form used here. The input \(X\) is a loopless graph on \(W\) with \(\Delta(X)\le2\rho n\). Its precise scope and source are given in Appendix G.4. On a vertex set \(W\), its auxiliary graph may be complete. For positive parameters \(\lambda,\rho\) with
+We first recall the ordinary refiner in the form used here. Throughout B.3, \(n\) is the ambient order, whereas H.6 first uses the local order \(N=|W|\). Its concluding rescaling gives the ambient-parameter formulation below; in particular, \(M=2^h\) in (B.3.2). The input \(X\) is a loopless graph on \(W\) with \(\Delta(X)\le2\rho n\). Its precise scope and source are given in Appendix G.4. On a vertex set \(W\), its auxiliary graph may be complete. For positive parameters \(\lambda,\rho\) with
 
 \[64\lambda n\le |W|,\quad 2^{24}\rho\le\lambda^2,
 \quad \rho n\ge1,\quad\lambda n\ge256,
@@ -1921,7 +1921,7 @@ Indeed at most \(S/T\) vertices have load at least \(T\). Choose the first and l
 
 \subsection{Appendix H. Proofs of the auxiliary constructions}\label{appendix-h.-proofs-of-the-auxiliary-constructions}
 
-This appendix supplies the constructions used in C.5a and G.2--G.4. A library is an indexed family: two indices are retained even if their edge sets agree. Its load is the sum of the degrees over all indices. Every remainder and every library below is fixed before the divisible residue is selected.
+This appendix supplies the auxiliary constructions used in C.5a, G.2 and G.4; the cover-down reduction is given separately in G.3. A library is an indexed family: two indices are retained even if their edge sets agree. Its load is the sum of the degrees over all indices. Every remainder and every library below is fixed before the divisible residue is selected.
 
 \subsubsection{H.1. Parity chains}\label{h.1.-parity-chains}
 

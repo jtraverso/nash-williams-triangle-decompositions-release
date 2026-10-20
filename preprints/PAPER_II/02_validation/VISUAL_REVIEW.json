@@ -3,74 +3,152 @@
   "date": "2026-10-20",
   "reviewer": "Codex internal editorial audit",
   "pdf_hashes": {
-    "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.pdf": "286141d6aa2f0c41fc050d480b9c7d94ab4030f142d36606e5af763cb9695fa0",
-    "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.pdf": "b8f9299b0c3f403b08f886f1d604f98c14258383c024c46db63000d13b3a2517",
-    "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf": "4c93bd512b5090682cf4a86835ad747347cf4d9c23cf3320a6cb163226e979f9",
-    "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf": "5c23cce646680faf6bf73a7b87eb16ca23dc7225fd5230897111c5f48e365c2f"
+    "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.pdf": "1f4943f1f15e6002bc1e93432c98af497d0e569b650e80e3f02a75e48d7d7786",
+    "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.pdf": "f9d97b0244978badc43b09a39ae4f982c0ca51ba1494071ee2dbd22c38020f57",
+    "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf": "9712d9683cf49ecea4d88280d9b8b133ba2158a61492147769e16fb36183dcf9",
+    "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf": "a864b44ecb19c00ab6171f526fba92de3a1127397106ab5cd07b50cd2c5defcf"
   },
   "pages_reviewed": 161,
-  "contact_sheets_reviewed": [
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_en/contact-001.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_en/contact-010.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_en/contact-019.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_en/contact-028.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_en/contact-037.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_en/contact-046.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_en/contact-055.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_en/contact-064.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_es/contact-001.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_es/contact-010.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_es/contact-019.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_es/contact-028.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_es/contact-037.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_es/contact-046.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_es/contact-055.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_es/contact-064.jpg",
-    "audit/paper-ii-feedback-20261020/renders/PAPER_II_preprint_v1.0_es/contact-073.jpg",
-    "audit/paper-ii-feedback-20261020/renders/FORMALIZATION_COMPANION_preprint_v1.0_en/contact-001.jpg",
-    "audit/paper-ii-feedback-20261020/renders/FORMALIZATION_COMPANION_preprint_v1.0_es/contact-001.jpg"
+  "images": [
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/FORMALIZATION_COMPANION_preprint_v1.0_en/contact-001.jpg",
+      "sha256": "2537bb1c6913c1970e564c5a56798e708529106fdbb850e4b16cc28883e9e6e6"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/FORMALIZATION_COMPANION_preprint_v1.0_es/contact-001.jpg",
+      "sha256": "280b1a74bc1edaeec66170972e0c614e22f9d3ea8af66896baef4c3a7fa30a64"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_en/contact-001.jpg",
+      "sha256": "4965c73c2b5ad8509290fc066602e073c008242dff2799502d4e469c800b18b5"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_en/contact-010.jpg",
+      "sha256": "81041d428b54f8076d1977360eec2b8e5c46f265b7fa59eca4940676614cb530"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_en/contact-019.jpg",
+      "sha256": "f16a59e13cd5ef21523d9a664195e65d2777b0375c6218391dd5d429f3640f53"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_en/contact-028.jpg",
+      "sha256": "3208b26f3a0d9f868dde437779bfb0aea13fb1a4644e70f9e6a919967e50df07"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_en/contact-037.jpg",
+      "sha256": "d2829aa8ce9cb32d122b6e2704872b9915097466bf372962586167d08fa7fb8d"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_en/contact-046.jpg",
+      "sha256": "d142d8c4187cb35d90dc8bfa2da262a6d3c9148841808b17ee2431037476a8c7"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_en/contact-055.jpg",
+      "sha256": "13ef390b14021cc576c4ea77d8bd3b97c4aeb0b5009f2e7de1ba270b01e72a39"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_en/contact-064.jpg",
+      "sha256": "d8b308f81d93884e842d33477b0ce9c9609d3c5acb396aaf7a2d192235310cd6"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_es/contact-001.jpg",
+      "sha256": "3a8570da64c8303bd40ca11f48dfc6fb958d365dae114da481ae1c947f4c381d"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_es/contact-010.jpg",
+      "sha256": "8f45d967836c1e6aa8005b96d4e826c2bf4787fdef7effd8f4d56eac91ab4c6a"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_es/contact-019.jpg",
+      "sha256": "d86b58709fa5a39ded4488f683cd92f642ba17d0a6681f7f2ec669168d4b9590"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_es/contact-028.jpg",
+      "sha256": "9eb5a605a593e96341b79e7cc2a78cd57f3b3725d7b743f59eb9c50860b92c14"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_es/contact-037.jpg",
+      "sha256": "69b1b24edd92c71301a913b75e29f73730d2de077558efc2f45a5d350bf540b4"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_es/contact-046.jpg",
+      "sha256": "a3a690c5e799eb2f4b673428ff0f1e281363df953ab2190e3c6754848ea94eca"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_es/contact-055.jpg",
+      "sha256": "56d6970db59dc2b0c75b1d5bf6979a1f7ee68047b7b9b2749b170be582d39d53"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_es/contact-064.jpg",
+      "sha256": "3f1c077ed303c43c3ca1336db2e1341b499a7b2a6247a655b51b40d5dcf8ba2f"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_es/contact-073.jpg",
+      "sha256": "513c7de5dd216b0a41f84ef536e66e82e861b0742d1cc77e0c64a77e35002d02"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/FORMALIZATION_COMPANION_preprint_v1.0_en/detail-004.png",
+      "sha256": "707da22869841db1823df8b032d4608a3d80a3d1c41b585c7a3d0230a8886f9c"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/FORMALIZATION_COMPANION_preprint_v1.0_en/detail-008.png",
+      "sha256": "c202090a050417906a1055801072e7165363137e38dd49beeca50b56783b295c"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/FORMALIZATION_COMPANION_preprint_v1.0_es/detail-004.png",
+      "sha256": "718f18a66baa58d17bb8ae866640adfdd1f4b5895a9929ebae06b866459ec882"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/FORMALIZATION_COMPANION_preprint_v1.0_es/detail-008.png",
+      "sha256": "ffac45ffa00e77f03df0dd24b1e9062f6828f2172212d1e0bae1c970520b11d9"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_en/detail-018.png",
+      "sha256": "deecb664dd7bbda30814dedffb1a067da01e87bc647dd21068c5915ce768f8b9"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_en/detail-019.png",
+      "sha256": "56b211025a6e66e6f986d9a3fad7632b34b9556bc959597dd284fced28d69529"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_en/detail-028.png",
+      "sha256": "e31b2c8f086b969da0450d5429c86c787331a9c42d4deec3a003b07945a3bf6d"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_en/detail-063.png",
+      "sha256": "88ce0c2767a716f8dc0233a58d26ed0157b66c6f417518f3bf1c51a64c55f2cf"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_en/detail-066.png",
+      "sha256": "70e235e2791a5f4a2d710c65253351226a1efa1ade385a03740747b00c00dbef"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_es/detail-020.png",
+      "sha256": "8ff5e1406d4b9b129e5a8a15237122c5c2375e144ae1cf1a2e7dd437998c0cf1"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_es/detail-029.png",
+      "sha256": "c285be53e5c3339690eaa9ffd4313080a206725c92306e069f715bd4f4acf573"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_es/detail-030.png",
+      "sha256": "35d041343106b013878323199f314798f4bf256f675375483cbd74fe92da3f1a"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_es/detail-066.png",
+      "sha256": "0aeb3efed9aee5568055c868d28eb831982ad6465d615cdf205dde28d39f2024"
+    },
+    {
+      "path": "preprints/PAPER_II/02_validation/renders/PAPER_II_preprint_v1.0_es/detail-069.png",
+      "sha256": "86c2594a101ee3af6b40e79b9e21e79ed1514a52b5014f1247731b4bfd44d90e"
+    }
   ],
-  "readable_page_checks": {
-    "PAPER_II_preprint_v1.0_en": [
-      4,
-      5,
-      16,
-      19,
-      60,
-      67
-    ],
-    "PAPER_II_preprint_v1.0_es": [
-      5,
-      9,
-      17,
-      20,
-      63,
-      64,
-      70
-    ],
-    "FORMALIZATION_COMPANION_preprint_v1.0_en": [
-      1,
-      2,
-      3,
-      4,
-      5,
-      9
-    ],
-    "FORMALIZATION_COMPANION_preprint_v1.0_es": [
-      2,
-      3,
-      4,
-      5,
-      9
-    ]
-  },
   "criteria": [
-    "No clipped content or margin overflow",
-    "Tables and equations remain within text block",
-    "Changed bibliographic comparison is legible in both languages",
-    "Companion evidence and licensing statements rendered correctly",
-    "No broken glyphs or text overlaps"
+    "All pages inspected through contact sheets",
+    "Retained detail images inspected at readable page resolution",
+    "No clipping, overlap, broken glyphs or margin overflow",
+    "Corrected references and formal correspondence legible"
   ],
   "findings": [],
-  "scope": "Every page inspected via contact sheets; listed changed/dense pages also read at page resolution. This is layout review, not an independent mathematical proof audit."
+  "scope": "Layout and editorial review; not a new mathematical proof audit."
 }

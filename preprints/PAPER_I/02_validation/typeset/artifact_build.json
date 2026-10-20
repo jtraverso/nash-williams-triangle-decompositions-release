@@ -1,0 +1,46 @@
+[
+  {
+    "source": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.md",
+    "markdown_sha256": "ab4b989540c0ee2c16a9c515d149a91a8b78c6995864605fbfa4de87482d9969",
+    "tex_sha256": "2005baab75b61ff2e57cf377bae9cc097b657b8ead8b22a6eaae5874f59ade3c",
+    "pdf_sha256": "6035d2c15b4c046b8fa7d1aa38ea97677dfe53fc42ad3b7d9b846d4c5b1f64c4",
+    "template_sha256": "e9deeb8ccbfddf9a26be47898932465a4976c873d7f734eb787f198a5068e38f",
+    "engine": "Tectonic 0.17.0 (XeTeX)",
+    "passes": 3,
+    "layout_issues": [],
+    "lean_build_executed": false
+  },
+  {
+    "source": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.md",
+    "markdown_sha256": "87791a1b85bd95ddfc7ece82a6982a25537aacaf9a26c2dcfe798939d8d5e229",
+    "tex_sha256": "2e2aa918df151571d5edd1d8cd02cafca4751e97963e76a5dfcf6a5a1ecb68dc",
+    "pdf_sha256": "fb1536dfb0627bee314120a66e14ddf086a3e356586a8871950141ed3607f069",
+    "template_sha256": "e9deeb8ccbfddf9a26be47898932465a4976c873d7f734eb787f198a5068e38f",
+    "engine": "Tectonic 0.17.0 (XeTeX)",
+    "passes": 3,
+    "layout_issues": [],
+    "lean_build_executed": false
+  },
+  {
+    "source": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md",
+    "markdown_sha256": "9aad3be95577bbfaf5cd70279739899edd67410ecda2e943e5bb5b82ed720179",
+    "tex_sha256": "261991c7180b6dd7bd463752b65b1426d66acc1fd571227cc2f953311029c3cc",
+    "pdf_sha256": "fe65d1fc81ddfc3220f736dba4ee52206f8268484f9986b05db436fde2728a08",
+    "template_sha256": "e9deeb8ccbfddf9a26be47898932465a4976c873d7f734eb787f198a5068e38f",
+    "engine": "Tectonic 0.17.0 (XeTeX)",
+    "passes": 3,
+    "layout_issues": [],
+    "lean_build_executed": false
+  },
+  {
+    "source": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md",
+    "markdown_sha256": "906c1372e7ec3e198ca429b429ed4186438cd96de00835861b7b223ab56e82bb",
+    "tex_sha256": "df448488f2666173c9f27f1ac55a79ea77c20865df94d7f7ba3f58707e947e85",
+    "pdf_sha256": "ceb98621670dcf0adbde4064c641c62e8e835c37880730ff7ca92acfeec49bbf",
+    "template_sha256": "e9deeb8ccbfddf9a26be47898932465a4976c873d7f734eb787f198a5068e38f",
+    "engine": "Tectonic 0.17.0 (XeTeX)",
+    "passes": 3,
+    "layout_issues": [],
+    "lean_build_executed": false
+  }
+]

@@ -10,3 +10,7 @@
 - Correct UTF-8 metadata and retain the source/archive hashes and verification scope.
 
 [Validation and review response](02_validation/README.md) records the checks on this edition. Source and compilation evidence are described by the companion; document preparation is not a new Lean build.
+
+## 20 October 2026 — external editorial review, preprint 1.0
+
+Restored the Spanish attribution to Keevash and the cross-reference to Paper II Section 2.3. Updated immutable source links following GitHub no-reply attribution of repository commits. Regenerated bilingual documents and repeated the editorial audit. Source archives, mathematical statements and proof bodies are unchanged; no new Lean build was used for this editorial revision.

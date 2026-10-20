@@ -20,7 +20,7 @@ The completed local campaign is recorded as `PASS_CLEAN_ALIGNED_BUILD`; it is no
 
 ## 2. Frozen sources
 
-The selected source archive is `PAPER_II_LEAN_20261020_ALIGNED_v4.zip`, at [the immutable source reference](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/e14248179ae6c9d8c0b24f4541e5087afca6e5c4/archives/PAPER_II_LEAN_20261020_ALIGNED_v4.zip). Its SHA-256 is:
+The selected source archive is `PAPER_II_LEAN_20261020_ALIGNED_v4.zip`, at [the immutable source reference](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/d6d020982ebf3f3cd8c104b6befc6c094850b3e7/archives/PAPER_II_LEAN_20261020_ALIGNED_v4.zip). Its SHA-256 is:
 
 `677faa70a76444a000b8c2192a45d0ab0e39f8899825c004fdf6cbe52bb755cc`.
 
@@ -84,11 +84,11 @@ For a static check, extract the selected archive and run from its root:
 
 `python tools/verify_attribution.py`
 
-This checks all current source hashes, reconstructs the exact historical sources from `attribution/source_changes.json`, checks 1,510 successful historical receipts and 3,096 project-import object-hash links, and verifies the internal manifest. It does not invoke Lean. The 3,028 existing evidence files remain byte-identical to the clean predecessor.
+This checks all current source hashes, reconstructs the exact historical sources from `attribution/source_changes.json`, checks 1,510 successful historical receipts and 3,096 project-import object-hash links, and verifies the internal manifest. It does not invoke Lean. The 3,029 existing evidence files remain byte-identical to the clean predecessor.
 
 `evidence/verification.json` records the campaign result, including fifteen standard-axiom queries. `evidence/build_plan.json` gives the topological plan. Each module has a receipt in `evidence/receipts/` and compiler output in `evidence/module_logs/`; `evidence/entry_audit.log` collects the three entry outputs. At assembly, source hashes matched the receipts and all compiled objects on disk matched their recorded hashes. Compiled objects are not included in this archive.
 
-The campaign ran in several invocations, resuming only objects with valid receipts from that campaign. The final Paper II invocation reports 517 modules newly compiled and 370 reused from earlier invocations of the same clean campaign, totalling the 887 Paper II-phase modules. These 370 are not an imported project cache from an earlier campaign. Memory limits were raised for some large modules; this changed resource limits, not mathematical sources. The first 23 modules were recompiled against the final Mathlib checkout of the same revision, with identical output bytes, as recorded in `evidence/early_module_recheck.txt`. These are parts of one local clean campaign, not independent replications.
+The campaign ran in several invocations, resuming only objects with valid receipts from that campaign. The final Paper II invocation reports 517 modules newly compiled and 370 reused from earlier invocations of the same clean campaign, totalling the 887 Paper II-phase modules. These 370 are not an imported project cache from an earlier campaign. All 517 modules compiled in the final invocation used the raised memory limit; this changed resource limits, not mathematical sources. The first 23 modules were recompiled against the final Mathlib checkout of the same revision, with identical output bytes, as recorded in `evidence/early_module_recheck.txt`. These are parts of one local clean campaign, not independent replications.
 
 For a fresh compilation, install `leanprover/lean4:v4.35.0-rc3`, prepare Mathlib at `c55e6e786f49471c72fbddbec5415808896aec1e` and the recorded dependency revisions, and obtain their cache with `lake exe cache get`. Preserve the lock file; do not run `lake update`. Compile the supplied `source/` tree in a separate output directory and generate new receipts. The historical `tools/build.py` and `tools/align.py` use fixed Windows workspace paths and require adaptation; they are campaign records, not a portable one-command reproducer. In particular, the alignment script reconstructs the pre-correction sources and must not overwrite the selected corrected tree. The original campaign instructions remain in `evidence/BUILD_README.md`.
 
@@ -200,7 +200,8 @@ Appendix G of the manuscript states the auxiliary results used in the assembly. 
 - **G.2**: `BlowupB/PaddedNibble/ReserveConstruction.lean`; `exists_reserve_of_decomposition`.
 - **G.3**: `BlowupB/PaddedNibble/TypedEffectiveConsumer.lean`; `typed_cover_down_absorption_effective`.
 - **B.3/G.4**: `BlowupB/UniversalProducer/RoutedEvenProducer.lean`; `evenRefinerProducer_routed`.
-- **G.4**: `BlowupB/StructuralF3General/RefinerF0/RobustSlots.lean`; `exists_robust`.
+- **G.4/H.5, C.5a**: `TypedRefinerF0/RobustSlots.lean`; `exists_robust`.
+- **B.3/G.4/H.6**: `UniversalRefiner/Main.lean`; `exists_universal_refiner`.
 - **G.5**: `BlowupB/LatinCore/WeightedPathStep.lean`; `exists_weighted_path`.
 - **B.4**: `BlowupB/UniversalProducer/IterLayers.lean`; `iterate_layers`.
 - **B.6**: `BlowupB/PaddedF12/HostGap.lean`; `degree_gap_of_guarded`.

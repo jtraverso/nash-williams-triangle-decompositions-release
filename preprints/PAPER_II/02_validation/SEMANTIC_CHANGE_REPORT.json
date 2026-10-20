@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "baseline_commit": "230fb9a427f010f90bf2afe103a465d55be9097a",
+  "documents": [
+    {
+      "source": "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.md",
+      "baseline_sha256": "89655c7244ea84e44005b3941f1ff2c87da5e944fa9a8624b579861c82250206",
+      "current_sha256": "6ce54c986fc794703be220f0ca6a92d722d209f9a1dcb9a4a8ce1b91b7fc381d",
+      "display_mathematics_unchanged": true,
+      "inline_insertions": [
+        [
+          "n",
+          "N=|W|",
+          "M=2^h"
+        ]
+      ],
+      "scope": "Bibliography, attribution, resource-evidence description, source locators and terminology; existing equations and proof steps retained."
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.md",
+      "baseline_sha256": "07531d18635fbce2fe1ce697d49591b218a8366710744b3400248ea987f40b8b",
+      "current_sha256": "c5e8bfc75d590337b5b41ad566f6af066ad1b2a7e44ab0ff4c52743da9144054",
+      "display_mathematics_unchanged": true,
+      "inline_insertions": [
+        [
+          "n",
+          "N=|W|",
+          "M=2^h"
+        ]
+      ],
+      "scope": "Bibliography, attribution, resource-evidence description, source locators and terminology; existing equations and proof steps retained."
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md",
+      "baseline_sha256": "d979108021b4b9b7f0f8670fc029925b4b4c36d98252793c362b6166bf851a60",
+      "current_sha256": "8bc944968d5549be7024248ea1db5015d64e4609014112536c4fa94584ad2f20",
+      "display_mathematics_unchanged": true,
+      "inline_insertions": [],
+      "scope": "Bibliography, attribution, resource-evidence description, source locators and terminology; existing equations and proof steps retained."
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md",
+      "baseline_sha256": "aa47b013d753da8efbfdb5931a14ab18665caff0ff5318c008e36a353fe6e81f",
+      "current_sha256": "2fdfef500891119a000f6fa8db3e8cb5be1d9104bc91faa4e58a8a9a71f3f41f",
+      "display_mathematics_unchanged": true,
+      "inline_insertions": [],
+      "scope": "Bibliography, attribution, resource-evidence description, source locators and terminology; existing equations and proof steps retained."
+    }
+  ],
+  "lean_sources_changed": false,
+  "lean_build_executed": false
+}

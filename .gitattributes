@@ -1,1 +1,3 @@
 * -text
+*.sha256 text eol=lf
+manifest_sha256.txt text eol=lf

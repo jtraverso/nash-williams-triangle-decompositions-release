@@ -55,7 +55,7 @@ El texto principal enuncia los resultados, demuestra las deducciones para grafos
 | Obtener certificados físicos y pesos exactos en el grafo semidenso | Apéndice C | Teorema C |
 | Dividir enlaces desconectados y corregir invariantes | Apéndices D–E | Teorema D |
 | Construir un catálogo conservado de carga total acotada | Apéndice F y sección 8 | Diecisiete casos conservados |
-| Demostrar las construcciones auxiliares y sus constantes | Apéndice H | B.3–B.4, C.5a y G.2–G.4 |
+| Demostrar las construcciones auxiliares y sus constantes | Apéndice H | B.3–B.4, C.5a, G.2 y G.4 |
 
 Las letras de los apéndices son independientes de los Teoremas A–D. En ellos $F$ denota la misma familia que $\mathcal F$ en el texto principal, y sus ecuaciones llevan el prefijo correspondiente. Las tablas finitas están en las fuentes congeladas, ubicadas en [8, Secciones 7–8]; el resultado para todas las familias utiliza datos explícitos de certificados.
 
@@ -705,16 +705,16 @@ El autor es responsable de los argumentos, las citas, el código y la presentaci
 
 [7] The mathlib Community, *The Lean Mathematical Library*, CPP 2020, 367–381. https://doi.org/10.1145/3372885.3373824.
 
-[8] J. P. Traverso Gianini, *Formalization and reproducibility companion to Triangle decompositions II*, preprint 1.0 (2026), correspondiente al freeze `PAPER_II_LEAN_20261020_ALIGNED_v4`. Esta versión incluye la referencia inmutable de las fuentes a las fuentes. [Documento](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md).
+[8] J. P. Traverso Gianini, *Formalization and reproducibility companion to Triangle decompositions II*, preprint 1.0 (2026), correspondiente al freeze `PAPER_II_LEAN_20261020_ALIGNED_v4`. El complemento identifica el archivo inmutable de las fuentes y su huella SHA-256. [Documento](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md).
 
 [9] J. P. Traverso Gianini, *Certo*, repositorio de software. https://github.com/jtraverso/certo-math.
 
 [10] *Jacobian*, repositorio de software. https://github.com/morluto/jacobian.
 
 
-[11] B. Barber, D. Kühn, A. Lo, D. Osthus y A. Taylor, *Clique decompositions of multipartite graphs y completion of Latin squares*, Journal of Combinatorial Theory, Series A 151 (2017), 146–201. https://doi.org/10.1016/j.jcta.2017.04.005.
+[11] B. Barber, D. Kühn, A. Lo, D. Osthus y A. Taylor, *Clique decompositions of multipartite graphs and completion of Latin squares*, Journal of Combinatorial Theory, Series A 151 (2017), 146–201. https://doi.org/10.1016/j.jcta.2017.04.005.
 
-[12] R. Montgomery, *Fractional clique decompositions of dense partite graphs*, Combinatorics, Probability y Computing (2017). https://doi.org/10.1017/S0963548317000165. https://arxiv.org/abs/1603.01039.
+[12] R. Montgomery, *Fractional clique decompositions of dense partite graphs*, Combinatorics, Probability and Computing 26 (2017), 911–943. https://doi.org/10.1017/S0963548317000165. https://arxiv.org/abs/1603.01039.
 
 [13] B. Barber, D. Kühn, A. Lo y D. Osthus, *Edge-decompositions of graphs with high minimum degree*, Advances in Mathematics 288 (2016), 337–385. https://doi.org/10.1016/j.aim.2015.09.032.
 
@@ -722,15 +722,15 @@ El autor es responsable de los argumentos, las citas, el código y la presentaci
 
 [15] P. Keevash, *The existence of designs*, arXiv:1401.3665v4 (2024; primera versión 2014). https://arxiv.org/abs/1401.3665v4.
 
-[16] V. Rödl, *On a packing y covering problem*, European Journal of Combinatorics 6 (1985), 69–78. https://doi.org/10.1016/S0195-6698(85)80023-8.
+[16] V. Rödl, *On a packing and covering problem*, European Journal of Combinatorics 6 (1985), 69–78. https://doi.org/10.1016/S0195-6698(85)80023-8.
 
-[17] P. Frankl y V. Rödl, *Near perfect coverings in graphs y hypergraphs*, European Journal of Combinatorics 6 (1985), 317–326. https://doi.org/10.1016/S0195-6698(85)80045-7.
+[17] P. Frankl y V. Rödl, *Near perfect coverings in graphs and hypergraphs*, European Journal of Combinatorics 6 (1985), 317–326. https://doi.org/10.1016/S0195-6698(85)80045-7.
 
 [18] N. Pippenger y J. Spencer, *Asymptotic behavior of the chromatic index for hypergraphs*, Journal of Combinatorial Theory, Series A 51 (1989), 24–42. https://doi.org/10.1016/0097-3165(89)90074-5.
 
-[19] P. E. Haxell y V. Rödl, *Integer y fractional packings in dense graphs*, Combinatorica 21 (2001), 13–38. https://doi.org/10.1007/s004930170003.
+[19] P. E. Haxell y V. Rödl, *Integer and fractional packings in dense graphs*, Combinatorica 21 (2001), 13–38. https://doi.org/10.1007/s004930170003.
 
-[20] S. Ehard, S. Glock y F. Joos, *Pseudorandom hypergraph matchings*, Combinatorics, Probability y Computing 29 (2020), 868–885. https://doi.org/10.1017/S0963548320000280.
+[20] S. Ehard, S. Glock y F. Joos, *Pseudorandom hypergraph matchings*, Combinatorics, Probability and Computing 29 (2020), 868–885. https://doi.org/10.1017/S0963548320000280.
 
 [21] S. Boucheron, G. Lugosi y P. Massart, *Concentration Inequalities: A Nonasymptotic Theory of Independence*, Oxford University Press (2013), Capítulo 2. https://doi.org/10.1093/acprof:oso/9780199535255.001.0001.
 
@@ -1078,6 +1078,8 @@ $$
 Las ecuaciones (B.2.1)–(B.2.2) demuestran que la divisibilidad local equivale a tener grado total par en el soporte activo. Esto **no** elimina la condición del retículo global. Sea $\mathcal Q_F$ el grupo de vectores enteros de tipos de aristas módulo el subgrupo generado por las columnas triangulares. Un grafo activo sin lazos es integralmente divisible exactamente cuando sus grados son pares y su clase en $\mathcal Q_F$ es cero. Conservamos este grupo abeliano, incluida su torsión.
 
 ### B.3. Una biblioteca par fija y su posterior realización mediante caminos
+
+En B.3, $n$ es el orden del grafo ambiente, mientras que H.6 utiliza primero el orden local $N=|W|$. El reescalado al final de H.6 da la formulación con parámetros ambientales que sigue; en particular, $M=2^h$ en (B.3.2).
 
 Recordamos primero el refinador ordinario en la forma que utilizamos. El dato $X$ es un grafo sin lazos sobre $W$ con $\Delta(X)\le2\rho n$. Su alcance preciso y su fuente se indican en el Apéndice G.4. Sobre un conjunto de vértices $W$, su grafo auxiliar puede ser completo. Para parámetros positivos $\lambda,\rho$ con
 
@@ -2400,23 +2402,23 @@ En efecto, a lo sumo $S/T$ vértices tienen carga al menos $T$. Elegimos el prim
 
 ## Apéndice H. Demostraciones de las construcciones auxiliares
 
-Este apéndice desarrolla las construcciones utilizadas en C.5a y G.2–G.4. Una biblioteca es una familia indexada: dos índices se conservan aunque sus conjuntos de aristas coincidan. Su carga es la suma de los grados sobre todos los índices. Cada resto y cada biblioteca se fijan antes de elegir el residuo divisible.
+Este apéndice proporciona las construcciones auxiliares utilizadas en C.5a, G.2 y G.4; la reducción de cobertura se presenta por separado en G.3. En las cadenas, «conector» traduce wire; «enlace» designa el grafo asociado a una etiqueta raíz. Una biblioteca es una familia indexada: dos índices se conservan aunque sus conjuntos de aristas coincidan. Su carga es la suma de los grados sobre todos los índices. Cada resto y cada biblioteca se fijan antes de elegir el residuo divisible.
 
 ### H.1. Cadenas de paridad
 
-Para bits $x_0,\ldots,x_{N-1}$, ponemos $c_{-1}=0$ y $c_j=c_{j-1}+x_j$ en $\mathbb F_2$. Entre posiciones consecutivas colocamos dos caminos distintos $A_j,B_j$ con extremos comunes. La posición $j$ recibe $B_{j-1}$ cuando $c_{j-1}=1$; si no es la última, recibe además $A_j$ y recibe $B_j$ cuando $c_j=0$. Cada camino de enlace se asigna una vez. En una posición no terminal, el número recibido tiene paridad
+Para bits $x_0,\ldots,x_{N-1}$, ponemos $c_{-1}=0$ y $c_j=c_{j-1}+x_j$ en $\mathbb F_2$. Entre posiciones consecutivas colocamos dos caminos distintos $A_j,B_j$ con extremos comunes. La posición $j$ recibe $B_{j-1}$ cuando $c_{j-1}=1$; si no es la última, recibe además $A_j$ y recibe $B_j$ cuando $c_j=0$. Cada camino del conector se asigna una vez. En una posición no terminal, el número recibido tiene paridad
 $$
 c_{j-1}+1+(1-c_j)=x_j\pmod2.
 $$
-En la última posición la paridad es $x_{N-1}+c_{N-1}$. Hay como máximo tres caminos por posición. Esto incluye una cadena de longitud uno, que no tiene enlaces.
+En la última posición la paridad es $x_{N-1}+c_{N-1}$. Hay como máximo tres caminos por posición. Esto incluye una cadena de longitud uno, que no tiene conectores.
 
-Aplicamos esta regla a una familia de enlaces $\Lambda$ y una aplicación $h$ que no fija ningún extremo de enlace. Para cada vértice $u$, formamos una cadena de sus enlaces incidentes con extremos de camino $u,h(u)$. Para cada par proyectado no degenerado $\sigma=\{h(u),h(v)\}$, formamos una cadena de sus preimágenes, con extremos de camino $\sigma$, y dos caminos terminales $f_\sigma,f'_\sigma$. Los caminos con los mismos extremos siguen siendo peticiones distintas.
+Aplicamos esta regla a una familia de conectores $\Lambda$ y una aplicación $h$ que no fija ningún extremo de conector. Para cada vértice $u$, formamos una cadena de sus conectores incidentes con extremos de camino $u,h(u)$. Para cada par proyectado no degenerado $\sigma=\{h(u),h(v)\}$, formamos una cadena de sus preimágenes, con extremos de camino $\sigma$, y dos caminos terminales $f_\sigma,f'_\sigma$. Los caminos con los mismos extremos siguen siendo peticiones distintas.
 
-Para cada enlace incluimos las dieciséis alternativas determinadas por su bit de selección y los tres acarreos entrantes. Una alternativa contiene el enlace seleccionado, los caminos recibidos de sus dos cadenas de extremos y los de su cadena de par proyectado. En la última posición de esta cadena añadimos $f_\sigma$ si el acarreo saliente es uno. Incluimos también la pieza $f_\sigma\cup f'_\sigma$. Descartamos las alternativas con frontera no nula módulo dos.
+Para cada conector incluimos las dieciséis alternativas determinadas por su bit de selección y los tres acarreos entrantes. Una alternativa contiene el conector seleccionado, los caminos recibidos de sus dos cadenas de extremos y los de su cadena de par proyectado. En la última posición de esta cadena añadimos $f_\sigma$ si el acarreo saliente es uno. Incluimos también la pieza $f_\sigma\cup f'_\sigma$. Descartamos las alternativas con frontera no nula módulo dos.
 
-Para una entrada seleccionada par, las cadenas de extremos tienen acarreo terminal cero. Sus fronteras cancelan los extremos de entrada y dejan los extremos proyectados; las cadenas de pares cancelan estos últimos. Un par proyectado degenerado contribuye cero. Los pares proyectados con un número impar de preimágenes forman una nueva entrada par, pues su frontera es la imagen de la frontera nula anterior. Si el acarreo final de un par es cero, seleccionamos $f_\sigma\cup f'_\sigma$; si es uno, $f_\sigma$ ya se utiliza y $f'_\sigma$ es el siguiente enlace de entrada. Esto demuestra la cobertura disjunta entre niveles consecutivos. Una jerarquía que termina sin enlaces refina, por tanto, toda entrada par mediante una biblioteca fija.
+Para una entrada seleccionada par, las cadenas de extremos tienen acarreo terminal cero. Sus fronteras cancelan los extremos de entrada y dejan los extremos proyectados; las cadenas de pares cancelan estos últimos. Un par proyectado degenerado contribuye cero. Los pares proyectados con un número impar de preimágenes forman una nueva entrada par, pues su frontera es la imagen de la frontera nula anterior. Si el acarreo final de un par es cero, seleccionamos $f_\sigma\cup f'_\sigma$; si es uno, $f_\sigma$ ya se utiliza y $f'_\sigma$ es el siguiente conector de entrada. Esto demuestra la cobertura disjunta entre niveles consecutivos. Una jerarquía que termina sin conectores refina, por tanto, toda entrada par mediante una biblioteca fija.
 
-Escribimos $S=\sum_\ell|\Lambda_\ell|$. Hay como máximo $17S$ índices y $8S$ peticiones: por nivel, los enlaces de extremos cuestan a lo sumo $4|\Lambda_\ell|$, los de pares $2|\Lambda_\ell|$ y los terminales $2|\Lambda_\ell|$. Una pieza tiene como máximo $1+3+3+4=11$ átomos. Un átomo aparece en no más de $33$ piezas, pues un enlace encuentra como máximo dos posiciones con dieciséis alternativas cada una y un terminal puede aparecer además en su pieza cíclica. Realizar cada petición mediante su propio camino de dos aristas da
+Escribimos $S=\sum_\ell|\Lambda_\ell|$. Hay como máximo $17S$ índices y $8S$ peticiones: por nivel, los conectores de extremos cuestan a lo sumo $4|\Lambda_\ell|$, los de pares $2|\Lambda_\ell|$ y los terminales $2|\Lambda_\ell|$. Una pieza tiene como máximo $1+3+3+4=11$ átomos. Un átomo aparece en no más de $33$ piezas, pues un conector encuentra como máximo dos posiciones con dieciséis alternativas cada una y un terminal puede aparecer además en su pieza cíclica. Realizar cada petición mediante su propio camino de dos aristas da
 $$
 |P_i|\le22,\qquad
 \sum_i|P_i|\le66(8S+|X|).
@@ -2425,7 +2427,7 @@ En una raíz la carga es a lo sumo $33(d_X+\text{carga de raíces de peticiones}
 $$
 2d_\Lambda(u)+10\sum_{v:h(v)=u}d_\Lambda(v).
 $$
-El primer término cuenta sus enlaces de extremos; el segundo paga los enlaces de extremos entrantes, los de pares y los terminales. Estas estimaciones cuentan todas las alternativas.
+El primer término cuenta sus conectores de extremos; el segundo paga los conectores de extremos entrantes, los de pares y los terminales. Estas estimaciones cuentan todas las alternativas.
 
 ### H.2. La jerarquía comprimida y las etiquetas compatibles
 
@@ -2515,9 +2517,9 @@ $$
 $$
 Las hipótesis de B.3 dan $2\le M$ y $2M\le N$. Enumeramos los vértices desde cero. La primera aplicación es $j\mapsto M+((j+1)\bmod M)$; no tiene puntos fijos y sus fibras tienen tamaño a lo sumo $\lfloor N/M\rfloor+1$. Las aplicaciones posteriores son los padres de la jerarquía binaria. H.1 da $S\le|X|+2M^2\le2\rho N^2$. Añadimos como máximo dos ciclos disjuntos de cuatro aristas para hacer divisible por tres el tamaño del resto y los incluimos como piezas separadas. La biblioteca par tiene entonces $N_0\le17S+2\le34\rho N^2+2$ índices.
 
-Entre posiciones consecutivas de esta biblioteca colocamos tres ciclos nuevos de cuatro aristas. Una alternativa $(x,a,b)\in\{0,1\}\times\{0,1,2\}^2$ toma la pieza anterior cuando $x=1$, los ciclos numerados al menos $a$ en su enlace izquierdo y los numerados por debajo de $b$ en su enlace derecho. Omitimos los enlaces de los extremos y conservamos las alternativas de tamaño divisible por tres. Elegimos los acarreos como el negativo del recuento acumulado de aristas seleccionadas módulo tres. Cada pieza tiene tamaño congruente con $x|P_i|-a+b=0$; los acarreos inicial y final son cero. Cada ciclo de enlace se asigna una vez. Se conserva la paridad y el tamaño de pieza es a lo sumo $22+12+8=42$.
+Entre posiciones consecutivas de esta biblioteca colocamos tres ciclos nuevos de cuatro aristas. Una alternativa $(x,a,b)\in\{0,1\}\times\{0,1,2\}^2$ toma la pieza anterior cuando $x=1$, los ciclos numerados al menos $a$ en su conector izquierdo y los numerados por debajo de $b$ en su conector derecho. Omitimos los conectores de los extremos y conservamos las alternativas de tamaño divisible por tres. Elegimos los acarreos como el negativo del recuento acumulado de aristas seleccionadas módulo tres. Cada pieza tiene tamaño congruente con $x|P_i|-a+b=0$; los acarreos inicial y final son cero. Cada ciclo del conector se asigna una vez. Se conserva la paridad y el tamaño de pieza es a lo sumo $22+12+8=42$.
 
-Damos al enlace $j$ raíces $j\bmod N,(j+1)\bmod N$. Cada uno de sus ciclos utiliza dos peticiones de caminos separadas. Si $D=\lfloor2\rho N\rfloor$, todas las raíces de peticiones tienen carga a lo sumo
+Damos al conector $j$ raíces $j\bmod N,(j+1)\bmod N$. Cada uno de sus ciclos utiliza dos peticiones de caminos separadas. Si $D=\lfloor2\rho N\rfloor$, todas las raíces de peticiones tienen carga a lo sumo
 $$
 r_0=2D+10(\lfloor N/M\rfloor+1)D+44M+8
 +12(\lfloor(N_0+1)/N\rfloor+1).
@@ -2537,7 +2539,7 @@ $$
 \le\frac{65536\rho N}{\lambda}+4\rho N+\frac{33}{16}\lambda N
 <8\lambda N.
 $$
-Así, basta una oferta de $8\lambda N$ vecinos comunes. El grado del resto es a lo sumo $r_0+2q\le4\lambda N$. Un átomo anterior aparece como máximo $18\cdot33$ veces; un enlace módulo tres aparece como máximo $36$ veces. En consecuencia,
+Así, basta una oferta de $8\lambda N$ vecinos comunes. El grado del resto es a lo sumo $r_0+2q\le4\lambda N$. Un átomo anterior aparece como máximo $18\cdot33$ veces; un conector módulo tres aparece como máximo $36$ veces. En consecuencia,
 $$
 \sum_i d_{P_i}(v)\le594d_X(v)+630(r_0+2q)\le4096\lambda N,
 \qquad |I|\le18N_0\le1224\rho N^2.

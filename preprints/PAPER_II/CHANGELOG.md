@@ -30,3 +30,7 @@ Preprint 1.0 remains the first intended public edition. The selected archive now
 ## Review corrections — 20 October 2026
 
 Preprint 1.0 is retained. The revision adds scoped bibliographic comparisons and packing-method attribution; makes the idealized allowed-edge hypothesis explicit; corrects “fewer than” to “at most” in the load count; labels the finite classification computer-assisted; and clarifies compilation/query evidence. The selected source archive v4 changes only its README and manifest relative to the header-corrected v2 archive. No Lean source or mathematical proof is changed. Document URLs use the official series repository; the manuscript and companion use CC BY 4.0. Operational release evidence is recorded separately.
+
+## 20 October 2026 — external editorial review, preprint 1.0
+
+Restored original English bibliography titles, Montgomery volume and page range, and the immutable-source wording. Corrected evidence counts, the resource-limit description and the auxiliary source map. Clarified the ambient/local order notation and distinguished wires from root links in Spanish. Updated immutable source links following GitHub no-reply attribution of repository commits. Regenerated bilingual documents and repeated the editorial audit. Source archives, mathematical statements and proof bodies are unchanged; no new Lean build was used for this editorial revision.
