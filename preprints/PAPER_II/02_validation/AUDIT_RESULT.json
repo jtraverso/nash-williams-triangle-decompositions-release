@@ -1,0 +1,68 @@
+{
+  "status": "PASS_LOCAL_DOCUMENT_CHECKS",
+  "documents": [
+    {
+      "source": "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.md",
+      "display_count": 264,
+      "pages": 70,
+      "markdown_sha256": "89655c7244ea84e44005b3941f1ff2c87da5e944fa9a8624b579861c82250206",
+      "pdf_sha256": "286141d6aa2f0c41fc050d480b9c7d94ab4030f142d36606e5af763cb9695fa0"
+    },
+    {
+      "source": "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.md",
+      "display_count": 264,
+      "pages": 73,
+      "markdown_sha256": "07531d18635fbce2fe1ce697d49591b218a8366710744b3400248ea987f40b8b",
+      "pdf_sha256": "b8f9299b0c3f403b08f886f1d604f98c14258383c024c46db63000d13b3a2517"
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md",
+      "display_count": 0,
+      "pages": 9,
+      "markdown_sha256": "d979108021b4b9b7f0f8670fc029925b4b4c36d98252793c362b6166bf851a60",
+      "pdf_sha256": "4c93bd512b5090682cf4a86835ad747347cf4d9c23cf3320a6cb163226e979f9"
+    },
+    {
+      "source": "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md",
+      "display_count": 0,
+      "pages": 9,
+      "markdown_sha256": "aa47b013d753da8efbfdb5931a14ab18665caff0ff5318c008e36a353fe6e81f",
+      "pdf_sha256": "5c23cce646680faf6bf73a7b87eb16ca23dc7225fd5230897111c5f48e365c2f"
+    }
+  ],
+  "total_pages": 161,
+  "utf8_scanned": [
+    "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.md",
+    "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.tex",
+    "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.md",
+    "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.tex",
+    "preprints/PAPER_II/02_validation/README.md",
+    "preprints/PAPER_II/02_validation/RESPONSE_TO_REVIEW.md",
+    "preprints/PAPER_II/02_validation/REVIEW_SUMMARY.md",
+    "preprints/PAPER_II/03_reproducibility/README.md",
+    "preprints/PAPER_II/04_integrity/README.md",
+    "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md",
+    "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.tex",
+    "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md",
+    "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.tex",
+    "preprints/PAPER_II/CHANGELOG.md",
+    "preprints/PAPER_II/CITATION.bib",
+    "preprints/PAPER_II/index.html",
+    "preprints/PAPER_II/LICENSE.md",
+    "preprints/PAPER_II/README.md"
+  ],
+  "archive_check": {
+    "status": "PASS_HEADER_ONLY_REVISION",
+    "modules": 1510,
+    "corrected_headers": 1411,
+    "unchanged_headers": 99,
+    "historical_receipts_checked": 1510,
+    "import_hash_links": 3096,
+    "lean_build_executed": false,
+    "scope": "Current body bytes reconstruct the original compiled sources. Historical receipts are unchanged; no new compilation is asserted."
+  },
+  "bibliography_comparison": "BIBLIOGRAPHIC_COMPARISON.md",
+  "release_hold": true,
+  "no_lean_build": true,
+  "public_identifiers_are_reserved": true
+}

@@ -1,5 +1,7 @@
 # Reproducibility — Paper I
 
-Run `python scripts/verify_repository.py` from the repository root for static checks. To reproduce Lean, extract the selected ZIP separately and follow its original instructions, pinned toolchain and Mathlib revision. Site scripts do not execute Lean/Lake.
+The formalization companion, Sections 6–8, records the pinned toolchain, dependencies, original campaign and reversible source-hash verification. From the extracted archive, run `python tools/verify_attribution.py` for static verification. Historical build scripts contain fixed Windows paths; adapt those paths before an independent run, preserve the pinned revisions and use a separate output directory.
 
-[Paper guide](../README.md) · [Series](../../../README.md)
+The manuscript, validation, archive and citation links are distributed within the complete series repository. This paper directory alone is not a standalone copy of all shared resources.
+
+[Paper guide](../README.md).

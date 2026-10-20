@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Cite this paper and its version."
+title: "Triangle decompositions II: Robust absorption for typed triangles"
+version: "1.0"
+doi: "10.5281/zenodo.23502224"
+authors:
+  - family-names: "Traverso Gianini"
+    given-names: "Juan Pablo"
+    orcid: "https://orcid.org/0009-0003-6068-4096"
+license: CC-BY-4.0
+url: "https://github.com/jtraverso/nash-williams-triangle-decompositions/tree/main/preprints/PAPER_II"

@@ -1,6 +1,7 @@
 cff-version: 1.2.0
-message: "Private release preparation. Cite the individual manuscript and version; no public release DOI is assigned."
+message: "Cite the individual paper and version using CITATION.md."
 title: "Triangle decompositions — Nash–Williams and typed absorption"
+version: "1.0"
 authors:
   - family-names: "Traverso Gianini"
     given-names: "Juan Pablo"

@@ -1,0 +1,117 @@
+{
+  "status": "PASS_LOCAL_LINKS",
+  "links": [
+    {
+      "source": "preprints/PAPER_I/02_validation/README.md",
+      "target": "RESPONSE_TO_REVIEW.md"
+    },
+    {
+      "source": "preprints/PAPER_I/02_validation/README.md",
+      "target": "../README.md"
+    },
+    {
+      "source": "preprints/PAPER_I/02_validation/REVIEW_SUMMARY.md",
+      "target": "RESPONSE_TO_REVIEW.md"
+    },
+    {
+      "source": "preprints/PAPER_I/02_validation/REVIEW_SUMMARY.md",
+      "target": "../03_reproducibility/README.md"
+    },
+    {
+      "source": "preprints/PAPER_I/02_validation/REVIEW_SUMMARY.md",
+      "target": "../05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf"
+    },
+    {
+      "source": "preprints/PAPER_I/03_reproducibility/README.md",
+      "target": "../README.md"
+    },
+    {
+      "source": "preprints/PAPER_I/04_integrity/README.md",
+      "target": "../README.md"
+    },
+    {
+      "source": "preprints/PAPER_I/CHANGELOG.md",
+      "target": "02_validation/README.md"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "01_manuscript/PAPER_I_preprint_v1.0_en.pdf"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "01_manuscript/PAPER_I_preprint_v1.0_en.md"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "01_manuscript/PAPER_I_preprint_v1.0_en.tex"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "01_manuscript/PAPER_I_preprint_v1.0_es.pdf"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "01_manuscript/PAPER_I_preprint_v1.0_es.md"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "01_manuscript/PAPER_I_preprint_v1.0_es.tex"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.tex"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.tex"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "02_validation/README.md"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "02_validation/RESPONSE_TO_REVIEW.md"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "03_reproducibility/README.md"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "04_integrity/README.md"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "CHANGELOG.md"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "CITATION.bib"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "LICENSE.md"
+    },
+    {
+      "source": "preprints/PAPER_I/README.md",
+      "target": "LICENSE.md"
+    }
+  ]
+}

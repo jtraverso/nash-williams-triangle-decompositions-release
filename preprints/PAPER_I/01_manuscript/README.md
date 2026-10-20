@@ -1,5 +1,7 @@
-# Mathematical manuscript — Paper I
+# Manuscript / Manuscrito
 
-The EN/ES manuscript files are exact copies of preprint 1.0 dated 20 October 2026. See the [document table](../README.md).
+Preprint 1.0 · 20 October 2026 · DOI [10.5281/zenodo.23428173](https://doi.org/10.5281/zenodo.23428173).
 
-[Paper guide](../README.md) · [Series](../../../README.md)
+The English and Spanish documents are available in PDF, TeX and Markdown.
+
+[Document table / Documentos](../README.md).

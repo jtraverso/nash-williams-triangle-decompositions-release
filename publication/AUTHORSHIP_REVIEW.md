@@ -6,6 +6,8 @@ Every byte after the initial ordinary header comment is preserved. The archive's
 
 Archive SHA-256: `bfa42bd57e6d9c2ac918bbf6fe2c2ba7c01894d1d8387d92e81b090020a6aaff`.
 
-[Full internal report and document evidence](https://github.com/jtraverso/nash-williams-private-review/blob/31c5059d5f89db92fbec7c5dd5901696316c8194/audit/paper-i-authorship-v3-20261020/FINAL_REPORT.md). Access requires permission to the private research repository.
+[Paper I document evidence](../preprints/PAPER_I/02_validation/REVIEW_SUMMARY.md) and its [formalization companion](../preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf) describe this correspondence.
 
-`author_headers_reconciled` is true. The coordinated public release remains held for Paper II and the other final-release checks.
+Paper II's selected v4 archive contains **1,510** project sources with the same author and Apache-2.0 notices. Its header-only revision added or corrected 1,411 headers and preserved 99 already correct headers. The later README-only revision preserves all source and proof-evidence bytes. Static verification checks its 1,510 receipts, 3,096 project-import hash links and 4,561 internal hashes; see the [Paper II companion](../preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf).
+
+`author_headers_reconciled` is true for both selected packages. The operational publication hold is recorded separately.

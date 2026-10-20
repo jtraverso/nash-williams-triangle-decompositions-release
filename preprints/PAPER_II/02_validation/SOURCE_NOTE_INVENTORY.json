@@ -1,0 +1,3068 @@
+{
+  "archive": "PAPER_II_LEAN_20261020_ALIGNED_v4",
+  "missing_note_occurrences": [
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/Links.lean",
+      "line": 19,
+      "path": "cegis/b0_refiner/Fstar_20261012/kappa_gate.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/KeevashBridge.lean",
+      "line": 26,
+      "path": "cegis/b0_refiner/KEEVASH_RESERVA_PRUEBA_20261011.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedFstar/Lattice.lean",
+      "line": 14,
+      "path": "cegis/b0_refiner/Fstar_20261012/",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/VertexSplit/Basic.lean",
+      "line": 13,
+      "path": "cegis/b0_refiner/DIVISION_VERTICES_PRUEBA_20261014.md",
+      "archived": false
+    }
+  ],
+  "distinct_missing_notes": [
+    "cegis/b0_refiner/DIVISION_VERTICES_PRUEBA_20261014.md",
+    "cegis/b0_refiner/Fstar_20261012/",
+    "cegis/b0_refiner/Fstar_20261012/kappa_gate.py",
+    "cegis/b0_refiner/KEEVASH_RESERVA_PRUEBA_20261011.md"
+  ],
+  "note_count": 4,
+  "historical_file_occurrences": [
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal00.lean",
+      "line": 13,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal01.lean",
+      "line": 13,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal02.lean",
+      "line": 13,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal03.lean",
+      "line": 13,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal04.lean",
+      "line": 13,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal06PartA.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal06PartB.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal07Part1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal07Part2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal08.lean",
+      "line": 13,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal09.lean",
+      "line": 13,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal10.lean",
+      "line": 13,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal11Part1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal11Part2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal11Part3.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal12Part1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal12Part2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal12Part3.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal13Part1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal13Part2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal13Part3.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal14Part1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal14Part2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal14Part3.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal15.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal16.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal17Part1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal17Part2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal17Part3.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal17Part4.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal18.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal19Part1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal19Part2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal19Part3.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal20Part1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal20Part2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal21.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal22Part1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal22Part2.lean",
+      "line": 16,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal22Part3.lean",
+      "line": 16,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal22Part4.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal23Part1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal23Part2.lean",
+      "line": 15,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal23Part2Block1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal23Part3.lean",
+      "line": 16,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal23Part3Block1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal23Part3Block2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal23Part4.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal24.lean",
+      "line": 17,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal24Block1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal24Block2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal24Block3.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal25Part1.lean",
+      "line": 16,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal25Part1Block1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal25Part1Block2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal25Part2.lean",
+      "line": 16,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal25Part2Block1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal25Part2Block2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal26Part1.lean",
+      "line": 16,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal26Part1Block1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal26Part1Block2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal26Part2.lean",
+      "line": 16,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal26Part2Block1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal26Part2Block2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal26Part3.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal27Part1.lean",
+      "line": 16,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal27Part1Block1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal27Part1Block2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal27Part2.lean",
+      "line": 16,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal27Part2Block1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal27Part2Block2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal28Part1.lean",
+      "line": 16,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal28Part1Block1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal28Part1Block2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal28Part2.lean",
+      "line": 15,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal28Part2Block1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal28Part3.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal29Part1.lean",
+      "line": 16,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal29Part1Block1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal29Part1Block2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal29Part2.lean",
+      "line": 16,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal29Part2Block1.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal29Part2Block2.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal29Part3.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/Bal30.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC00.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC01.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC02.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC03.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC04Case025.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC04Case026.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC04Case027.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC04Case028.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC04Case029.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC05.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC06.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC07Case042.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC07Case043.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC07Case044.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC07Case045.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC07Case047.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalC08.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalCM0.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalCY0.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalCY1.lean",
+      "line": 14,
+      "path": "gen_balfam_chi.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalFamily050.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalFamily051.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalFamily052.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalFamily053.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalFamily054.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalFamily055.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalFamily056.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalFamily057.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalFamily058.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalFamily059.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalFamily224.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalFamily225.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalFamily227.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalFamily228.lean",
+      "line": 14,
+      "path": "gen_balfam.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/BalFixer/Fam/BalT00.lean",
+      "line": 14,
+      "path": "gen_balfam_tors_emit.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/CompWrappers.lean",
+      "line": 11,
+      "path": "gen_wrappers.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Even3.lean",
+      "line": 12,
+      "path": "gen_flex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/Kappa_ChargeFamilies.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/Kappa_Families.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/Kappa_FamiliesT234.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/Kappa_G2Families.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/Kappa_G3Families.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/Kappa_KCCFamilies.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/Kappa_KCTFamilies.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/Kappa_KCXFamilies.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/Kappa_KEFamilies.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/Kappa_KMFamilies.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/PaddedComponents_MonoFamilies_UniversalA.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/PaddedComponents_MonoFamilies_UniversalB.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/PaddedComponents_MonoFamilies_UniversalC.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/PaddedComponents_MonoFamilies_UniversalD.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Fam/PaddedNoCommon_UniversalFamilies.lean",
+      "line": 12,
+      "path": "gen_famflex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par00.lean",
+      "line": 17,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par01.lean",
+      "line": 17,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par02.lean",
+      "line": 20,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par03.lean",
+      "line": 20,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par04.lean",
+      "line": 21,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par05.lean",
+      "line": 18,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par06.lean",
+      "line": 20,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par07.lean",
+      "line": 19,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par08.lean",
+      "line": 21,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par09.lean",
+      "line": 19,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par10.lean",
+      "line": 21,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par11.lean",
+      "line": 21,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par12.lean",
+      "line": 19,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par13.lean",
+      "line": 20,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par14.lean",
+      "line": 19,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par15.lean",
+      "line": 21,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par16.lean",
+      "line": 20,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par17.lean",
+      "line": 21,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par18.lean",
+      "line": 21,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par19.lean",
+      "line": 20,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par20.lean",
+      "line": 19,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par21.lean",
+      "line": 18,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par22.lean",
+      "line": 17,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par23.lean",
+      "line": 18,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par24.lean",
+      "line": 16,
+      "path": "gen_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par5_0.lean",
+      "line": 13,
+      "path": "gen_par5.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par5_1.lean",
+      "line": 14,
+      "path": "gen_par5.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par5_2.lean",
+      "line": 13,
+      "path": "gen_par5.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par5_3.lean",
+      "line": 15,
+      "path": "gen_par5.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par5_4.lean",
+      "line": 14,
+      "path": "gen_par5.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/Par/Par6.lean",
+      "line": 16,
+      "path": "gen_par5c.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed00.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed01.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed02.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed03.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed04.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed05.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed06.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed07.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed08.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed09.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed10.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed11.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed12.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed13.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed14.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed15.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed16.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed17.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed18.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed19.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed20.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed21.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed22.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed23.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed24.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed25.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed26.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed27.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed28.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed29.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed30.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed31.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed32.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed33.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed34.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed35.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed36.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed37.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed38.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed39.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed40.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed41.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed42.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed43.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed44.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed45.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed46.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed47.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed48.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed49.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed50.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed51.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed52.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed53.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed54.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed55.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed56.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed57.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed58.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed59.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed60.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed61.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed62.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed63.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed64.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed65.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed66.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed67.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed68.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParClosed/Closed69.lean",
+      "line": 9,
+      "path": "gen_par_closed.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv00.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv00.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv01.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv01.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv02.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv02.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv03.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv03.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv04.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv04.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv05.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv05.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv06.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv06.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv07.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv07.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv08.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv08.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv09.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv09.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv10.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv10.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv11.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv11.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv12.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv12.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv13.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv13.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv14.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv14.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv15.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv15.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv16.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv16.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv17.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv17.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv18.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv18.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv19.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv19.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv20.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv20.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv21.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv21.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv22.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv22.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv23.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv23.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv24.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv24.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv25.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv25.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv26.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv26.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv27.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv27.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv28.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv28.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv29.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv29.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv30.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv30.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv31.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv31.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv32.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv32.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv33.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv33.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv34.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv34.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv35.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv35.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv36.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv36.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv37.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv37.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv38.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv38.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv39.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv39.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv40.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv40.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv41.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv41.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv42.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv42.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv43.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv43.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv44.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv44.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv45.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv45.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv46.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv46.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv47.lean",
+      "line": 12,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv47.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv48.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv48.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv49.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv49.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv50.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv50.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv51.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv51.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv52.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv52.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv53.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv53.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv54.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv54.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv55.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv55.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv56.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv56.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv57.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv57.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv58.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv58.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv59.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv59.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv60.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv60.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv61.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv61.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv62.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv62.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv63.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv63.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv64.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv64.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv65.lean",
+      "line": 11,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv65.lean",
+      "line": 11,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv66.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv66.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv67.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv67.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv68.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv68.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv69.lean",
+      "line": 10,
+      "path": "gen_inv_par.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/ParInv/Inv69.lean",
+      "line": 10,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/TokenCerts.lean",
+      "line": 21,
+      "path": "gen_flex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/TokenScales.lean",
+      "line": 16,
+      "path": "gen_flex_scales.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Flex/WholeCerts.lean",
+      "line": 15,
+      "path": "gen_flex.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/ChargeFamilies.lean",
+      "line": 15,
+      "path": "kab_data.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/Closed.lean",
+      "line": 17,
+      "path": "kappa_gate.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/Closed.lean",
+      "line": 17,
+      "path": "oddlinks.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/Collapse.lean",
+      "line": 14,
+      "path": "kappa_gate.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/Families.lean",
+      "line": 43,
+      "path": "kappa_data.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/FamiliesT234.lean",
+      "line": 12,
+      "path": "kappa_data.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/G2Families.lean",
+      "line": 17,
+      "path": "gen_g2.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/G3Families.lean",
+      "line": 17,
+      "path": "gen_g3.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKC2C.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKC3T.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKCC1.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKCC2.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKCC3.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKCT1.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKCT2.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKCT3.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKCT4.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKCT5.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKCT6.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKCX1.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKCX2.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKCX3.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKCX4.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKE1.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKE2.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKE3.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKE4.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKM1.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKM2.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKM3.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKM4.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKM5.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKQ1.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKQ10.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKQ11.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKQ2.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKQ3.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKQ4.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKQ5.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKQ6.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKQ7.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKQ8.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKQ9.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKTA1.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKTB1.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKTB2.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKTB3.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKTH1.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKTH2.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKTH3.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/InverseKTH4.lean",
+      "line": 12,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/KC2CFamily.lean",
+      "line": 15,
+      "path": "gen_kc2.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/KC3TFamily.lean",
+      "line": 14,
+      "path": "gen_c2.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/KCCFamilies.lean",
+      "line": 16,
+      "path": "gen_kcc.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/KCTFamilies.lean",
+      "line": 16,
+      "path": "gen_kct.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/KCXFamilies.lean",
+      "line": 18,
+      "path": "gen_kcx.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/KCXFamily1.lean",
+      "line": 17,
+      "path": "gen_kcx.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/KEFamilies.lean",
+      "line": 13,
+      "path": "gen_ke.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/KMFamilies.lean",
+      "line": 16,
+      "path": "gen_km.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/Kappa/Links.lean",
+      "line": 19,
+      "path": "cegis/b0_refiner/Fstar_20261012/kappa_gate.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/KeevashBridge.lean",
+      "line": 26,
+      "path": "cegis/b0_refiner/KEEVASH_RESERVA_PRUEBA_20261011.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/LatinCore/Cycles/Defs.lean",
+      "line": 23,
+      "path": "ARISTOTLE_CRUX_CICLOS_ACOTADOS_20261015.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/LatinCore/Cycles/HubShortener.lean",
+      "line": 31,
+      "path": "docs/LATIN_CORE_CYCLE_SHORTENER_20261015.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/LatinCore/Positivization/Channels.lean",
+      "line": 13,
+      "path": "DENSE_EXPANDER_INTEGER_FILLING_20261015.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/Defs.lean",
+      "line": 14,
+      "path": "CENSUS_ALL_765_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM01.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM02.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM03.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM04.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM05.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM06.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM07.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM08.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM09.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM10.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM11.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM12.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM13.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM14.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM15.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM16.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM17.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM18.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM19.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM20.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM21.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM22.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM23.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM24.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM25.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM26.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM27.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM28.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM29.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM30.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM31.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM32.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM33.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM34.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM35.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM36.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM37.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM38.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoFamilies/InverseFM39.lean",
+      "line": 12,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedComponents/MonoObstruction.lean",
+      "line": 25,
+      "path": "PROOF_CHARGE_COMPONENTS_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedF12/PaddedDefinitions.lean",
+      "line": 11,
+      "path": "INPUT_TASK.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedNoCommon/Families.lean",
+      "line": 11,
+      "path": "CENSUS_THREESTEP_NOCOMMON_20261013.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedTrivial/Family.lean",
+      "line": 19,
+      "path": "PROOF.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/PaddedTrivial/Family.lean",
+      "line": 19,
+      "path": "scripts/analyze2.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/TeoremaB748.lean",
+      "line": 18,
+      "path": "census748.py",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/TeoremaBBalanced.lean",
+      "line": 20,
+      "path": "PLAN_17_DESDE_13_16_20261010.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/BlowupB/VertexSplit/Basic.lean",
+      "line": 13,
+      "path": "cegis/b0_refiner/DIVISION_VERTICES_PRUEBA_20261014.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/ParityChain.lean",
+      "line": 21,
+      "path": "REFINER_STATUS.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/TypedLatticePadding.lean",
+      "line": 14,
+      "path": "MATHEMATICAL_COLOURED_HUB_PRIVATE_TEMPLATE_NEXT_20261007.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/TypedRefinerF0/HubLoads.lean",
+      "line": 14,
+      "path": "TYPED_REFINER_F0_STAGE38.md",
+      "archived": false
+    },
+    {
+      "source": "source/PartitionedTriangleAbsorption/TypedRefinerF0/Main.lean",
+      "line": 27,
+      "path": "TYPED_REFINER_F0_STAGE38.md",
+      "archived": false
+    }
+  ],
+  "historical_file_names": [
+    "ARISTOTLE_CRUX_CICLOS_ACOTADOS_20261015.md",
+    "CENSUS_ALL_765_20261013.md",
+    "CENSUS_THREESTEP_NOCOMMON_20261013.md",
+    "DENSE_EXPANDER_INTEGER_FILLING_20261015.md",
+    "INPUT_TASK.md",
+    "MATHEMATICAL_COLOURED_HUB_PRIVATE_TEMPLATE_NEXT_20261007.md",
+    "PLAN_17_DESDE_13_16_20261010.md",
+    "PROOF.md",
+    "PROOF_CHARGE_COMPONENTS_20261013.md",
+    "REFINER_STATUS.md",
+    "TYPED_REFINER_F0_STAGE38.md",
+    "cegis/b0_refiner/DIVISION_VERTICES_PRUEBA_20261014.md",
+    "cegis/b0_refiner/Fstar_20261012/kappa_gate.py",
+    "cegis/b0_refiner/KEEVASH_RESERVA_PRUEBA_20261011.md",
+    "census748.py",
+    "docs/LATIN_CORE_CYCLE_SHORTENER_20261015.md",
+    "gen_balfam.py",
+    "gen_balfam_chi.py",
+    "gen_balfam_tors_emit.py",
+    "gen_c2.py",
+    "gen_famflex.py",
+    "gen_flex.py",
+    "gen_flex_scales.py",
+    "gen_g2.py",
+    "gen_g3.py",
+    "gen_inv_par.py",
+    "gen_kc2.py",
+    "gen_kcc.py",
+    "gen_kct.py",
+    "gen_kcx.py",
+    "gen_ke.py",
+    "gen_km.py",
+    "gen_par.py",
+    "gen_par5.py",
+    "gen_par5c.py",
+    "gen_par_closed.py",
+    "gen_wrappers.py",
+    "kab_data.py",
+    "kappa_data.py",
+    "kappa_gate.py",
+    "oddlinks.py",
+    "scripts/analyze2.py"
+  ],
+  "historical_file_name_count": 42,
+  "noncomment_resource_references": [],
+  "excluded_false_positive": "Req.md is the Lean Req constructor named md, not a file.",
+  "scope": "Historical paths in source comments are not packaged reproduction resources or Lean imports."
+}

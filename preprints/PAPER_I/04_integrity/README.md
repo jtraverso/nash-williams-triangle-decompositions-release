@@ -1,5 +1,5 @@
 # Integrity — Paper I
 
-The [intake record](../../../publication/INTAKE.json) binds the selected files to their source commit and SHA-256. The [repository manifest](../../../manifest_sha256.txt) covers this tree. These are packaging checks, not a new kernel execution.
+`MANIFEST.json` binds the current document and navigation artifacts. The selected source archive has its own sidecar SHA-256 and internal file manifest; its reversible attribution checker relates corrected headers to the historical compiler receipts. The companion records the archive digest. Document hashes do not replace proof validation.
 
-[Paper guide](../README.md) · [Series](../../../README.md)
+[Paper guide](../README.md).

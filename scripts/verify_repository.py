@@ -65,9 +65,29 @@ def verify():
         assert p.stat().st_size == row['bytes'] and digest(p) == row['sha256'], row['path']
     idx = json.loads((ROOT/'PUBLICATION_INDEX.json').read_text(encoding='utf-8'))
     for paper in idx['papers']:
+        assert len(paper['documents']) == 4
         for doc in paper['documents']:
             assert set(doc['files']) == {'pdf', 'tex', 'md'}
             assert all((ROOT/p).is_file() for p in doc['files'].values())
+            text = (ROOT/doc['files']['md']).read_text(encoding='utf8')
+            assert paper['doi'] in text and 'CC BY 4.0' in text
+            assert 'nash-williams-private-review' not in text
+        folder = ROOT/'preprints'/paper['id']
+        audit = json.loads((folder/'02_validation/AUDIT_RESULT.json').read_text(encoding='utf8'))
+        visual = json.loads((folder/'02_validation/VISUAL_REVIEW.json').read_text(encoding='utf8'))
+        assert audit['status'] == 'PASS_LOCAL_DOCUMENT_CHECKS'
+        assert visual['status'] == 'PASS_VISUAL_REVIEW'
+        for row in audit['documents']:
+            md = row.get('path', row.get('source'))
+            assert digest(ROOT/md) == row.get('md_sha256', row.get('markdown_sha256'))
+            pdf = str(Path(md).with_suffix('.pdf')).replace('\\', '/')
+            assert digest(ROOT/pdf) == row['pdf_sha256'] == visual['pdf_hashes'][pdf]
+        bound_paper = json.loads((folder/'04_integrity/MANIFEST.json').read_text(encoding='utf8'))
+        for row in bound_paper['files']:
+            assert digest(ROOT/row['path']) == row['sha256']
+        paper_paths = {p.relative_to(ROOT).as_posix() for p in folder.rglob('*')
+                       if p.is_file() and p.name != 'MANIFEST.json'}
+        assert paper_paths == {row['path'] for row in bound_paper['files']}
     archive_hashes = 0
     archive_reviews = []
     from verify_header_revision import verify as verify_headers

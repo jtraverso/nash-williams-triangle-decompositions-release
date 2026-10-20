@@ -1,0 +1,75 @@
+{
+  "status": "PASS_LOCAL_DOCUMENT_CHECKS",
+  "baseline": "9248386699b10dbc9aae9a32f9d9862c73c71ec2",
+  "documents": [
+    {
+      "path": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.md",
+      "pages": 19,
+      "displays": 53,
+      "md_sha256": "ab4b989540c0ee2c16a9c515d149a91a8b78c6995864605fbfa4de87482d9969",
+      "tex_sha256": "2005baab75b61ff2e57cf377bae9cc097b657b8ead8b22a6eaae5874f59ade3c",
+      "pdf_sha256": "afc90dd5587050bea71dc2e6f0ed2c426d0f6ac3828a3757bd3c42b2429538e7"
+    },
+    {
+      "path": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.md",
+      "pages": 20,
+      "displays": 53,
+      "md_sha256": "3b268914f37c26921029a60a1352f8cb0e04085ca58ec9efdcedddfe799e86a8",
+      "tex_sha256": "908aedee9f7de25ef7d586e36b361cadd11f82395469bf499d87ded19f0132a5",
+      "pdf_sha256": "b8c5f03aef16b3f6d9b4ef669a4661522a39bcc6c059ea5e45262da912e36df4"
+    },
+    {
+      "path": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md",
+      "pages": 9,
+      "displays": 2,
+      "md_sha256": "a4623bd504823426ee56702d974146a5fbc7a7f5641e58614d963685d772c564",
+      "tex_sha256": "e44045cf018e997c7f2f887932a3405ca281322bba7df33f454c7c45e3fcfd18",
+      "pdf_sha256": "b01f58056931ecd161f12a41f5dc8b6df5c60305b7696153a354244ff6b7b879"
+    },
+    {
+      "path": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md",
+      "pages": 9,
+      "displays": 2,
+      "md_sha256": "e93ad775d951a64e1d6bafd7c5663702eca9b5ed3727ef973035bab393a6533d",
+      "tex_sha256": "d2d6ea8d6c12f1a5816efd98345bd1dfc9db8afeeeaba465fd1160108f876c9d",
+      "pdf_sha256": "1cef01b3e2719707c0c6be242d4b071e794d0b5cc7f8d9a38e06eb0c5c993f92"
+    }
+  ],
+  "total_pages": 57,
+  "mathematical_displays_and_code_blocks_unchanged": true,
+  "bilingual_math_identifiers_and_references": true,
+  "utf8_scanned": [
+    "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.md",
+    "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.tex",
+    "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.md",
+    "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.tex",
+    "preprints/PAPER_I/02_validation/README.md",
+    "preprints/PAPER_I/02_validation/RESPONSE_TO_REVIEW.md",
+    "preprints/PAPER_I/02_validation/REVIEW_SUMMARY.md",
+    "preprints/PAPER_I/03_reproducibility/README.md",
+    "preprints/PAPER_I/04_integrity/README.md",
+    "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md",
+    "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.tex",
+    "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md",
+    "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.tex",
+    "preprints/PAPER_I/CHANGELOG.md",
+    "preprints/PAPER_I/CITATION.bib",
+    "preprints/PAPER_I/index.html",
+    "preprints/PAPER_I/LICENSE.md",
+    "preprints/PAPER_I/README.md"
+  ],
+  "archive_result": {
+    "status": "PASS_HEADER_ONLY_REVISION",
+    "modules": 1070,
+    "corrected_headers": 1068,
+    "unchanged_headers": 2,
+    "historical_receipts_checked": 1070,
+    "import_hash_links": 1671,
+    "lean_build_executed": false,
+    "scope": "Current body bytes reconstruct the original compiled sources. Historical receipts are unchanged; no new compilation is asserted."
+  },
+  "archive_sha256": "bfa42bd57e6d9c2ac918bbf6fe2c2ba7c01894d1d8387d92e81b090020a6aaff",
+  "internal_hashes": 3240,
+  "no_lean_build": true,
+  "publication_performed": false
+}

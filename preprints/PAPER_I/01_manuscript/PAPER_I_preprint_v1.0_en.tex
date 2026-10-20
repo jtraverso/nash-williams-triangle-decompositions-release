@@ -40,6 +40,10 @@ pdflang={en-US},colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
 
 \textbf{Preprint 1.0 --- 20 October 2026.}
 
+DOI: https://doi.org/10.5281/zenodo.23428173.
+
+© 2026 Juan Pablo Traverso Gianini. Licensed under \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}.
+
 \subsection{Abstract}\label{abstract}
 
 Delcourt and Postle gave a proof that every sufficiently large triangle-divisible graph of minimum degree at least three quarters of its order has a triangle decomposition; their decomposition step invokes the manuscript listed as reference 17 in {[}2{]}. We give a Lean formalization that follows their extremal and non-extremal case division, together with the fractional threshold and stability results used in the proof. The decomposition inputs are supplied by typed absorption results developed in Paper II and by a protected covering construction presented here. This replaces the applications of their Theorem 13.16 without using it as an assumption. The protected construction combines simultaneous local packing, a sparse reserve, and matchings that control the resources needed by later rounds. We give its proof, including the bounded signed certificates used at the terminal step. We also state the typed inputs and check their application to the extremal residual graphs. The theorem, its attribution and its degree threshold are unchanged; the contribution is the formal proof and the explicit replacement constructions and interfaces.
@@ -48,7 +52,7 @@ Delcourt and Postle gave a proof that every sufficiently large triangle-divisibl
 
 \subsection{1. The theorem and the contribution}\label{the-theorem-and-the-contribution}
 
-Delcourt and Postle gave a proof of the Nash--Williams theorem for sufficiently large graphs in \emph{A Proof of Nash-Williams' Conjecture} {[}2, Theorem 1.8{]}; its decomposition step invokes their manuscript listed as reference 17 in {[}2{]}. The present formalization supplies the replacement constructions described below, without assuming their Theorem 13.16. We formalize that result and the fractional theorems on which its proof rests. A graph is \emph{triangle-divisible} if its number of edges is divisible by three and every vertex has even degree. A triangle decomposition partitions its edges into triangles.
+Nash-Williams posed the triangle-decomposition conjecture in 1970 {[}16{]}. Delcourt and Postle gave a proof of the Nash--Williams theorem for sufficiently large graphs in \emph{A Proof of Nash-Williams' Conjecture} {[}2, Theorem 1.8{]}; its decomposition step invokes their manuscript listed as reference 17 in {[}2{]}. The present formalization supplies the replacement constructions described below, without assuming their Theorem 13.16. We formalize that result and the fractional theorems on which its proof rests. A graph is \emph{triangle-divisible} if its number of edges is divisible by three and every vertex has even degree. A triangle decomposition partitions its edges into triangles.
 
 
 \Needspace{12\baselineskip}
@@ -84,7 +88,7 @@ Every finite simple graph \(G\) of order \(n\) with \(3n\le4\delta(G)\) has a fr
 
 Unlike the main theorem, this result requires neither integral divisibility nor a sufficiently large order. Its formal proof follows the dual discharging argument and then passes to fractional weights through a finite-dimensional alternative theorem.
 
-To state stability, call \(G\) \(\sigma\)-extremal if at least \((1-\sigma)n\) vertices have degree at most \((3/4+\sigma)n\) and some cut has at least \((1-\sigma)n^2/4\) edges. Both conditions are required.
+To state stability, call \(G\) \(\sigma\)-extremal if at least \((1-\sigma)n\) vertices have degree at most \((3/4+\sigma)n\) and some cut has at least \((1-\sigma)n^2/4\) edges. Both conditions are required; this is {[}2, Definition 12.2{]}.
 
 \paragraph{Fractional stability --- Delcourt--Postle {[}2, Theorem 1.6{]}}\label{fractional-stability-delcourtpostle-2-theorem-1.6}
 
@@ -178,7 +182,7 @@ The cleanup in branch 12.8 covers the exceptional vertices and the remaining int
 
 \subsubsection{3.2. The typed inputs from Paper II}\label{the-typed-inputs-from-paper-ii}
 
-Let \(V(G)=V_0\sqcup\cdots\sqcup V_{t-1}\), with part map \(p\). A triangle type is the multiset of its three part labels. For a family \(\mathcal F\) of permitted types, a pair of labels is allowed if it occurs in a permitted type. An \(\mathcal F\)-decomposition uses only triangles of those types. We use \[\begin{aligned}
+Let \(V(G)=V_0\sqcup\cdots\sqcup V_{t-1}\), with part map \(p\). A triangle type is the multiset of its three part labels. For a family \(\mathcal F\) of permitted types, a pair of labels is allowed if it occurs in a permitted type. An \(\mathcal F\)-decomposition uses only triangles of those types. The general lattice framework for decompositions with prescribed label data is due to Keevash {[}19{]}. Paper II {[}1, Section 2.3{]} distinguishes that framework from the explicit typed hypotheses used here. We use \[\begin{aligned}
 \mathcal F_0&=\{001,011\},\\
 \mathcal F_1&=\{002,003,112,113,022,122,033,133\},\\
 \mathcal F_2&=\{002,003,112,113,023,123\}.
@@ -237,6 +241,8 @@ Let \(\alpha_1,\alpha_2,\alpha_3\) be the tolerances for the three template-near
 \Needspace{9\baselineskip}
 \subsection{4. Local packing and protected covering}\label{local-packing-and-protected-covering}
 
+The nested sets, cover-down rounds and fixed terminal absorber follow the iterative-absorption scheme of Barber, Kühn, Lo and Osthus {[}17{]}. The certificate-to-absorber viewpoint is related to the refined-absorption framework of Delcourt and Postle {[}18{]}. Here we give the bounded signed certificate of Lemma A.1 and the reserve and matching controls that protect the resources required by subsequent rounds.
+
 We give two constructions used in the non-extremal argument. The first applies the pseudorandom matching theorem of Ehard, Glock and Joos {[}4{]} to actual triangles while controlling prescribed sets of edges. The second adds protected reserves and an exact covering step. Neither construction uses the full Nash--Williams conclusion.
 
 \subsubsection{4.1. From fractional weights to actual triangles}\label{from-fractional-weights-to-actual-triangles}
@@ -266,7 +272,7 @@ The selection step is necessary for this application: applying the weighted matc
 
 \subsubsection{4.2. A round that preserves the next reserve}\label{a-round-that-preserves-the-next-reserve}
 
-For \(\beta>0\), call \(G\) \emph{\(\beta\)-extremal} when at least \((1-\beta)n\) vertices have degree at most \((3/4+\beta)n\) and some cut has at least \((1-\beta)n^2/4\) edges. Write \(E_G(W)=E(G[W])\).
+For \(\beta>0\), call \(G\) \emph{\(\beta\)-extremal} when at least \((1-\beta)n\) vertices have degree at most \((3/4+\beta)n\) and some cut has at least \((1-\beta)n^2/4\) edges. This is the same definition {[}2, Definition 12.2{]}. Write \(E_G(W)=E(G[W])\).
 
 
 \Needspace{24\baselineskip}
@@ -394,7 +400,7 @@ This is the appropriate division between the articles: Lemma A.1 produces certif
 
 \emph{Proof.} We separate the protected fractional step, the coverage of exterior edges, and the final coverage of radial edges. Put \(u=|W|\), \(z=|Z|\) and \(X=V(G)\setminus W\).
 
-\textbf{Choice of constants.} Regular fractional stability remains applicable after a sufficiently small maximum-degree deletion. Indeed, use Theorem 2.6 with extremality parameter \(b/2\), where \(0<b\le\beta/4\) is in its permitted range. If \(H\) is deleted from a graph that is not \(b\)-extremal, then a \((b/2)\)-extremal graph \(G-H\) would make \(G\) \(b\)-extremal: the cut only gains edges, and every degree increases by at most \(\Delta(H)\). If \(\varepsilon_{2.6}\) is the degree margin in Theorem 2.6, choose \(0<\theta_{\mathrm n}\le\min\{\varepsilon_{2.6}/2,b/4\}\). Since \(\theta\le\theta_{\mathrm n}\), the original margin and the deletion together cost at most \(\theta+\theta_{\mathrm n}\le\varepsilon_{2.6}\). This produces constants \(\theta_{\mathrm n}>0\) and \(C\ge1\) for the protected fractional step. They are chosen before \(q\) and before the graph.
+\textbf{Choice of constants.} Regular fractional stability remains applicable after a sufficiently small maximum-degree deletion. Indeed, use Theorem 2.6 with extremality parameter \(b/2\), where \(0<b\le\beta/4\) is chosen in its permitted range, in particular with \(b/2\le\sigma_0\) for the constant in Theorem 2.6. If \(H\) is deleted from a graph that is not \(b\)-extremal, then a \((b/2)\)-extremal graph \(G-H\) would make \(G\) \(b\)-extremal: the cut only gains edges, and every degree increases by at most \(\Delta(H)\). If \(\varepsilon_{2.6}\) is the degree margin in Theorem 2.6, choose \(0<\theta_{\mathrm n}\le\min\{\varepsilon_{2.6}/2,b/4\}\). Since \(\theta\le\theta_{\mathrm n}\), the original margin and the deletion together cost at most \(\theta+\theta_{\mathrm n}\le\varepsilon_{2.6}\). This produces constants \(\theta_{\mathrm n}>0\) and \(C\ge1\) for the protected fractional step. They are chosen before \(q\) and before the graph.
 
 The following choices suffice; they are the ones used in the formal construction: \[\begin{aligned}
 \theta&=\min\{\theta_{\mathrm n},1/100\},&
@@ -491,7 +497,7 @@ For completeness, the errors can be controlled uniformly through an arbitrarily 
 
 Normalizing by the sampled order changes each tracked density by at most \(D_{\mathrm v}a^{-1/4}\), where \(D_{\mathrm v}=4k/q+4\) suffices. Maintain cumulative error at most \(2D_{\mathrm v}a^{-1/4}\) at order \(a\). Since the child has order at most \(a/16\), its permitted error is at least \(4D_{\mathrm v}a^{-1/4}\), which pays for the previous error and the new step. Choose the stopping threshold so that the error at the smallest child is at most \(\epsilon_1\). The same neighbourhood estimates give the required parent-to-child degree bounds. This constructs (A.5) with constants chosen before \(G\).
 
-\textbf{A fixed absorber for the terminal set.} We spell out the finite-library construction, and identify its absorption inputs. In a host of minimum degree at least \(3n/4\), every two vertices have at least \(n/2\) common neighbours. Non-extremality and {[}2, Lemma 14.4{]} supply a constant \(c>0\) and at least \(cn^4\) root-clean eight-vertex hinges for every two triangles sharing exactly one edge. A hinge provides the two alternative triangle decompositions needed to exchange the two rooted wedges; its edges avoid those of the root triangles. We use the configuration-count form with normalization \(n^{i-4}\) for four fixed roots, as in Paper II, rather than the \(n^{i-2}\) normalization printed in {[}2, Definition 13.15{]}. Non-extremality supplies the required separation from the three templates; the formal hinge result is stated with that separation hypothesis.
+\textbf{A fixed absorber for the terminal set.} We spell out the finite-library construction, and identify its absorption inputs. In a host of minimum degree at least \(3n/4\), every two vertices have at least \(n/2\) common neighbours. Non-extremality and {[}2, Lemma 14.4{]} supply a constant \(c>0\) and at least \(cn^4\) root-clean eight-vertex hinges for every two triangles sharing exactly one edge. A hinge provides the two alternative triangle decompositions needed to exchange the two rooted wedges; its edges avoid those of the root triangles. We use the configuration-count form with normalization \(n^{i-4}\) for four fixed roots, as in Paper II, rather than the \(n^{i-2}\) normalization printed in {[}2, Definition 13.15{]}. The separation hypothesis follows quantitatively from non-extremality. Choose \(0<\gamma\le\min\{\alpha_0,\beta^2/8,\beta/8\}\) and \(n\ge\lceil2/\beta\rceil\). If \(G\) were \(\gamma\)-close to a template, at most \(4\gamma n/\beta\le\beta n/2\) vertices could meet more than \(\beta n/2\) edited edges. All remaining degrees would be at most \(3n/4+1+\beta n/2\le(3/4+\beta)n\), and the balanced template cut would retain at least \(\lfloor n^2/4\rfloor-\gamma n^2\ge(1-\beta)n^2/4\) edges. Thus \(G\) would be \(\beta\)-extremal, a contradiction. Lemma 14.4 therefore applies with this separation parameter.
 
 Apply Lemma A.1 to \(\mathbf1_L\) for each possible triangle-divisible residue \(L\). It gives a certificate of cost at most \(K=16741|L|\). Lemma SC of Paper II {[}1{]}, in the form recorded in Appendix A.2, then gives \(A_L\), avoiding all edges inside a prescribed set \(Z_0\supseteq V(L)\), with \(A_L\) and \(A_L\cup L\) decomposable. Its bounds are \[\begin{gathered}
 |Z_0|+35K+1<n/2,\\
@@ -527,11 +533,11 @@ At termination the remaining edge set \(L\) lies inside \(U_\ell\). Subtracting 
 \begingroup\small\raggedright
 \setlength{\parskip}{3pt}
 
-{[}1{]} J. P. Traverso Gianini, \emph{Triangle decompositions II: Robust absorption for typed triangles}, preprint 1.0 (2026). \href{https://github.com/jtraverso/nash-williams-private-review/blob/main/preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.md}{Document}.
+{[}1{]} J. P. Traverso Gianini, \emph{Triangle decompositions II: Robust absorption for typed triangles}, preprint 1.0 (2026). \href{https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.md}{Document}. https://doi.org/10.5281/zenodo.23502224.
 
-{[}2{]} M. Delcourt and L. Postle, \emph{A Proof of Nash-Williams' Conjecture}, arXiv:2606.11178v1 (2026). https://arxiv.org/abs/2606.11178v1.
+{[}2{]} M. Delcourt and L. Postle, \emph{A Proof of Nash-Williams' Conjecture}, arXiv:2606.11178v1 (2026). https://doi.org/10.48550/arXiv.2606.11178.
 
-{[}3{]} M. Delcourt and L. Postle, \emph{Refined absorption for partitioned hypergraphs and beyond}, manuscript, 2026. Bibliographic details as listed in {[}2, reference 17{]}.
+{[}3{]} M. Delcourt and L. Postle, \emph{Refined absorption for partitioned hypergraphs and beyond}, unpublished manuscript (2026), cited as reference 17 in {[}2{]}. No public version was located during preparation; no unexamined statement from this manuscript is used as an assumption.
 
 {[}4{]} S. Ehard, S. Glock and F. Joos, \emph{Pseudorandom hypergraph matchings}, Combinatorics, Probability and Computing 29 (2020), 868--885. https://doi.org/10.1017/S0963548320000280.
 
@@ -539,11 +545,11 @@ At termination the remaining edge set \(L\) lies inside \(U_\ell\). Subtracting 
 
 {[}6{]} The mathlib Community, \emph{The Lean Mathematical Library}, CPP 2020, 367--381. https://doi.org/10.1145/3372885.3373824.
 
-{[}7{]} J. P. Traverso Gianini, \emph{Triangle decompositions I: Formalization and reproducibility companion}, preprint 1.0 (2026), accompanying source freeze \texttt{PAPER\_\allowbreak{}I\_\allowbreak{}LEAN\_\allowbreak{}20261020\_\allowbreak{}ALIGNED\_\allowbreak{}v3}. Accompanying technical document. \href{https://github.com/jtraverso/nash-williams-private-review/blob/main/preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md}{Document}.
+{[}7{]} J. P. Traverso Gianini, \emph{Triangle decompositions I: Formalization and reproducibility companion}, preprint 1.0 (2026), accompanying source freeze \texttt{PAPER\_\allowbreak{}I\_\allowbreak{}LEAN\_\allowbreak{}20261020\_\allowbreak{}ALIGNED\_\allowbreak{}v3}. Accompanying technical document. \href{https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md}{Document}. https://doi.org/10.5281/zenodo.23428173.
 
-{[}8{]} T. Hales et al., \emph{A formal proof of the Kepler conjecture}, arXiv:1501.02155. https://arxiv.org/abs/1501.02155.
+{[}8{]} T. Hales et al., \emph{A formal proof of the Kepler conjecture}, Forum of Mathematics, Pi 5 (2017), e2. https://doi.org/10.1017/fmp.2017.1.
 
-{[}9{]} C. Edmonds, A. Koutsoukou-Argyraki and L. C. Paulson, \emph{Formalising Szemerédi's Regularity Lemma and Roth's Theorem on Arithmetic Progressions in Isabelle/HOL}, arXiv:2207.07499v2. https://arxiv.org/abs/2207.07499v2.
+{[}9{]} C. Edmonds, A. Koutsoukou-Argyraki and L. C. Paulson, \emph{Formalising Szemerédi's Regularity Lemma and Roth's Theorem on Arithmetic Progressions in Isabelle/HOL}, Journal of Automated Reasoning 67 (2023), article 2. https://doi.org/10.1007/s10817-022-09650-2. Preprint: https://arxiv.org/abs/2207.07499v3.
 
 {[}10{]} Y. Dillies and B. Mehta, \emph{Formalising Szemerédi's Regularity Lemma in Lean}, ITP 2022. https://doi.org/10.4230/LIPIcs.ITP.2022.9.
 
@@ -553,9 +559,17 @@ At termination the remaining edge set \(L\) lies inside \(U_\ell\). Subtracting 
 
 {[}13{]} J. P. Traverso Gianini, \emph{Pseudorandom hypergraph matchings (Ehard--Glock--Joos)}, Lean formalization, Palomar, PALOMAR-2026-10-17-000004, version 1 (2026). \href{https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-17-000004&version=1}{Registered version}.
 
-{[}14{]} S. Arora, D. Karger and M. Karpinski, \emph{Polynomial Time Approximation Schemes for Dense Instances of NP-Hard Problems}, Journal of Computer and System Sciences 58 (1999), 193--210. https://www.sciencedirect.com/science/article/pii/S0022000098916051.
+{[}14{]} S. Arora, D. Karger and M. Karpinski, \emph{Polynomial Time Approximation Schemes for Dense Instances of NP-Hard Problems}, Journal of Computer and System Sciences 58 (1999), 193--210. https://doi.org/10.1006/jcss.1998.1605.
 
-{[}15{]} O. Goldreich, S. Goldwasser and D. Ron, \emph{Property Testing and Its Connection to Learning and Approximation}, Journal of the ACM 45 (1998), 653--750. https://www.wisdom.weizmann.ac.il/\textasciitilde oded/PDF/ggr-jacm.pdf.
+{[}15{]} O. Goldreich, S. Goldwasser and D. Ron, \emph{Property Testing and Its Connection to Learning and Approximation}, Journal of the ACM 45 (1998), 653--750. https://doi.org/10.1145/285055.285060.
+
+{[}16{]} C. St.~J. A. Nash-Williams, \emph{An unsolved problem concerning decomposition of graphs into triangles}, in \emph{Combinatorial Theory and its Applications III}, North-Holland, Amsterdam (1970), 1179--1183.
+
+{[}17{]} B. Barber, D. Kühn, A. Lo and D. Osthus, \emph{Edge-decompositions of graphs with high minimum degree}, Advances in Mathematics 288 (2016), 337--385. https://doi.org/10.1016/j.aim.2015.09.032.
+
+{[}18{]} M. Delcourt and L. Postle, \emph{Refined Absorption: A New Proof of the Existence Conjecture}, arXiv:2402.17855v1 (2024). https://doi.org/10.48550/arXiv.2402.17855.
+
+{[}19{]} P. Keevash, \emph{The existence of designs II}, arXiv:1802.05900v1 (2018). https://doi.org/10.48550/arXiv.1802.05900.
 
 \endgroup
 

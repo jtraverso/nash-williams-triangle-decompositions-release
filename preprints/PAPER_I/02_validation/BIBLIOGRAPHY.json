@@ -1,0 +1,611 @@
+{
+  "checked_utc": "2026-10-20T14:41:37.233149+00:00",
+  "scope": "Bibliographic identity only; mathematical attribution checked separately against primary papers. No priority certification.",
+  "records": [
+    {
+      "doi": "10.1016/j.aim.2015.09.032",
+      "registry_url": "https://api.crossref.org/works/10.1016/j.aim.2015.09.032",
+      "http_status": 200,
+      "title": [
+        "Edge-decompositions of graphs with high minimum degree"
+      ],
+      "authors": [
+        {
+          "given": "Ben",
+          "family": "Barber",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniela",
+          "family": "Kühn",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Allan",
+          "family": "Lo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Deryk",
+          "family": "Osthus",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "year": {
+        "date-parts": [
+          [
+            2016,
+            1
+          ]
+        ]
+      },
+      "venue": [
+        "Advances in Mathematics"
+      ],
+      "volume": "288",
+      "pages": "337-385",
+      "article_number": null
+    },
+    {
+      "doi": "10.1017/fmp.2017.1",
+      "registry_url": "https://api.crossref.org/works/10.1017/fmp.2017.1",
+      "http_status": 200,
+      "title": [
+        "A FORMAL PROOF OF THE KEPLER CONJECTURE"
+      ],
+      "authors": [
+        {
+          "given": "THOMAS",
+          "family": "HALES",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "MARK",
+          "family": "ADAMS",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "GERTRUD",
+          "family": "BAUER",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "TAT DAT",
+          "family": "DANG",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "JOHN",
+          "family": "HARRISON",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "LE TRUONG",
+          "family": "HOANG",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "CEZARY",
+          "family": "KALISZYK",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "VICTOR",
+          "family": "MAGRON",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "SEAN",
+          "family": "MCLAUGHLIN",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "TAT THANG",
+          "family": "NGUYEN",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "QUANG TRUONG",
+          "family": "NGUYEN",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "TOBIAS",
+          "family": "NIPKOW",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "STEVEN",
+          "family": "OBUA",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "JOSEPH",
+          "family": "PLESO",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "JASON",
+          "family": "RUTE",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "ALEXEY",
+          "family": "SOLOVYEV",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "THI HOAI AN",
+          "family": "TA",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "NAM TRUNG",
+          "family": "TRAN",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "THI DIEP",
+          "family": "TRIEU",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "JOSEF",
+          "family": "URBAN",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "KY",
+          "family": "VU",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "ROLAND",
+          "family": "ZUMKELLER",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "year": {
+        "date-parts": [
+          [
+            2017
+          ]
+        ]
+      },
+      "venue": [
+        "Forum of Mathematics, Pi"
+      ],
+      "volume": "5",
+      "pages": null,
+      "article_number": "e2"
+    },
+    {
+      "doi": "10.1007/s10817-022-09650-2",
+      "registry_url": "https://api.crossref.org/works/10.1007/s10817-022-09650-2",
+      "http_status": 429,
+      "publisher_verification": {
+        "url": "https://link.springer.com/article/10.1007/s10817-022-09650-2",
+        "verified": "Journal of Automated Reasoning 67, article 2 (2023); online 19 December 2022",
+        "method": "Primary publisher page read during editorial review; Crossref rate limit retained above."
+      }
+    },
+    {
+      "doi": "10.1006/jcss.1998.1605",
+      "registry_url": "https://api.crossref.org/works/10.1006/jcss.1998.1605",
+      "http_status": 200,
+      "title": [
+        "Polynomial Time Approximation Schemes for Dense Instances of NP-Hard Problems"
+      ],
+      "authors": [
+        {
+          "given": "Sanjeev",
+          "family": "Arora",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David",
+          "family": "Karger",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Marek",
+          "family": "Karpinski",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "year": {
+        "date-parts": [
+          [
+            1999,
+            2
+          ]
+        ]
+      },
+      "venue": [
+        "Journal of Computer and System Sciences"
+      ],
+      "volume": "58",
+      "pages": "193-210",
+      "article_number": null
+    },
+    {
+      "doi": "10.1145/285055.285060",
+      "registry_url": "https://api.crossref.org/works/10.1145/285055.285060",
+      "http_status": 200,
+      "title": [
+        "Property testing and its connection to learning and approximation"
+      ],
+      "authors": [
+        {
+          "given": "Oded",
+          "family": "Goldreich",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Weizmann Institute of Science, Rehovot, Israel"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shari",
+          "family": "Goldwasser",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Weizmann Institute of Science, Rehovot, Israel; and Massachusetts Institute of Technology, Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dana",
+          "family": "Ron",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Massachusetts Institute of Technology, Cambridge"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "year": {
+        "date-parts": [
+          [
+            1998,
+            7
+          ]
+        ]
+      },
+      "venue": [
+        "Journal of the ACM"
+      ],
+      "volume": "45",
+      "pages": "653-750",
+      "article_number": null
+    },
+    {
+      "doi": "10.48550/arXiv.2402.17855",
+      "registry_url": "https://api.datacite.org/dois/10.48550/arXiv.2402.17855",
+      "http_status": 200,
+      "title": [
+        {
+          "title": "Refined Absorption: A New Proof of the Existence Conjecture"
+        }
+      ],
+      "authors": [
+        {
+          "name": "Delcourt, Michelle",
+          "nameType": "Personal",
+          "givenName": "Michelle",
+          "familyName": "Delcourt",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Postle, Luke",
+          "nameType": "Personal",
+          "givenName": "Luke",
+          "familyName": "Postle",
+          "affiliation": [],
+          "nameIdentifiers": []
+        }
+      ],
+      "year": 2024,
+      "venue": "arXiv",
+      "volume": null,
+      "pages": null,
+      "article_number": null
+    },
+    {
+      "doi": "10.48550/arXiv.1802.05900",
+      "registry_url": "https://api.datacite.org/dois/10.48550/arXiv.1802.05900",
+      "http_status": 200,
+      "title": [
+        {
+          "title": "The existence of designs II"
+        }
+      ],
+      "authors": [
+        {
+          "name": "Keevash, Peter",
+          "nameType": "Personal",
+          "givenName": "Peter",
+          "familyName": "Keevash",
+          "affiliation": [],
+          "nameIdentifiers": []
+        }
+      ],
+      "year": 2018,
+      "venue": "arXiv",
+      "volume": null,
+      "pages": null,
+      "article_number": null
+    },
+    {
+      "doi": "10.48550/arXiv.2606.11178",
+      "registry_url": "https://api.datacite.org/dois/10.48550/arXiv.2606.11178",
+      "http_status": 200,
+      "title": [
+        {
+          "title": "A Proof of Nash-Williams' Conjecture"
+        }
+      ],
+      "authors": [
+        {
+          "name": "Delcourt, Michelle",
+          "nameType": "Personal",
+          "givenName": "Michelle",
+          "familyName": "Delcourt",
+          "affiliation": [],
+          "nameIdentifiers": []
+        },
+        {
+          "name": "Postle, Luke",
+          "nameType": "Personal",
+          "givenName": "Luke",
+          "familyName": "Postle",
+          "affiliation": [],
+          "nameIdentifiers": []
+        }
+      ],
+      "year": 2026,
+      "venue": "arXiv",
+      "volume": null,
+      "pages": null,
+      "article_number": null
+    }
+  ],
+  "nash_williams_1970": {
+    "title": "An unsolved problem concerning decomposition of graphs into triangles",
+    "book": "Combinatorial Theory and its Applications III",
+    "pages": "1179–1183",
+    "publisher": "North-Holland, Amsterdam",
+    "year": 1970,
+    "source": "Primary references of Barber–Kühn–Lo–Osthus and the supplied review; no DOI asserted."
+  },
+  "method_sources": [
+    "https://arxiv.org/abs/1410.5750",
+    "https://arxiv.org/abs/2402.17855",
+    "https://arxiv.org/abs/1802.05900"
+  ]
+}

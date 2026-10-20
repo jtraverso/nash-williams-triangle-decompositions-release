@@ -1,5 +1,7 @@
-# Formalization companion — Paper II
+# Companion / Complemento
 
-Reserved for the final Paper II delivery. No previous edition is copied here. Receipt and verification are required before the joint public release.
+Preprint 1.0 · 20 October 2026 · DOI [10.5281/zenodo.23502224](https://doi.org/10.5281/zenodo.23502224).
 
-[Paper guide](../README.md) · [Series](../../../README.md)
+The English and Spanish documents are available in PDF, TeX and Markdown.
+
+[Document table / Documentos](../README.md).

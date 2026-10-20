@@ -1,35 +1,13 @@
-# Joint first-release checklist
+# Coordinated release operations
 
-Current state: **HOLD_FOR_PAPER_II**. Website preparation is not publication.
+Current operational state: **HOLD_FOR_AUTHOR_PUBLICATION_AUTHORIZATION**.
 
-1. Receive Paper II's final manuscript and companion in EN/ES and MD/TeX/PDF,
-   its selected source freeze, SHA-256, licences, build and axiom evidence.
-   Do not infer its status from Paper I's dependency closure.
-2. Import only that final package. Update Paper Iâ€“II cross-references and
-   companions against the final public source locations. Preserve protected
-   mathematics and sources; regenerate document artifacts only if edited.
-3. Close the joint editorial, bibliography, visual, provenance and integrity
-   audit. Explicitly inspect private URLs and machine-local paths in the
-   selected public material; preserve original evidence privately when a
-   public derivative needs redaction.
-4. Record manuscript distribution rights and Paper II's third-party licences.
-   Apache-2.0 already governs the original packaging code.
-   The [Paper I author-header correction](AUTHORSHIP_REVIEW.md) is complete
-   in v3, with reversible hashes and preserved historical build evidence.
-   Apply the same attribution inventory to the incoming Paper II package.
-5. Update CFF/BibTeX, document tables, `PUBLICATION_INDEX.json`, the site
-   allowlist and checksums. Run `python scripts/verify_repository.py`.
-6. Retain previous versions only in the private research repository.
-   If necessary export the final tree without preparation history for the
-   first public commit. Do not include `superseded`, old freezes, old PDFs,
-   caches or duplicated historical release archives.
-7. Obtain the author's authorization for this complete joint package.
-   Then change the release conditions and run the production site builder.
-8. Publish the verified first edition on GitHub and activate Cloudflare Pages
-   using the documented settings. Verify the live document links.
-9. Deposit the eight final PDFs on Zenodo: two manuscripts and two companions,
-   in two languages. Verify titles, versions, licences, checksums and receipts.
-10. Update the GitHub/site citation metadata with the confirmed version and
-    concept DOI; repeat navigation and manifest checks.
+The articles and companions use final publication-facing metadata, including their reserved DOI identifiers. Both selected source archives and their licences are installed. This preparation does not activate the DOI or change repository visibility.
 
-No step in this preparation has created a public release or deposit.
+1. Verify the current repository manifest, article manifests, archive hashes, document audit and website screenshots.
+2. Obtain the author's authorization to publish this exact package.
+3. Publish the repository and connect Cloudflare Pages using the documented configuration. Verify the live document links.
+4. Complete the two reserved Zenodo deposits with the four final PDFs for each paper. Verify uploaded hashes and metadata before publishing.
+5. Record publication receipts and concept DOI identifiers; verify the live DOI and site links.
+
+The production builder remains blocked while `public_release_authorized` is false. Previous source packages and manuscripts remain in the research archive; this release tree includes only the selected edition.

@@ -1,5 +1,7 @@
-# Formalization companion â€” Paper I
+# Companion / Complemento
 
-Read the EN/ES companion via the [document table](../README.md). The [selected ZIP](../../../archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip) contains the aligned Lean sources, licences and original evidence; proof bodies and historical evidence are preserved, while the author headers and source hashes are corrected.
+Preprint 1.0 · 20 October 2026 · DOI [10.5281/zenodo.23428173](https://doi.org/10.5281/zenodo.23428173).
 
-[Paper guide](../README.md) Â· [Series](../../../README.md)
+The English and Spanish documents are available in PDF, TeX and Markdown.
+
+[Document table / Documentos](../README.md).

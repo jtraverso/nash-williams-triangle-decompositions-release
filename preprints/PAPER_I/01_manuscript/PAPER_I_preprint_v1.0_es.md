@@ -8,6 +8,10 @@ title: 'Descomposiciones en triángulos I: Formalización del teorema de Nash–
 
 **Preprint 1.0 — 20 de octubre de 2026.**
 
+DOI: https://doi.org/10.5281/zenodo.23428173.
+
+© 2026 Juan Pablo Traverso Gianini. Licencia [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
 ## Resumen
 
 Delcourt y Postle dieron una prueba de que todo grafo suficientemente grande, divisible para triángulos y de grado mínimo al menos tres cuartos de su orden admite una descomposición en triángulos; su paso de descomposición invoca el manuscrito citado como referencia 17 en [2]. Presentamos una formalización en Lean que sigue su división en casos extremales y no extremales, junto con los resultados fraccionales de umbral y estabilidad utilizados en la prueba. Los resultados de descomposición proceden de la absorción tipada desarrollada en Paper II y de una construcción de cobertura protegida que presentamos aquí. Así se sustituyen las aplicaciones de su Teorema 13.16 sin utilizarlo como hipótesis. La construcción protegida combina empaquetamiento local simultáneo, una reserva dispersa y emparejamientos que controlan los recursos necesarios para las rondas posteriores. Damos su demostración, incluidos los certificados firmados de coste acotado utilizados en el paso terminal. También enunciamos los resultados tipados y verificamos su aplicación a los grafos residuales extremales. El teorema, su atribución y su umbral de grado se conservan; la contribución es la prueba formal y las construcciones de sustitución y sus condiciones explícitas.
@@ -16,7 +20,7 @@ Delcourt y Postle dieron una prueba de que todo grafo suficientemente grande, di
 
 ## 1. El teorema y la contribución
 
-Delcourt y Postle dieron una prueba del teorema de Nash–Williams para grafos suficientemente grandes en *A Proof of Nash-Williams' Conjecture* [2, Teorema 1.8]; su paso de descomposición invoca el manuscrito que figura como referencia 17 en [2]. La presente formalización aporta las construcciones de sustitución descritas a continuación, sin suponer su Teorema 13.16. Formalizamos ese resultado y los teoremas fraccionales en que se apoya su prueba. Un grafo es *divisible para triángulos* si su número de aristas es divisible por tres y todos sus vértices tienen grado par. Una descomposición en triángulos es una partición de sus aristas en triángulos.
+Nash-Williams planteó la conjetura de descomposición en triángulos en 1970 [16]. Delcourt y Postle dieron una prueba del teorema de Nash–Williams para grafos suficientemente grandes en *A Proof of Nash-Williams' Conjecture* [2, Teorema 1.8]; su paso de descomposición invoca el manuscrito que figura como referencia 17 en [2]. La presente formalización aporta las construcciones de sustitución descritas a continuación, sin suponer su Teorema 13.16. Formalizamos ese resultado y los teoremas fraccionales en que se apoya su prueba. Un grafo es *divisible para triángulos* si su número de aristas es divisible por tres y todos sus vértices tienen grado par. Una descomposición en triángulos es una partición de sus aristas en triángulos.
 
 ### Teorema principal — Delcourt–Postle [2, Teorema 1.8]
 
@@ -50,7 +54,7 @@ Todo grafo simple finito $G$ de orden $n$ con $3n\le4\delta(G)$ admite una desco
 
 A diferencia del teorema principal, este resultado no requiere divisibilidad integral ni un orden suficientemente grande. Su prueba formal sigue el argumento de descarga en el dual y obtiene después los pesos fraccionales mediante un teorema de alternativa en dimensión finita.
 
-Para enunciar la estabilidad, diremos que $G$ es $\sigma$-extremal si al menos $(1-\sigma)n$ vértices tienen grado a lo sumo $(3/4+\sigma)n$ y algún corte contiene al menos $(1-\sigma)n^2/4$ aristas. Se requieren ambas condiciones.
+Para enunciar la estabilidad, diremos que $G$ es $\sigma$-extremal si al menos $(1-\sigma)n$ vértices tienen grado a lo sumo $(3/4+\sigma)n$ y algún corte contiene al menos $(1-\sigma)n^2/4$ aristas. Se requieren ambas condiciones; esta es [2, Definición 12.2].
 
 #### Estabilidad fraccional — Delcourt–Postle [2, Teorema 1.6]
 
@@ -222,6 +226,8 @@ sirve para el ensamblaje. Un grafo cercano a alguna de las tres plantillas utili
 
 ## 4. Empaquetamiento local y cobertura protegida
 
+Los conjuntos anidados, las rondas de cobertura y el absorbedor terminal fijado de antemano siguen el esquema de absorción iterada de Barber, Kühn, Lo y Osthus [17]. El enfoque que convierte certificados en absorbedores se relaciona con la absorción refinada de Delcourt y Postle [18]. Aquí damos el certificado firmado acotado del Lema A.1 y los controles de reserva y emparejamiento que protegen los recursos requeridos por las rondas posteriores.
+
 Damos dos construcciones utilizadas en el argumento no extremal. La primera aplica el teorema de emparejamientos seudoaleatorios de Ehard, Glock y Joos [4] a triángulos reales, controlando conjuntos prescritos de aristas. La segunda añade reservas protegidas y un paso de cobertura exacta. Ninguna utiliza la conclusión completa de Nash–Williams.
 
 ### 4.1. De los pesos fraccionales a los triángulos reales
@@ -259,7 +265,7 @@ La selección es necesaria para esta aplicación: aplicar el teorema de empareja
 
 ### 4.2. Una ronda que conserva la reserva siguiente
 
-Para $\beta>0$, llamamos a $G$ *$\beta$-extremal* cuando al menos $(1-\beta)n$ vértices tienen grado a lo sumo $(3/4+\beta)n$ y algún corte contiene al menos $(1-\beta)n^2/4$ aristas. Escribimos $E_G(W)=E(G[W])$.
+Para $\beta>0$, llamamos a $G$ *$\beta$-extremal* cuando al menos $(1-\beta)n$ vértices tienen grado a lo sumo $(3/4+\beta)n$ y algún corte contiene al menos $(1-\beta)n^2/4$ aristas. Es la misma definición [2, Definición 12.2]. Escribimos $E_G(W)=E(G[W])$.
 
 ### Proposición 4.2 (ronda de cobertura protegida)
 
@@ -428,7 +434,7 @@ Esta es la división adecuada entre los artículos: el Lema A.1 produce certific
 
 *Demostración.* Separamos el paso fraccional protegido, la cobertura de las aristas exteriores y la cobertura final de las aristas radiales. Ponemos $u=|W|$, $z=|Z|$ y $X=V(G)\setminus W$.
 
-**Elección de constantes.** La estabilidad fraccional regular sigue siendo aplicable después de un borrado de grado máximo suficientemente pequeño. En efecto, usamos el Teorema 2.6 con parámetro de extremalidad $b/2$, donde $0<b\le\beta/4$ pertenece a su rango permitido. Si eliminamos $H$ de un grafo que no es $b$-extremal, la $(b/2)$-extremalidad de $G-H$ implicaría que $G$ es $b$-extremal: el corte solo gana aristas y cada grado aumenta a lo sumo $\Delta(H)$. Si $\varepsilon_{2.6}$ es el margen de grado del Teorema 2.6, elegimos $0<\theta_{\mathrm n}\le\min\{\varepsilon_{2.6}/2,b/4\}$. Como $\theta\le\theta_{\mathrm n}$, el margen inicial y el borrado cuestan juntos a lo sumo $\theta+\theta_{\mathrm n}\le\varepsilon_{2.6}$. Obtenemos así constantes $\theta_{\mathrm n}>0$ y $C\ge1$ para el paso fraccional protegido. Se eligen antes de $q$ y del grafo.
+**Elección de constantes.** La estabilidad fraccional regular sigue siendo aplicable después de un borrado de grado máximo suficientemente pequeño. En efecto, usamos el Teorema 2.6 con parámetro de extremalidad $b/2$, donde $0<b\le\beta/4$ se elige en su rango permitido, en particular con $b/2\le\sigma_0$ para la constante del Teorema 2.6. Si eliminamos $H$ de un grafo que no es $b$-extremal, la $(b/2)$-extremalidad de $G-H$ implicaría que $G$ es $b$-extremal: el corte solo gana aristas y cada grado aumenta a lo sumo $\Delta(H)$. Si $\varepsilon_{2.6}$ es el margen de grado del Teorema 2.6, elegimos $0<\theta_{\mathrm n}\le\min\{\varepsilon_{2.6}/2,b/4\}$. Como $\theta\le\theta_{\mathrm n}$, el margen inicial y el borrado cuestan juntos a lo sumo $\theta+\theta_{\mathrm n}\le\varepsilon_{2.6}$. Obtenemos así constantes $\theta_{\mathrm n}>0$ y $C\ge1$ para el paso fraccional protegido. Se eligen antes de $q$ y del grafo.
 
 Bastan las siguientes elecciones, que son las utilizadas en la construcción formal:
 $$
@@ -564,7 +570,7 @@ Los errores se pueden controlar uniformemente a lo largo de una secuencia de esc
 
 Normalizar por el orden de la muestra cambia cada densidad controlada en a lo sumo $D_{\mathrm v}a^{-1/4}$, donde basta $D_{\mathrm v}=4k/q+4$. Mantenemos un error acumulado a lo sumo $2D_{\mathrm v}a^{-1/4}$ en orden $a$. Como el hijo tiene orden a lo sumo $a/16$, su error permitido es al menos $4D_{\mathrm v}a^{-1/4}$, suficiente para el error anterior y el nuevo paso. Elegimos el umbral de parada de forma que el error en el hijo más pequeño sea a lo sumo $\epsilon_1$. Las mismas estimaciones de vecindarios dan las cotas de grado del padre hacia el hijo. Así se construye (A.5), con constantes elegidas antes de $G$.
 
-**Un absorbedor fijo para el conjunto terminal.** Detallamos la construcción de la biblioteca finita e identificamos los resultados de absorción que utiliza. En un anfitrión de grado mínimo al menos $3n/4$, cada par de vértices tiene al menos $n/2$ vecinos comunes. La no extremalidad y [2, Lema 14.4] proporcionan una constante $c>0$ y al menos $cn^4$ bisagras de ocho vértices, sin aristas de los triángulos raíz, para cada par de triángulos que comparte exactamente una arista. Una bisagra tiene las dos descomposiciones alternativas que permiten intercambiar los dos caminos de dos aristas con raíces fijadas. Utilizamos la forma de conteo de configuraciones con normalización $n^{i-4}$ para cuatro raíces fijas, como en Paper II, en lugar de la normalización $n^{i-2}$ impresa en [2, Definición 13.15]. La no extremalidad proporciona la separación necesaria respecto de las tres plantillas; el resultado formal de bisagras se enuncia con esa hipótesis de separación.
+**Un absorbedor fijo para el conjunto terminal.** Detallamos la construcción de la biblioteca finita e identificamos los resultados de absorción que utiliza. En un anfitrión de grado mínimo al menos $3n/4$, cada par de vértices tiene al menos $n/2$ vecinos comunes. La no extremalidad y [2, Lema 14.4] proporcionan una constante $c>0$ y al menos $cn^4$ bisagras de ocho vértices, sin aristas de los triángulos raíz, para cada par de triángulos que comparte exactamente una arista. Una bisagra tiene las dos descomposiciones alternativas que permiten intercambiar los dos caminos de dos aristas con raíces fijadas. Utilizamos la forma de conteo de configuraciones con normalización $n^{i-4}$ para cuatro raíces fijas, como en Paper II, en lugar de la normalización $n^{i-2}$ impresa en [2, Definición 13.15]. La hipótesis de separación se deduce cuantitativamente de la no extremalidad. Elegimos $0<\gamma\le\min\{\alpha_0,\beta^2/8,\beta/8\}$ y $n\ge\lceil2/\beta\rceil$. Si $G$ estuviera $\gamma$-cerca de una plantilla, a lo sumo $4\gamma n/\beta\le\beta n/2$ vértices podrían incidir en más de $\beta n/2$ aristas editadas. Los grados restantes serían a lo sumo $3n/4+1+\beta n/2\le(3/4+\beta)n$, y el corte equilibrado de la plantilla conservaría al menos $\lfloor n^2/4\rfloor-\gamma n^2\ge(1-\beta)n^2/4$ aristas. Así, $G$ sería $\beta$-extremal, una contradicción. El Lema 14.4 se aplica, por tanto, con este parámetro de separación.
 
 Aplicamos el Lema A.1 a $\mathbf1_L$ para cada posible residuo $L$ divisible para triángulos. Obtenemos un certificado de coste a lo sumo $K=16741|L|$. El Lema SC de Paper II [1], en la forma recogida en el Apéndice A.2, da entonces $A_L$, que evita todas las aristas dentro de un conjunto prescrito $Z_0\supseteq V(L)$, con $A_L$ y $A_L\cup L$ descomponibles. Sus cotas son
 $$
@@ -611,11 +617,11 @@ Al terminar, el conjunto de aristas restante $L$ está dentro de $U_\ell$. Resta
 
 ## Referencias
 
-[1] J. P. Traverso Gianini, *Triangle decompositions II: Robust absorption for typed triangles*, preprint 1.0 (2026). [Documento](https://github.com/jtraverso/nash-williams-private-review/blob/main/preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.md).
+[1] J. P. Traverso Gianini, *Triangle decompositions II: Robust absorption for typed triangles*, preprint 1.0 (2026). [Documento](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.md). https://doi.org/10.5281/zenodo.23502224.
 
-[2] M. Delcourt y L. Postle, *A Proof of Nash-Williams' Conjecture*, arXiv:2606.11178v1 (2026). https://arxiv.org/abs/2606.11178v1.
+[2] M. Delcourt and L. Postle, *A Proof of Nash-Williams' Conjecture*, arXiv:2606.11178v1 (2026). https://doi.org/10.48550/arXiv.2606.11178.
 
-[3] M. Delcourt y L. Postle, *Refined absorption for partitioned hypergraphs and beyond*, manuscrito, 2026. Datos bibliográficos tomados de [2, referencia 17].
+[3] M. Delcourt y L. Postle, *Refined absorption for partitioned hypergraphs and beyond*, manuscrito no publicado (2026), citado como referencia 17 en [2]. No se localizó una versión pública durante la preparación; no se utiliza como hipótesis ningún enunciado no examinado de este manuscrito.
 
 [4] S. Ehard, S. Glock y F. Joos, *Pseudorandom hypergraph matchings*, Combinatorics, Probability and Computing 29 (2020), 868–885. https://doi.org/10.1017/S0963548320000280.
 
@@ -623,11 +629,11 @@ Al terminar, el conjunto de aristas restante $L$ está dentro de $U_\ell$. Resta
 
 [6] The mathlib Community, *The Lean Mathematical Library*, CPP 2020, 367–381. https://doi.org/10.1145/3372885.3373824.
 
-[7] J. P. Traverso Gianini, *Descomposiciones en triángulos I: Documento de formalización y reproducibilidad*, preprint 1.0 (2026), vinculada al freeze `PAPER_I_LEAN_20261020_ALIGNED_v3`. Documento técnico complementario; preparado para el lanzamiento. [Documento](https://github.com/jtraverso/nash-williams-private-review/blob/main/preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md).
+[7] J. P. Traverso Gianini, *Descomposiciones en triángulos I: Documento de formalización y reproducibilidad*, preprint 1.0 (2026), vinculada al freeze `PAPER_I_LEAN_20261020_ALIGNED_v3`. Documento técnico complementario. [Documento](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md). https://doi.org/10.5281/zenodo.23428173.
 
-[8] T. Hales et al., *A formal proof of the Kepler conjecture*, arXiv:1501.02155. https://arxiv.org/abs/1501.02155.
+[8] T. Hales et al., *A formal proof of the Kepler conjecture*, Forum of Mathematics, Pi 5 (2017), e2. https://doi.org/10.1017/fmp.2017.1.
 
-[9] C. Edmonds, A. Koutsoukou-Argyraki y L. C. Paulson, *Formalising Szemerédi's Regularity Lemma and Roth's Theorem on Arithmetic Progressions in Isabelle/HOL*, arXiv:2207.07499v2. https://arxiv.org/abs/2207.07499v2.
+[9] C. Edmonds, A. Koutsoukou-Argyraki and L. C. Paulson, *Formalising Szemerédi's Regularity Lemma and Roth's Theorem on Arithmetic Progressions in Isabelle/HOL*, Journal of Automated Reasoning 67 (2023), article 2. https://doi.org/10.1007/s10817-022-09650-2. Preprint: https://arxiv.org/abs/2207.07499v3.
 
 [10] Y. Dillies y B. Mehta, *Formalising Szemerédi's Regularity Lemma in Lean*, ITP 2022. https://doi.org/10.4230/LIPIcs.ITP.2022.9.
 
@@ -637,6 +643,14 @@ Al terminar, el conjunto de aristas restante $L$ está dentro de $U_\ell$. Resta
 
 [13] J. P. Traverso Gianini, *Pseudorandom hypergraph matchings (Ehard–Glock–Joos)*, formalización en Lean, Palomar, PALOMAR-2026-10-17-000004, versión 1 (2026). [Versión registrada](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-17-000004&version=1).
 
-[14] S. Arora, D. Karger and M. Karpinski, *Polynomial Time Approximation Schemes for Dense Instances of NP-Hard Problems*, Journal of Computer and System Sciences 58 (1999), 193–210. https://www.sciencedirect.com/science/article/pii/S0022000098916051.
+[14] S. Arora, D. Karger and M. Karpinski, *Polynomial Time Approximation Schemes for Dense Instances of NP-Hard Problems*, Journal of Computer and System Sciences 58 (1999), 193–210. https://doi.org/10.1006/jcss.1998.1605.
 
-[15] O. Goldreich, S. Goldwasser and D. Ron, *Property Testing and Its Connection to Learning and Approximation*, Journal of the ACM 45 (1998), 653–750. https://www.wisdom.weizmann.ac.il/~oded/PDF/ggr-jacm.pdf.
+[15] O. Goldreich, S. Goldwasser and D. Ron, *Property Testing and Its Connection to Learning and Approximation*, Journal of the ACM 45 (1998), 653–750. https://doi.org/10.1145/285055.285060.
+
+[16] C. St. J. A. Nash-Williams, *An unsolved problem concerning decomposition of graphs into triangles*, in *Combinatorial Theory and its Applications III*, North-Holland, Amsterdam (1970), 1179–1183.
+
+[17] B. Barber, D. Kühn, A. Lo and D. Osthus, *Edge-decompositions of graphs with high minimum degree*, Advances in Mathematics 288 (2016), 337–385. https://doi.org/10.1016/j.aim.2015.09.032.
+
+[18] M. Delcourt and L. Postle, *Refined Absorption: A New Proof of the Existence Conjecture*, arXiv:2402.17855v1 (2024). https://doi.org/10.48550/arXiv.2402.17855.
+
+[19] P. Keevash, *The existence of designs II*, arXiv:1802.05900v1 (2018). https://doi.org/10.48550/arXiv.1802.05900.

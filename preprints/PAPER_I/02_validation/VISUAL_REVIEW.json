@@ -1,0 +1,14 @@
+{
+  "status": "PASS_VISUAL_REVIEW",
+  "total_pages": 57,
+  "pdf_hashes": {
+    "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.pdf": "afc90dd5587050bea71dc2e6f0ed2c426d0f6ac3828a3757bd3c42b2429538e7",
+    "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.pdf": "b8c5f03aef16b3f6d9b4ef669a4661522a39bcc6c059ea5e45262da912e36df4",
+    "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf": "b01f58056931ecd161f12a41f5dc8b6df5c60305b7696153a354244ff6b7b879",
+    "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf": "1cef01b3e2719707c0c6be242d4b071e794d0b5cc7f8d9a38e06eb0c5c993f92"
+  },
+  "coverage": "All 57 pages inspected through eight contact sheets. Changed bibliography and source-record pages inspected enlarged after final corrections; quantitative Appendix A.4 and dependency-audit passages also inspected enlarged.",
+  "findings": [],
+  "iteration": "Final bibliography separation and Spanish companion DOI corrected; affected PDFs regenerated and reinspected.",
+  "scope": "Internal AI-assisted editorial and layout inspection; not independent mathematical peer review."
+}

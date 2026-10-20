@@ -1,6 +1,6 @@
 {
   "status": "PASS_PREPARATION_WITH_RELEASE_HELD",
-  "source": "Paper I v3 corrected-header intake",
+  "source": "Both papers and companions, preprint 1.0, audited bilingual DOI intake",
   "checks": [
     {
       "command": [
@@ -8,7 +8,7 @@
         "scripts/verify_repository.py"
       ],
       "exit_code": 0,
-      "stdout": "{\n  \"status\": \"PASS_PREPARATION\",\n  \"imported_files\": 15,\n  \"archive_hashes\": 3240,\n  \"repository_hashes\": 79,\n  \"local_links\": 132,\n  \"scope\": \"Static packaging only; no Lean/Lake, no deployment.\"\n}\n",
+      "stdout": "{\n  \"status\": \"PASS_PREPARATION\",\n  \"imported_files\": 54,\n  \"archive_hashes\": 7801,\n  \"archives\": [\n    {\n      \"paper\": \"PAPER_I\",\n      \"modules\": 1070,\n      \"hashes\": 3240\n    },\n    {\n      \"paper\": \"PAPER_II\",\n      \"modules\": 1510,\n      \"hashes\": 4561\n    }\n  ],\n  \"repository_hashes\": 124,\n  \"local_links\": 145,\n  \"scope\": \"Static packaging only; no Lean/Lake, no deployment.\"\n}\n",
       "stderr": ""
     },
     {
@@ -18,7 +18,7 @@
         "--preview"
       ],
       "exit_code": 0,
-      "stdout": "{\n  \"status\": \"PASS_PREPARATION\",\n  \"imported_files\": 15,\n  \"archive_hashes\": 3240,\n  \"repository_hashes\": 79,\n  \"local_links\": 132,\n  \"scope\": \"Static packaging only; no Lean/Lake, no deployment.\"\n}\n{\"output\": \"_preview\", \"files\": 71, \"local_links\": 132, \"uploaded\": false, \"preview\": true}\n",
+      "stdout": "{\n  \"status\": \"PASS_PREPARATION\",\n  \"imported_files\": 54,\n  \"archive_hashes\": 7801,\n  \"archives\": [\n    {\n      \"paper\": \"PAPER_I\",\n      \"modules\": 1070,\n      \"hashes\": 3240\n    },\n    {\n      \"paper\": \"PAPER_II\",\n      \"modules\": 1510,\n      \"hashes\": 4561\n    }\n  ],\n  \"repository_hashes\": 124,\n  \"local_links\": 145,\n  \"scope\": \"Static packaging only; no Lean/Lake, no deployment.\"\n}\n{\"output\": \"_preview\", \"files\": 114, \"local_links\": 145, \"uploaded\": false, \"preview\": true}\n",
       "stderr": ""
     },
     {
@@ -28,10 +28,10 @@
       ],
       "exit_code": 1,
       "stdout": "",
-      "stderr": "RELEASE HELD: public_release_authorized, paper_ii_final_received, final_joint_audit_pass, public_references_reconciled, manuscript_licence_recorded\n"
+      "stderr": "RELEASE HELD: public_release_authorized\n"
     }
   ],
   "lean_build_executed": false,
-  "author_headers_reconciled": true,
-  "uploaded": false
+  "uploaded": false,
+  "note": "Check outputs precede this report's final manifest refresh; rerun verify_repository.py for the sealed state."
 }

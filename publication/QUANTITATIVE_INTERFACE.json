@@ -1,0 +1,7 @@
+{
+  "archive": "archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip",
+  "source": "PAPER_I_LEAN_20261020_ALIGNED_v3/source/RequestProject/NW18/CloseExtremal.lean",
+  "source_sha256": "d753e0fbf750ec4a5a11f0047de0f74e4917415da1a073d88fafd581641be15d",
+  "declaration": "NashWilliams18.extremal_of_isCloseToExtremal",
+  "scope": "Existing frozen declaration supports the explicit quantitative explanation added to Paper I Appendix A.4; no recompilation."
+}

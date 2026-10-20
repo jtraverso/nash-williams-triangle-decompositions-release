@@ -8,23 +8,27 @@ title: 'Triangle decompositions I: Formalization and reproducibility companion'
 
 **Preprint 1.0 — 20 October 2026.**
 
+DOI: https://doi.org/10.5281/zenodo.23428173.
+
+© 2026 Juan Pablo Traverso Gianini. Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+
 ## Abstract
 
-This companion records the formal scope and reproducibility evidence for Paper I. The selected archive preserves the clean-build evidence for 1,070 project modules and six final axiom queries, and corrects the author headers in its sources. A reversible hash record relates the corrected sources to the compiled bytes; no new Lean build is asserted. We identify the final theorem, fractional results, typed replacement inputs, exact audit target, source alignment and pinned dependencies. The record distinguishes this local compilation from independent reproduction and from the separate Paper II validation. The present editorial update inspects the supplied evidence without running Lean again.
+This companion records the formal scope and reproducibility evidence for Paper I. The selected archive preserves the clean-build evidence for 1,070 project modules and six final axiom queries, and corrects the author headers in its sources. A reversible hash record relates the corrected sources to the compiled bytes; no new Lean build is asserted. We identify the final theorem, fractional results, typed replacement inputs, exact audit target, source alignment and pinned dependencies. The record distinguishes this local compilation from independent reproduction and from the separate Paper II validation. The verification scripts allow the source correspondence and historical receipts to be checked without compiling Lean.
 
 ## 1. Scope and source identity
 
-Paper I formalizes the theorem of Delcourt and Postle [3, Theorem 1.8] that every sufficiently large triangle-divisible graph of minimum degree at least three quarters of its order has a triangle decomposition. The formal development also includes their fractional theorem and stability results. This companion identifies the declarations, the replacement inputs used in the integral proof, and the evidence attached to one fixed source snapshot. It is a technical record, not a substitute for the mathematical proofs in Papers I and II.
+Paper I formalizes the theorem of Delcourt and Postle [3, Theorem 1.8] that every sufficiently large triangle-divisible graph of minimum degree at least three quarters of its order has a triangle decomposition. The formal development also includes their fractional theorem and stability results. This companion identifies the declarations, the replacement inputs used in the integral proof, and the evidence attached to one fixed source snapshot. It is a technical record, not a substitute for the mathematical proofs in Papers I and II. The historical conjecture is due to Nash-Williams [8]; the iterative-absorption scheme, refined-absorption background and general framework for label data are attributed in [9]–[11], as explained in the mathematical article.
 
 The historical clean compilation, before the header correction, finished successfully. Its explicit target was `RequestProject.NW18.AuditPaperIIAssembly`, and the final theorem is `NashWilliams18.PaperI.nash_williams_via_paperII`. All 1,070 project modules in the target’s import closure have successful receipts. Their source hashes and project-import object hashes form one consistent chain. The six final axiom queries and proof-dependency audit passed.
 
-These statements concern that target, not every file in the archive or the entire current Paper II tree. Paper I uses the specialized Paper II inputs in this frozen snapshot. The separate incremental Paper II validation recorded in `PAPER_II_LEAN_20261019_v1` passed, including the seventeen conserved families and census exhaustiveness. It is not needed to certify the recorded Paper I snapshot.
+These statements concern that target, not every file in the archive or the entire Paper II development. Paper I uses the specialized Paper II inputs in this frozen snapshot. The separate aligned Paper II campaign compiled its full 1,510-module closure, including the seventeen conserved families and census exhaustiveness; its selected header-corrected archive is `PAPER_II_LEAN_20261020_ALIGNED_v4`. The companion to Paper II records the fifteen entry queries and evidence. This separate validation is not needed to certify the recorded Paper I snapshot.
 
 The selected source freeze is `PAPER_I_LEAN_20261020_ALIGNED_v3`. Its archive SHA-256 is
 
 `bfa42bd57e6d9c2ac918bbf6fe2c2ba7c01894d1d8387d92e81b090020a6aaff`.
 
-Preprint 1.0 is the publication-series version of this technical document. The earlier private-review documents and the companion stored inside the original archive retain their own version labels. The present document does not overwrite those records or alter the archive. Its release metadata and document hashes are recorded separately.
+Preprint 1.0 identifies this article and its companion. The source archive preserves the recorded compilation evidence and its exact source correspondence; document hashes and source-archive hashes are recorded separately.
 
 The preserved build record describes compilation from an empty project output directory, without reusing project objects from earlier builds. The earlier `PAPER_I_LEAN_20261017_v1` remains historical evidence; its final incremental pass rebuilt five modules. Neither record is an independent reproduction by another party. Section 6 describes resumptions within the clean campaign and the use of cached Mathlib build products.
 
@@ -63,7 +67,7 @@ The paths below are relative to `source/` in the archive. The listed modules all
 
 **Fractional threshold, Delcourt-Postle 1.4.** `NashWilliams.Frac.exists_fractional_weights`, in `RequestProject/Fractional/Final.lean`, produces nonnegative real weights on finite vertex sets. For each graph edge, the sum over three-cliques containing its endpoints is one. Its only graph inequality is `3 * Fintype.card V ≤ 4 * G.minDegree`; neither integral divisibility nor sufficiently large order is assumed.
 
-**Fractional stability, Delcourt-Postle 1.6.** `NashWilliams.Frac.theorem_1_6_proof`, in `RequestProject/FracStab/Main.lean`, has the order of choices $\exists\sigma_0>0$, then $\forall\sigma\in(0,\sigma_0]$, then $\exists\varepsilon>0$ and $n_0$. Above that order and degree $(3/4-\varepsilon)n$, failure of a fractional triangle decomposition implies `IsExtremal σ G`.
+**Fractional stability, Delcourt-Postle 1.6.** `NashWilliams.Frac.theorem_1_6_proof`, in `RequestProject/FracStab/Main.lean`, has the order of choices $\exists\sigma_0>0$, then $\forall\sigma\in(0,\sigma_0]$, then $\exists\varepsilon>0$ and $n_0$. Above that order and degree $(3/4-\varepsilon)n$, failure of a fractional triangle decomposition implies `NashWilliams18.IsExtremal σ G`.
 
 **Regular fractional stability, Delcourt-Postle 2.6.** `NashWilliams18.theorem_2_6`, in `RequestProject/NW18/Theorem26Proof.lean`, also chooses $C\ge1$ before the graph. Failure of a `C`-regular fractional decomposition implies the same extremality conclusion. The regular decomposition includes exact edge coverage, not just approximate coverage.
 
@@ -94,7 +98,7 @@ $$\varepsilon=\min\{1/16,\eta/3,\delta/4\}.$$
 
 The class-size bounds give a missing-degree bound of $4\varepsilon n$; the floor used for the integer parameter and both inequalities needed to apply it are proved. The final audit requires this bridge and forbids the former `FourColourConsumerStage84.margin_four_colour_decomposition` in the theorem's proof-dependency closure.
 
-In the separate `PAPER_II_LEAN_20261019_v1` freeze, Paper II's final `PaperIApplications` entry queries `PartitionedTriangleAbsorption.FourColourConsumerStage84.margin_four_colour_decomposition`. Paper I excludes that former consumer from its final proof and instead uses `NashWilliams18.PaperII.margin_four_colour_decomposition`, which invokes `nearlyComplete_F123`. The latter has module-level axiom evidence in Paper II, but is not one of its fifteen final entry queries. Paper I's dependency audit and final theorem queries certify the route actually used by Paper I. Different queried targets must not be described as a single synchronized entry point. The aligned Paper I archive certifies the relocated bridge through its own final target. It does not certify a new Paper II `PaperIApplications` audit; that requires the separate Paper II freeze.
+The aligned Paper II entry `PaperIApplications` now queries `NashWilliams18.PaperII.margin_four_colour_decomposition`, the bridge to `nearlyComplete_F123` used by Paper I. The former consumer `PartitionedTriangleAbsorption.FourColourConsumerStage84.margin_four_colour_decomposition` is excluded from Paper I's final proof. The separate aligned Paper II freeze records the new entry query, and Paper I's dependency audit certifies its use in the final theorem. Both papers therefore use the same four-colour interface while retaining separate entry closures and audit targets. The nearly complete corollary also has module-level axiom evidence; it is not an additional final entry query.
 
 ## 5. Axiom and dependency evidence
 
@@ -111,7 +115,7 @@ The six final queries are:
 
 Each reported exactly `propext`, `Classical.choice`, and `Quot.sound`. None reported `sorryAx` or an additional mathematical axiom. These are Lean's foundational axioms, so “axiom-free” would be inaccurate. The final audit contains neither errors nor warnings. Module compilation logs do contain warnings; a warning-free project is not claimed.
 
-The dependency audit reports `PASS_PAPERII_PROOF_DEPENDENCIES`. Among its required constants are the F0 theorem, `idealized_F12`, the F3 bridge, `nearlyComplete_F123`, `completeInverseCertLocalBound_general`, and `UniversalProducer.producerTarget_of_threeStepLinks`. Among the forbidden constants are `NashWilliams18.Theorem1316Statement`, the old `nash_williams` declaration, the alternative F1 vortex route, and the former F3 consumer. The complete lists are in the frozen audit source.
+The dependency audit reports `PASS_PAPERII_PROOF_DEPENDENCIES`. Among its required constants are the F0 theorem, `idealized_F12`, the F3 bridge, `nearlyComplete_F123`, `completeInverseCertLocalBound_general`, and `UniversalProducer.producerTarget_of_threeStepLinks`. Among the forbidden constants are `NashWilliams18.Theorem1316Statement`, the configured legacy name `NashWilliams18.nash_williams`, the alternative F1 vortex route, and the former F3 consumer. The complete lists are in the frozen audit source. That legacy name is absent from this snapshot, so its exclusion alone is vacuous. The substantive evidence is the presence of the required replacement dependencies and the exclusion of legacy declarations that are actually present. Source comments describing the final assembly as an alternative entry point, or referring to an unavailable branch ledger, are historical commentary; the selected final theorem is the canonical assembly stated here. The divisibility distinction is discussed in Paper II, Section 7.1, without attributing an unexamined statement to the unpublished manuscript.
 
 The v3 archive seal reports `PASS_HEADER_ONLY_REVISION`. Its 1,070 source headers identify Juan Pablo Traverso Gianini. The historical clean-build evidence is unchanged and applies to the reconstructed pre-correction sources, not to the current source hashes. The internal `evidence/verification.json` has SHA-256
 
@@ -159,7 +163,7 @@ Version v3 adds 1,008 missing author headers, corrects 59 instances of the surna
 
 The English and Spanish documents share the same declarations, mathematical statements, scope and limitations. They use the local Paper I LaTeX template. Document compilation and rendered-page inspection are separate from inspection of the recorded Lean proof evidence.
 
-## 9. Attribution and preparation for release
+## 9. Attribution and reproducibility
 
 Delcourt and Postle are credited for the Nash-Williams theorem and the fractional results formalized here [3]. The replacement mathematics is explained in the two papers. The author's responsibility includes checking that the written statements agree with their formal counterparts. The methods and limits of these replacements must remain visible in the manuscripts, not only here.
 
@@ -169,11 +173,11 @@ Certo [5] and Jacobian [6] were used to explore finite instances, check identiti
 
 The author remains responsible for the arguments, citations, code and presentation. No AI system is listed as an author.
 
-The selected aligned sources and evidence are in [the archive at commit `afa9f4a06b0e`](https://github.com/jtraverso/nash-williams-private-review/blob/afa9f4a06b0e5ad84ba07faefe3c1880c1005ae7/archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip). This reference requires repository access and does not assert public availability. The earlier source archive remains unchanged as a historical record; the current manuscript and companion are separate files.
+The selected aligned sources and evidence are in [the immutable source archive](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/4cd4b445bd263162a618be9a3babefbc51340cf7/archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip). The mathematical article and this companion are separate documents in the Paper I deposit, https://doi.org/10.5281/zenodo.23428173.
 
-Paper II preprint 1.0 [2] gives the three-step-link refiner and quantitative assembly in Appendix B, the semidense theorem in Appendix C and the PAR/BAL constructions in Appendix E. Appendix H supplies written proofs of the compatible library and general auxiliary constructions; finite family certificates remain explicit source data. The earlier proof dossiers are retained in [7]. Paper I now uses the aligned sources for its selected typed inputs, checked within its own clean closure. This does not extend its validation to all of Paper II.
+Paper II preprint 1.0 [2] gives the three-step-link refiner and quantitative assembly in Appendix B, the semidense theorem in Appendix C and the PAR/BAL constructions in Appendix E. Appendix H supplies written proofs of the compatible library and general auxiliary constructions; finite family certificates remain explicit source data. The selected Paper II source record and its provenance are identified in [7]. Paper I now uses the aligned sources for its selected typed inputs, checked within its own clean closure. This does not extend its validation to all of Paper II.
 
-The selected formal evidence remains the historical complete local clean compilation. The author-header revision is verified by byte comparison and reversible source reconstruction; it is not a compilation of the corrected source hashes or independent reproduction. Source and dependency licence texts are included. This document and its manuscript remain private until the coordinated release is approved.
+The selected formal evidence remains the historical complete local clean compilation. The author-header revision is verified by byte comparison and reversible source reconstruction; it is not a compilation of the corrected source hashes or independent reproduction. Source and dependency licence texts are included.
 
 ## Appendix. Main Lean declarations
 
@@ -206,9 +210,9 @@ For Corollary 4.3, the assembly passes `roundUnivSpec124_holds` through `roundSp
 
 ## References
 
-[1] J. P. Traverso Gianini, *Triangle decompositions I: Formalizing the Nash-Williams theorem in Lean*, preprint 1.0, 20 October 2026. [Document](https://github.com/jtraverso/nash-williams-private-review/blob/main/preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.md).
+[1] J. P. Traverso Gianini, *Triangle decompositions I: Formalizing the Nash-Williams theorem in Lean*, preprint 1.0, 20 October 2026. [Document](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.md). https://doi.org/10.5281/zenodo.23428173.
 
-[2] J. P. Traverso Gianini, *Triangle decompositions II: Robust absorption for typed triangles*, preprint 1.0 (2026). [Document](https://github.com/jtraverso/nash-williams-private-review/blob/main/preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.md).
+[2] J. P. Traverso Gianini, *Triangle decompositions II: Robust absorption for typed triangles*, preprint 1.0 (2026). [Document](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.md). https://doi.org/10.5281/zenodo.23502224.
 
 [3] M. Delcourt and L. Postle, *A Proof of Nash-Williams' Conjecture*, arXiv:2606.11178v1 (2026). Bibliographic identification follows Paper I.
 
@@ -218,4 +222,12 @@ For Corollary 4.3, the assembly passes `roundUnivSpec124_holds` through `roundSp
 
 [6] *Jacobian*, software repository. https://github.com/morluto/jacobian.
 
-[7] J. P. Traverso Gianini, *Paper II: written proof dossiers*, private source record, commit 61f752fc87bff6f5654725b23ce10ad4302364ab (19 October 2026). [Fixed record](https://github.com/jtraverso/nash-williams-private-review/tree/61f752fc87bff6f5654725b23ce10ad4302364ab/papers/paper-II/proof-development/20261019).
+[7] J. P. Traverso Gianini, *Triangle decompositions II: source archive*, `PAPER_II_LEAN_20261020_ALIGNED_v4` (2026). SHA-256 `677faa70a76444a000b8c2192a45d0ab0e39f8899825c004fdf6cbe52bb755cc`. [Source archive](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/e14248179ae6c9d8c0b24f4541e5087afca6e5c4/archives/PAPER_II_LEAN_20261020_ALIGNED_v4.zip). https://doi.org/10.5281/zenodo.23502224.
+
+[8] C. St. J. A. Nash-Williams, *An unsolved problem concerning decomposition of graphs into triangles*, in *Combinatorial Theory and its Applications III*, North-Holland, Amsterdam (1970), 1179–1183.
+
+[9] B. Barber, D. Kühn, A. Lo and D. Osthus, *Edge-decompositions of graphs with high minimum degree*, Advances in Mathematics 288 (2016), 337–385. https://doi.org/10.1016/j.aim.2015.09.032.
+
+[10] M. Delcourt and L. Postle, *Refined Absorption: A New Proof of the Existence Conjecture*, arXiv:2402.17855v1 (2024). https://doi.org/10.48550/arXiv.2402.17855.
+
+[11] P. Keevash, *The existence of designs II*, arXiv:1802.05900v1 (2018). https://doi.org/10.48550/arXiv.1802.05900.

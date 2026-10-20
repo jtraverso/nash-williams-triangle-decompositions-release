@@ -1,34 +1,28 @@
 # Triangle decompositions I: Formalizing the Nash–Williams theorem in Lean
 
-Juan Pablo Traverso Gianini · Preprint 1.0 · Selected package staged / Documentos seleccionados
+**Juan Pablo Traverso Gianini · Preprint 1.0 · 20 October 2026**
 
-Follows Delcourt–Postle’s case division and supplies the replacement constructions and formal interfaces described in the manuscript.
+DOI: https://doi.org/10.5281/zenodo.23428173
 
-Sigue la división de casos de Delcourt–Postle y presenta las construcciones de reemplazo y las interfaces formales descritas en el manuscrito.
+This article formalizes the Nash–Williams triangle-decomposition theorem of Delcourt and Postle, with explicit replacement decomposition inputs. The mathematical exposition and formalization record are separate documents.
 
-## Read / Leer
+El artículo formaliza el teorema de descomposición en triángulos de Nash–Williams de Delcourt y Postle, con resultados de descomposición de sustitución explícitos. La exposición matemática y el registro de formalización son documentos separados.
 
 | Document | English | Español |
 |---|---|---|
-| Manuscript / Artículo | [PDF](01_manuscript/PAPER_I_preprint_v1.0_en.pdf) · [TEX](01_manuscript/PAPER_I_preprint_v1.0_en.tex) · [MD](01_manuscript/PAPER_I_preprint_v1.0_en.md) | [PDF](01_manuscript/PAPER_I_preprint_v1.0_es.pdf) · [TEX](01_manuscript/PAPER_I_preprint_v1.0_es.tex) · [MD](01_manuscript/PAPER_I_preprint_v1.0_es.md) |
-| Companion / Complemento | [PDF](05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf) · [TEX](05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.tex) · [MD](05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md) | [PDF](05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf) · [TEX](05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.tex) · [MD](05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md) |
+| Manuscript | [PDF](01_manuscript/PAPER_I_preprint_v1.0_en.pdf) · [MD](01_manuscript/PAPER_I_preprint_v1.0_en.md) · [TeX](01_manuscript/PAPER_I_preprint_v1.0_en.tex) | [PDF](01_manuscript/PAPER_I_preprint_v1.0_es.pdf) · [MD](01_manuscript/PAPER_I_preprint_v1.0_es.md) · [TeX](01_manuscript/PAPER_I_preprint_v1.0_es.tex) |
+| Formalization companion | [PDF](05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf) · [MD](05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md) · [TeX](05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.tex) | [PDF](05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf) · [MD](05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md) · [TeX](05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.tex) |
 
-## Formalization and scope / Formalización y alcance
+## Formalization and reproducibility / Formalización y reproducibilidad
 
-The selected archive is `PAPER_I_LEAN_20261020_ALIGNED_v3`: 1,070 project modules, six final axiom queries, Lean 4.35.0-rc3. The existing clean-build evidence uses pinned Mathlib products and reports only `propext`, `Classical.choice` and `Quot.sound` in those queries. No Lean/Lake build was performed during repository preparation. This does not certify the full Paper II development.
+The selected archive [PAPER_I_LEAN_20261020_ALIGNED_v3.zip](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/4cd4b445bd263162a618be9a3babefbc51340cf7/archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip) contains 1,070 source modules and preserves the historical clean-build record, including six final queries with only standard axioms. Its corrected author headers are related reversibly to the compiled source bytes. The companion describes the exact scope and reproduction procedure. This archive does not stand for a complete build of Paper II, which has its own archive and companion.
 
-- [Validation](02_validation/README.md).
-- [Reproducibility](03_reproducibility/README.md).
-- [Integrity](04_integrity/README.md).
-- [Formalization package](05_formalization/README.md).
-- [Licence scopes](../../LICENSE.md).
+El archivo contiene 1.070 módulos y conserva los registros de la compilación limpia histórica. La correspondencia reversible de huellas permite comprobar las cabeceras corregidas frente a las fuentes compiladas. El complemento precisa el alcance y la reproducción.
 
-## Release status
+- [Validation](02_validation/README.md) and [review response](02_validation/RESPONSE_TO_REVIEW.md).
+- [Reproduction instructions](03_reproducibility/README.md) and [integrity](04_integrity/README.md).
+- [Editorial record](CHANGELOG.md), [BibTeX](CITATION.bib), [licences](LICENSE.md).
 
-Private preparation. Joint public release waits for Paper II and the
-[final checklist](../../publication/RELEASE_CHECKLIST.md).
-The documents retain their selected bytes, including private-review references. Public references must be reconciled before launch.
+The directory layout separates the article, validation, reproducibility, integrity and formalization materials. Repository-relative links assume the complete series repository.
 
-[Series](../../README.md) · [Web page](index.html)
-
-All 1,070 project source headers now identify Juan Pablo Traverso Gianini and Apache-2.0. Only header comments differ from the compiled edition. The archive includes a reversible source-hash mapping, static verifier and unchanged historical receipts. [Attribution check](../../publication/AUTHORSHIP_REVIEW.md).
+Los documentos se distribuyen bajo CC BY 4.0; las fuentes y el empaquetado propios conservan Apache-2.0 y los avisos de terceros. Véase [LICENSE.md](LICENSE.md).
