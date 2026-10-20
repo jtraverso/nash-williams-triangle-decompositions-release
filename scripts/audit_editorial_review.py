@@ -51,6 +51,8 @@ def audit(render):
             assert all(op[0] == "insert" for op in edits), ("removed or replaced inline mathematics", rel, edits)
             assert not edits or (number == "II" and "01_manuscript" in rel)
             assert not re.search(r"Private immutable source reference|de las fuentes a las fuentes|Probability y Computing", text)
+            assert "superseded" not in text.lower(), rel
+            assert not re.search(r"(?i)\bpreprint\s+(?!1\.0\b)\d", text), rel
             record = builds[rel]
             pdf = md.with_suffix(".pdf")
             assert record["markdown_sha256"] == sha(md)
@@ -61,6 +63,7 @@ def audit(render):
                 extracted = "\n".join(p.get_text() for p in doc)
                 assert "\ufffd" not in extracted
                 assert "Private immutable source reference" not in extracted
+                assert "superseded" not in extracted.lower(), rel
                 row = dict(source=rel, markdown_sha256=sha(md), pdf_sha256=sha(pdf),
                            display_count=len(displays(text)), pages=len(doc))
                 rows.append(row)

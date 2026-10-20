@@ -644,4 +644,4 @@ LaTeX Font Info:    Font shape `TU/lmmono10-regular.otf(0)/m/n' will be
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
 ) )
-Output written on PAPER_I_preprint_v1.0_es.xdv (20 pages, 581556 bytes).
+Output written on PAPER_I_preprint_v1.0_es.xdv (20 pages, 581572 bytes).

@@ -15,7 +15,7 @@ El artículo formaliza el teorema de descomposición en triángulos de Nash–Wi
 
 ## Formalization and reproducibility / Formalización y reproducibilidad
 
-The selected archive [PAPER_I_LEAN_20261020_ALIGNED_v3.zip](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/0d652cde7d8d1f58cb6dd264b30fd3e6dc60f4f7/archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip) contains 1,070 source modules and preserves the historical clean-build record, including six final queries with only standard axioms. Its corrected author headers are related reversibly to the compiled source bytes. The companion describes the exact scope and reproduction procedure. This archive does not stand for a complete build of Paper II, which has its own archive and companion.
+The selected archive [PAPER_I_LEAN_20261020_ALIGNED_v3.zip](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/blob/0d652cde7d8d1f58cb6dd264b30fd3e6dc60f4f7/archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip) contains 1,070 source modules and preserves the historical clean-build record, including six final queries with only standard axioms. Its corrected author headers are related reversibly to the compiled source bytes. The companion describes the exact scope and reproduction procedure. This archive does not stand for a complete build of Paper II, which has its own archive and companion.
 
 El archivo contiene 1.070 módulos y conserva los registros de la compilación limpia histórica. La correspondencia reversible de huellas permite comprobar las cabeceras corregidas frente a las fuentes compiladas. El complemento precisa el alcance y la reproducción.
 

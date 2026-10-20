@@ -683,5 +683,5 @@ dEvenProducer.lean\TU/lmroman10-regular.otf(0)/m/n/10.95 ; \TU/lmmono10-regular
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
 ) )
-Output written on FORMALIZATION_COMPANION_preprint_v1.0_es.xdv (9 pages, 280760
+Output written on FORMALIZATION_COMPANION_preprint_v1.0_es.xdv (9 pages, 281136
  bytes).

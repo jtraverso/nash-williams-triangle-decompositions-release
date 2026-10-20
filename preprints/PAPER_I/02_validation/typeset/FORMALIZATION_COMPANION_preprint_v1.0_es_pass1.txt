@@ -1,9 +1,9 @@
 note: Running TeX ...
 note: Rerunning TeX because "FORMALIZATION_COMPANION_preprint_v1.0_es.aux" changed ...
 note: Running xdvipdfmx ...
-note: Writing `<REPO>\preprints\PAPER_I\05_formalization\FORMALIZATION_COMPANION_preprint_v1.0_es.aux` (3.5302734375 KiB)
+note: Writing `<REPO>\preprints\PAPER_I\05_formalization\FORMALIZATION_COMPANION_preprint_v1.0_es.pdf` (74.2431640625 KiB)
 note: Writing `<REPO>\preprints\PAPER_I\05_formalization\FORMALIZATION_COMPANION_preprint_v1.0_es.log` (26.326171875 KiB)
-note: Writing `<REPO>\preprints\PAPER_I\05_formalization\FORMALIZATION_COMPANION_preprint_v1.0_es.pdf` (74.236328125 KiB)
+note: Writing `<REPO>\preprints\PAPER_I\05_formalization\FORMALIZATION_COMPANION_preprint_v1.0_es.aux` (3.5302734375 KiB)
 warning: FORMALIZATION_COMPANION_preprint_v1.0_es.tex:106: Underfull \hbox (badness 3713) in paragraph at lines 105--106
 warning: FORMALIZATION_COMPANION_preprint_v1.0_es.tex:112: Underfull \hbox (badness 2941) in paragraph at lines 111--112
 warning: FORMALIZATION_COMPANION_preprint_v1.0_es.tex:112: Underfull \hbox (badness 1314) in paragraph at lines 111--112

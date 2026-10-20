@@ -34,3 +34,9 @@ Preprint 1.0 is retained. The revision adds scoped bibliographic comparisons and
 ## 20 October 2026 — external editorial review, preprint 1.0
 
 Restored original English bibliography titles, Montgomery volume and page range, and the immutable-source wording. Corrected evidence counts, the resource-limit description and the auxiliary source map. Clarified the ambient/local order notation and distinguished wires from root links in Spanish. Updated immutable source links following GitHub no-reply attribution of repository commits. Regenerated bilingual documents and repeated the editorial audit. Source archives, mathematical statements and proof bodies are unchanged; no new Lean build was used for this editorial revision.
+
+Removed the obsolete reference to a superseded manuscript archive in both companions. The article and companion are their first public edition, preprint 1.0. Technical revision identifiers of the selected source archives are retained for reproducibility; previous manuscript editions are not included.
+
+## Canonical repository migration
+
+Updated canonical source links to `jtraverso/nash-williams-triangle-decompositions-release`. The first public edition remains preprint 1.0. The mathematical text and selected Lean archives are unchanged.

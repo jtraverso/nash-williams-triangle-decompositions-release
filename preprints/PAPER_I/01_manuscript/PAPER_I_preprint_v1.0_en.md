@@ -616,7 +616,7 @@ At termination the remaining edge set $L$ lies inside $U_\ell$. Subtracting the 
 
 ## References
 
-[1] J. P. Traverso Gianini, *Triangle decompositions II: Robust absorption for typed triangles*, preprint 1.0 (2026). [Document](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.md). https://doi.org/10.5281/zenodo.23502224.
+[1] J. P. Traverso Gianini, *Triangle decompositions II: Robust absorption for typed triangles*, preprint 1.0 (2026). [Document](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/blob/main/preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.md). https://doi.org/10.5281/zenodo.23502224.
 
 [2] M. Delcourt and L. Postle, *A Proof of Nash-Williams' Conjecture*, arXiv:2606.11178v1 (2026). https://doi.org/10.48550/arXiv.2606.11178.
 
@@ -628,7 +628,7 @@ At termination the remaining edge set $L$ lies inside $U_\ell$. Subtracting the 
 
 [6] The mathlib Community, *The Lean Mathematical Library*, CPP 2020, 367–381. https://doi.org/10.1145/3372885.3373824.
 
-[7] J. P. Traverso Gianini, *Triangle decompositions I: Formalization and reproducibility companion*, preprint 1.0 (2026), accompanying source freeze `PAPER_I_LEAN_20261020_ALIGNED_v3`. Accompanying technical document. [Document](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md). https://doi.org/10.5281/zenodo.23428173.
+[7] J. P. Traverso Gianini, *Triangle decompositions I: Formalization and reproducibility companion*, preprint 1.0 (2026), accompanying source freeze `PAPER_I_LEAN_20261020_ALIGNED_v3`. Accompanying technical document. [Document](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/blob/main/preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md). https://doi.org/10.5281/zenodo.23428173.
 
 [8] T. Hales et al., *A formal proof of the Kepler conjecture*, Forum of Mathematics, Pi 5 (2017), e2. https://doi.org/10.1017/fmp.2017.1.
 

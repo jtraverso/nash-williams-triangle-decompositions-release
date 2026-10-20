@@ -6,7 +6,7 @@ authors:
   - family-names: "Traverso Gianini"
     given-names: "Juan Pablo"
     orcid: "https://orcid.org/0009-0003-6068-4096"
-repository-code: "https://github.com/jtraverso/nash-williams-triangle-decompositions"
+repository-code: "https://github.com/jtraverso/nash-williams-triangle-decompositions-release"
 keywords:
   - triangle decompositions
   - Nash-Williams theorem

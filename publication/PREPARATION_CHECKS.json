@@ -8,7 +8,7 @@
         "scripts/verify_repository.py"
       ],
       "exit_code": 0,
-      "stdout": "{\n  \"status\": \"PASS_PREPARATION\",\n  \"imported_files\": 54,\n  \"archive_hashes\": 7801,\n  \"archives\": [\n    {\n      \"paper\": \"PAPER_I\",\n      \"modules\": 1070,\n      \"hashes\": 3240\n    },\n    {\n      \"paper\": \"PAPER_II\",\n      \"modules\": 1510,\n      \"hashes\": 4561\n    }\n  ],\n  \"repository_hashes\": 217,\n  \"local_links\": 147,\n  \"scope\": \"Static packaging only; no Lean/Lake, no deployment.\"\n}\n",
+      "stdout": "{\n  \"status\": \"PASS_PREPARATION\",\n  \"imported_files\": 54,\n  \"archive_hashes\": 7801,\n  \"archives\": [\n    {\n      \"paper\": \"PAPER_I\",\n      \"modules\": 1070,\n      \"hashes\": 3240\n    },\n    {\n      \"paper\": \"PAPER_II\",\n      \"modules\": 1510,\n      \"hashes\": 4561\n    }\n  ],\n  \"repository_hashes\": 221,\n  \"local_links\": 147,\n  \"scope\": \"Static packaging only; no Lean/Lake, no deployment.\"\n}\n",
       "stderr": ""
     },
     {
@@ -18,7 +18,7 @@
         "--preview"
       ],
       "exit_code": 0,
-      "stdout": "{\n  \"status\": \"PASS_PREPARATION\",\n  \"imported_files\": 54,\n  \"archive_hashes\": 7801,\n  \"archives\": [\n    {\n      \"paper\": \"PAPER_I\",\n      \"modules\": 1070,\n      \"hashes\": 3240\n    },\n    {\n      \"paper\": \"PAPER_II\",\n      \"modules\": 1510,\n      \"hashes\": 4561\n    }\n  ],\n  \"repository_hashes\": 217,\n  \"local_links\": 147,\n  \"scope\": \"Static packaging only; no Lean/Lake, no deployment.\"\n}\n{\"output\": \"_preview\", \"files\": 214, \"local_links\": 147, \"uploaded\": false, \"preview\": true}\n",
+      "stdout": "{\n  \"status\": \"PASS_PREPARATION\",\n  \"imported_files\": 54,\n  \"archive_hashes\": 7801,\n  \"archives\": [\n    {\n      \"paper\": \"PAPER_I\",\n      \"modules\": 1070,\n      \"hashes\": 3240\n    },\n    {\n      \"paper\": \"PAPER_II\",\n      \"modules\": 1510,\n      \"hashes\": 4561\n    }\n  ],\n  \"repository_hashes\": 221,\n  \"local_links\": 147,\n  \"scope\": \"Static packaging only; no Lean/Lake, no deployment.\"\n}\n{\"output\": \"_preview\", \"files\": 218, \"local_links\": 147, \"uploaded\": false, \"preview\": true}\n",
       "stderr": ""
     },
     {

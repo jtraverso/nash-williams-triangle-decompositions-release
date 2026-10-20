@@ -14,3 +14,7 @@
 ## 20 October 2026 — external editorial review, preprint 1.0
 
 Restored the Spanish attribution to Keevash and the cross-reference to Paper II Section 2.3. Updated immutable source links following GitHub no-reply attribution of repository commits. Regenerated bilingual documents and repeated the editorial audit. Source archives, mathematical statements and proof bodies are unchanged; no new Lean build was used for this editorial revision.
+
+## Canonical repository migration
+
+Updated canonical source links to `jtraverso/nash-williams-triangle-decompositions-release`. The first public edition remains preprint 1.0. The mathematical text and selected Lean archives are unchanged.

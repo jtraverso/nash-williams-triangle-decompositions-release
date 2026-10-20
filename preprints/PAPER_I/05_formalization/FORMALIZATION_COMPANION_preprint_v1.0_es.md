@@ -173,7 +173,7 @@ Certo [5] y Jacobian [6] se utilizaron para explorar casos finitos, comprobar id
 
 El autor es responsable de los argumentos, las citas, el código y la exposición. Ningún sistema de IA figura como autor.
 
-Las fuentes alineadas y la evidencia seleccionadas están en [el archivo de fuentes inmutable](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/0d652cde7d8d1f58cb6dd264b30fd3e6dc60f4f7/archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip). El artículo matemático y este complemento son documentos separados del depósito de Paper I, https://doi.org/10.5281/zenodo.23428173.
+Las fuentes alineadas y la evidencia seleccionadas están en [el archivo de fuentes inmutable](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/blob/0d652cde7d8d1f58cb6dd264b30fd3e6dc60f4f7/archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip). El artículo matemático y este complemento son documentos separados del depósito de Paper I, https://doi.org/10.5281/zenodo.23428173.
 
 Paper II preprint 1.0 [2] presenta el refinador por enlaces de tres pasos y el ensamblaje cuantitativo en el Apéndice B, el teorema semidenso en el Apéndice C y las construcciones PAR/BAL en el Apéndice E. El Apéndice H aporta pruebas escritas de la biblioteca compatible y de las construcciones auxiliares generales; los certificados finitos de familias siguen siendo datos explícitos de las fuentes. El registro de fuentes seleccionado de Paper II y su procedencia se identifican en [7]. Paper I utiliza ahora las fuentes alineadas para sus entradas tipadas seleccionadas, comprobadas dentro de su propia clausura limpia. Esto no extiende su validación a todo Paper II.
 
@@ -210,9 +210,9 @@ Para el Corolario 4.3, el ensamblaje pasa `roundUnivSpec124_holds` por `roundSpe
 
 ## Referencias
 
-[1] J. P. Traverso Gianini, *Triangle decompositions I: Formalizing the Nash-Williams theorem in Lean*, preprint 1.0 del manuscrito, 20 de octubre de 2026. [Documento](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.md). https://doi.org/10.5281/zenodo.23428173.
+[1] J. P. Traverso Gianini, *Triangle decompositions I: Formalizing the Nash-Williams theorem in Lean*, preprint 1.0 del manuscrito, 20 de octubre de 2026. [Documento](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/blob/main/preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.md). https://doi.org/10.5281/zenodo.23428173.
 
-[2] J. P. Traverso Gianini, *Triangle decompositions II: Robust absorption for typed triangles*, preprint 1.0 (2026). [Documento](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/main/preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.md). https://doi.org/10.5281/zenodo.23502224.
+[2] J. P. Traverso Gianini, *Triangle decompositions II: Robust absorption for typed triangles*, preprint 1.0 (2026). [Documento](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/blob/main/preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.md). https://doi.org/10.5281/zenodo.23502224.
 
 [3] M. Delcourt y L. Postle, *A Proof of Nash-Williams' Conjecture*, arXiv:2606.11178v1 (2026). Identificación bibliográfica tomada de Paper I.
 
@@ -222,7 +222,7 @@ Para el Corolario 4.3, el ensamblaje pasa `roundUnivSpec124_holds` por `roundSpe
 
 [6] *Jacobian*, repositorio de software. https://github.com/morluto/jacobian.
 
-[7] J. P. Traverso Gianini, *Triangle decompositions II: source archive*, `PAPER_II_LEAN_20261020_ALIGNED_v4` (2026). SHA-256 `677faa70a76444a000b8c2192a45d0ab0e39f8899825c004fdf6cbe52bb755cc`. [Source archive](https://github.com/jtraverso/nash-williams-triangle-decompositions/blob/d6d020982ebf3f3cd8c104b6befc6c094850b3e7/archives/PAPER_II_LEAN_20261020_ALIGNED_v4.zip). https://doi.org/10.5281/zenodo.23502224.
+[7] J. P. Traverso Gianini, *Triangle decompositions II: source archive*, `PAPER_II_LEAN_20261020_ALIGNED_v4` (2026). SHA-256 `677faa70a76444a000b8c2192a45d0ab0e39f8899825c004fdf6cbe52bb755cc`. [Source archive](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/blob/d6d020982ebf3f3cd8c104b6befc6c094850b3e7/archives/PAPER_II_LEAN_20261020_ALIGNED_v4.zip). https://doi.org/10.5281/zenodo.23502224.
 
 [8] C. St. J. A. Nash-Williams, *An unsolved problem concerning decomposition of graphs into triangles*, in *Combinatorial Theory and its Applications III*, North-Holland, Amsterdam (1970), 1179–1183.
 

@@ -655,4 +655,4 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
 ) )
-Output written on PAPER_II_preprint_v1.0_es.xdv (73 pages, 2053464 bytes).
+Output written on PAPER_II_preprint_v1.0_es.xdv (73 pages, 2053480 bytes).

@@ -696,5 +696,5 @@ versalProducer.producerTarget_of_
 LaTeX Info: Redefining \. on input line 21.
 LaTeX Info: Redefining \% on input line 21.
 ) )
-Output written on FORMALIZATION_COMPANION_preprint_v1.0_es.xdv (9 pages, 293432
+Output written on FORMALIZATION_COMPANION_preprint_v1.0_es.xdv (9 pages, 293464
  bytes).

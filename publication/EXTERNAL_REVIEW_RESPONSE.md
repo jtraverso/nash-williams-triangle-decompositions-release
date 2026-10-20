@@ -19,6 +19,7 @@ This response concerns the review of `cb1ee86`. Its identical-tree replacement a
 | Spanish wire/link ambiguity | Chains use “conector”; “enlace” denotes the root-label link graph. The convention is explicit in H. | Spanish Appendix H. |
 | Repository presentation | Description and web instructions present both papers and their companions as available. The obsolete “awaiting Paper II” description is removed. | Repository metadata and `WEB_PUBLICATION.md`. |
 | Git identity | Author and committer use Juan Pablo Traverso Gianini and the GitHub `jtraverso` noreply address. The five preparation commits were reconstructed with identical trees; current immutable links use the replacement commits. | `publication/GIT_IDENTITY_REVIEW.json`. |
+| First public edition | Removed the obsolete sentence about a `superseded` archive from both Paper II companions. All articles and companions identify themselves as preprint 1.0. No previous manuscript edition is packaged; technical source-archive revision identifiers remain unchanged. | `publication/DOCUMENT_VERSION_CHECKS.json`; static editorial audit and regenerated companions. |
 
 ## Audit and scope
 
@@ -33,3 +34,5 @@ Rewriting reachable Git history does not certify removal of old objects from Git
 ## Reproduction
 
 Run `python -I scripts/audit_editorial_review.py` for the static editorial comparison and `python -I scripts/verify_repository.py` for the sealed package. The visual inspection record is in each paper's `02_validation/VISUAL_REVIEW.json`; this is an internal editorial audit, not a new external mathematical review.
+
+The canonical repository is now `jtraverso/nash-williams-triangle-decompositions-release`, created privately with the corrected GitHub no-reply history. The previous repository was left intact at the author’s request. Manuscript links were updated and all eight PDFs regenerated; the DOI reservations and frozen Lean archive hashes remain unchanged.

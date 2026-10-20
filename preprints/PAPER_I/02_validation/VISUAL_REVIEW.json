@@ -3,10 +3,10 @@
   "date": "2026-10-20",
   "reviewer": "Codex internal editorial audit",
   "pdf_hashes": {
-    "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.pdf": "6035d2c15b4c046b8fa7d1aa38ea97677dfe53fc42ad3b7d9b846d4c5b1f64c4",
-    "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.pdf": "fb1536dfb0627bee314120a66e14ddf086a3e356586a8871950141ed3607f069",
-    "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf": "fe65d1fc81ddfc3220f736dba4ee52206f8268484f9986b05db436fde2728a08",
-    "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf": "ceb98621670dcf0adbde4064c641c62e8e835c37880730ff7ca92acfeec49bbf"
+    "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.pdf": "54a8ed1869dede261595c121d7f33cca20b8fb86e4ff0a65a651ba44be63139f",
+    "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.pdf": "7a0aacbe92d72dd754de2eb394c3efe181985d76c08f12dfc7db78ad0709a555",
+    "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf": "f0ea8646556989d69699b7fadc87ea76a4f062f7fd1d0e049579d59d17b00600",
+    "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf": "4eb509eba2132c1435a71c15b18d83366fb128d80f33ef78a2739c811666ea36"
   },
   "pages_reviewed": 57,
   "images": [
@@ -54,5 +54,6 @@
     "Corrected references and formal correspondence legible"
   ],
   "findings": [],
-  "scope": "Layout and editorial review; not a new mathematical proof audit."
+  "scope": "Layout and editorial review; not a new mathematical proof audit.",
+  "url_migration_visual_check": "publication/REPOSITORY_MIGRATION_CHECKS.json"
 }
