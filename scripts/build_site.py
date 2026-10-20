@@ -13,7 +13,8 @@ parser.add_argument('--preview', action='store_true', help='Local, ignored outpu
 args = parser.parse_args()
 state = json.loads((ROOT/'publication/RELEASE_STATE.json').read_text())
 required = ['public_release_authorized', 'paper_ii_final_received', 'final_joint_audit_pass',
-            'public_references_reconciled', 'manuscript_licence_recorded']
+            'public_references_reconciled', 'manuscript_licence_recorded',
+            'author_headers_reconciled']
 if not args.preview:
     pending = [key for key in required if state[key] is not True]
     if pending:

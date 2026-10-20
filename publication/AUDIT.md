@@ -44,6 +44,10 @@ The [visual review](VISUAL_REVIEW.md) records browser inspection.
   affected document audits and manifests.
 - Manuscript public-distribution rights remain to be recorded; the original
   software packaging uses Apache-2.0 with third-party notices preserved.
+- The [author-header review](AUTHORSHIP_REVIEW.md) confirms 1,008 missing
+  headers, 59 surname errors and one tool attribution in the selected
+  source archive. A verified comment-only patch is prepared privately;
+  it has not been applied to the selected ZIP or its build receipts.
 - The final joint audit and public-release authorization remain pending.
 
 Historical audits and superseded editions remain in the private review

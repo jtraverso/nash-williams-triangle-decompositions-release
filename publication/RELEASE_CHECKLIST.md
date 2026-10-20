@@ -14,6 +14,9 @@ Current state: **HOLD_FOR_PAPER_II**. Website preparation is not publication.
    public derivative needs redaction.
 4. Record manuscript distribution rights and Paper II's third-party licences.
    Apache-2.0 already governs the original packaging code.
+   Reconcile the [Paper I author-header correction](AUTHORSHIP_REVIEW.md)
+   with the final source archive, its hashes and verification scope.
+   Apply the same attribution inventory to the incoming Paper II package.
 5. Update CFF/BibTeX, document tables, `PUBLICATION_INDEX.json`, the site
    allowlist and checksums. Run `python scripts/verify_repository.py`.
 6. Retain previous versions only in the private research repository.
