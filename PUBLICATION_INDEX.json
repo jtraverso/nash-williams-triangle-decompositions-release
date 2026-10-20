@@ -51,16 +51,18 @@
           }
         }
       ],
-      "source_archive": "archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip"
+      "source_archive": "archives/PAPER_I_LEAN_20261020_ALIGNED_v3.zip",
+      "doi": "10.5281/zenodo.23428173"
     },
     {
       "id": "PAPER_II",
       "title": "Triangle decompositions II: Robust absorption for typed triangles",
       "version": "1.0",
-      "status": "AWAITING_FINAL_PACKAGE",
+      "status": "SOURCE_ARCHIVE_STAGED",
       "manuscript_date": null,
       "documents": [],
-      "source_archive": null
+      "source_archive": "archives/PAPER_II_LEAN_20261020_ALIGNED_v4.zip",
+      "doi": "10.5281/zenodo.23502224"
     }
   ]
 }

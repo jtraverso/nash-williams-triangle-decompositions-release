@@ -1,0 +1,28 @@
+{
+  "status": "PASS_README_ONLY_REVISION",
+  "id": "PAPER_II_LEAN_20261020_ALIGNED_v4",
+  "zip_sha256": "677faa70a76444a000b8c2192a45d0ab0e39f8899825c004fdf6cbe52bb755cc",
+  "bytes": 7968663,
+  "files": 4562,
+  "manifest_entries": 4561,
+  "predecessor": "PAPER_II_LEAN_20261020_ALIGNED_v3",
+  "predecessor_sha256": "51a15f4da91518fda68337fb4f7208727dd7e193309642bc9ad2d114305f69da",
+  "changed_files": [
+    "README.md",
+    "SHA256SUMS.txt"
+  ],
+  "unchanged_files": 4560,
+  "source_files_identical": 1510,
+  "utf8_readme_pass": true,
+  "no_lean_build": true,
+  "verifier": {
+    "status": "PASS_HEADER_ONLY_REVISION",
+    "modules": 1510,
+    "corrected_headers": 1411,
+    "unchanged_headers": 99,
+    "historical_receipts_checked": 1510,
+    "import_hash_links": 3096,
+    "lean_build_executed": false,
+    "scope": "Current body bytes reconstruct the original compiled sources. Historical receipts are unchanged; no new compilation is asserted."
+  }
+}

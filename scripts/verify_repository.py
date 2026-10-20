@@ -68,18 +68,32 @@ def verify():
         for doc in paper['documents']:
             assert set(doc['files']) == {'pdf', 'tex', 'md'}
             assert all((ROOT/p).is_file() for p in doc['files'].values())
-    freeze = 'PAPER_I_LEAN_20261020_ALIGNED_v3'
-    with zipfile.ZipFile(ROOT/f'archives/{freeze}.zip') as z:
-        lines = z.read(freeze+'/SHA256SUMS.txt').decode().splitlines()
-        for line in lines:
-            expected, name = line.split('  ', 1)
-            assert hashlib.sha256(z.read(freeze+'/'+name)).hexdigest() == expected, name
-        assert len(lines) == 3240
-        from verify_header_revision import verify as verify_headers
-        assert verify_headers(lambda name: z.read(freeze+'/'+name))['modules'] == 1070
-        assert (ROOT/'LICENSE').read_bytes() == z.read(freeze+'/LICENSE')
-        for p in (ROOT/'LICENSES').glob('*.txt'):
-            assert p.read_bytes() == z.read(freeze+'/dependencies/licenses/'+p.name)
+    archive_hashes = 0
+    archive_reviews = []
+    from verify_header_revision import verify as verify_headers
+    expected = {'PAPER_I': (1070,3240), 'PAPER_II': (1510,4561)}
+    for paper in idx['papers']:
+        if not paper['source_archive']:
+            continue
+        freeze = Path(paper['source_archive']).stem
+        with zipfile.ZipFile(ROOT/paper['source_archive']) as z:
+            lines = z.read(freeze+'/SHA256SUMS.txt').decode().splitlines()
+            for line in lines:
+                checksum, name = line.split('  ',1)
+                assert hashlib.sha256(z.read(freeze+'/'+name)).hexdigest() == checksum, name
+            modules, count = expected[paper['id']]
+            assert len(lines) == count
+            if paper['id'] == 'PAPER_II':
+                from verify_paper_ii_header_revision import verify as check_headers
+            else:
+                check_headers = verify_headers
+            review = check_headers(lambda name: z.read(freeze+'/'+name))
+            assert review['modules'] == modules
+            archive_hashes += len(lines)
+            archive_reviews.append({'paper': paper['id'], 'modules': modules, 'hashes': len(lines)})
+            assert (ROOT/'LICENSE').read_bytes() == z.read(freeze+'/LICENSE')
+            for p in (ROOT/'LICENSES').glob('*.txt'):
+                assert p.read_bytes() == z.read(freeze+'/dependencies/licenses/'+p.name)
     manifest = ROOT/'manifest_sha256.txt'
     bound = {}
     for line in manifest.read_text().splitlines():
@@ -100,7 +114,7 @@ def verify():
         assert digest(ROOT/row['screenshot']) == row['sha256']
     links = local_links(files())
     result = dict(status='PASS_PREPARATION', imported_files=len(intake['files']),
-                  archive_hashes=len(lines), repository_hashes=len(bound), local_links=links,
+                  archive_hashes=archive_hashes, archives=archive_reviews, repository_hashes=len(bound), local_links=links,
                   scope='Static packaging only; no Lean/Lake, no deployment.')
     print(json.dumps(result, indent=2))
     return result
