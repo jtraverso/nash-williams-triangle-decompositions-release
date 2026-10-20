@@ -24,6 +24,7 @@ La serie conecta una prueba formal del teorema de Nash–Williams con los result
 
 - [Bilingual website](index.html) and [paper index](preprints/README.md).
 - [Citation guide](CITATION.md) and [publication index](PUBLICATION_INDEX.json).
+- [aiXiv records / Registros en aiXiv](publication/aixiv/README.md).
 - [Selected source archives](archives/README.md), with licences, hashes and original build evidence.
 
 ## Reproducibility / Reproducibilidad

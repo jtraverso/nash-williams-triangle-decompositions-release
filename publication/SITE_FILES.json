@@ -215,6 +215,8 @@
     "publication/REPOSITORY_MIGRATION_CHECKS.json",
     "publication/SITE_FILES.json",
     "publication/VISUAL_REVIEW.md",
+    "publication/aixiv/PUBLICATION_RECEIPT.json",
+    "publication/aixiv/README.md",
     "publication/web-qa/checks.json",
     "publication/web-qa/contact-review.jpg",
     "publication/web-qa/paper-I-desktop.png",

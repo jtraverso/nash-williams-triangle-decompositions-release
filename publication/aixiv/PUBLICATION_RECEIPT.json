@@ -1,0 +1,59 @@
+{
+  "status": "PASS_PUBLIC_ARTIFACT_AND_METADATA_VERIFICATION",
+  "checked_utc": "2026-10-20T21:22:31.659919+00:00",
+  "papers": [
+    {
+      "status": "PASS_PUBLIC_ARTIFACT_AND_METADATA_VERIFICATION",
+      "key": "NASH_PAPER_I",
+      "aixiv_id": "2610.02049",
+      "url": "https://aixiv.online/abs/2610.02049",
+      "aixiv_version": 1,
+      "manuscript_version": "1.0",
+      "title": "Triangle decompositions I: Formalizing the Nash–Williams theorem in Lean",
+      "authors": [
+        "Juan Pablo Traverso Gianini"
+      ],
+      "license": "CC BY 4.0",
+      "repository": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release",
+      "source_commit": "466afa67b92944dd9b17248fb02197716675a710",
+      "official_article": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.pdf",
+      "doi": "10.5281/zenodo.23428173",
+      "companion_url": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/blob/466afa67b92944dd9b17248fb02197716675a710/preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf",
+      "artifact_hashes": {
+        "pdf": "a3a0406029fcfece04d8713db06eab92901fb3591169b02e836ae21bae09df46",
+        "tex": "9f7a4e920c1daff557c9187285aacc5872602f4bc72e473f1f3b6b67d7a17db7",
+        "source": "cd68631bc71422d00083dc17bba7cf40a05aa2373e6b06b4b6559009e22cea1f"
+      },
+      "traces_attached": [],
+      "checked_utc": "2026-10-20T21:12:04.675567+00:00"
+    },
+    {
+      "status": "PASS_PUBLIC_ARTIFACT_AND_METADATA_VERIFICATION",
+      "key": "NASH_PAPER_II",
+      "aixiv_id": "2610.02050",
+      "url": "https://aixiv.online/abs/2610.02050",
+      "aixiv_version": 1,
+      "manuscript_version": "1.0",
+      "title": "Triangle decompositions II: Robust absorption for typed triangles",
+      "authors": [
+        "Juan Pablo Traverso Gianini"
+      ],
+      "license": "CC BY 4.0",
+      "repository": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release",
+      "source_commit": "466afa67b92944dd9b17248fb02197716675a710",
+      "official_article": "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.pdf",
+      "doi": "10.5281/zenodo.23502224",
+      "companion_url": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/blob/466afa67b92944dd9b17248fb02197716675a710/preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf",
+      "artifact_hashes": {
+        "pdf": "5f7eef757877bd66462dff3ae1fde9df119acabcadac036d50676c3dff4f18d7",
+        "tex": "bc1915ed1e8d70cb34066cc0fe52d4184d8e20eb891ae29eb0d287be42ab4d80",
+        "source": "4942fdc32774cb8cf0cc498dfa454d346ba86fd1c389714349d786bb0c8a3fa1"
+      },
+      "traces_attached": [],
+      "checked_utc": "2026-10-20T21:22:20.471353+00:00"
+    }
+  ],
+  "manuscript_changes": false,
+  "lean_changes": false,
+  "scope": "Public aiXiv PDF/source downloads and metadata verified. The aiXiv listing check is a separate platform process; its live state is visible on each record. Research sessions were not uploaded."
+}
