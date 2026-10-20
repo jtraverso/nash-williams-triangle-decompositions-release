@@ -1,8 +1,8 @@
 # Coordinated release operations
 
-Current operational state: **HOLD_FOR_AUTHOR_PUBLICATION_AUTHORIZATION**.
+Current operational state: **AUTHORIZED_FOR_PUBLICATION** (author instruction, 20 October 2026).
 
-The articles and companions use final publication-facing metadata, including their reserved DOI identifiers. Both selected source archives and their licences are installed. This preparation does not activate the DOI or change repository visibility.
+The articles and companions use final publication-facing metadata, including their reserved DOI identifiers. Both selected source archives and their licences are installed. The final publication receipts record repository visibility and the two Zenodo deposits.
 
 1. Verify the current repository manifest, article manifests, archive hashes, document audit and website screenshots.
 2. Obtain the author's authorization to publish this exact package.

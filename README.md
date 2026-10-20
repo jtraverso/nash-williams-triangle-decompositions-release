@@ -11,6 +11,15 @@ La serie conecta una prueba formal del teorema de Nash–Williams con los result
 | I — Formalizing the Nash–Williams theorem in Lean | Delcourt–Postle's case division, explicit replacement constructions and the formal theorem. | [Article and companion](preprints/PAPER_I/README.md) · [10.5281/zenodo.23428173](https://doi.org/10.5281/zenodo.23428173) |
 | II — Robust absorption for typed triangles | Typed decomposition inputs, the semidense case, finite family constructions and terminal absorption. | [Article and companion](preprints/PAPER_II/README.md) · [10.5281/zenodo.23502224](https://doi.org/10.5281/zenodo.23502224) |
 
+## PDF downloads / Descargar PDF
+
+| Document | English | Español |
+|---|---|---|
+| **Paper I — Nash–Williams** | [Paper I PDF (EN)](preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.pdf) | [Paper I PDF (ES)](preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.pdf) |
+| **Paper II — Typed absorption** | [Paper II PDF (EN)](preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.pdf) | [Paper II PDF (ES)](preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.pdf) |
+| Paper I formalization companion | [Companion I PDF (EN)](preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf) | [Companion I PDF (ES)](preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf) |
+| Paper II formalization companion | [Companion II PDF (EN)](preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf) | [Companion II PDF (ES)](preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf) |
+
 ## Read and cite / Leer y citar
 
 - [Bilingual website](index.html) and [paper index](preprints/README.md).
