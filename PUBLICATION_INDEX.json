@@ -1,0 +1,66 @@
+{
+  "series": "Triangle decompositions",
+  "author": "Juan Pablo Traverso Gianini",
+  "repository": "https://github.com/jtraverso/nash-williams-triangle-decompositions",
+  "public_release": false,
+  "version": "1.0",
+  "doi": null,
+  "website_url": null,
+  "papers": [
+    {
+      "id": "PAPER_I",
+      "title": "Triangle decompositions I: Formalizing the Nash–Williams theorem in Lean",
+      "version": "1.0",
+      "status": "SELECTED_PACKAGE_STAGED",
+      "manuscript_date": "2026-10-20",
+      "documents": [
+        {
+          "kind": "manuscript",
+          "language": "en",
+          "files": {
+            "pdf": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.pdf",
+            "tex": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.tex",
+            "md": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.md"
+          }
+        },
+        {
+          "kind": "manuscript",
+          "language": "es",
+          "files": {
+            "pdf": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.pdf",
+            "tex": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.tex",
+            "md": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.md"
+          }
+        },
+        {
+          "kind": "companion",
+          "language": "en",
+          "files": {
+            "pdf": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf",
+            "tex": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.tex",
+            "md": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.md"
+          }
+        },
+        {
+          "kind": "companion",
+          "language": "es",
+          "files": {
+            "pdf": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf",
+            "tex": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.tex",
+            "md": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md"
+          }
+        }
+      ],
+      "source_archive": "archives/PAPER_I_LEAN_20261020_ALIGNED_v2.zip"
+    },
+    {
+      "id": "PAPER_II",
+      "title": "Triangle decompositions II: Robust absorption for typed triangles",
+      "version": "1.0",
+      "status": "AWAITING_FINAL_PACKAGE",
+      "manuscript_date": null,
+      "documents": [],
+      "source_archive": null
+    }
+  ]
+}

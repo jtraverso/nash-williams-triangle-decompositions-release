@@ -1,0 +1,642 @@
+---
+title: 'Descomposiciones en triángulos I: Formalización del teorema de Nash–Williams en Lean'
+---
+
+**Paper I de la serie:** *Descomposiciones en triángulos I: Formalización del teorema de Nash–Williams en Lean* (este artículo).
+
+**Paper II de la serie:** *Descomposiciones en triángulos II: Absorción robusta para triángulos tipados* [1].
+
+**Preprint 1.0 — 20 de octubre de 2026.**
+
+## Resumen
+
+Delcourt y Postle dieron una prueba de que todo grafo suficientemente grande, divisible para triángulos y de grado mínimo al menos tres cuartos de su orden admite una descomposición en triángulos; su paso de descomposición invoca el manuscrito citado como referencia 17 en [2]. Presentamos una formalización en Lean que sigue su división en casos extremales y no extremales, junto con los resultados fraccionales de umbral y estabilidad utilizados en la prueba. Los resultados de descomposición proceden de la absorción tipada desarrollada en Paper II y de una construcción de cobertura protegida que presentamos aquí. Así se sustituyen las aplicaciones de su Teorema 13.16 sin utilizarlo como hipótesis. La construcción protegida combina empaquetamiento local simultáneo, una reserva dispersa y emparejamientos que controlan los recursos necesarios para las rondas posteriores. Damos su demostración, incluidos los certificados firmados de coste acotado utilizados en el paso terminal. También enunciamos los resultados tipados y verificamos su aplicación a los grafos residuales extremales. El teorema, su atribución y su umbral de grado se conservan; la contribución es la prueba formal y las construcciones de sustitución y sus condiciones explícitas.
+
+**Palabras clave:** teorema de Nash–Williams; descomposición en triángulos; verificación formal; Lean; absorción.
+
+## 1. El teorema y la contribución
+
+Delcourt y Postle dieron una prueba del teorema de Nash–Williams para grafos suficientemente grandes en *A Proof of Nash-Williams' Conjecture* [2, Teorema 1.8]; su paso de descomposición invoca el manuscrito que figura como referencia 17 en [2]. La presente formalización aporta las construcciones de sustitución descritas a continuación, sin suponer su Teorema 13.16. Formalizamos ese resultado y los teoremas fraccionales en que se apoya su prueba. Un grafo es *divisible para triángulos* si su número de aristas es divisible por tres y todos sus vértices tienen grado par. Una descomposición en triángulos es una partición de sus aristas en triángulos.
+
+### Teorema principal — Delcourt–Postle [2, Teorema 1.8]
+
+Existe un entero $N$ tal que todo grafo simple finito $G$ de orden $n\ge N$ que satisface
+$$
+3\mid |E(G)|,\qquad d_G(v)\equiv0\pmod2\quad(v\in V(G)),\qquad
+3n\le4\delta(G)
+\tag{1.1}
+$$
+admite una descomposición en triángulos.
+
+El umbral de grado de (1.1) es exactamente $3n/4$; sólo se exige que el orden sea suficientemente grande. El teorema es de Delcourt y Postle [2]. Su teorema fraccional del umbral y sus dos teoremas de estabilidad se enuncian en la sección 2, conservando la numeración original.
+
+La prueba divide los grafos en casos extremales y no extremales. En los casos extremales, un empaquetamiento inicial de triángulos cubre los vértices excepcionales y deja un grafo residual particionado. Los triángulos restantes deben tener tipos prescritos. En el caso no extremal, una sucesión de coberturas concentra las aristas no cubiertas en conjuntos de vértices cada vez menores y conserva una reserva para el paso siguiente.
+
+Seguimos esta división y explicitamos los resultados de descomposición utilizados. El argumento original aplica [2, Teorema 13.16], cuya prueba se remite al manuscrito [3], listado como referencia 17 en [2]. Al preparar el desarrollo de origen no se localizó una versión pública de [3]. Paper II [1] proporciona los resultados tipados que necesitan los residuos extremales. Para el caso no extremal damos una ronda de cobertura protegida y usamos la conversión de certificados firmados en absorbedores terminales de Paper II. Estas sustituciones no identifican nuestros resultados con un enunciado de [3] que no hemos examinado.
+
+Dos comprobaciones aparecen a lo largo del argumento. Un residuo tipado debe satisfacer tanto el retículo global de conteos de aristas como los retículos locales de perfiles de grado. Una ronda de cobertura debe dejar además suficientes aristas libres dentro de la reserva siguiente. Contar el número total de aristas no cubiertas no establece ninguna de esas dos condiciones. Las secciones 3 y 4 enuncian los resultados utilizados y explican cómo se verifican sus hipótesis.
+
+La sección 5 recoge las relaciones enteras y las convenciones de redondeo necesarias al componer los resultados. El Apéndice A contiene el argumento de certificados firmados, la ronda protegida y su iteración. El análisis completo de casos heredado de Delcourt y Postle permanece en [2]; las pruebas de este artículo se concentran en los pasos de sustitución utilizados por este desarrollo.
+
+## 2. Resultados fraccionales y estrategia de la prueba
+
+### 2.1. Descomposición fraccional, estabilidad y regularidad
+
+Una descomposición fraccional en triángulos asigna a cada triángulo un peso real no negativo, de modo que los pesos de los triángulos que contienen una arista dada sumen uno. Enunciamos los tres resultados fraccionales formalizados con la numeración original de Delcourt y Postle.
+
+#### Teorema fraccional — Delcourt–Postle [2, Teorema 1.4]
+
+Todo grafo simple finito $G$ de orden $n$ con $3n\le4\delta(G)$ admite una descomposición fraccional en triángulos.
+
+A diferencia del teorema principal, este resultado no requiere divisibilidad integral ni un orden suficientemente grande. Su prueba formal sigue el argumento de descarga en el dual y obtiene después los pesos fraccionales mediante un teorema de alternativa en dimensión finita.
+
+Para enunciar la estabilidad, diremos que $G$ es $\sigma$-extremal si al menos $(1-\sigma)n$ vértices tienen grado a lo sumo $(3/4+\sigma)n$ y algún corte contiene al menos $(1-\sigma)n^2/4$ aristas. Se requieren ambas condiciones.
+
+#### Estabilidad fraccional — Delcourt–Postle [2, Teorema 1.6]
+
+Utilizamos la forma formalizada con un umbral de orden; el enunciado original de [2] no impone ese umbral adicional.
+
+Existe $\sigma_0>0$ tal que, para cada $0<\sigma\le\sigma_0$, existen $\varepsilon>0$ y un entero $n_0$ con la siguiente propiedad: todo grafo simple $G$ de orden $n\ge n_0$ con $\delta(G)\ge(3/4-\varepsilon)n$ admite una descomposición fraccional en triángulos o es $\sigma$-extremal.
+
+#### Estabilidad fraccional regular — Delcourt–Postle [2, Teorema 2.6]
+
+Existe $\sigma_0>0$ tal que, para cada $0<\sigma\le\sigma_0$, existen $\varepsilon>0$, $C\ge1$ y un entero $n_0$ con la siguiente propiedad: todo grafo simple $G$ de orden $n\ge n_0$ que no sea $\sigma$-extremal y satisfaga $\delta(G)\ge(3/4-\varepsilon)n$ admite una descomposición fraccional cuyo peso en cada triángulo pertenece a $[1/(Cn),C/n]$.
+
+Las constantes se eligen antes del grafo. Tanto la cobertura exacta de cada arista como las cotas sobre todos los pesos forman parte de la conclusión regular. Este es el resultado que necesita la selección aleatoria de la Proposición 4.1.
+
+Estos tres resultados fraccionales no utilizan la conclusión entera del teorema principal. El Apéndice A también usa el teorema de muestreo del corte máximo [2, Teorema 11.4] para conservar la no extremalidad en conjuntos anidados, y la oferta de bisagras [2, Lema 14.4] para realizar absorbedores terminales. El documento complementario [7] proporciona la correspondencia de fuentes de estos resultados. El resultado de muestreo se debe a Arora–Karger–Karpinski [14] y Goldreich–Goldwasser–Ron [15], como reconoce [2]. Aquí se utiliza su forma formalizada unilateral para tuplas ordenadas uniformes, con repeticiones permitidas.
+
+### 2.2. Cómo se combinan los argumentos fraccional y entero
+
+La estabilidad fraccional regular proporciona pesos acotados sobre los triángulos reales de un grafo no extremal. La Proposición 4.1 convierte esos pesos en un único empaquetamiento que controla simultáneamente todos los conjuntos grandes de aristas prescritos. Aplicada a las estrellas de vértices, acota el grado residual en cada vértice.
+
+Ese empaquetamiento no basta para cerrar la prueba entera. La Proposición 4.2 reserva primero aristas hacia un conjunto menor, aplica el empaquetamiento fuera de las aristas protegidas y cubre después las aristas exteriores y radiales restantes. Su conclusión acota el uso de aristas dentro del conjunto menor y deja intacto el interior siguiente. El Corolario 4.3 itera esta operación y utiliza un absorbedor terminal fijo.
+
+Las ramas extremales usan, en cambio, los resultados de descomposición tipada de la sección 3. El empaquetamiento inicial elimina los vértices excepcionales; el residuo se comprueba a su propio orden, con sus condiciones globales y locales de divisibilidad. La descomposición tipada y el empaquetamiento inicial forman entonces una partición del conjunto de aristas original.
+
+Los resultados fraccionales se demuestran antes de estas construcciones y no utilizan la conclusión entera. Todas las tolerancias y los umbrales de orden se eligen antes del grafo. La ecuación (1.1) expresa la cota de grado sin una convención de redondeo. El resultado final es de existencia: no proporciona un algoritmo eficiente de descomposición ni un valor numérico explícito de $N$.
+
+## 3. Sustitución de las cuatro aplicaciones
+
+### 3.1. Resultados de sustitución
+
+La división en casos de [2] tiene cinco ramas, pero cuatro clases de resultados de descomposición. Dos ramas extremales utilizan instancias distintas del mismo teorema tipado casi completo. La Tabla 1 recoge las sustituciones; no es un inventario de los lemas heredados.
+
+**Tabla 1.** Resultados de descomposición utilizados por el ensamblaje formal. La numeración corresponde a [2].
+
+| Rama | Hipótesis comprobadas para la sustitución | Resultado utilizado |
+|---|---|---|
+| 12.4: no extremal | Grado cercano al umbral, no extremalidad y cotas sobre las reservas protegidas | Proposición 4.2 y Corolario 4.3 |
+| 12.5 vía 14.6 | Grafo semidenso de tipo $\mathcal F_0$, divisibilidad integral y una parte alejada de las plantillas equilibradas | Paper II; Teorema 3.3 |
+| 12.6 y 12.7 vía 14.7 | Grafo de tipo $\mathcal F_1$ o $\mathcal F_2$ casi completo, casi equilibrado y con divisibilidad integral | Paper II; Teorema 3.2 |
+| 12.8 | Coloración propia de cuatro colores, margen de grado, grados pares e igualdad de las sumas de aristas entre pares opuestos | Paper II, $\mathcal F_3$; Proposición 3.1 |
+
+Cada fila sustituye una aplicación de [2, Teorema 13.16], no las hipótesis del teorema de la rama correspondiente. Las condiciones de la columna central se demuestran a partir de esas hipótesis. No se añade al grafo original un nuevo criterio de descomposición como supuesto.
+
+El resultado semidenso tiene grados internos cercanos a un cuarto del orden total, mientras que el grafo entre las dos partes es casi completo. Sus hipótesis de densidad difieren de las del resultado casi completo: los grafos internos no tienen por qué ser casi completos.
+
+Para la rama de cuatro colores, el teorema casi completo de Paper II para $\mathcal F_3$ da el siguiente corolario. Su prueba comprueba directamente el equilibrio, los grados faltantes y ambas condiciones de retículo entero; no requiere construir por separado un empaquetamiento fraccional. Escribimos $e_{ij}$ para el número de aristas entre las clases de colores $i$ y $j$.
+
+### Proposición 3.1 (resultado de cuatro colores)
+
+Existen $0<\varepsilon\le1/16$ y un entero $N$ tales que todo grafo $G$ de orden $n\ge N$ con una coloración propia de cuatro colores, grados pares y
+$$
+\delta(G)\ge(3/4-\varepsilon)n,
+\qquad
+e_{01}+e_{23}=e_{02}+e_{13}=e_{03}+e_{12}
+\tag{3.1}
+$$
+admite una descomposición en triángulos. Cada triángulo utiliza tres colores distintos.
+
+Cada uno de esos triángulos aporta una arista a cada una de las tres sumas entre pares opuestos de (3.1). En un grafo con coloración propia de cuatro colores, los grados pares y esas igualdades equivalen a la divisibilidad integral para la familia $\mathcal F_3=\{012,013,023,123\}$.
+
+*Demostración.* Aplicamos el teorema casi completo de Paper II [1] para $\mathcal F_3$. Proporciona constantes $\eta,\delta>0$ y $N_{\mathrm{II}}$ tales que un grafo integralmente divisible respecto de $\mathcal F_3$ admite una $\mathcal F_3$-descomposición si sus cuatro clases tienen tamaños en $[(1/4-\eta)n,(1/4+\eta)n]$, todas sus aristas unen clases distintas y a cada vértice le faltan a lo sumo $\delta n$ vecinos entre las otras clases. Elegimos
+$$
+\varepsilon=\min\{1/16,\eta/3,\delta/4\},\qquad
+N=\max\{N_{\mathrm{II}},1\}.
+$$
+Sean $n_i$ los tamaños de las clases. Un vértice de una clase no vacía tiene grado a lo sumo $n-n_i$, luego $n_i\le(1/4+\varepsilon)n$; la misma cota superior vale para una clase vacía. Al restar las cotas de las otras tres clases, obtenemos
+$$
+(1/4-3\varepsilon)n\le n_i\le(1/4+\varepsilon)n.
+$$
+Estas cotas dan el equilibrio requerido. En un vértice de la clase $i$, el número de vecinos permitidos que faltan es
+$$
+n-n_i-d_G(v)\le4\varepsilon n\le\delta n.
+$$
+La cota entera que se entrega al teorema formal es $d=\lfloor4\varepsilon n\rfloor$: un grado faltante entero acotado por $4\varepsilon n$ está acotado por $d$, y $d\le\delta n$. La coloración propia da exactamente la condición de pares permitidos.
+
+Comprobamos por separado las condiciones de retículo entero. En cada vértice, los perfiles permitidos son los tres vectores con dos coordenadas iguales a uno; su retículo entero consta exactamente de las ternas de suma par. Los grados pares proporcionan esta condición. Para los conteos globales, ponemos
+$$
+a_{012}=\frac{e_{01}+e_{02}-e_{03}}2,\quad
+a_{013}=e_{01}-a_{012},\quad
+a_{023}=e_{02}-a_{012},\quad
+a_{123}=e_{12}-a_{012}.
+$$
+El primer coeficiente es entero porque la suma de los grados en la clase cero es par. Las igualdades de (3.1) muestran que estos cuatro enteros reproducen los seis conteos de aristas. Recíprocamente, todo triángulo de tres colores tiene grados pares y aporta una arista a cada suma entre pares opuestos. Esto es precisamente la divisibilidad integral respecto de $\mathcal F_3$. Paper II da ahora la descomposición buscada. $\square$
+
+La limpieza de la rama 12.8 cubre los vértices excepcionales y las aristas internas restantes. El grafo residual no tiene, por tanto, aristas dentro de sus cuatro clases: la partición heredada es una coloración propia, como exige la Proposición 3.1.
+
+### 3.2. Los resultados tipados de Paper II
+
+Sea $V(G)=V_0\sqcup\cdots\sqcup V_{t-1}$, con aplicación de partes $p$. El tipo de un triángulo es el multiconjunto de las etiquetas de sus tres partes. Dada una familia $\mathcal F$ de tipos permitidos, un par de etiquetas está permitido si aparece en alguno de esos tipos. Una $\mathcal F$-descomposición utiliza solamente triángulos de esos tipos. Consideramos
+$$
+\begin{aligned}
+\mathcal F_0&=\{001,011\},\\
+\mathcal F_1&=\{002,003,112,113,022,122,033,133\},\\
+\mathcal F_2&=\{002,003,112,113,023,123\}.
+\end{aligned}
+\tag{3.2}
+$$
+
+La divisibilidad integral respecto de $\mathcal F$ tiene una condición global y otra local. El vector que cuenta las aristas por pares no ordenados de partes debe pertenecer al retículo entero generado por los vectores de conteo de aristas de los triángulos permitidos. En cada vértice $v$, el vector $(|N_G(v)\cap V_j|)_{j=0}^{t-1}$ debe pertenecer al retículo entero generado por los vectores que cuentan las otras dos etiquetas de un triángulo permitido al fijar una esquina de etiqueta $p(v)$. Todas las aristas deben tener tipos permitidos.
+
+Un anfitrión idealizado para $\mathcal F$ con tolerancia $\varepsilon>0$ tiene solamente aristas permitidas y satisface
+$$
+|V_i|\ge(1-\varepsilon)n/t\quad(0\le i<t),\qquad
+|N_G(v)\cap V_j|\ge|V_j|-\varepsilon n
+\quad\text{cuando }p(v)j\text{ está permitido}.
+\tag{3.3}
+$$
+Los vecindarios son abiertos, también cuando el par permitido es interno.
+
+### Teorema 3.2 (Paper II, Corolario 4.2, forma idealizada)
+
+Para cada $\mathcal F\in\{\mathcal F_1,\mathcal F_2\}$ existen $\varepsilon>0$ y un entero $N_{\mathrm{II}}$ tales que todo grafo integralmente divisible respecto de $\mathcal F$ que sea un anfitrión idealizado para $\mathcal F$ con tolerancia $\varepsilon$ y orden $n\ge N_{\mathrm{II}}$ admite una $\mathcal F$-descomposición.
+
+Esta forma idealizada de Paper II [1, Corolario 4.2] es el resultado utilizado en las ramas 12.6 y 12.7.
+
+El resultado de dos partes tiene hipótesis de densidad diferentes. Para un conjunto de vértices $D$, diremos que $G[D]$ es $\alpha$-cercano a una plantilla equilibrada si basta añadir o quitar a lo sumo $\alpha|D|^2$ aristas para convertirlo en el grafo bipartito completo sobre una partición de tamaños $\lfloor|D|/2\rfloor,\lceil|D|/2\rceil$, o en la unión disjunta de las dos cliques sobre una partición de esos tamaños.
+
+### Teorema 3.3 (Paper II, Teorema C)
+
+Para todo $\alpha>0$ existen $\varepsilon_0>0$ y un entero $n_0$ con la siguiente propiedad. Sea $G$ un grafo de orden $n\ge n_0$, con una partición $V_0\sqcup V_1$ y divisibilidad integral respecto de $\mathcal F_0$. Supongamos que
+$$
+|V_i|\ge(1-\varepsilon_0)n/2\quad(i=0,1),
+\tag{3.4}
+$$
+y, para cada $v\in V_i$,
+$$
+(1/4-\varepsilon_0)n\le|N_G(v)\cap V_i|\le(1/4+\varepsilon_0)n,\qquad
+|N_G(v)\cap V_{1-i}|\ge(1/2-\varepsilon_0)n.
+\tag{3.5}
+$$
+Si al menos uno de $G[V_0],G[V_1]$ no es $\alpha$-cercano a una plantilla equilibrada, entonces $G$ admite una $\mathcal F_0$-descomposición.
+
+Para $\mathcal F_0$, la divisibilidad integral equivale a tener grados pares y satisfacer $e_{01}=2(e_{00}+e_{11})$. El Teorema 3.3 es un teorema separado de Paper II; no es un caso del Teorema 3.2.
+
+### 3.3. Comprobación de los grafos residuales extremales
+
+Las aplicaciones para $\mathcal F_1$ y $\mathcal F_2$ tienen una estructura común. Primero se escogen la tolerancia y el umbral de orden de Paper II. Después se eligen los parámetros de limpieza en función de esa tolerancia. La limpieza construye un empaquetamiento de triángulos $\mathcal T$ que cubre todas las aristas incidentes con un conjunto excepcional de vértices $A$. El grafo residual es
+$$
+H=(G-E(\mathcal T))[V(G)\setminus A],\qquad m=|V(H)|.
+\tag{3.6}
+$$
+Antes de aplicar el teorema tipado hay que comprobar tres puntos.
+
+Primero, las clases de $H$ deben estar casi equilibradas y los pares permitidos deben ser casi completos **a escala $m$**. Las estimaciones a escala $n$ deben trasladarse mediante la cota sobre $|A|$. Segundo, la cota de orden debe dar $m\ge N_{\mathrm{II}}$, no solamente $n\ge N_{\mathrm{II}}$. Tercero, los conteos residuales de aristas y cada perfil residual de vértice deben pertenecer a sus retículos enteros correspondientes. Los grados pares, por sí solos, no expresan la divisibilidad tipada.
+
+Las reducciones formales realizan estas comprobaciones sobre el mismo grafo residual. Paper II proporciona entonces una descomposición tipada $\mathcal D$ de $H$. Como todas las aristas incidentes con $A$ quedaron cubiertas y las aristas residuales no pertenecen al empaquetamiento,
+$$
+E(G)=E(\mathcal T)\,\dot\cup\,E(H).
+\tag{3.7}
+$$
+En consecuencia, $\mathcal T\cup\mathcal D$ es una descomposición de $G$. Esta aplicación utiliza únicamente las familias especificadas, no una clasificación de todas las familias estudiadas en Paper II.
+
+En la rama semidensa 12.5 hay una comprobación adicional: la parte alejada de las plantillas equilibradas debe seguir alejada después de la limpieza. La reducción identifica primero una parte así en el grafo original. Si su parte residual fuera cercana a una plantilla con la tolerancia menor, podríamos extender esa partición a los vértices eliminados y volver a equilibrarla. Sean $k$ el número de vértices eliminados en la parte original $D$, $d=|D|$ y $C_{\mathrm{out}}$ las aristas del empaquetamiento que evitan $A$. Contando aristas no ordenadas, restaurar los vértices cuesta a lo sumo $kd$ y reequilibrar la partición a lo sumo $d(k+1)$. Junto con las aristas retiradas, el coste adicional es a lo sumo
+$$
+|C_{\mathrm{out}}|+(2k+1)d
+\le 3\sqrt\beta\,n^2+4\sqrt\beta\,nd+d\le39\sqrt\beta\,d^2+d.
+$$
+La reducción formal de `Case125/Residual.lean` utiliza las cotas suficientes $160\sqrt\beta\le\theta$, $n\ge12/\theta$, $|A|\le2\sqrt\beta\,n$, $|C_{\mathrm{out}}|\le3\sqrt\beta\,n^2$ y $d\ge n/3$ para transferir la no cercanía de $\theta$ a $\theta/2$. Como $d\ge4/\theta$, la última expresión es a lo sumo $(39/160+1/4)\theta d^2=79\theta d^2/160<\theta d^2/2$. Al añadir el coste de edición residual supuesto, a lo sumo $\theta d^2/2$, se contradice la no cercanía original. Así, la estimación mostrada utiliza exactamente el umbral de orden indicado. La reducción comprueba también (3.4)–(3.5) a escala $m$, los grados pares y la igualdad exacta entre aristas internas y cruzadas. Aplica entonces el Teorema 3.3 a ese grafo residual.
+
+En la rama 12.8, la limpieza no solo produce una coloración propia: también impone las dos igualdades independientes de (3.1). Quitar un empaquetamiento de triángulos conserva la paridad de los grados, y su cota de incidencias limita el grado que pierde cada vértice restante. Las estimaciones de tamaño y grado dan después el umbral de orden y el margen de la Proposición 3.1 a escala $m$. Estas comprobaciones justifican la aplicación de cuatro colores sin recurrir al teorema casi completo para $\mathcal F_1$ o $\mathcal F_2$. La descomposición se reúne con el empaquetamiento de limpieza como en (3.7).
+
+### 3.4. Combinación de las ramas
+
+Sean $\alpha_1,\alpha_2,\alpha_3$ las tolerancias de los tres casos cercanos a plantillas, con umbrales $n_1,n_2,n_3$, y pongamos $\alpha=\min\{\alpha_1,\alpha_2,\alpha_3\}$. El caso extremal restante proporciona $\beta>0$ y $n_4$ para este $\alpha$. Si $\beta_0$ es el rango permitido por la rama no extremal, elegimos $\beta'=\min\{\beta,\beta_0\}$ y su umbral $n_5$. Entonces
+$$
+N=\max\{n_1,n_2,n_3,n_4,n_5\}
+\tag{3.8}
+$$
+sirve para el ensamblaje. Un grafo cercano a alguna de las tres plantillas utiliza su rama correspondiente. Un grafo que no está cerca de ninguna es $\beta'$-extremal, y por tanto $\beta$-extremal, o no es $\beta'$-extremal. Estas son las dos ramas restantes. Todas las elecciones preceden al grafo.
+
+## 4. Empaquetamiento local y cobertura protegida
+
+Damos dos construcciones utilizadas en el argumento no extremal. La primera aplica el teorema de emparejamientos seudoaleatorios de Ehard, Glock y Joos [4] a triángulos reales, controlando conjuntos prescritos de aristas. La segunda añade reservas protegidas y un paso de cobertura exacta. Ninguna utiliza la conclusión completa de Nash–Williams.
+
+### 4.1. De los pesos fraccionales a los triángulos reales
+
+Sea $K_3(J)$ el conjunto de triángulos de un grafo $J$ de orden $n$. Una descomposición fraccional $C$-regular asigna pesos $w(T)$ a sus triángulos de modo que
+$$
+\sum_{T\ni e}w(T)=1\quad(e\in E(J)),\qquad
+\frac1{Cn}\le w(T)\le\frac Cn\quad(T\in K_3(J)).
+\tag{4.1}
+$$
+
+### Proposición 4.1 (empaquetamiento local simultáneo)
+
+Para todo $C\ge1$, $\eta>0$ y entero $B\ge0$, existe un entero $N$ con la siguiente propiedad. Supongamos que $J$ tiene orden $n\ge N$ y una descomposición fraccional $C$-regular. Dada una familia $\mathscr S$ de a lo sumo $n^B$ subconjuntos de $E(J)$, existe un empaquetamiento $\mathcal P$ de triángulos en $J$ que satisface simultáneamente
+$$
+|S\setminus E(\mathcal P)|\le\eta|S|
+\quad\text{para todo }S\in\mathscr S\text{ con }|S|\ge6n^{1/4}.
+\tag{4.2}
+$$
+
+*Demostración.* Pongamos $\zeta=\min\{\eta/4,1/4\}$ y $d=n/(2C)$. Seleccionamos cada triángulo $T$ de manera independiente con probabilidad $dw(T)\le1/2$. Para cada arista $e$, el número esperado de triángulos seleccionados que la contienen es $d$. Hay a lo sumo $n$ triángulos candidatos que contienen $e$. La desigualdad de Hoeffding y una cota de unión muestran que la probabilidad de una desviación de al menos $\zeta d$ en alguna arista es a lo sumo
+$$
+2n^2\exp\left(-\frac{\zeta^2 n}{2C^2}\right)<1
+\tag{4.3}
+$$
+para $n$ suficientemente grande. Fijamos una familia seleccionada que satisface todas estas cotas de grado.
+
+Su hipergrafo de triángulos tiene como vértices las aristas de $J$. Es simple, y dos aristas distintas del grafo pertenecen juntas a lo sumo a un triángulo, por lo que sus codegrados son a lo sumo uno. Sea $\Delta=(1+\zeta)d$. Cada vértice del hipergrafo correspondiente a una arista de $J$ tiene grado entre $(1-2\zeta)\Delta$ y $\Delta$.
+
+Para $S\in\mathscr S$, asignamos a cada hiperarista un peso igual al número de sus aristas del grafo que pertenecen a $S$. El peso total es al menos $(1-2\zeta)\Delta|S|$. Como $\Delta\le n$ y $2\zeta\le1/2$, la condición de tamaño de (4.2) implica que este peso es al menos $3\Delta^{5/4}$. Por tanto, satisface el umbral de peso de [4, Teorema 1.2], con $\delta_{\mathrm{EGJ}}=1/4$ y $r=3$, de modo que $\epsilon_{\mathrm{EGJ}}=\delta_{\mathrm{EGJ}}/(50r^2)=1/1800$. Los números de hiperaristas y conjuntos controlados son polinomiales en $n$. Como $\Delta$ es un múltiplo constante positivo de $n$, ambos quedan por debajo de $\exp(\Delta^{1/1800^2})$ para $n$ suficientemente grande, como exige el teorema.
+
+Un mismo emparejamiento deja entonces a lo sumo $(2\zeta+\Delta^{-1/1800})|S|$ aristas sin cubrir en cada uno de esos conjuntos $S$. Aumentamos $N$ para que $\Delta^{-1/1800}\le\eta/2$. Como $2\zeta\le\eta/2$, obtenemos (4.2). Un emparejamiento del hipergrafo es un empaquetamiento de los triángulos reales seleccionados, como se requería.
+
+La selección es necesaria para esta aplicación: aplicar el teorema de emparejamientos ponderados a todos los triángulos normalizaría cada conjunto controlado según los grados de triángulos de sus aristas, que no tienen por qué ser casi iguales. Esta construcción selecciona triángulos reales y controla simultáneamente todos los conjuntos de aristas indicados. Es una consecuencia reutilizable de [4], no un nuevo teorema de emparejamientos.
+
+### 4.2. Una ronda que conserva la reserva siguiente
+
+Para $\beta>0$, llamamos a $G$ *$\beta$-extremal* cuando al menos $(1-\beta)n$ vértices tienen grado a lo sumo $(3/4+\beta)n$ y algún corte contiene al menos $(1-\beta)n^2/4$ aristas. Escribimos $E_G(W)=E(G[W])$.
+
+### Proposición 4.2 (ronda de cobertura protegida)
+
+Para todo $\beta>0$ existen $0<\theta\le1$ y $q_0>0$ tales que, para cada $0<q\le q_0$, hay $\kappa>0$ y un entero $N_0$ con la siguiente propiedad. Sea $G$ de orden $n\ge N_0$, sean $Z\subseteq W\subseteq V(G)$, y sea $F\subseteq E(G)$ tal que
+$$
+\frac{7q}{8}n\le|W|\le\frac{9q}{8}n,\qquad |Z|\le\frac{9q}{8}|W|,
+\tag{4.4}
+$$
+$$
+\delta(G)\ge(3/4-\theta)n,\qquad
+G\text{ no es }(\beta/4)\text{-extremal},\qquad
+|N_G(v)\cap W|\ge(3/4-\theta)|W|\quad(v\in V(G)),
+\tag{4.5}
+$$
+$$
+F\cap E_G(W)=\varnothing,\qquad\Delta(F)\le\kappa n,\qquad
+d_{G-F}(x)\equiv0\pmod2\quad(x\notin W).
+\tag{4.6}
+$$
+Entonces existe un conjunto de aristas descomponible en triángulos $Q\subseteq E(G)\setminus F$ tal que
+$$
+(E(G)\setminus F)\setminus E_G(W)\subseteq Q,\qquad
+Q\cap E_G(Z)=\varnothing,\qquad
+\Delta(Q\cap E_G(W))\le\kappa|W|.
+\tag{4.7}
+$$
+
+
+La ronda primero empaqueta el grafo después de retirar todas las reservas; luego cubre las aristas exteriores con ápices de la reserva y, por último, las aristas radiales restantes mediante emparejamientos disjuntos dentro de ella. La selección de emparejamientos controla el uso dentro de cada enlace futuro, no solo el grado total. El orden de elección es $\beta$, después $\theta,q_0$, luego $q$ y finalmente $\kappa,N_0$. La prueba completa, con los presupuestos enteros, está en el Apéndice A.3.
+
+### 4.3. De una ronda al caso no extremal
+
+### Corolario 4.3 (descomposición no extremal)
+
+Existe $\beta_0>0$ tal que, para cada $0<\beta\le\beta_0$, hay un entero $N_\beta$ con la siguiente propiedad. Todo grafo $G$ divisible para triángulos, de orden $n\ge N_\beta$, con $\delta(G)\ge3n/4$ y que no sea $\beta$-extremal admite una descomposición en triángulos.
+
+Construimos conjuntos anidados de vértices conservando las condiciones de grado y no extremalidad. Antes de elegir cualquier ronda de cobertura, construimos un absorbedor fijo para todos los posibles residuos divisibles del conjunto terminal. El Lema A.1 proporciona sus certificados firmados y el Lema SC de Paper II [1] los convierte en absorbedores. Cada ronda protege el interior siguiente y utiliza allí un grado pequeño de aristas. La iteración termina con un residuo absorbido por el absorbedor fijado al comienzo. El Apéndice A.4 demuestra estas afirmaciones y precisa el orden de los umbrales.
+
+## 5. Divisibilidad y redondeo al componer los resultados
+
+### 5.1. Retículos enteros y correcciones de índices
+
+La divisibilidad tipada exige más información que grados pares y un conteo total de aristas. En esta subsección usamos las etiquetas $1,2,3,4$ de [2], y $e_{ii}$ cuenta aristas internas no ordenadas. Para la familia $\mathcal F_1$ del Lema 13.19, cada triángulo permitido tiene una arista interna y dos cruzadas. Por tanto, la relación de conteos de aristas es
+$$
+e_{13}+e_{14}+e_{23}+e_{24}
+=2(e_{11}+e_{22}+e_{33}+e_{44}),
+\tag{5.1}
+$$
+y sus cuatro conteos cruzados son pares en el retículo entero de tipos. Para $\mathcal F_2$ del Lema 13.20, las condiciones correspondientes incluyen
+$$
+e_{13}+e_{14}+e_{23}+e_{24}=2(e_{11}+e_{22}+e_{34}),\qquad
+2e_{11}+e_{13}-e_{14}\equiv0\pmod4.
+\tag{5.2}
+$$
+
+Los enunciados impresos en [2, v1, pp.80 y 82] contienen errores tipográficos de índices: sus sumas cruzadas terminan en $e_{34}$ en vez de $e_{24}$; el Lema 13.19 también contiene una suma interna incorrecta e incluye $e_{34}$ en vez de $e_{14}$ entre los conteos cruzados pares. Las relaciones utilizadas en las reducciones formales son (5.1)–(5.2), obtenidas contando los tipos de triángulos permitidos. Las condiciones locales sobre los perfiles de los vértices siguen formando parte de la divisibilidad tipada.
+
+El cálculo para $\mathcal F_2$ que [2, Afirmación 14.7.2] deja por analogía también se desarrolla por separado, incluidas sus desigualdades de perfiles de vértices. Este resultado complementario debe distinguirse del teorema de descomposición casi completa utilizado en la Tabla 1.
+
+### 5.2. Redondeo y escala correcta
+
+La Observación 12.3 de [2] omite los pisos y techos en las plantillas extremales. Las definiciones formales los conservan. En la partición asociada de cuatro clases, cada clase $C$ satisface $n\le4|C|+3$, también para órdenes impares. El umbral de tamaño absorbe ese error aditivo. Eliminar los vértices excepcionales también cambia el denominador en las estimaciones de densidad: la aplicación en (3.6) debe utilizar el orden del grafo residual.
+
+La construcción proporciona elecciones explícitas compatibles para algunos parámetros intermedios, pero no obtenemos un nuevo valor para el umbral de grado de Nash–Williams ni un valor numérico explícito de $N$. Su función es permitir la composición de los sucesivos argumentos de existencia.
+
+## Formalización y reproducibilidad
+
+El teorema y los resultados utilizados aquí se han comprobado en Lean 4 con Mathlib [5,6]. La validación fija de Paper I reporta únicamente extensionalidad proposicional, elección clásica y solidez de los cocientes en sus seis consultas finales de axiomas, sin pruebas incompletas ni axiomas matemáticos adicionales en esas consultas. El documento complementario [7], preprint 1.0, registra las fuentes exactas, el alcance de compilación, la correspondencia de declaraciones, la auditoría de dependencias y el procedimiento de reproducción. También distingue el registro separado de EGJ [13] de su uso en este desarrollo. Los trabajos anteriores de formalización [8–10] aportan contexto; la contribución y la atribución de los resultados matemáticos se mantienen como se indicó antes. El freeze seleccionado registra una compilación limpia local completa de la clausura alineada de 1.070 módulos, utilizando los productos de build de la revisión fijada de Mathlib. Sus entradas tipadas emplean las fuentes alineadas de Paper II y se comprueban dentro del objetivo de Paper I. No es una reproducción independiente ni certifica el desarrollo completo de Paper II. El documento complementario registra la alineación, la cadena de recibos y el alcance exacto de la auditoría.
+
+## Agradecimientos
+
+El autor agradece profundamente a su esposa María Paz y a sus hijos Lucas, Juan Cristóbal, Francisca, Raimundo y Benjamín su amor, paciencia y apoyo. Agradece a Delcourt y Postle el trabajo matemático en que se basa esta formalización, y a las comunidades de Lean y Mathlib la infraestructura utilizada en el desarrollo.
+
+## Uso de inteligencia artificial y herramientas computacionales
+
+Claude, de Anthropic, y ChatGPT/Codex, de OpenAI, se utilizaron para explorar y comprobar argumentos y para preparar el manuscrito. Aristotle, de Harmonic, contribuyó a la exploración de enfoques, la búsqueda de contraejemplos, el desarrollo de demostraciones y su formalización y revisión en Lean. Su función no se limitó a traducir pruebas ya terminadas.
+
+Certo [11] y Jacobian [12] se utilizaron para explorar casos finitos, comprobar identidades y evaluar construcciones candidatas. Estos cálculos orientaron el desarrollo de los argumentos; las comprobaciones finitas no se trataron como pruebas de enunciados universales.
+
+El autor es responsable de los argumentos, las citas, el código y la exposición. Ningún sistema de IA figura como autor.
+
+## Apéndice A. Pruebas de la rama no extremal
+
+Presentamos primero la construcción del certificado firmado, después la ronda protegida y su iteración. La conversión general de un certificado firmado en un absorbedor positivo es el Lema SC de Paper II [1]. Su prueba utiliza gadgets por ocurrencia y emparejamientos que respetan las aristas físicas; esa conversión no requiere ninguna hipótesis de no extremalidad.
+
+### A.1. Un certificado firmado de coste acotado
+
+Para un vector entero $w$ sobre $E(G)$, escribimos $\|w\|_1=\sum_e|w_e|$, $d_w(v)=\sum_{e\ni v}w_e$ y $s(w)=\sum_e w_e$. El vector de aristas de un triángulo $T$ se denota por $[T]$. El coste de una representación firmada por triángulos es la suma de los valores absolutos de sus coeficientes.
+
+### Lema A.1 (certificados firmados en un anfitrión no extremal)
+
+Sea $\beta>0$. Supongamos que $G$ es un grafo no vacío de orden $n$, con $\delta(G)\ge3n/4$, que no es $\beta$-extremal. Si $w\in\mathbb Z^{E(G)}$ satisface
+$$
+d_w(v)\equiv0\pmod2\quad(v\in V(G)),\qquad 3\mid s(w),
+$$
+entonces $w$ admite una representación por triángulos reales de coste a lo sumo $16741\|w\|_1$.
+
+*Demostración.* Todas las igualdades de esta prueba son igualdades entre vectores enteros de aristas. Los paseos pueden repetir aristas; sus multiplicidades se conservan. No se presupone ninguna descomposición positiva.
+
+**Eliminar la paridad.** Para dos vértices cualesquiera $a,c$, su conjunto $S$ de vecinos comunes tiene tamaño al menos $n/2$. El grafo inducido en $S$ tiene grado mínimo al menos $|S|-n/4\ge|S|/2$ y, por tanto, es conexo. Un camino mínimo en él tiene longitud a lo sumo 14: los vecindarios cerrados en las posiciones $0,3,6,\ldots$ son disjuntos y cada uno contiene más de $|S|/5$ vértices. No pueden existir seis de esos vecindarios.
+
+Consideremos un paseo cerrado de cuatro aristas $abcd a$. Si $a=c$ o $b=d$, su vector de aristas es el doble de un vector entero. En otro caso, elegimos un camino de longitud a lo sumo 14 desde $b$ hasta $d$ en $G[N(a)\cap N(c)]$. Por cada arista $xy$ del camino tomamos los dos triángulos $axy,cxy$. Módulo dos, su suma sobre el camino es exactamente el paseo de cuatro aristas: las aristas del camino aparecen dos veces y los radios intermedios se cancelan. Así, cada paseo de este tipo es $g+2h$, donde $g$ tiene una representación por triángulos de coste a lo sumo 28.
+
+Para un paseo cerrado de cinco aristas $v_0v_1v_2v_3v_4v_0$, elegimos un vecino común $y$ de $v_0,v_2,v_3$. Existe porque su vecindario común tiene tamaño al menos $n/4>0$. Su vector de aristas es la suma de los paseos de cuatro aristas $v_0v_1v_2yv_0$ y $v_0yv_3v_4v_0$ y del triángulo $v_2v_3y$, menos el doble de las tres aristas $v_0y,v_2y,v_3y$. El argumento anterior lo representa, por tanto, módulo dos con coste a lo sumo $28+1+28=57$.
+
+Fijamos un vértice $r$ y, para cada $v$, un vecino común $m(v)$ de $r,v$. Sea $\pi_v$ el paseo de dos aristas $r m(v)v$. Para cada arista $uv$, usamos el paseo cerrado que sigue $\pi_u$, después $uv$ y finalmente $\pi_v$ en sentido inverso. Al sumar con coeficientes $w_{uv}$ obtenemos
+$$
+w+\sum_v d_w(v)\pi_v.
+$$
+El segundo término es par. Aplicando a cada sumando la construcción para paseos de cinco aristas, obtenemos una combinación entera de triángulos $g$ y un vector entero $U$ tales que
+$$
+w=g+2U,\qquad \operatorname{cost}(g)\le57\|w\|_1,
+\qquad \|U\|_1\le86\|w\|_1.
+\tag{A.1}
+$$
+En efecto, $\|g\|_1\le3\operatorname{cost}(g)$, de modo que $2\|U\|_1\le\|w\|_1+\|g\|_1\le172\|w\|_1$. Como todo triángulo tiene tres aristas y $3\mid s(w)$, también $3\mid s(U)$.
+
+**Transportar el doble de una arista.** Formamos un grafo $O$ cuyos vértices son las aristas de $G$, y unimos dos cuando son aristas opuestas de una copia de $K_4$. Para uno de esos pares $ab,cd$,
+$$
+[abc]+[abd]-[acd]-[bcd]=2([ab]-[cd]).
+\tag{A.2}
+$$
+Demostraremos que $O$ es conexo. Supongamos primero que el grafo de vecinos comunes de cualesquiera dos vértices distintos contiene un triángulo. Cada uno de esos grafos es conexo por la estimación de grado anterior. Para una arista $uv$ y un triángulo $abc$ en su grafo de vecinos comunes, los caminos de dos pasos $uv,bc,ua$ y $uv,bc,va$ pertenecen a $O$. Si $a,b$ son adyacentes en ese grafo de vecinos comunes, los pares opuestos $ua,vb$ y $va,ub$ propagan esta conclusión desde los radios en $a$ hasta los radios en $b$. Por tanto, $uv$ está conectado en $O$ con cada radio $ux,vx$ con $x\in N(u)\cap N(v)$.
+
+Dos aristas incidentes $uv,uw$ tienen un vecino común $x$ de sus tres extremos; ambas están conectadas en $O$ con $ux$. Como $G$ es conexo, esto conecta todas sus aristas en $O$.
+
+Falta el caso en que un grafo de vecinos comunes sobre un conjunto $S$ no contiene triángulos. Ponemos $q=n/4$. Se tiene $|S|\ge2q$ y $\delta(G[S])\ge|S|-q$. Para una arista $xy$ de $G[S]$, sus dos vecindarios internos son disjuntos, de donde $2(|S|-q)\le|S|$. Así, $|S|=2q$. En particular, la igualdad de grados que sigue obliga a que $q$ sea entero, por lo que $4\mid n$. Cada vértice de $S$ tiene grado interno exactamente $q$: su grado es al menos $q$, y la desigualdad de vecindarios disjuntos con cualquiera de sus vecinos da la cota inversa. Su grado en $G$ es, por tanto, exactamente $3q$, y están presentes todas las aristas entre $S$ y $R=V(G)\setminus S$. El grafo $G[R]$ tiene orden $2q$ y grado mínimo al menos $q$, luego es conexo y contiene una arista.
+
+Si $G[R]$ tampoco tuviera triángulos, el mismo argumento daría grado $3q$ en cada vértice de $G$ y un corte completo equilibrado entre $S$ y $R$. Esto haría a $G$ $\beta$-extremal, contradicción. Este es el único uso de la no extremalidad en la construcción del certificado. Por tanto, $G[R]$ contiene un triángulo. Para cada arista $ab$ de $G[S]$, su grafo de vecinos comunes es exactamente $G[R]$. El argumento de propagación ya demostrado conecta $ab$ con todas las aristas desde $a$ o $b$ hacia $R$. Todas las aristas de $G[S]$ son opuestas a una arista fija de $G[R]$, y cada arista de $G[R]$ es opuesta a una arista fija de $G[S]$. Cada vértice de $S$ tiene un vecino allí. Estas observaciones conectan todas las aristas de $G$ en $O$.
+
+Para una arista $uv$, sea $S=N(u)\cap N(v)$. Cada arista de $G[S]$ es un vecino de $uv$ en $O$, y
+$$
+d_O(uv)=e(G[S])\ge\frac{|S|(|S|-n/4)}2\ge\frac{n^2}{16}\ge\frac{n^2}{20}.
+$$
+Además, $|V(O)|=e(G)\le n^2/2$. En una geodésica de longitud 30, los once vecindarios cerrados en las posiciones $0,3,\ldots,30$ serían disjuntos y contendrían juntos más de $n^2/2$ vértices. Luego el diámetro de $O$ es a lo sumo 29. Al sumar (A.2) a lo largo de un camino, se obtiene una representación de $2([e]-[f])$ por triángulos de coste a lo sumo $4\cdot29=116$ para cualesquiera dos aristas $e,f$.
+
+**El múltiplo de tres restante.** Fijamos un triángulo con aristas $f_0,f_1,f_2$; existe por la condición de grado. La identidad
+$$
+6[f_0]=2[T]-2([f_1]-[f_0])-2([f_2]-[f_0])
+$$
+tiene coste a lo sumo $2+2\cdot116=234$. Escribimos $s(U)=3k$. Entonces
+$$
+2U=\sum_e U_e\,2([e]-[f_0])+6k[f_0].
+$$
+Como $3|k|\le\|U\|_1$, esta representación tiene coste a lo sumo $(116+234/3)\|U\|_1=194\|U\|_1$. Al combinarla con (A.1), obtenemos
+$$
+57\|w\|_1+194\cdot86\|w\|_1=16741\|w\|_1.
+$$
+Esto demuestra el lema. Las constantes son cotas uniformes convenientes, no valores optimizados. $\square$
+
+El resultado formal también permite una pequeña pérdida por debajo de $3n/4$, vinculada al parámetro de no extremalidad. Aquí hemos enunciado y demostrado la especialización en el umbral exacto que se usa para el absorbedor terminal; esta aplicación no necesita la versión formal más fuerte.
+
+### A.2. El lema de absorción de certificados firmados
+
+Usamos el Lema SC de Paper II [1] en la siguiente forma exacta. Supongamos que cada par tiene al menos $\alpha n$ vecinos comunes y que cada par de triángulos que comparte una arista tiene, para algún $6\le i\le C_0$, al menos $cn^{i-4}$ bisagras físicas de orden $i$. Un certificado firmado de $\mathbf1_L$ de coste a lo sumo $K$, con $V(L)\subseteq Z_0$ y $|Z_0|\le z$, da un absorbedor que evita $E_G(Z_0)$ siempre que
+$$
+z+3K+4KC_0+1<\alpha n,\qquad
+2^{\binom{C_0+1}{2}}(z+3K+4KC_0+1)<cn.
+\tag{A.3}
+$$
+El absorbedor y su unión con $L$ admiten descomposiciones en triángulos, y tiene a lo sumo $4K(\binom{C_0+1}{2}+2)$ aristas. El lema construye ambas descomposiciones emparejando ocurrencias positivas y negativas de aristas; no presupone un absorbedor. Para $C_0=8$, las cotas son $z+35K+1$, $2^{36}$ y $152K$. El exponente $i-4$ cuenta los vértices libres de la bisagra después de fijar sus cuatro raíces, como se explica en Paper II.
+
+Esta es la división adecuada entre los artículos: el Lema A.1 produce certificados usando la hipótesis de grado no extremal, mientras que el Lema SC convierte certificados dados usando solamente la oferta de vecinos comunes y de bisagras.
+
+### A.3. Demostración de la Proposición 4.2
+
+*Demostración.* Separamos el paso fraccional protegido, la cobertura de las aristas exteriores y la cobertura final de las aristas radiales. Ponemos $u=|W|$, $z=|Z|$ y $X=V(G)\setminus W$.
+
+**Elección de constantes.** La estabilidad fraccional regular sigue siendo aplicable después de un borrado de grado máximo suficientemente pequeño. En efecto, usamos el Teorema 2.6 con parámetro de extremalidad $b/2$, donde $0<b\le\beta/4$ pertenece a su rango permitido. Si eliminamos $H$ de un grafo que no es $b$-extremal, la $(b/2)$-extremalidad de $G-H$ implicaría que $G$ es $b$-extremal: el corte solo gana aristas y cada grado aumenta a lo sumo $\Delta(H)$. Si $\varepsilon_{2.6}$ es el margen de grado del Teorema 2.6, elegimos $0<\theta_{\mathrm n}\le\min\{\varepsilon_{2.6}/2,b/4\}$. Como $\theta\le\theta_{\mathrm n}$, el margen inicial y el borrado cuestan juntos a lo sumo $\theta+\theta_{\mathrm n}\le\varepsilon_{2.6}$. Obtenemos así constantes $\theta_{\mathrm n}>0$ y $C\ge1$ para el paso fraccional protegido. Se eligen antes de $q$ y del grafo.
+
+Bastan las siguientes elecciones, que son las utilizadas en la construcción formal:
+$$
+\begin{aligned}
+\theta&=\min\{\theta_{\mathrm n},1/100\},&
+q_0&=\min\{\theta_{\mathrm n}/8,1/100\},\\
+\kappa&=q/1000,&
+\rho&=q^2/4000,&
+\sigma&=\rho^4q^2/10^4.
+\end{aligned}
+$$
+Aumentamos $N_0$ para cumplir los umbrales de muestreo y empaquetamiento que aparecen a continuación y para asegurar
+$$
+4\log n+8\le\rho qn/20,\qquad
+1\le\sigma n,\qquad 6n^{1/4}\le\sigma n.
+$$
+Todos estos requisitos dependen solo de las constantes ya fijadas.
+
+**La reserva y el empaquetamiento protegido.** Para cada $x\in X$, ponemos $C_x=N_{G-F}(x)\cap(W\setminus Z)$. Seleccionamos independientemente cada arista disponible entre $X$ y $W\setminus Z$ con probabilidad $\rho$, formando $R$. Escribimos $R_x=N_R(x)$. Podemos elegir una muestra en la que cada una de las siguientes cantidades difiera de su esperanza en a lo sumo $\sigma n$: $|R_x|$, $|R_x\cap N_G(y)|$ para todos $x,y$, $|R_x\cap R_{x'}|$ para vértices exteriores distintos, y el número de aristas de reserva en cada vértice interior. Para cada cantidad fija, los sumandos indexados por vértices del lado opuesto de la bipartición son independientes; en la intersección de reservas, su esperanza es $\rho^2|C_x\cap C_{x'}|$. La desigualdad de Hoeffding y una cota de la unión sobre a lo sumo una constante por $n^2$ cantidades proporcionan esa muestra para $n$ grande.
+
+En particular, $\Delta(R)\le(\rho+\sigma)n$. La pérdida total de grado máximo al eliminar $F$, $R$ y todas las aristas internas de $W$ es a lo sumo
+$$
+\kappa n+(\rho+\sigma)n+u\le\theta_{\mathrm n}n.
+$$
+Obtenemos la descomposición fraccional regular directamente en
+$$
+J=G-(F\cup R\cup E_G(W)),
+\tag{A.4}
+$$
+mediante el paso de estabilidad protegido. Aplicamos la Proposición 4.1 a sus estrellas de vértices. Una estrella de tamaño al menos $6n^{1/4}$ deja a lo sumo $\sigma n$ aristas; una estrella menor ya cumple esa cota. Obtenemos un empaquetamiento con conjunto de aristas $Q_{\mathrm p}$ y grado máximo residual a lo sumo $D=\lfloor\sigma n\rfloor$. Ninguno de sus triángulos utiliza una arista protegida.
+
+**Cobertura de las aristas exteriores.** Sea $L$ el conjunto de aristas residuales con ambos extremos en $X$. Entonces $\Delta(L)\le D$ y $2|L|\le nD$. Para cada $xy\in L$, las estimaciones del muestreo y (4.5) dan al menos $M$ vecinos comunes en la reserva, donde
+$$
+M=\left\lfloor
+\rho^2\bigl((1/2-2\theta)u-2z-2\kappa n\bigr)-\sigma n
+\right\rfloor,\qquad
+K_{\mathrm g}=\lfloor\rho^2u/40\rfloor.
+$$
+Las elecciones de parámetros, aumentando $N_0$, dan
+$$
+M\ge0.44\rho^2u-1,\qquad
+3nD+12K_{\mathrm g}(K_{\mathrm g}+D)<2K_{\mathrm g}M.
+$$
+Procesamos las aristas de $L$ una por una. Llamamos saturado a un vértice de reserva cuando ya ha servido como ápice de $K_{\mathrm g}$ triángulos elegidos. Hay a lo sumo $|L|/K_{\mathrm g}$ vértices así y, por tanto, menos de $3|L|/K_{\mathrm g}$ mientras quede una arista de demanda. Cada vértice pertenece a lo sumo a $K_{\mathrm g}$ triángulos como ápice y a lo sumo a $D$ como extremo de una arista de demanda. Los triángulos anteriores que contienen $x$ o $y$ excluyen a lo sumo otros $6(K_{\mathrm g}+D)$ candidatos. La desigualdad estricta anterior deja un vecino común de reserva disponible. Añadimos el triángulo correspondiente. Esto construye una familia disjunta en aristas, con conjunto de aristas $Q_{\mathrm a}$, que utiliza una arista de $L$ y dos de $R$ por triángulo.
+
+**Las aristas radiales restantes.** Para $x\in X$, sea $T_x\subseteq W$ su conjunto de vecinos en el grafo aún no cubierto después de esos dos empaquetamientos. Todas las aristas exteriores están cubiertas, y la paridad de (4.6) implica que $|T_x|$ es par. La cobertura por ápices gastó a lo sumo $D$ aristas de reserva en $x$, y a lo sumo $D$ aristas no reservadas en $x$ sobrevivieron al primer empaquetamiento. Por tanto,
+$$
+|R_x\setminus T_x|\le D,\qquad |T_x\setminus R_x|\le D.
+$$
+Sea ahora $K$ el grafo de aristas interiores disponibles $E_G(W)\setminus E_G(Z)$. Los dos primeros empaquetamientos no han usado ninguna arista interior. Las cotas del muestreo implican las cuatro estimaciones siguientes:
+$$
+\begin{aligned}
+|T_x|&\ge t_*:=\rho\bigl((3/4-\theta)u-z-\kappa n\bigr)-\sigma n-D,\\
+|T_x\setminus N_K(y)|&\le
+g:=\left\lceil\rho(1/4+\theta)u+2\sigma n+D+1\right\rceil
+&& (y\in T_x),\\
+|T_x\cap T_{x'}|&\le
+\omega:=\left\lceil\rho^2u+\sigma n+2D\right\rceil
+&& (x\ne x'),\\
+|\{x:v\in T_x\}|&\le
+v_*:=\left\lceil\rho n+\sigma n+D\right\rceil
+&& (v\in W).
+\end{aligned}
+$$
+Para la segunda estimación, un vértice de $Z$ solo puede pertenecer a $T_x$ a través de una de las, a lo sumo, $D$ aristas residuales no reservadas; esto también paga la eliminación de $E_G(Z)$. La última estimación cuenta las demandas restantes en un vértice interior; no atribuye erróneamente una cota $D$ a todo su uso previo como ápice.
+
+Necesitamos emparejamientos perfectos en los conjuntos $T_x$ cuyas aristas sean disjuntas entre raíces. Ponemos
+$$
+k_*=\lceil800\rho^2n\rceil,\qquad
+B_*=\left\lceil\frac{(\mathrm e-1)\omega v_*}{k_*}+2\log n\right\rceil.
+$$
+Las mismas elecciones de constantes dan
+$$
+\omega\le2\rho^2u,\quad v_*\le2\rho n\le\kappa u,\quad
+B_*\le\rho u/100+2\log n+1,\quad
+2(g+B_*+k_*)\le t_*.
+$$
+Estas son las estimaciones finitas que justifican las cotas. Ponemos $t=\rho^2u$. Los parámetros elegidos dan $\sigma\le\rho q/10^4$ y $4\sigma n\le t/100$. Como $1\le\sigma n$, se tiene $t\ge400$. En particular, los siguientes cálculos incluyen los pisos y techos.
+
+| Cota utilizada | Comprobación |
+|---|---|
+| Ápices comunes | $(1/2-2\theta)u-2z-2\kappa n\ge(45/100)u$, luego $M\ge(45/100)t-\sigma n-1\ge(44/100)t-1$. |
+| Presupuesto voraz | $t/80\le K_{\mathrm g}\le t/40$ y $2M-12K_{\mathrm g}-12D\ge t/2$. Además, $3nD\le3\rho^4q^2n^2/10^4<\rho^4u^2/160\le K_{\mathrm g}t/2$. Al reordenar se obtiene la desigualdad estricta requerida. |
+| Conteos de conjuntos futuros | $\omega\le t+3\sigma n+1\le2t$ y $v_*\le\rho n+2\sigma n+1\le2\rho n\le\kappa u$. |
+| Potencial exponencial | Con $\mathrm e-1\le2$ y $k_*\ge800\rho^2n$, obtenemos $(\mathrm e-1)\omega v_*/k_*\le\rho u/100$. Tomar el techo añade a lo sumo uno. |
+
+Para el margen de los emparejamientos, escribimos $r=\rho u$. Las mismas cotas implican
+$$
+\begin{aligned}
+t_*&\ge\left(\frac34-\frac1{100}-\frac9{800}-\frac8{7000}-\frac{16}{70000}\right)r
+\ge\frac{72}{100}r,\\
+2(g+B_*+k_*)&\le\frac{54}{100}r+6\sigma n+1600\rho^2n+4\log n+8\\
+&\le\left(\frac{54}{100}+\frac{48}{70000}+\frac{12800}{2800000}+\frac2{35}\right)r
+\le\frac{61}{100}r<t_*.
+\end{aligned}
+$$
+Para la segunda línea, $g\le\rho(1/4+\theta)u+2\sigma n+D+2$, $k_*\le800\rho^2n+1$ y la cota sobre $B_*$ pagan los tres techos. Son estimaciones deliberadamente conservadoras de los presupuestos escalares de la ronda formal.
+
+Damos el argumento de selección, incluido el control dentro de los conjuntos futuros. Procesamos las raíces en un orden cualquiera. Si las aristas de los emparejamientos anteriores eliminan a lo sumo $B_*$ vecinos de cada vértice dentro de cada $T_x$ futuro, el grafo actual, de orden par, tiene $k_*$ emparejamientos perfectos candidatos disjuntos en aristas: después de retirar cada candidato, el grado mínimo sigue siendo al menos $|T_x|/2$. Un grafo de orden par con ese grado mínimo tiene un emparejamiento perfecto. Para verlo, tomamos un emparejamiento de tamaño máximo; dos vértices no emparejados no pueden ser adyacentes y, si no hay un camino aumentante a través de una arista emparejada, la suma de sus grados es a lo sumo el número de vértices emparejados, que no supera $|T_x|-2$, contradicción.
+
+Elegimos uno de los candidatos conservando la cota futura. Para un conjunto futuro $T_j$ y un vértice $v\in T_j$, sea $c(v,j)$ el número de vecinos de $v$ ya seleccionados dentro de $T_j$. Una etapa cambia ese número en cero o uno. Promediando sobre los $k_*$ candidatos, el incremento es a lo sumo $\omega/k_*$ si $v$ pertenece al conjunto actual, y cero en caso contrario: los candidatos no comparten aristas y los dos conjuntos se cortan en a lo sumo $\omega$ vértices. Ponemos $\mu=(\mathrm e-1)\omega/k_*$. Podemos mantener no creciente la suma, sobre los pares futuros $(v,j)$, de
+$$
+\exp\bigl(c(v,j)-\mu a(v)\bigr)
+$$
+donde $a(v)$ cuenta los conjuntos procesados que contienen $v$. En efecto, el factor multiplicativo medio es a lo sumo $\exp(-\mu)(1+\mu)\le1$; retirar los términos de la raíz actual solo disminuye la suma. Inicialmente hay a lo sumo $n^2$ términos y $a(v)\le v_*$. Así, cada conteo futuro es a lo sumo $\mu v_*+2\log n\le B_*$. Esto demuestra la inducción y la existencia de los emparejamientos perfectos disjuntos.
+
+Por cada arista emparejada $yy'$ en $T_x$, tomamos el triángulo $xyy'$. Estos triángulos cubren exactamente las demandas radiales restantes y las aristas de sus emparejamientos. Sus bases tienen grado máximo a lo sumo $v_*$, pues cada vértice aparece en a lo sumo ese número de conjuntos $T_x$. Junto con los dos primeros empaquetamientos dan $Q$. Solo las bases de los emparejamientos están dentro de $W$; evitan $E_G(Z)$ y tienen grado máximo a lo sumo $\kappa u$. Se cumplen así las tres conclusiones de (4.7). $\square$
+
+### A.4. Demostración del Corolario 4.3
+
+*Demostración.* Construimos los conjuntos anidados, el absorbedor terminal fijo y la iteración. Utilizaremos los mismos $q$ y $\kappa$ en todas las escalas.
+
+**Conjuntos anidados.** Fijamos $0<\beta\le\beta_0=1/8$ y tomamos $\theta,q_0$ de la Proposición 4.2. Para un $q\le\min\{q_0,1/32\}$ fijo y suficientemente pequeño construimos
+$$
+V(G)=U_0\supseteq U_1\supseteq\cdots\supseteq U_\ell,
+\tag{A.5}
+$$
+con cada hijo de tamaño entre $7q/8$ y $9q/8$ veces el de su padre. Cada grafo inducido original $G[U_i]$ no es $(\beta/4)$-extremal y tiene grado mínimo al menos $(3/4-\theta)|U_i|$. Cada vértice de $U_i$ tiene al menos $(3/4-\theta)|U_{i+1}|$ vecinos en el conjunto siguiente. Nos detenemos cuando el orden cae por debajo de una constante $m$, elegida de modo que incluso el último hijo cumpla los umbrales auxiliares de muestreo.
+
+La extremalidad del grafo original puede fallar de dos maneras. O bien al menos $\beta n$ vértices tienen grado mayor que $(3/4+\beta)n$, o bien todo corte tiene menos de $(1-\beta)n^2/4$ aristas. En el primer caso muestreamos conservando tanto la proporción de esos vértices como su ventaja de grado. Un error de a lo sumo $\beta/16$ en cada cantidad deja una proporción mayor que $\beta/4$ con grado mayor que $(3/4+\beta/4)$ veces el orden actual.
+
+En el segundo caso usamos el teorema de muestreo del corte máximo [2, Teorema 11.4]. Ponemos $\eta=\beta/16$ y fijamos un entero $k$ suficientemente grande, que cumpla además $3\le\beta(k-1)$. Llamamos mala a una $k$-tupla ordenada si el grafo que induce sobre sus posiciones tiene un corte cuyo tamaño duplicado es al menos $t k^2$, donde $t=(1-\beta)/2+\eta$. El teorema da una proporción de tuplas malas a lo sumo $\eta$ en el grafo original. Conservamos esa proporción con error acumulado a lo sumo
+$$
+\epsilon_1=\min\{\theta/2,\beta/16\}.
+$$
+Para un corte de cualquier grafo posterior, promediar el tamaño duplicado de su corte sobre todas las tuplas ordenadas da $k(k-1)$ veces la densidad duplicada del corte. Las tuplas buenas aportan menos de $t k^2$ y las demás a lo sumo $k^2$. Su densidad duplicada queda, por tanto, acotada por
+$$
+(t+\eta+\epsilon_1)\frac{k}{k-1}<\frac{1-\beta/4}{2}.
+$$
+El grafo posterior tampoco cumple la condición de corte de la $(\beta/4)$-extremalidad. Hemos utilizado la disyunción que expresa la no extremalidad, sin suponer que fallan sus dos condiciones a la vez.
+
+Los errores se pueden controlar uniformemente a lo largo de una secuencia de escalas de longitud arbitraria. En un padre de orden $a$, seleccionamos vértices independientemente con probabilidad $q$ y usamos la escala de error $a^{-1/4}$. La desigualdad de Hoeffding controla el tamaño, el conjunto de vértices de grado alto cuando corresponde y los no vecinos de cada vértice del padre. La probabilidad total de fallo es a lo sumo $2(a+2)\exp(-2\sqrt a)$. Para el conteo de tuplas malas, solo contribuyen a la covarianza las tuplas que se cortan. Hay a lo sumo $k^2a^{2k-1}$ de esos pares; las tuplas con coordenadas repetidas producen un sesgo a lo sumo $k^2a^{k-1}$. La desigualdad de Chebyshev añade una probabilidad de fallo a lo sumo $k^2/(q^{2k}\sqrt a)$, tras aumentar el umbral. La suma es menor que uno.
+
+Normalizar por el orden de la muestra cambia cada densidad controlada en a lo sumo $D_{\mathrm v}a^{-1/4}$, donde basta $D_{\mathrm v}=4k/q+4$. Mantenemos un error acumulado a lo sumo $2D_{\mathrm v}a^{-1/4}$ en orden $a$. Como el hijo tiene orden a lo sumo $a/16$, su error permitido es al menos $4D_{\mathrm v}a^{-1/4}$, suficiente para el error anterior y el nuevo paso. Elegimos el umbral de parada de forma que el error en el hijo más pequeño sea a lo sumo $\epsilon_1$. Las mismas estimaciones de vecindarios dan las cotas de grado del padre hacia el hijo. Así se construye (A.5), con constantes elegidas antes de $G$.
+
+**Un absorbedor fijo para el conjunto terminal.** Detallamos la construcción de la biblioteca finita e identificamos los resultados de absorción que utiliza. En un anfitrión de grado mínimo al menos $3n/4$, cada par de vértices tiene al menos $n/2$ vecinos comunes. La no extremalidad y [2, Lema 14.4] proporcionan una constante $c>0$ y al menos $cn^4$ bisagras de ocho vértices, sin aristas de los triángulos raíz, para cada par de triángulos que comparte exactamente una arista. Una bisagra tiene las dos descomposiciones alternativas que permiten intercambiar los dos caminos de dos aristas con raíces fijadas. Utilizamos la forma de conteo de configuraciones con normalización $n^{i-4}$ para cuatro raíces fijas, como en Paper II, en lugar de la normalización $n^{i-2}$ impresa en [2, Definición 13.15]. La no extremalidad proporciona la separación necesaria respecto de las tres plantillas; el resultado formal de bisagras se enuncia con esa hipótesis de separación.
+
+Aplicamos el Lema A.1 a $\mathbf1_L$ para cada posible residuo $L$ divisible para triángulos. Obtenemos un certificado de coste a lo sumo $K=16741|L|$. El Lema SC de Paper II [1], en la forma recogida en el Apéndice A.2, da entonces $A_L$, que evita todas las aristas dentro de un conjunto prescrito $Z_0\supseteq V(L)$, con $A_L$ y $A_L\cup L$ descomponibles. Sus cotas son
+$$
+|Z_0|+35K+1<n/2,\qquad
+2^{36}(|Z_0|+35K+1)<cn,\qquad |A_L|\le152K.
+$$
+El factor $2^{36}$ cuenta posibles conjuntos de aristas de bisagras; no es un parámetro de regularidad fraccional. Ambas construcciones preceden a las rondas de cobertura.
+
+Aplicamos esta construcción a cada residuo divisible posible en el conjunto terminal $U_\ell$, cuyo orden es a lo sumo $m$. Ponemos
+$$
+b_m=\binom{m+1}{2},\qquad
+s_m=2^{b_m},\qquad
+K_m=16741b_m,\qquad a_m=152K_m.
+$$
+Hay a lo sumo $s_m$ residuos. Construimos sus absorbedores sucesivamente, prohibiendo $U_1$ y todos los vértices incidentes con aristas de absorbedores anteriores. En cada paso el conjunto prohibido tiene tamaño a lo sumo $|U_1|+2s_ma_m$. Definimos
+$$
+D_m=2s_ma_m+35K_m+1,\qquad
+\zeta=\min\{1/8,c/2^{37}\}.
+$$
+Elegimos el $q$ anterior también de forma que $q\le\zeta/2$, con lo que $|U_1|\le\zeta n$. Una vez fijado $m$, aumentamos el umbral del anfitrión para que
+$$
+n>8D_m,\qquad
+n>4\cdot2^{36}D_m/c,\qquad
+s_ma_m\le\kappa n.
+$$
+Estas desigualdades dan ambos presupuestos para elegir auxiliares nuevos en cada residuo. Los absorbedores resultantes son disjuntos en aristas. Su unión $A$ es descomponible en triángulos, tiene grado máximo a lo sumo $|A|\le s_ma_m\le\kappa n$ y absorbe todo residuo divisible dentro de $U_\ell$: usamos la descomposición absorbente de su miembro correspondiente y las descomposiciones ordinarias de los demás. Además, $A\cap E_G(U_1)=\varnothing$. Se trata de disjunción de aristas, no de vértices; $A$ puede contener aristas que unan $U_\ell$ con vértices fuera de $U_1$.
+
+El orden de las elecciones importa. La oferta de bisagras determina $\zeta$; fijamos entonces $q$, y la Proposición 4.2 fija $\kappa,N_0$. Elegimos el umbral de parada $m$ mayor que los umbrales de muestreo y de la ronda. Solo después elegimos el umbral final del anfitrión para pagar la biblioteca finita de absorbedores. Nada depende del residuo que producirán las rondas.
+
+**Iteración.** Sea $Q_{<i}$ la unión de los conjuntos de aristas de las rondas anteriores y pongamos
+$$
+F_i=(A\cup Q_{<i})\cap E_G(U_i).
+\tag{A.6}
+$$
+En el paso cero este conjunto es $A$, que cumple la cota de grado prohibido y evita $E_G(U_1)$. Para $i\ge1$, el absorbedor evita todas las aristas internas de $U_i$. Toda ronda $j\le i-2$ protegió $E_G(U_{j+2})$, que contiene $E_G(U_i)$. Por tanto,
+$$
+F_i=Q_{i-1}\cap E_G(U_i),\qquad
+\Delta(F_i)\le\kappa|U_i|,\qquad
+F_i\cap E_G(U_{i+1})=\varnothing.
+$$
+Aplicamos la Proposición 4.2 al grafo original $G[U_i]$, con $W=U_{i+1}$ y $Z=U_{i+2}$, tomando $Z=\varnothing$ en la última ronda. La construcción de los conjuntos anidados proporciona (4.4)–(4.5), con los mismos $q,\kappa$. Fuera del conjunto actual, todas las aristas restantes ya están cubiertas. Así, los grados pares del grafo original, después de restar $A$ y los empaquetamientos anteriores, dan la paridad local requerida en (4.6). Esto demuestra la inducción.
+
+Al terminar, el conjunto de aristas restante $L$ está dentro de $U_\ell$. Restar los conjuntos descomponibles conserva los grados pares y la divisibilidad del número de aristas por tres. Por tanto, $L$ es divisible para triángulos. Usamos la descomposición fija de $A\cup L$ y los empaquetamientos disjuntos de las rondas. Estos particionan $E(G)$, lo que demuestra el corolario. $\square$
+
+## Referencias
+
+[1] J. P. Traverso Gianini, *Triangle decompositions II: Robust absorption for typed triangles*, preprint 1.0 (2026). [Documento](https://github.com/jtraverso/nash-williams-private-review/blob/main/preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.md).
+
+[2] M. Delcourt y L. Postle, *A Proof of Nash-Williams' Conjecture*, arXiv:2606.11178v1 (2026). https://arxiv.org/abs/2606.11178v1.
+
+[3] M. Delcourt y L. Postle, *Refined absorption for partitioned hypergraphs and beyond*, manuscrito, 2026. Datos bibliográficos tomados de [2, referencia 17].
+
+[4] S. Ehard, S. Glock y F. Joos, *Pseudorandom hypergraph matchings*, Combinatorics, Probability and Computing 29 (2020), 868–885. https://doi.org/10.1017/S0963548320000280.
+
+[5] L. de Moura y S. Ullrich, *The Lean 4 Theorem Prover and Programming Language*, CADE 28 (2021), 625–635. https://doi.org/10.1007/978-3-030-79876-5_37.
+
+[6] The mathlib Community, *The Lean Mathematical Library*, CPP 2020, 367–381. https://doi.org/10.1145/3372885.3373824.
+
+[7] J. P. Traverso Gianini, *Descomposiciones en triángulos I: Documento de formalización y reproducibilidad*, preprint 1.0 (2026), vinculada al freeze `PAPER_I_LEAN_20261020_ALIGNED_v2`. Documento técnico complementario; preparado para el lanzamiento. [Documento](https://github.com/jtraverso/nash-williams-private-review/blob/main/preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.md).
+
+[8] T. Hales et al., *A formal proof of the Kepler conjecture*, arXiv:1501.02155. https://arxiv.org/abs/1501.02155.
+
+[9] C. Edmonds, A. Koutsoukou-Argyraki y L. C. Paulson, *Formalising Szemerédi's Regularity Lemma and Roth's Theorem on Arithmetic Progressions in Isabelle/HOL*, arXiv:2207.07499v2. https://arxiv.org/abs/2207.07499v2.
+
+[10] Y. Dillies y B. Mehta, *Formalising Szemerédi's Regularity Lemma in Lean*, ITP 2022. https://doi.org/10.4230/LIPIcs.ITP.2022.9.
+
+[11] J. P. Traverso Gianini, *Certo*, repositorio de software. https://github.com/jtraverso/certo-math.
+
+[12] *Jacobian*, repositorio de software. https://github.com/morluto/jacobian.
+
+[13] J. P. Traverso Gianini, *Pseudorandom hypergraph matchings (Ehard–Glock–Joos)*, formalización en Lean, Palomar, PALOMAR-2026-10-17-000004, versión 1 (2026). [Versión registrada](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-17-000004&version=1).
+
+[14] S. Arora, D. Karger and M. Karpinski, *Polynomial Time Approximation Schemes for Dense Instances of NP-Hard Problems*, Journal of Computer and System Sciences 58 (1999), 193–210. https://www.sciencedirect.com/science/article/pii/S0022000098916051.
+
+[15] O. Goldreich, S. Goldwasser and D. Ron, *Property Testing and Its Connection to Learning and Approximation*, Journal of the ACM 45 (1998), 653–750. https://www.wisdom.weizmann.ac.il/~oded/PDF/ggr-jacm.pdf.

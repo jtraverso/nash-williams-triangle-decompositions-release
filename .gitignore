@@ -1,0 +1,10 @@
+__pycache__/
+_preview/
+dist/
+.wrangler/
+.env
+.env.*
+!.env.example
+*.olean
+*.ilean
+.lake/

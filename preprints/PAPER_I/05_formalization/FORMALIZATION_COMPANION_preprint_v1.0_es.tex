@@ -1,0 +1,308 @@
+% Adapted from the author's public Erdos Paper IV v1.23 series_template.tex.
+% Layout provenance is recorded in 02_validation; the Markdown is semantic authority.
+\documentclass[spanish,11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf,BoldItalicFont=lmroman10-bolditalic.otf]
+\setsansfont{lmsans10-regular.otf}[BoldFont=lmsans10-bold.otf]
+\setmonofont{lmmono10-regular.otf}[Scale=MatchLowercase]
+\usepackage{amsmath,amssymb}
+\providecommand{\mathscr}{\mathcal}
+\usepackage[spanish,es-noshorthands,es-tabla]{babel}
+\usepackage{microtype,parskip}
+\usepackage{longtable,booktabs,array,calc}
+\usepackage{xcolor,xurl}
+\usepackage{hyperref,bookmark}
+\usepackage{etoolbox,needspace}
+\setcounter{secnumdepth}{-\maxdimen}
+\setlength{\emergencystretch}{3em}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\newcounter{none}
+\AtBeginEnvironment{longtable}{\Needspace{8\baselineskip}\small}
+\pretocmd{\section}{\Needspace{5\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace{4\baselineskip}}{}{}
+\pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
+\urlstyle{same}
+\hypersetup{pdftitle={Descomposiciones en triángulos I: Documento de formalización y reproducibilidad},pdfauthor={Juan Pablo Traverso Gianini},
+pdflang={es-ES},colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\title{Descomposiciones en triángulos I: Documento de formalización y reproducibilidad}
+\author{Juan Pablo Traverso Gianini\\
+\small Investigador independiente, Santiago, Chile\\
+\small \href{mailto:jtraverso@gmail.com}{jtraverso@gmail.com}\\
+\small ORCID: 0009-0003-6068-4096}
+\date{}
+\begin{document}
+\raggedbottom
+\maketitle
+\textbf{Documento complementario del Paper I de la serie:} \emph{Descomposiciones en triángulos I: Formalización del teorema de Nash-Williams en Lean} {[}1{]}, preprint 1.0 del manuscrito.
+
+\textbf{Paper II de la serie:} \emph{Descomposiciones en triángulos II: Absorción robusta para triángulos tipados} {[}2{]}.
+
+\textbf{Preprint 1.0 --- 20 de octubre de 2026.}
+
+\subsection{Resumen}\label{resumen}
+
+Este documento registra el alcance formal y la evidencia de reproducibilidad de Paper I. El freeze alineado seleccionado registra una compilación limpia completa de 1.070 módulos del proyecto y seis consultas finales de axiomas. Identificamos el teorema final, los resultados fraccionales, las entradas tipadas de sustitución, el objetivo exacto de auditoría, la alineación de fuentes y las dependencias fijadas. Distinguimos esta compilación local de una reproducción independiente y de la validación separada de Paper II. La presente actualización editorial inspecciona la evidencia entregada sin ejecutar Lean de nuevo.
+
+\subsection{1. Alcance e identidad de las fuentes}\label{alcance-e-identidad-de-las-fuentes}
+
+Paper I formaliza el teorema de Delcourt y Postle {[}3, Teorema 1.8{]}: todo grafo suficientemente grande, divisible en triángulos y con grado mínimo al menos igual a tres cuartos de su orden admite una descomposición en triángulos. El desarrollo formal incluye también su teorema fraccional y sus resultados de estabilidad. Este documento identifica las declaraciones, los resultados de sustitución usados en la prueba entera y la evidencia correspondiente a una versión fija de las fuentes. Es un registro técnico, no un reemplazo de las demostraciones matemáticas de Papers I y II.
+
+La compilación limpia terminó satisfactoriamente. Su objetivo explícito fue \texttt{Request\allowbreak{}Project.\allowbreak{}NW18.\allowbreak{}Audit\allowbreak{}Paper\allowbreak{}IIAssembly}, y el teorema final es \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}I.\allowbreak{}nash\_\allowbreak{}williams\_\allowbreak{}via\_\allowbreak{}paper\allowbreak{}II}. Los 1.070 módulos del proyecto en la clausura de importaciones tienen recibos satisfactorios. Las huellas de sus fuentes y de los objetos importados del proyecto forman una cadena coherente. Pasaron las seis consultas finales de axiomas y la auditoría de dependencias de la prueba.
+
+Estas afirmaciones se refieren a ese objetivo, no a todos los archivos incluidos ni al árbol actual completo de Paper II. Paper I utiliza los resultados particulares de Paper II presentes en esta versión congelada. La validación incremental separada de Paper II registrada en \texttt{PAPER\_\allowbreak{}II\_\allowbreak{}LEAN\_\allowbreak{}20261019\_\allowbreak{}v1} pasó, incluidas las diecisiete familias y la exhaustividad del censo. No es necesaria para certificar la versión congelada de Paper I.
+
+El freeze de fuentes seleccionado es \texttt{PAPER\_\allowbreak{}I\_\allowbreak{}LEAN\_\allowbreak{}20261020\_\allowbreak{}ALIGNED\_\allowbreak{}v2}. El SHA-256 del archivo es
+
+\texttt{c04ca7dd\allowbreak{}432322fa\allowbreak{}65eab196\allowbreak{}d5895425\allowbreak{}2f8e0f37\allowbreak{}7222bd57\allowbreak{}a6a0c94e\allowbreak{}e82e116e}.
+
+Preprint 1.0 es la versión de publicación de este documento técnico dentro de la serie. Los documentos anteriores de revisión privada y el companion conservado dentro del archivo original mantienen sus propias etiquetas de versión. Este documento no reemplaza esos registros ni modifica el archivo. Sus metadatos de lanzamiento y sus huellas documentales se registran por separado.
+
+El freeze seleccionado registra la compilación desde un directorio de salida del proyecto vacío, sin reutilizar objetos del proyecto de builds anteriores. El anterior \texttt{PAPER\_\allowbreak{}I\_\allowbreak{}LEAN\_\allowbreak{}20261017\_\allowbreak{}v1} se conserva como evidencia histórica; su pasada incremental final recompiló cinco módulos. Ninguno de los dos registros es una reproducción independiente por terceros. La Sección 6 describe las reanudaciones dentro de la campaña limpia y el uso de productos de build de Mathlib en caché.
+
+
+\Needspace{9\baselineskip}
+\subsection{2. Enunciado matemático y definiciones}\label{enunciado-matemuxe1tico-y-definiciones}
+
+La declaración principal comprobada tiene el orden de cuantificadores
+
+\[\begin{gathered}
+\exists N\in\mathbb N\;\forall G:\\
+n\ge N,\quad 3\mid |E(G)|,\quad
+(\forall v,\;2\mid d_G(v)),\quad 3n\le4\delta(G)
+\\
+\Longrightarrow\quad G\text{ admite una descomposición en triángulos}.
+\end{gathered}\]
+
+Aquí \(G\) es un grafo simple finito, \(n=|V(G)|\), y el umbral de orden se elige antes del grafo. El umbral de grado es exactamente \(3n/4\), no \((3/4+\varepsilon)n\). La declaración afirma que existe \(N\); este documento no proporciona un valor numérico.
+
+\texttt{Nash\allowbreak{}Williams.\allowbreak{}Is\allowbreak{}Triangle\allowbreak{}Divisible} exige que \texttt{G.\allowbreak{}edge\allowbreak{}Finset.\allowbreak{}card} sea divisible por tres y que \texttt{Even\ (G.\allowbreak{}degree\ v)} valga para todo vértice. \texttt{Nash\allowbreak{}Williams.\allowbreak{}Is\allowbreak{}Triangle\allowbreak{}Decomposition} exige una familia finita de cliques de tres elementos y un único miembro que contenga los extremos de cada arista. \texttt{Nash\allowbreak{}Williams.\allowbreak{}Has\allowbreak{}Triangle\allowbreak{}Decomposition} cuantifica existencialmente esa familia. Las definiciones están en \texttt{Request\allowbreak{}Project/\allowbreak{}Nash\allowbreak{}Williams\allowbreak{}Basic.\allowbreak{}lean}.
+
+Para comparar con el enunciado matemático, el tipo con los espacios de nombres abiertos es:
+
+\begin{verbatim}
+Exists fun N : Nat =>
+  forall (V : Type) [Fintype V] [DecidableEq V]
+    (G : SimpleGraph V) [DecidableRel G.Adj],
+    N <= Fintype.card V ->
+    IsTriangleDivisible G ->
+    3 * Fintype.card V <= 4 * G.minDegree ->
+    HasTriangleDecomposition G
+\end{verbatim}
+
+El enunciado formal lleva además las instancias de finitud y decidibilidad necesarias para representar un grafo finito en Lean. Son parámetros de representación, no hipótesis adicionales de teoría de grafos. Ni una descomposición fraccional ni un certificado de absorción son premisas de la declaración final.
+
+
+\Needspace{9\baselineskip}
+\subsection{3. Enunciados disponibles en la clausura seleccionada}\label{enunciados-disponibles-en-la-clausura-seleccionada}
+
+Las rutas siguientes son relativas a \texttt{source/\allowbreak{}} dentro del archivo. Todos los módulos enumerados pertenecen a la clausura de importaciones comprobada. Su inclusión aquí no significa que cada declaración haya recibido una consulta final de axiomas por separado: la Sección 5 enumera exactamente las seis declaraciones consultadas.
+
+\textbf{Umbral fraccional, Delcourt-Postle 1.4.} \texttt{Nash\allowbreak{}Williams.\allowbreak{}Frac.\allowbreak{}exists\_\allowbreak{}fractional\_\allowbreak{}weights}, en \texttt{Request\allowbreak{}Project/\allowbreak{}Fractional/\allowbreak{}Final.\allowbreak{}lean}, produce pesos reales no negativos sobre conjuntos finitos de vértices. Para cada arista, la suma sobre las cliques de tres vértices que contienen sus extremos es uno. La única desigualdad sobre el grafo es \texttt{3\ *\ Fintype.\allowbreak{}card\ V\ \ensuremath{\le}\ 4\ *\ G.\allowbreak{}min\allowbreak{}Degree}; no exige divisibilidad entera ni orden suficientemente grande.
+
+\textbf{Estabilidad fraccional, Delcourt-Postle 1.6.} \texttt{Nash\allowbreak{}Williams.\allowbreak{}Frac.\allowbreak{}theorem\_\allowbreak{}1\_\allowbreak{}6\_\allowbreak{}proof}, en \texttt{Request\allowbreak{}Project/\allowbreak{}Frac\allowbreak{}Stab/\allowbreak{}Main.\allowbreak{}lean}, elige primero \(\exists\sigma_0>0\), después \(\forall\sigma\in(0,\sigma_0]\) y luego \(\exists\varepsilon>0\) y \(n_0\). Por encima de ese orden y del grado \((3/4-\varepsilon)n\), la inexistencia de una descomposición fraccional en triángulos implica \texttt{Is\allowbreak{}Extremal\ \ensuremath{\sigma}\ G}.
+
+\textbf{Estabilidad fraccional regular, Delcourt-Postle 2.6.} \texttt{Nash\allowbreak{}Williams18.\allowbreak{}theorem\_\allowbreak{}2\_\allowbreak{}6}, en \texttt{Request\allowbreak{}Project/\allowbreak{}NW18/\allowbreak{}Theorem26Proof.\allowbreak{}lean}, elige también \(C\ge1\) antes del grafo. La inexistencia de una descomposición fraccional \texttt{C}-regular implica la misma conclusión de extremalidad. La descomposición regular incluye cobertura exacta de las aristas, no solamente aproximada.
+
+\textbf{Teorema entero, Delcourt-Postle 1.8.} \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}I.\allowbreak{}nash\_\allowbreak{}williams\_\allowbreak{}via\_\allowbreak{}paper\allowbreak{}II}, en \texttt{Request\allowbreak{}Project/\allowbreak{}NW18/\allowbreak{}Paper\allowbreak{}IIAssembly.\allowbreak{}lean}, es el teorema final enunciado en la Sección 2 de este documento y en (1.1) del manuscrito. La declaración intermedia \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}I.\allowbreak{}nash\_\allowbreak{}williams\_\allowbreak{}of\_\allowbreak{}paper\allowbreak{}II\_\allowbreak{}inputs} todavía recibe \texttt{Branch124Statement} y \texttt{Theorem146Statement}; la declaración final proporciona ambas pruebas. La distinción importa: un adaptador con premisas pendientes no es el resultado completo.
+
+\textbf{Resultado de emparejamientos de Ehard-Glock-Joos.} La declaración local utilizada es \texttt{Pseudorandom.\allowbreak{}theorem\_\allowbreak{}1\_\allowbreak{}2}. Su presencia aquí no afirma que el objetivo de Paper I haya auditado todos los teoremas de aquel artículo. La formalización separada de EGJ tiene su propio registro y espacio de nombres; el manuscrito la documenta por separado. Durante este freeze no se sustituyó la fuente local por un paquete público.
+
+
+\Needspace{9\baselineskip}
+\subsection{4. Las cuatro ramas de sustitución}\label{las-cuatro-ramas-de-sustituciuxf3n}
+
+Delcourt y Postle {[}3{]} usan el Teorema 13.16 y atribuyen su prueba al manuscrito que figura como referencia 17. Al preparar Paper I no se había localizado una versión pública de ese manuscrito. Lo que afirmamos aquí es que nuestra prueba seleccionada no depende del Teorema 13.16. No inferimos que el manuscrito no exista, que su teorema sea falso ni que nuestro resultado equivalga a un enunciado no disponible.
+
+{\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Rama de {[}3{]}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Sustitución en el ensamblaje comprobado
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+12.4, no extremal & El productor demostrado de la ronda protegida, seguido de la construcción terminal de absorción. \\
+12.5 mediante 14.6 & El teorema semidenso separado \texttt{F0Direct.\allowbreak{}theorem146\_\allowbreak{}ordered}, mediante el adaptador F0. \\
+12.6 y 12.7 mediante 14.7 & El resultado tipado casi completo \texttt{Padded\allowbreak{}General.\allowbreak{}Real\allowbreak{}Inverse.\allowbreak{}idealized\_\allowbreak{}F12}, mediante los adaptadores F1 y F2. \\
+12.8, cuatro colores & El nuevo puente F3 hacia \texttt{Padded\allowbreak{}General.\allowbreak{}Real\allowbreak{}Inverse.\allowbreak{}nearly\allowbreak{}Complete\_\allowbreak{}F123}. \\
+\end{longtable}
+}
+
+La entrada no extremal es \texttt{round\allowbreak{}Univ\allowbreak{}Spec124\_\allowbreak{}holds}, que se aplica mediante \texttt{round\allowbreak{}Spec124\_\allowbreak{}of\_\allowbreak{}univ} y \texttt{branch124\_\allowbreak{}of\_\allowbreak{}round}. Se construye en el árbol congelado, no se postula. Esta rama no es una aplicación de blowups tipados casi completos.
+
+El adaptador F0 es \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}II.\allowbreak{}theorem146\_\allowbreak{}F0}. Su prueba usa el teorema semidenso separado; el ensamblaje no atribuye F0 a la geometría de F1 y F2. La implementación cuenta discrepancias ordenadas: cada arista editada no ordenada contribuye dos. El umbral del manuscrito corresponde, por tanto, al doble de discrepancias ordenadas, como se indica en Paper II, Sección 5. Los adaptadores conservan esta conversión.
+
+Los adaptadores F1 y F2 son \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}II.\allowbreak{}theorem147\_\allowbreak{}F1} y \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}II.\allowbreak{}theorem147\_\allowbreak{}F2}. En \texttt{Blowup\allowbreak{}Paper\allowbreak{}Inputs.\allowbreak{}lean}, \texttt{idealized\_\allowbreak{}iff\_\allowbreak{}paper\allowbreak{}II} se demuestra mediante \texttt{Iff.\allowbreak{}rfl}: los predicados del anfitrión son idénticos por definición. Es una identificación explícita de hipótesis, no una conversión inferida por semejanza de nombres.
+
+El puente F3 es \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}II.\allowbreak{}margin\_\allowbreak{}four\_\allowbreak{}colour\_\allowbreak{}decomposition}, en \texttt{Partitioned\allowbreak{}Triangle\allowbreak{}Absorption/\allowbreak{}Paper\allowbreak{}II/\allowbreak{}Four\allowbreak{}Colour\allowbreak{}Application.\allowbreak{}lean}. Recibe una coloración propia de cuatro colores, la condición de grado próxima al umbral, grados pares y los dos balances de conteos de aristas entre pares opuestos. Su conclusión proporciona una descomposición F3 y la descomposición F0 obtenida al agrupar colores, sobre el mismo conjunto de aristas. Elige
+
+\[\varepsilon=\min\{1/16,\eta/3,\delta/4\}.\]
+
+Las cotas de tamaños de clases dan un grado de aristas faltantes a lo sumo \(4\varepsilon n\); están demostradas las dos desigualdades necesarias para el piso que se usa como parámetro entero. La auditoría final exige este puente y prohíbe el antiguo \texttt{Four\allowbreak{}Colour\allowbreak{}Consumer\allowbreak{}Stage84.\allowbreak{}margin\_\allowbreak{}four\_\allowbreak{}colour\_\allowbreak{}decomposition} en la clausura de dependencias de la prueba del teorema.
+
+En el freeze separado \texttt{PAPER\_\allowbreak{}II\_\allowbreak{}LEAN\_\allowbreak{}20261019\_\allowbreak{}v1}, la entrada final \texttt{Paper\allowbreak{}IApplications} de Paper II consulta \texttt{Partitioned\allowbreak{}Triangle\allowbreak{}Absorption.\allowbreak{}Four\allowbreak{}Colour\allowbreak{}Consumer\allowbreak{}Stage84.\allowbreak{}margin\_\allowbreak{}four\_\allowbreak{}colour\_\allowbreak{}decomposition}. Paper I excluye ese consumidor anterior de su prueba final y utiliza en cambio \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}II.\allowbreak{}margin\_\allowbreak{}four\_\allowbreak{}colour\_\allowbreak{}decomposition}, que invoca \texttt{nearly\allowbreak{}Complete\_\allowbreak{}F123}. Este último tiene evidencia de axiomas a nivel de módulo en Paper II, pero no es una de sus quince consultas finales de entrada. La auditoría de dependencias y las consultas del teorema final de Paper I certifican la ruta realmente utilizada por Paper I. No deben describirse objetivos consultados distintos como un único punto de entrada sincronizado. El archivo alineado de Paper I certifica el puente trasladado mediante su propio objetivo final. No certifica una nueva auditoría de \texttt{Paper\allowbreak{}IApplications} para Paper II; eso requiere el freeze separado de Paper II.
+
+
+\Needspace{9\baselineskip}
+\subsection{5. Evidencia de axiomas y dependencias}\label{evidencia-de-axiomas-y-dependencias}
+
+\texttt{Audit\allowbreak{}Paper\allowbreak{}IIAssembly.\allowbreak{}lean} recorre las constantes presentes en los tipos y términos de prueba del teorema final. Comprueba las sustituciones exigidas y excluye la antigua ruta global. Esto es más preciso que encontrar una importación en una fuente: una declaración importada puede estar disponible sin intervenir en la prueba final.
+
+Las seis consultas finales son:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}II.\allowbreak{}theorem146\_\allowbreak{}F0};
+\item
+  \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}II.\allowbreak{}theorem147\_\allowbreak{}F1};
+\item
+  \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}II.\allowbreak{}theorem147\_\allowbreak{}F2};
+\item
+  \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}II.\allowbreak{}typed\_\allowbreak{}inputs};
+\item
+  \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}I.\allowbreak{}nash\_\allowbreak{}williams\_\allowbreak{}of\_\allowbreak{}paper\allowbreak{}II\_\allowbreak{}inputs};
+\item
+  \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}I.\allowbreak{}nash\_\allowbreak{}williams\_\allowbreak{}via\_\allowbreak{}paper\allowbreak{}II}.
+\end{enumerate}
+
+Cada una informó exactamente \texttt{propext}, \texttt{Classical.\allowbreak{}choice} y \texttt{Quot.\allowbreak{}sound}. Ninguna informó \texttt{sorry\allowbreak{}Ax} ni un axioma matemático adicional. Son los axiomas fundacionales de Lean, por lo que sería incorrecto escribir «sin axiomas». La auditoría final no contiene errores ni advertencias. Los registros de compilación de módulos sí contienen advertencias; no se afirma que el proyecto esté libre de ellas.
+
+La auditoría de dependencias informa \texttt{PASS\_\allowbreak{}PAPERII\_\allowbreak{}PROOF\_\allowbreak{}DEPENDENCIES}. Entre las constantes exigidas están el teorema F0, \texttt{idealized\_\allowbreak{}F12}, el puente F3, \texttt{nearly\allowbreak{}Complete\_\allowbreak{}F123}, \texttt{complete\allowbreak{}Inverse\allowbreak{}Cert\allowbreak{}Local\allowbreak{}Bound\_\allowbreak{}general} y \texttt{Universal\allowbreak{}Producer.\allowbreak{}producer\allowbreak{}Target\_\allowbreak{}of\_\allowbreak{}three\allowbreak{}Step\allowbreak{}Links}. Entre las prohibidas están \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Theorem1316Statement}, la antigua declaración \texttt{nash\_\allowbreak{}williams}, la ruta alternativa de vórtice F1 y el antiguo consumidor F3. Las listas completas están en la fuente congelada de la auditoría.
+
+El sello del archivo v2 reporta \texttt{PASS\_\allowbreak{}LICENSE\_\allowbreak{}ONLY\_\allowbreak{}REPACKAGE}; la evidencia de compilación limpia registrada en v1 no cambia. El archivo interno \texttt{evidence/\allowbreak{}verification.\allowbreak{}json} tiene SHA-256
+
+\texttt{d83783e3\allowbreak{}a0dbcc7d\allowbreak{}3bf1a465\allowbreak{}460b3996\allowbreak{}c0889dc6\allowbreak{}371d362d\allowbreak{}766e0e48\allowbreak{}f6583497}.
+
+Esa huella identifica el registro sellado de verificación, no el ZIP ni este documento. Sus huellas se registran por separado.
+
+\subsection{6. Identidad de las fuentes, paquetes y alcance de compilación}\label{identidad-de-las-fuentes-paquetes-y-alcance-de-compilaciuxf3n}
+
+El toolchain es \texttt{leanprover/\allowbreak{}lean4:v4.\allowbreak{}35.\allowbreak{}0-rc3}. Mathlib está fijado en \texttt{c55e6e78\allowbreak{}6f49471c\allowbreak{}72fbddbe\allowbreak{}c5415808\allowbreak{}896aec1e}; el archivo de dependencias fija ocho paquetes auxiliares. Sus revisiones figuran en \texttt{evidence/\allowbreak{}environment.\allowbreak{}json} y \texttt{source/\allowbreak{}lake-manifest.\allowbreak{}json}. La compilación utilizó los productos de build de esa revisión de Mathlib. No se recompiló Mathlib.
+
+La clausura seleccionada tiene 1.070 módulos: 251 en \texttt{Request\allowbreak{}Project} y 819 en \texttt{Partitioned\allowbreak{}Triangle\allowbreak{}Absorption}, incluido su módulo raíz. El archivo contiene exactamente esas fuentes del proyecto. No certifica el desarrollo completo de Paper II.
+
+La alineación parte de los freezes anteriores de Paper I y Paper II. Los 623 módulos previamente compartidos toman la fuente de Paper II. Así se resuelven las cuatro diferencias en \texttt{Typed\allowbreak{}Refiner\allowbreak{}F0.\allowbreak{}Perm\allowbreak{}Count}, \texttt{Typed\allowbreak{}Refiner\allowbreak{}F0.\allowbreak{}Estimates}, \texttt{Typed\allowbreak{}Refiner\allowbreak{}F0.\allowbreak{}Robust\allowbreak{}Hall} y \texttt{Blowup\allowbreak{}B.\allowbreak{}Padded\allowbreak{}General.\allowbreak{}Real\allowbreak{}Inverse.\allowbreak{}Routed\allowbreak{}Paper}. Los 194 módulos de ese espacio de nombres exclusivos de Paper I conservan sus fuentes. La aplicación de cuatro colores se traslada, sin modificar su contenido ni los nombres de sus declaraciones, de \texttt{Request\allowbreak{}Project.\allowbreak{}NW18.\allowbreak{}Four\allowbreak{}Colour\allowbreak{}Paper\allowbreak{}II} a \texttt{Partitioned\allowbreak{}Triangle\allowbreak{}Absorption.\allowbreak{}Paper\allowbreak{}II.\allowbreak{}Four\allowbreak{}Colour\allowbreak{}Application}; el import de \texttt{Case128Reduction} sigue ese traslado. La clausura resultante tiene un módulo adicional. El manifiesto de alineación registra el origen de las fuentes y los cambios; no afirma que el objetivo de Paper I haya compilado todos los módulos del desarrollo alineado completo.
+
+La compilación limpia comenzó con un directorio de salida del proyecto vacío. Se realizó en varias invocaciones de \texttt{tools/\allowbreak{}build.\allowbreak{}py\ paper\_\allowbreak{}I}, reanudadas tras ajustes de recursos. Las invocaciones reanudadas solo aceptaron objetos con recibos satisfactorios de esta campaña y hashes vigentes de fuente y objeto. No se reutilizaron objetos del proyecto de los freezes anteriores. El objetivo final compiló las seis consultas y la comprobación de dependencias de la prueba.
+
+Al sellar el paquete, \texttt{tools/\allowbreak{}make\_\allowbreak{}freeze.\allowbreak{}py} comprobó los 1.070 recibos, las huellas de fuentes y objetos y cada huella registrada de los objetos importados del proyecto. Los primeros 23 módulos habían utilizado inicialmente otro checkout de Mathlib de la misma revisión; al recompilarlos contra el checkout final, los 23 objetos resultaron idénticos byte por byte. Es una compilación limpia local completa, no una reproducción independiente por terceros.
+
+\subsection{7. Cómo reproducir el objetivo seleccionado}\label{cuxf3mo-reproducir-el-objetivo-seleccionado}
+
+El archivo conserva los scripts utilizados en la campaña. Estos emplean inspección de memoria específica de Windows y rutas fijas de trabajo; no son un adaptador portable que pueda ejecutarse desde cualquier directorio de extracción. Se omiten los ejecutables de Lean, los objetos compilados del proyecto y las cachés de dependencias.
+
+Para repetir el procedimiento registrado, primero deben inspeccionarse \texttt{tools/\allowbreak{}align.\allowbreak{}py} y \texttt{tools/\allowbreak{}build.\allowbreak{}py} y prepararse ubicaciones aisladas para sus rutas de archivos, fuentes y resultados. Se necesitan los dos archivos de fuentes identificados en \texttt{evidence/\allowbreak{}environment.\allowbreak{}json}, cuyas huellas deben verificarse, y el toolchain fijado. \texttt{align.\allowbreak{}py} reconstruye el árbol alineado y el plan por fases a partir de esos archivos. Deben proporcionarse Mathlib y los ocho paquetes auxiliares en las revisiones fijadas, con sus productos de build correspondientes, y comprobar esas revisiones antes de invocar el compilador dirigido.
+
+Las operaciones de la campaña son:
+
+\begin{verbatim}
+elan toolchain install leanprover/lean4:v4.35.0-rc3
+python tools/align.py
+python tools/build.py paper_I --workers 4 --threads 3 --memory-mb 5000
+\end{verbatim}
+
+Estos comandos requieren la preparación de rutas y dependencias descrita arriba. La primera invocación debe utilizar un directorio de salida del proyecto vacío. Una continuación de la misma campaña puede usar \texttt{-\/\allowbreak{}-resume}; esa opción no sustituye el inicio limpio. \texttt{tools/\allowbreak{}make\_\allowbreak{}freeze.\allowbreak{}py} verifica la cadena de huellas de fuentes, objetos e imports y prepara un registro nuevo. Debe ejecutarse con una ubicación de salida separada, sin sobrescribir el archivo seleccionado.
+
+La evidencia histórica puede inspeccionarse sin Lean: se verifica la huella del archivo y su \texttt{SHA256SUMS.\allowbreak{}txt} interno, se comparan las huellas de fuentes con los recibos y cada huella de import con el recibo del módulo importado. Los objetos compilados se omiten, por lo que sus bytes no pueden comprobarse de nuevo solo a partir del archivo; el productor los comprobó al sellarlo. Esta revisión editorial realiza esas verificaciones estáticas y no repite la compilación registrada.
+
+\subsection{8. Cómo leer el archivo}\label{cuxf3mo-leer-el-archivo}
+
+\texttt{evidence/\allowbreak{}ALIGNMENT\_\allowbreak{}MANIFEST.\allowbreak{}json} identifica el origen de las fuentes y los cambios de alineación. \texttt{evidence/\allowbreak{}build\_\allowbreak{}plan.\allowbreak{}json} da el objetivo, el orden topológico de sus 1.070 módulos y los imports del proyecto. \texttt{evidence/\allowbreak{}receipts/\allowbreak{}} contiene huellas de fuentes, dependencias y objetos; \texttt{evidence/\allowbreak{}module\_\allowbreak{}logs/\allowbreak{}} conserva la salida del compilador para cada módulo. \texttt{evidence/\allowbreak{}final\_\allowbreak{}audit.\allowbreak{}log} contiene las seis consultas finales y el indicador de éxito de dependencias. \texttt{evidence/\allowbreak{}verification.\allowbreak{}json} registra las comprobaciones del sellado; \texttt{evidence/\allowbreak{}early\_\allowbreak{}module\_\allowbreak{}recheck.\allowbreak{}txt} registra la comparación de 23 módulos.
+
+\texttt{source/\allowbreak{}} contiene la clausura seleccionada y la configuración fijada; \texttt{tools/\allowbreak{}} conserva los scripts de la campaña. \texttt{SHA256SUMS.\allowbreak{}txt} vincula 3.237 archivos internos. El ZIP contiene 3.238 archivos contando ese manifiesto, y su archivo de huella externo da el resumen del ZIP. Los manuscritos y documentos complementarios se mantienen fuera de este archivo Lean.
+
+La versión v2 añade \texttt{LICENSE}, \texttt{source/\allowbreak{}LICENSE}, \texttt{LICENSING.\allowbreak{}md} y los nueve archivos originales de licencias de dependencias en \texttt{dependencies/\allowbreak{}licenses/\allowbreak{}}. Los materiales originales de empaquetado del autor utilizan Apache-2.0; la licencia de las fuentes se restaura desde el freeze original de Paper II. Siguen vigentes las licencias y los avisos de atribución de las dependencias, incluida la licencia MIT de Cli. Todos los archivos previos, salvo \texttt{SHA256SUMS.\allowbreak{}txt}, regenerado, son idénticos byte por byte a v1: no cambian las fuentes, la configuración de compilación, los scripts de la campaña ni la evidencia de las pruebas. Los identificadores v1 del README histórico y de la evidencia siguen identificando la compilación original. Este reempaquetado de licencias no registra un build nuevo.
+
+Los documentos en inglés y español comparten las mismas declaraciones, enunciados matemáticos, alcance y limitaciones. Utilizan la plantilla LaTeX local de Paper I. La compilación documental y la inspección de páginas renderizadas son distintas de la inspección de la evidencia registrada de la prueba Lean.
+
+\subsection{9. Atribución y preparación del lanzamiento}\label{atribuciuxf3n-y-preparaciuxf3n-del-lanzamiento}
+
+El teorema de Nash-Williams y los resultados fraccionales formalizados aquí se atribuyen a Delcourt y Postle {[}3{]}. La matemática que los sustituye en los puntos señalados se explica en los dos papers. El autor es responsable de comprobar que los enunciados escritos coincidan con sus versiones formales. Los métodos y límites de estas sustituciones deben permanecer visibles en los manuscritos, no solamente aquí.
+
+Claude, de Anthropic, y ChatGPT/Codex, de OpenAI, se utilizaron para explorar y comprobar argumentos y para preparar el manuscrito. Aristotle, de Harmonic, contribuyó a la exploración de enfoques, la búsqueda de contraejemplos, el desarrollo de demostraciones y su formalización y revisión en Lean. Su función no se limitó a traducir pruebas ya terminadas.
+
+Certo {[}5{]} y Jacobian {[}6{]} se utilizaron para explorar casos finitos, comprobar identidades y evaluar construcciones candidatas. Estos cálculos orientaron el desarrollo de los argumentos; las comprobaciones finitas no se trataron como pruebas de enunciados universales.
+
+El autor es responsable de los argumentos, las citas, el código y la exposición. Ningún sistema de IA figura como autor.
+
+Las fuentes alineadas y la evidencia seleccionadas están en \href{https://github.com/jtraverso/nash-williams-private-review/blob/49235c3bf89f00b6f75e69c409e18c05c0e2a6f3/archives/PAPER_I_LEAN_20261020_ALIGNED_v2.zip}{el archivo del commit \texttt{49235c3bf89f}}. Esta referencia requiere acceso al repositorio y no afirma disponibilidad pública. El archivo anterior se conserva sin cambios como registro histórico; el manuscrito y el documento complementario actuales son archivos separados.
+
+Paper II preprint 1.0 {[}2{]} presenta el refinador por enlaces de tres pasos y el ensamblaje cuantitativo en el Apéndice B, el teorema semidenso en el Apéndice C y las construcciones PAR/BAL en el Apéndice E. El Apéndice H aporta pruebas escritas de la biblioteca compatible y de las construcciones auxiliares generales; los certificados finitos de familias siguen siendo datos explícitos de las fuentes. Los dossiers anteriores se conservan en {[}7{]}. Paper I utiliza ahora las fuentes alineadas para sus entradas tipadas seleccionadas, comprobadas dentro de su propia clausura limpia. Esto no extiende su validación a todo Paper II.
+
+La evidencia formal seleccionada es la compilación limpia local completa registrada en el archivo alineado. Esta actualización editorial comprueba ese registro sin ejecutar un nuevo build. No afirma una reproducción independiente. El archivo seleccionado incluye ahora las licencias de fuentes y dependencias; la distribución pública sigue requiriendo la aprobación final del autor. Este documento y su manuscrito permanecen privados hasta aprobar el lanzamiento coordinado.
+
+\subsection{Apéndice. Declaraciones principales en Lean}\label{apuxe9ndice.-declaraciones-principales-en-lean}
+
+Los teoremas fraccionales, el teorema de emparejamientos y los resultados de descomposición tipada se desarrollan por separado. El ensamblaje final los importa mediante los enunciados utilizados en la división en casos. Esto permite comparar las hipótesis de cada resultado con las propiedades demostradas para el grafo residual; las Secciones 4--7 documentan sus archivos de origen y dependencias.
+
+El índice incluye el espacio de nombres cuando el nombre corto sería ambiguo; las Secciones 4--7 proporcionan los archivos, los nombres completos de las demás declaraciones y los registros de dependencias.
+
+{\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Resultado
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Declaración
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Teorema principal (Delcourt--Postle 1.8) & \texttt{nash\_\allowbreak{}williams\_\allowbreak{}via\_\allowbreak{}paper\allowbreak{}II} \\
+Delcourt--Postle 1.4 & \texttt{Nash\allowbreak{}Williams.\allowbreak{}Frac.\allowbreak{}exists\_\allowbreak{}fractional\_\allowbreak{}weights} \\
+Delcourt--Postle 1.6 & \texttt{Nash\allowbreak{}Williams.\allowbreak{}Frac.\allowbreak{}theorem\_\allowbreak{}1\_\allowbreak{}6\_\allowbreak{}proof} \\
+Delcourt--Postle 2.6 & \texttt{Nash\allowbreak{}Williams18.\allowbreak{}theorem\_\allowbreak{}2\_\allowbreak{}6} \\
+Ehard--Glock--Joos 1.2 & \texttt{Pseudorandom.\allowbreak{}theorem\_\allowbreak{}1\_\allowbreak{}2} \\
+Proposición 3.1 & \texttt{Nash\allowbreak{}Williams18.\allowbreak{}Paper\allowbreak{}II.\allowbreak{}margin\_\allowbreak{}four\_\allowbreak{}colour\_\allowbreak{}decomposition} \\
+Teorema 3.2 & \texttt{idealized\_\allowbreak{}F12} \\
+Teorema 3.3, tal como se utiliza aquí & \texttt{theorem146\_\allowbreak{}F0} \\
+Proposición 4.1 & \texttt{regular\_\allowbreak{}seed\_\allowbreak{}nibble} \\
+Proposición 4.2 & \texttt{round\allowbreak{}Univ\allowbreak{}Spec124\_\allowbreak{}holds} \\
+Corolario 4.3 & \texttt{branch124\_\allowbreak{}of\_\allowbreak{}round} (condicional a \texttt{Round\allowbreak{}Spec124}; instanciado más abajo) \\
+Delcourt--Postle 11.4 & \texttt{Sampling.\allowbreak{}maxcut\_\allowbreak{}sample} \\
+Delcourt--Postle 14.4 & \texttt{lemma\_\allowbreak{}14\_\allowbreak{}4\_\allowbreak{}configs\_\allowbreak{}proof} \\
+Lema A.1 & \texttt{Parity\allowbreak{}Fill.\allowbreak{}signed\_\allowbreak{}certificate} (versión más fuerte con pequeño defecto de grado) \\
+Paper II, Lema SC (triángulos ordinarios) & \texttt{Nash\allowbreak{}Williams18.\allowbreak{}absorber\_\allowbreak{}one\allowbreak{}Part} \\
+\end{longtable}
+}
+
+La formalización independiente de EGJ está registrada en Palomar como PALOMAR-2026-10-17-000004, versión 1 {[}4{]}. Abarca los Teoremas 1.1, 1.2, 1.3, 3.1 y 4.1 del artículo de EGJ identificado en ese registro; la prueba de Nash--Williams utiliza el Teorema 1.2. Este registro corresponde al paquete independiente, no a la validación conjunta del presente desarrollo.
+
+Para el Corolario 4.3, el ensamblaje pasa \texttt{round\allowbreak{}Univ\allowbreak{}Spec124\_\allowbreak{}holds} por \texttt{round\allowbreak{}Spec124\_\allowbreak{}of\_\allowbreak{}univ} a \texttt{branch124\_\allowbreak{}of\_\allowbreak{}round}; no queda una hipótesis de ronda de cobertura en la declaración principal. Este apéndice es un índice, no el registro de reproducción. Las versiones del entorno, las fuentes exactas, los informes de axiomas y el procedimiento de compilación desde cero corresponden a las Secciones 4--7.
+
+
+\noindent\begin{minipage}{\linewidth}
+\subsection{Referencias}\label{referencias}
+
+\begingroup\small\raggedright
+\setlength{\parskip}{3pt}
+
+{[}1{]} J. P. Traverso Gianini, \emph{Triangle decompositions I: Formalizing the Nash-Williams theorem in Lean}, preprint 1.0 del manuscrito, 20 de octubre de 2026. \href{https://github.com/jtraverso/nash-williams-private-review/blob/main/preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.md}{Documento}.
+
+{[}2{]} J. P. Traverso Gianini, \emph{Triangle decompositions II: Robust absorption for typed triangles}, preprint 1.0 (2026). \href{https://github.com/jtraverso/nash-williams-private-review/blob/main/preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.md}{Documento}.
+
+{[}3{]} M. Delcourt y L. Postle, \emph{A Proof of Nash-Williams' Conjecture}, arXiv:2606.11178v1 (2026). Identificación bibliográfica tomada de Paper I.
+
+{[}4{]} Palomar Registry, \emph{PALOMAR-2026-10-17-000004}, version 1 (2026). https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-17-000004\&version=1
+
+{[}5{]} J. P. Traverso Gianini, \emph{Certo}, repositorio de software. https://github.com/jtraverso/certo-math.
+
+{[}6{]} \emph{Jacobian}, repositorio de software. https://github.com/morluto/jacobian.
+
+{[}7{]} J. P. Traverso Gianini, \emph{Paper II: dossiers de demostraciones escritas}, registro privado de fuentes, commit 61f752fc87bff6f5654725b23ce10ad4302364ab (19 de octubre de 2026). \href{https://github.com/jtraverso/nash-williams-private-review/tree/61f752fc87bff6f5654725b23ce10ad4302364ab/papers/paper-II/proof-development/20261019}{Registro fijo}.
+
+\endgroup
+
+\end{minipage}
+
+\end{document}

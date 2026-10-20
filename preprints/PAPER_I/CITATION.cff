@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Private preparation of the first public edition. No DOI assigned."
+title: "Triangle decompositions I: Formalizing the Nash–Williams theorem in Lean"
+version: "1.0"
+authors:
+  - family-names: "Traverso Gianini"
+    given-names: "Juan Pablo"
+    orcid: "https://orcid.org/0009-0003-6068-4096"
+url: "https://github.com/jtraverso/nash-williams-triangle-decompositions/tree/main/preprints/PAPER_I"

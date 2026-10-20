@@ -1,0 +1,11 @@
+{
+  "status": "HOLD_FOR_PAPER_II",
+  "public_release_authorized": false,
+  "paper_ii_final_received": false,
+  "final_joint_audit_pass": false,
+  "public_references_reconciled": false,
+  "manuscript_licence_recorded": false,
+  "first_public_edition_only": true,
+  "cloudflare_connected": false,
+  "zenodo_published": false
+}

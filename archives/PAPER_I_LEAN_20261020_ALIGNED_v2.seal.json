@@ -1,0 +1,33 @@
+{
+  "id": "PAPER_I_LEAN_20261020_ALIGNED_v2",
+  "zip_sha256": "c04ca7dd432322fa65eab196d58954252f8e0f377222bd57a6a0c94ee82e116e",
+  "zip_bytes": 4585111,
+  "files": 3238,
+  "modules": 1070,
+  "status": "PASS_LICENSE_ONLY_REPACKAGE",
+  "build_evidence": "Unchanged from the v1 clean build; no new build.",
+  "predecessor": {
+    "id": "PAPER_I_LEAN_20261020_ALIGNED_v1",
+    "zip_sha256": "7cc2b21543c2b76b0f4401c711d636adf19da4d1c2d173d153b6a8ec88fd585f"
+  },
+  "added_files": [
+    "LICENSE",
+    "LICENSING.md",
+    "dependencies/licenses/Cli.txt",
+    "dependencies/licenses/LeanSearchClient.txt",
+    "dependencies/licenses/Qq.txt",
+    "dependencies/licenses/aesop.txt",
+    "dependencies/licenses/batteries.txt",
+    "dependencies/licenses/importGraph.txt",
+    "dependencies/licenses/mathlib.txt",
+    "dependencies/licenses/plausible.txt",
+    "dependencies/licenses/proofwidgets.txt",
+    "source/LICENSE"
+  ],
+  "changed_existing_files": [
+    "SHA256SUMS.txt"
+  ],
+  "source_and_evidence_bytes_unchanged": true,
+  "packaging_license": "Apache-2.0",
+  "dependency_licenses_preserved": true
+}
