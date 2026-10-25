@@ -2,9 +2,9 @@
 
 **Juan Pablo Traverso Gianini · Preprint 1.0 · 20 October 2026**
 
-This series connects a formal proof of the Nash–Williams triangle-decomposition theorem with the typed absorption results supplying its decomposition inputs. The mathematical articles present the arguments; their separate companions describe the frozen sources, checked declarations and reproducibility evidence.
+This repository presents my Lean formalization of [*A Proof of Nash-Williams' Conjecture*](https://arxiv.org/abs/2606.11178) by **Michelle Delcourt and Luke Postle** (arXiv:2606.11178), together with the typed triangle-decomposition and absorption results developed to supply the required inputs. Paper I follows and formalizes the Nash–Williams proof; Paper II develops those typed inputs. Separate companions document the checked Lean sources and reproducibility evidence.
 
-La serie conecta una prueba formal del teorema de Nash–Williams con los resultados de absorción por tipos utilizados en sus casos extremales. Los artículos y sus complementos de formalización están disponibles en inglés y español.
+Este repositorio presenta mi formalización en Lean de [*A Proof of Nash-Williams' Conjecture*](https://arxiv.org/abs/2606.11178), de **Michelle Delcourt y Luke Postle** (arXiv:2606.11178), junto con los resultados de descomposición triangular tipada y absorción desarrollados para aportar los insumos necesarios. El Artículo I sigue y formaliza la demostración de Nash–Williams; el Artículo II desarrolla esos insumos tipados. Los complementos separados documentan las fuentes Lean verificadas y las evidencias de reproducibilidad.
 
 | Paper | Mathematical role | Documents and DOI |
 |---|---|---|
