@@ -1,6 +1,6 @@
 {
   "status": "PASS_BROWSER_LAYOUT_CHECKS",
-  "browser": "Chromium",
+  "browser": "Chromium (original); Microsoft Edge Chromium (updated series page)",
   "rows": [
     {
       "page": "/",
@@ -14,9 +14,9 @@
         "imagesMissing": 0
       },
       "screenshot": "publication/web-qa/series-desktop.png",
-      "html_sha256": "1863c3428f496a904c77b6e9725fde5c663175c69562bbbe24da6d03ea8fbc1c",
+      "html_sha256": "bf6446577b0089548b5d009e2a0b47473c83f93a86346b643953657259afa6b8",
       "css_sha256": "8e731c15fe09281db25f8bf7c1c7808e5f5af491c078389b812a71d9e07e68e2",
-      "sha256": "2cff5e5236ca3b9f18ec0ba9c33f167ff43d469b2c41df06035de2fa059c2dd1"
+      "sha256": "197c5c99ed78d93859b86f0cf08633792b9e7e546b991fb117aa9b88227696ea"
     },
     {
       "page": "/preprints/PAPER_I/index.html",
@@ -62,9 +62,9 @@
         "imagesMissing": 0
       },
       "screenshot": "publication/web-qa/series-mobile.png",
-      "html_sha256": "1863c3428f496a904c77b6e9725fde5c663175c69562bbbe24da6d03ea8fbc1c",
+      "html_sha256": "bf6446577b0089548b5d009e2a0b47473c83f93a86346b643953657259afa6b8",
       "css_sha256": "8e731c15fe09281db25f8bf7c1c7808e5f5af491c078389b812a71d9e07e68e2",
-      "sha256": "8290975edc07d5f24158f75ea791395681e583bfe73d119bcd6844a12ee32b8c"
+      "sha256": "f30928dd6ef4da7145287f173be883daed04eb34351e47f6a1deaedd1bcceb17"
     },
     {
       "page": "/preprints/PAPER_I/index.html",
