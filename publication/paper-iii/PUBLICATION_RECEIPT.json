@@ -1,0 +1,76 @@
+{
+  "status": "PUBLISHED_GITHUB_AND_ZENODO",
+  "checked_utc": "2026-11-01T21:07:45.631273+00:00",
+  "version": "1.0",
+  "first_public_edition_only": true,
+  "paper": "PAPER_III",
+  "source_commit": "eace97e0503aac06639ef05e687ae79a9b4f171d",
+  "approved_private_commit": "f42b5ed32db20b7ad43536cc934eece99236c209",
+  "github_release": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/tag/paper-iii-preprint-1.0",
+  "zenodo_record": "https://zenodo.org/records/23867836",
+  "doi": "10.5281/zenodo.23867836",
+  "concept_doi": "10.5281/zenodo.23867835",
+  "approved_document_bytes_preserved": true,
+  "lean_archive_sha256": "a5fbd7af2d13594a894d61bde81126353bd7d186f335ad9f302a5fd7ba942d95",
+  "public_github_downloads": [
+    {
+      "path": "preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_en.pdf",
+      "url": "https://raw.githubusercontent.com/jtraverso/nash-williams-triangle-decompositions-release/eace97e0503aac06639ef05e687ae79a9b4f171d/preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_en.pdf",
+      "bytes": 5083193,
+      "sha256": "f0284f08cec075fd22b8a4301fc920c3258e43ad9b1a5e726bdd2f24662987ea"
+    },
+    {
+      "path": "preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_es.pdf",
+      "url": "https://raw.githubusercontent.com/jtraverso/nash-williams-triangle-decompositions-release/eace97e0503aac06639ef05e687ae79a9b4f171d/preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_es.pdf",
+      "bytes": 5089083,
+      "sha256": "677f5a48a3ce54a40e3751b0b9361f67b6644ba98bc774f934b947abdbef4a91"
+    },
+    {
+      "path": "preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_en.pdf",
+      "url": "https://raw.githubusercontent.com/jtraverso/nash-williams-triangle-decompositions-release/eace97e0503aac06639ef05e687ae79a9b4f171d/preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_en.pdf",
+      "bytes": 29932,
+      "sha256": "64fde8d1a2d47e4418afe6c7da7c5d6e3e746c4f580b585a1fc48cf578de4909"
+    },
+    {
+      "path": "preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_es.pdf",
+      "url": "https://raw.githubusercontent.com/jtraverso/nash-williams-triangle-decompositions-release/eace97e0503aac06639ef05e687ae79a9b4f171d/preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_es.pdf",
+      "bytes": 30235,
+      "sha256": "fc85503c788399adf2d80a67a9b830f339a94443887c23c6590c06e22383994e"
+    },
+    {
+      "path": "archives/PAPER_III_LEAN_SOURCE_v1.0.zip",
+      "url": "https://raw.githubusercontent.com/jtraverso/nash-williams-triangle-decompositions-release/eace97e0503aac06639ef05e687ae79a9b4f171d/archives/PAPER_III_LEAN_SOURCE_v1.0.zip",
+      "bytes": 3345839,
+      "sha256": "a5fbd7af2d13594a894d61bde81126353bd7d186f335ad9f302a5fd7ba942d95"
+    }
+  ],
+  "public_zenodo_downloads": {
+    "PAPER_III_preprint_v1.0_en.pdf": {
+      "path": "preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_en.pdf",
+      "size": 5083193,
+      "sha256": "f0284f08cec075fd22b8a4301fc920c3258e43ad9b1a5e726bdd2f24662987ea",
+      "md5": "c8bb4fb7b0023e9c6b7f24d24c12066d"
+    },
+    "PAPER_III_preprint_v1.0_es.pdf": {
+      "path": "preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_es.pdf",
+      "size": 5089083,
+      "sha256": "677f5a48a3ce54a40e3751b0b9361f67b6644ba98bc774f934b947abdbef4a91",
+      "md5": "d437ffaa5e5e9a591c34f7dbeaef3987"
+    },
+    "PAPER_III_Lean_freeze_v1.0_en.pdf": {
+      "path": "preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_en.pdf",
+      "size": 29932,
+      "sha256": "64fde8d1a2d47e4418afe6c7da7c5d6e3e746c4f580b585a1fc48cf578de4909",
+      "md5": "b85ecee248d2d10577e3aee1b4bf8575"
+    },
+    "PAPER_III_Lean_freeze_v1.0_es.pdf": {
+      "path": "preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_es.pdf",
+      "size": 30235,
+      "sha256": "fc85503c788399adf2d80a67a9b830f339a94443887c23c6590c06e22383994e",
+      "md5": "e9d7a0cf5249574e77b1c67c539aeb10"
+    }
+  },
+  "release_assets_sha256_verified": true,
+  "prior_paper_documents_changed": false,
+  "cloudflare_deployed": false
+}

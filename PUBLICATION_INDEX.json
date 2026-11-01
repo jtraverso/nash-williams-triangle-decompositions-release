@@ -109,7 +109,7 @@
       "id": "PAPER_III",
       "title": "Triangle decompositions III: Physical typed absorption and prescribed statistics",
       "version": "1.0",
-      "status": "PUBLISHED_GITHUB_PREPRINT_1.0",
+      "status": "PUBLISHED_PREPRINT_1.0",
       "manuscript_date": "2026-11-01",
       "documents": [
         {
@@ -151,7 +151,10 @@
       ],
       "source_archive": "archives/PAPER_III_LEAN_SOURCE_v1.0.zip",
       "doi": "10.5281/zenodo.23867836",
-      "record_url": "https://zenodo.org/records/23867836"
+      "record_url": "https://zenodo.org/records/23867836",
+      "concept_doi": "10.5281/zenodo.23867835",
+      "release_url": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/tag/paper-iii-preprint-1.0",
+      "source_commit": "eace97e0503aac06639ef05e687ae79a9b4f171d"
     }
   ]
 }

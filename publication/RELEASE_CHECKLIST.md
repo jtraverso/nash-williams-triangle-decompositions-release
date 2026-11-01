@@ -21,4 +21,4 @@ The static website build is prepared and validated locally. Cloudflare Pages is 
 - [x] Internal document audit and repository verification passed.
 - [x] Desktop/mobile guide checked, including Paper III.
 - [x] Zenodo DOI reserved: 10.5281/zenodo.23867836.
-- [ ] Public GitHub and Zenodo downloads verified (receipt follows publication).
+- [x] Public GitHub and Zenodo downloads verified by SHA-256; [Paper III receipts](paper-iii/PUBLICATION_RECEIPT.json).

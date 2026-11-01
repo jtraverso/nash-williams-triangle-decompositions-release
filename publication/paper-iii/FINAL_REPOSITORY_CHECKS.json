@@ -1,0 +1,25 @@
+{
+  "status": "PASS_PREPARATION",
+  "imported_files": 66,
+  "archive_hashes": 8979,
+  "archives": [
+    {
+      "paper": "PAPER_I",
+      "modules": 1070,
+      "hashes": 3240
+    },
+    {
+      "paper": "PAPER_II",
+      "modules": 1510,
+      "hashes": 4561
+    },
+    {
+      "paper": "PAPER_III",
+      "modules": 1141,
+      "hashes": 1178
+    }
+  ],
+  "repository_hashes": 1725,
+  "local_links": 216,
+  "scope": "Static packaging only; no Lean/Lake, no deployment."
+}

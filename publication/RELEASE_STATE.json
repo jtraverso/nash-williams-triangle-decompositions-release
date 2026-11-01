@@ -16,5 +16,7 @@
   "paper_iii_final_received": true,
   "paper_iii_publication_authorized": true,
   "paper_iii_zenodo_reserved": true,
-  "paper_iii_zenodo_published": false
+  "paper_iii_zenodo_published": true,
+  "paper_iii_publication_date": "2026-11-01",
+  "paper_iii_release_url": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/tag/paper-iii-preprint-1.0"
 }

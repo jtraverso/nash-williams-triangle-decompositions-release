@@ -1,0 +1,77 @@
+{
+  "assets": [
+    {
+      "apiUrl": "https://api.github.com/repos/jtraverso/nash-williams-triangle-decompositions-release/releases/assets/699522340",
+      "contentType": "application/pdf",
+      "createdAt": "2026-11-01T21:04:55Z",
+      "digest": "sha256:64fde8d1a2d47e4418afe6c7da7c5d6e3e746c4f580b585a1fc48cf578de4909",
+      "downloadCount": 0,
+      "id": "RA_kwDOVRRue84psd0k",
+      "label": "",
+      "name": "PAPER_III_Lean_freeze_v1.0_en.pdf",
+      "size": 29932,
+      "state": "uploaded",
+      "updatedAt": "2026-11-01T21:04:56Z",
+      "url": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/download/paper-iii-preprint-1.0/PAPER_III_Lean_freeze_v1.0_en.pdf"
+    },
+    {
+      "apiUrl": "https://api.github.com/repos/jtraverso/nash-williams-triangle-decompositions-release/releases/assets/699522341",
+      "contentType": "application/pdf",
+      "createdAt": "2026-11-01T21:04:55Z",
+      "digest": "sha256:fc85503c788399adf2d80a67a9b830f339a94443887c23c6590c06e22383994e",
+      "downloadCount": 0,
+      "id": "RA_kwDOVRRue84psd0l",
+      "label": "",
+      "name": "PAPER_III_Lean_freeze_v1.0_es.pdf",
+      "size": 30235,
+      "state": "uploaded",
+      "updatedAt": "2026-11-01T21:04:56Z",
+      "url": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/download/paper-iii-preprint-1.0/PAPER_III_Lean_freeze_v1.0_es.pdf"
+    },
+    {
+      "apiUrl": "https://api.github.com/repos/jtraverso/nash-williams-triangle-decompositions-release/releases/assets/699522343",
+      "contentType": "application/zip",
+      "createdAt": "2026-11-01T21:04:55Z",
+      "digest": "sha256:a5fbd7af2d13594a894d61bde81126353bd7d186f335ad9f302a5fd7ba942d95",
+      "downloadCount": 0,
+      "id": "RA_kwDOVRRue84psd0n",
+      "label": "",
+      "name": "PAPER_III_LEAN_SOURCE_v1.0.zip",
+      "size": 3345839,
+      "state": "uploaded",
+      "updatedAt": "2026-11-01T21:04:59Z",
+      "url": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/download/paper-iii-preprint-1.0/PAPER_III_LEAN_SOURCE_v1.0.zip"
+    },
+    {
+      "apiUrl": "https://api.github.com/repos/jtraverso/nash-williams-triangle-decompositions-release/releases/assets/699522336",
+      "contentType": "application/pdf",
+      "createdAt": "2026-11-01T21:04:55Z",
+      "digest": "sha256:f0284f08cec075fd22b8a4301fc920c3258e43ad9b1a5e726bdd2f24662987ea",
+      "downloadCount": 0,
+      "id": "RA_kwDOVRRue84psd0g",
+      "label": "",
+      "name": "PAPER_III_preprint_v1.0_en.pdf",
+      "size": 5083193,
+      "state": "uploaded",
+      "updatedAt": "2026-11-01T21:05:01Z",
+      "url": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/download/paper-iii-preprint-1.0/PAPER_III_preprint_v1.0_en.pdf"
+    },
+    {
+      "apiUrl": "https://api.github.com/repos/jtraverso/nash-williams-triangle-decompositions-release/releases/assets/699522342",
+      "contentType": "application/pdf",
+      "createdAt": "2026-11-01T21:04:55Z",
+      "digest": "sha256:677f5a48a3ce54a40e3751b0b9361f67b6644ba98bc774f934b947abdbef4a91",
+      "downloadCount": 0,
+      "id": "RA_kwDOVRRue84psd0m",
+      "label": "",
+      "name": "PAPER_III_preprint_v1.0_es.pdf",
+      "size": 5089083,
+      "state": "uploaded",
+      "updatedAt": "2026-11-01T21:05:01Z",
+      "url": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/download/paper-iii-preprint-1.0/PAPER_III_preprint_v1.0_es.pdf"
+    }
+  ],
+  "isDraft": false,
+  "tagName": "paper-iii-preprint-1.0",
+  "url": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/tag/paper-iii-preprint-1.0"
+}
