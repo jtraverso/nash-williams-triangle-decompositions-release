@@ -1,19 +1,20 @@
 # Triangle decompositions — Nash–Williams and typed absorption
 
-**Juan Pablo Traverso Gianini · Preprint 1.0 · 20 October 2026**
+**Juan Pablo Traverso Gianini · Triangle decompositions I–III · First preprints, 2026**
 
-This repository presents my Lean formalization of [*A Proof of Nash-Williams' Conjecture*](https://arxiv.org/abs/2606.11178) by **Michelle Delcourt and Luke Postle** (arXiv:2606.11178), together with the typed triangle-decomposition and absorption results developed to supply the required inputs. Paper I follows and formalizes the Nash–Williams proof; Paper II develops those typed inputs. Separate companions document the checked Lean sources and reproducibility evidence.
+This repository presents my Lean formalization of [*A Proof of Nash-Williams' Conjecture*](https://arxiv.org/abs/2606.11178) by **Michelle Delcourt and Luke Postle** (arXiv:2606.11178), together with the typed triangle-decomposition and absorption results developed to supply the required inputs. Paper I follows and formalizes the Nash–Williams proof; Paper II develops those typed inputs. Paper III proves a physical typed criterion and adds simultaneous prescribed statistics, Pasch counts and a quantitative triangle-statistics bound. Separate companions document the checked Lean sources and reproducibility evidence.
 
-Este repositorio presenta mi formalización en Lean de [*A Proof of Nash-Williams' Conjecture*](https://arxiv.org/abs/2606.11178), de **Michelle Delcourt y Luke Postle** (arXiv:2606.11178), junto con los resultados de descomposición triangular tipada y absorción desarrollados para aportar los insumos necesarios. El Artículo I sigue y formaliza la demostración de Nash–Williams; el Artículo II desarrolla esos insumos tipados. Los complementos separados documentan las fuentes Lean verificadas y las evidencias de reproducibilidad.
+Este repositorio presenta mi formalización en Lean de [*A Proof of Nash-Williams' Conjecture*](https://arxiv.org/abs/2606.11178), de **Michelle Delcourt y Luke Postle** (arXiv:2606.11178), junto con los resultados de descomposición triangular tipada y absorción desarrollados para aportar los insumos necesarios. El Artículo I sigue y formaliza la demostración de Nash–Williams; el Artículo II desarrolla esos insumos tipados. El Artículo III establece un criterio físico tipado con estadísticas prescritas, conteos de Pasch y una cota cuantitativa para estadísticas de triángulos. Los complementos separados documentan las fuentes Lean verificadas y las evidencias de reproducibilidad.
 
 | Paper | Mathematical role | Documents and DOI |
 |---|---|---|
 | I — Formalizing the Nash–Williams theorem in Lean | Delcourt–Postle's case division, explicit replacement constructions and the formal theorem. | [Article and companion](preprints/PAPER_I/README.md) · [10.5281/zenodo.23428173](https://doi.org/10.5281/zenodo.23428173) |
 | II — Robust absorption for typed triangles | Typed decomposition inputs, the semidense case, finite family constructions and terminal absorption. | [Article and companion](preprints/PAPER_II/README.md) · [10.5281/zenodo.23502224](https://doi.org/10.5281/zenodo.23502224) |
+| III — Physical typed absorption and prescribed statistics | Physical hypotheses H1–H4, simultaneous triangle and Pasch statistics, and an explicit triangle-statistics threshold. | [Article and companion](preprints/PAPER_III/README.md) · [10.5281/zenodo.23867836](https://doi.org/10.5281/zenodo.23867836) |
 
 ## Palomar registry / Registro Palomar
 
-The Lean formalizations of both papers are registered in [Palomar](https://palomar-registry.org), a registry of Lean-verified results that rebuilds the sources, checks the stated theorems against a Mathlib-only challenge file and replays the proofs in independent kernels.
+The Lean formalizations of Papers I and II are registered in [Palomar](https://palomar-registry.org), a registry of Lean-verified results that rebuilds the sources, checks the stated theorems against a Mathlib-only challenge file and replays the proofs in independent kernels.
 
 | Paper | Palomar | Lean source |
 |---|---|---|
@@ -32,6 +33,8 @@ Paper II version 1.1 rewrites proof scripts in 279 modules of the computer-assis
 | **Paper II — Typed absorption** | [Paper II PDF (EN)](preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.pdf) | [Paper II PDF (ES)](preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.pdf) |
 | Paper I formalization companion | [Companion I PDF (EN)](preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf) | [Companion I PDF (ES)](preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf) |
 | Paper II formalization companion | [Companion II PDF (EN)](preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf) | [Companion II PDF (ES)](preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf) |
+| **Paper III — Physical typed absorption** | [Paper III PDF (EN)](preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_en.pdf) | [Paper III PDF (ES)](preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_es.pdf) |
+| Paper III formalization companion | [Companion III PDF (EN)](preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_en.pdf) | [Companion III PDF (ES)](preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_es.pdf) |
 
 ## Read and cite / Leer y citar
 
@@ -50,7 +53,7 @@ Paper II version 1.1 rewrites proof scripts in 279 modules of the computer-assis
 | `04_integrity` | File hashes |
 | `05_formalization` | Separate formalization companion, EN/ES |
 
-Each companion identifies its own checked dependency closure and distinguishes historical compilation, source-preserving packaging revisions and final axiom queries. Neither paper's build is used as evidence for the whole other development.
+Each companion identifies its own checked dependency closure and distinguishes historical compilation, source-preserving packaging revisions and final axiom queries. No paper's build is used as evidence for the whole other development.
 
 Cada complemento distingue su clausura comprobada, los registros de compilación, las revisiones de empaquetado y las consultas de axiomas. Los registros no se presentan como reproducción independiente.
 

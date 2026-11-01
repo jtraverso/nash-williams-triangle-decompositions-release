@@ -1,0 +1,13 @@
+{
+  "status": "PASS_VISUAL_REVIEW",
+  "date": "2026-11-01",
+  "reviewer": "Internal model visual inspection",
+  "pages": [
+    "series desktop",
+    "series mobile",
+    "Paper III desktop",
+    "Paper III mobile"
+  ],
+  "scope": "Screenshots inspected after final HTML edit; eight browser layout checks cover all three paper pages and the index.",
+  "browser_checks_sha256": "889d87e73f096be43ade9bff40f9347da1c0a053d9479e186f3c9566dca1cd06"
+}

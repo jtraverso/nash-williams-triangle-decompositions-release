@@ -1,0 +1,19 @@
+note: using only cached resource files
+note: Running TeX ...
+note: Rerunning TeX because "PAPER_III_preprint_v1.0_es.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\nw\physical-typed-absorption\preprints\PAPER_III_v1.0\02_validation\typeset\PAPER_III_preprint_v1.0_es\PAPER_III_preprint_v1.0_es.aux` (13.0830078125 KiB)
+note: Writing `C:\nw\physical-typed-absorption\preprints\PAPER_III_v1.0\02_validation\typeset\PAPER_III_preprint_v1.0_es\PAPER_III_preprint_v1.0_es.log` (25.0869140625 KiB)
+note: Writing `C:\nw\physical-typed-absorption\preprints\PAPER_III_v1.0\02_validation\typeset\PAPER_III_preprint_v1.0_es\PAPER_III_preprint_v1.0_es.pdf` (4.853327751159668 MiB)
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Object @figure.1 already defined.
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Object @figure.2 already defined.
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Object @figure.3 already defined.

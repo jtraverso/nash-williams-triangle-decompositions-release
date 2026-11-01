@@ -12,5 +12,9 @@
   "authorization_date": "2026-10-20",
   "authorization_scope": "Public GitHub series repository and both reserved Zenodo deposits, preprint 1.0.",
   "github_public": true,
-  "publication_date": "2026-10-20"
+  "publication_date": "2026-10-20",
+  "paper_iii_final_received": true,
+  "paper_iii_publication_authorized": true,
+  "paper_iii_zenodo_reserved": true,
+  "paper_iii_zenodo_published": false
 }

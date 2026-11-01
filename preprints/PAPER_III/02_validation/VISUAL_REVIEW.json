@@ -1,0 +1,12 @@
+{
+  "status": "PASS_VISUAL_REVIEW",
+  "pdf_hashes": {
+    "preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_en.pdf": "f0284f08cec075fd22b8a4301fc920c3258e43ad9b1a5e726bdd2f24662987ea",
+    "preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_es.pdf": "677f5a48a3ce54a40e3751b0b9361f67b6644ba98bc774f934b947abdbef4a91",
+    "preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_en.pdf": "64fde8d1a2d47e4418afe6c7da7c5d6e3e746c4f580b585a1fc48cf578de4909",
+    "preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_es.pdf": "fc85503c788399adf2d80a67a9b830f339a94443887c23c6590c06e22383994e"
+  },
+  "pages_reviewed": 66,
+  "evidence": "AUDIT/VISUAL_CERTIFICATE.json",
+  "scope": "Final approved PDF bytes preserved; existing final rendered review applies"
+}

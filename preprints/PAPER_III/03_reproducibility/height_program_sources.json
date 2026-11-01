@@ -1,0 +1,1874 @@
+{
+  "initialHingeOrder": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdInputs.lean",
+    "line": 14,
+    "sha256": "1a5cf5bfc9b42185c384bca915df107049e1161c3e9d91a4764fb1ed365ddd38",
+    "block": "def initialHingeOrder (h : ℕ) : ℕ := 2*h-3"
+  },
+  "compressionPowerMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 155,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def compressionPowerMajorant (M : ℕ) : ℕ := 2^(M^2)"
+  },
+  "hingeDensityMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 87,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def hingeDensityMajorant (M : ℕ) : ℕ :=\n  (M^3*M^(2*M+1))*((2048*M^2)*compressionPowerMajorant (2*M))"
+  },
+  "normalizedDensityMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdInputs.lean",
+    "line": 18,
+    "sha256": "1a5cf5bfc9b42185c384bca915df107049e1161c3e9d91a4764fb1ed365ddd38",
+    "block": "def normalizedDensityMajorant (K : ℕ) : ℕ := max K (hingeDensityMajorant K)*8"
+  },
+  "normalizedInputScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdInputs.lean",
+    "line": 19,
+    "sha256": "1a5cf5bfc9b42185c384bca915df107049e1161c3e9d91a4764fb1ed365ddd38",
+    "block": "def normalizedInputScale (K : ℕ) : ℕ := K+2*K+normalizedDensityMajorant K+1"
+  },
+  "thresholdWorkingScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdInputs.lean",
+    "line": 20,
+    "sha256": "1a5cf5bfc9b42185c384bca915df107049e1161c3e9d91a4764fb1ed365ddd38",
+    "block": "def thresholdWorkingScale (K : ℕ) : ℕ := normalizedInputScale K*32"
+  },
+  "deletionBudgetMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryBudgets.lean",
+    "line": 13,
+    "sha256": "b73d1fc8099efed007e596f08989c1663accdcd5f46502999d540866d8650a8a",
+    "block": "def deletionBudgetMajorant (M : ℕ) : ℕ := max 2 (M*(4*compressionPowerMajorant (M+1)))"
+  },
+  "nestedBudgetMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryBudgets.lean",
+    "line": 14,
+    "sha256": "b73d1fc8099efed007e596f08989c1663accdcd5f46502999d540866d8650a8a",
+    "block": "def nestedBudgetMajorant (M : ℕ) : ℕ :=\n  max (deletionBudgetMajorant M) (M*(128*compressionPowerMajorant (M+1)))"
+  },
+  "coreToleranceMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryBudgets.lean",
+    "line": 26,
+    "sha256": "b73d1fc8099efed007e596f08989c1663accdcd5f46502999d540866d8650a8a",
+    "block": "def coreToleranceMajorant (M : ℕ) : ℕ := max (max (deletionBudgetMajorant M) (nestedBudgetMajorant M)) 2"
+  },
+  "preparationToleranceMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryBudgets.lean",
+    "line": 27,
+    "sha256": "b73d1fc8099efed007e596f08989c1663accdcd5f46502999d540866d8650a8a",
+    "block": "def preparationToleranceMajorant (M : ℕ) : ℕ :=\n  max (max (nestedBudgetMajorant M) (coreToleranceMajorant M)) (max 2 (M*(2*compressionPowerMajorant M)))"
+  },
+  "hingeRatioMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGlobalScalars.lean",
+    "line": 10,
+    "sha256": "4c016b233380ffac96dff0a0d8e1fe1739c33ba61912122ddd163e03e5d4ab8c",
+    "block": "def hingeRatioMajorant (M k : ℕ) : ℕ := M*(k*compressionPowerMajorant M)"
+  },
+  "rawToleranceMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdInputs.lean",
+    "line": 21,
+    "sha256": "1a5cf5bfc9b42185c384bca915df107049e1161c3e9d91a4764fb1ed365ddd38",
+    "block": "def rawToleranceMajorant (M : ℕ) : ℕ :=\n  max (preparationToleranceMajorant (M*4)) (max (hingeRatioMajorant M 4) (8*max 1 (2*M)))"
+  },
+  "sampleLcMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 14,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def sampleLcMajorant (M : ℕ) : ℕ := 30*M+1"
+  },
+  "sampleAMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 15,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def sampleAMajorant (M : ℕ) : ℕ := 3*M*(27*M^3+1+M)+M"
+  },
+  "sampleTMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 16,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def sampleTMajorant (M : ℕ) : ℕ := 6*sampleAMajorant M*M+1"
+  },
+  "sampleJMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 17,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def sampleJMajorant (M : ℕ) : ℕ :=\n  max (4*M) (max (12*(sampleLcMajorant M+1)*M)\n    (6*(sampleLcMajorant M+1)*(sampleTMajorant M+1)*M))+1"
+  },
+  "sampleEtaMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 20,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def sampleEtaMajorant (M : ℕ) : ℕ := 2^sampleJMajorant M"
+  },
+  "sampleLMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 21,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def sampleLMajorant (M : ℕ) : ℕ := 2*M*sampleEtaMajorant M+1"
+  },
+  "compressionClipMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 154,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def compressionClipMajorant (M : ℕ) : ℕ := M+1"
+  },
+  "compressionThetaMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 156,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def compressionThetaMajorant (M : ℕ) : ℕ := compressionClipMajorant M*(64*compressionPowerMajorant M)"
+  },
+  "compressionKappaMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 157,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def compressionKappaMajorant (M : ℕ) : ℕ :=\n  max ((compressionClipMajorant M*2)*4)\n    (((compressionThetaMajorant M*4)*(compressionThetaMajorant M*2))*16)"
+  },
+  "compressionPrecisionMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 160,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def compressionPrecisionMajorant (M : ℕ) : ℕ :=\n  (compressionClipMajorant M*compressionThetaMajorant M)*16"
+  },
+  "compressionInitialMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 162,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def compressionInitialMajorant (M : ℕ) : ℕ :=\n  32*(compressionClipMajorant M*compressionThetaMajorant M^2)"
+  },
+  "compressionInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 164,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def compressionInputMajorant (M : ℕ) : ℕ :=\n  2*compressionClipMajorant M+compressionKappaMajorant M+\n    compressionPrecisionMajorant M+compressionInitialMajorant M+1"
+  },
+  "sampleQMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 22,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def sampleQMajorant (M : ℕ) : ℕ :=\n  9*sampleLMajorant M*M*sampleEtaMajorant M*M+1+M"
+  },
+  "sampleBMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 24,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def sampleBMajorant (M : ℕ) : ℕ :=\n  sampleLcMajorant M*(sampleJMajorant M+sampleTMajorant M)"
+  },
+  "compressionSampleMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 168,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def compressionSampleMajorant (M : ℕ) : ℕ :=\n  sampleLMajorant (compressionInputMajorant M)*sampleQMajorant (compressionInputMajorant M)+\n    sampleBMajorant (compressionInputMajorant M)"
+  },
+  "physicalRankMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 19,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def physicalRankMajorant (M : ℕ) : ℕ := (compressionSampleMajorant M+1)^2"
+  },
+  "preparationRankMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 25,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def preparationRankMajorant (M : ℕ) : ℕ := physicalRankMajorant (M*2)"
+  },
+  "rawRankMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdInputs.lean",
+    "line": 23,
+    "sha256": "1a5cf5bfc9b42185c384bca915df107049e1161c3e9d91a4764fb1ed365ddd38",
+    "block": "def rawRankMajorant (M : ℕ) : ℕ := preparationRankMajorant (M*4)"
+  },
+  "explicitTorsionRadius": {
+    "source": "RequestProject\\TypedTriangle\\QuotientBoxExplicitBound.lean",
+    "line": 10,
+    "sha256": "e23fd8cc6cdc585f38dc86054eb0122fcd08992c47b8ecd015f9827396cffaf7",
+    "block": "def explicitTorsionRadius (d R : ℕ) : ℕ := R * (2 * R + 1) ^ d"
+  },
+  "explicitTorsionBound": {
+    "source": "RequestProject\\TypedTriangle\\QuotientBoxExplicitBound.lean",
+    "line": 11,
+    "sha256": "e23fd8cc6cdc585f38dc86054eb0122fcd08992c47b8ecd015f9827396cffaf7",
+    "block": "def explicitTorsionBound (d R : ℕ) : ℕ := (2 * explicitTorsionRadius d R + 1) ^ d"
+  },
+  "compL2Majorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 15,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def compL2Majorant (M : ℕ) : ℕ := 2*(3*(2*M))+1"
+  },
+  "compNMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 16,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def compNMajorant (M : ℕ) : ℕ := 4+24*compL2Majorant M"
+  },
+  "compDMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 17,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def compDMajorant (M s : ℕ) : ℕ := 16*compNMajorant M+96*(2*s+1)*compNMajorant M"
+  },
+  "physicalColumnMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 20,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def physicalColumnMajorant (M : ℕ) : ℕ :=\n  3*compDMajorant (compressionClipMajorant M) (compressionSampleMajorant M)"
+  },
+  "physicalTorsionMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 22,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def physicalTorsionMajorant (M : ℕ) : ℕ :=\n  max 1 (QuotientBox.explicitTorsionBound (physicalRankMajorant M) (physicalColumnMajorant M))"
+  },
+  "preparationTorsionMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 26,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def preparationTorsionMajorant (M : ℕ) : ℕ := physicalTorsionMajorant (M*2)"
+  },
+  "rawTorsionMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdInputs.lean",
+    "line": 24,
+    "sha256": "1a5cf5bfc9b42185c384bca915df107049e1161c3e9d91a4764fb1ed365ddd38",
+    "block": "def rawTorsionMajorant (M : ℕ) : ℕ := preparationTorsionMajorant (M*4)"
+  },
+  "rawLengthMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdInputs.lean",
+    "line": 25,
+    "sha256": "1a5cf5bfc9b42185c384bca915df107049e1161c3e9d91a4764fb1ed365ddd38",
+    "block": "def rawLengthMajorant (M : ℕ) : ℕ := rawRankMajorant M+(rawRankMajorant M+1)*rawTorsionMajorant M"
+  },
+  "oddPathMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPaths.lean",
+    "line": 12,
+    "sha256": "a391913e1beeee295df0efab8cb5016a68f3845ec0ccfd9123f9ab073cd6f35e",
+    "block": "def oddPathMajorant (M : ℕ) : ℕ := 2*(4*((M+1)^2*(M+1)^5))+1"
+  },
+  "nativeRhoMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPaths.lean",
+    "line": 51,
+    "sha256": "a391913e1beeee295df0efab8cb5016a68f3845ec0ccfd9123f9ab073cd6f35e",
+    "block": "def nativeRhoMajorant (M : ℕ) : ℕ := max 1 (M*(8*compressionPowerMajorant M))"
+  },
+  "nativeKappaMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPaths.lean",
+    "line": 52,
+    "sha256": "a391913e1beeee295df0efab8cb5016a68f3845ec0ccfd9123f9ab073cd6f35e",
+    "block": "def nativeKappaMajorant (M : ℕ) : ℕ := nativeRhoMajorant M^2*2"
+  },
+  "nativePathInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPaths.lean",
+    "line": 53,
+    "sha256": "a391913e1beeee295df0efab8cb5016a68f3845ec0ccfd9123f9ab073cd6f35e",
+    "block": "def nativePathInputMajorant (M : ℕ) : ℕ := M+nativeKappaMajorant M+1"
+  },
+  "nativeInteriorMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPaths.lean",
+    "line": 54,
+    "sha256": "a391913e1beeee295df0efab8cb5016a68f3845ec0ccfd9123f9ab073cd6f35e",
+    "block": "def nativeInteriorMajorant (M : ℕ) : ℕ := oddPathMajorant (nativePathInputMajorant M)+1"
+  },
+  "pathDensityMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPaths.lean",
+    "line": 13,
+    "sha256": "a391913e1beeee295df0efab8cb5016a68f3845ec0ccfd9123f9ab073cd6f35e",
+    "block": "def pathDensityMajorant (M : ℕ) : ℕ := (M+1)^(oddPathMajorant M+3)*4"
+  },
+  "nativeDensityMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPaths.lean",
+    "line": 55,
+    "sha256": "a391913e1beeee295df0efab8cb5016a68f3845ec0ccfd9123f9ab073cd6f35e",
+    "block": "def nativeDensityMajorant (M : ℕ) : ℕ := pathDensityMajorant (nativePathInputMajorant M)"
+  },
+  "nativeAvoidMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPaths.lean",
+    "line": 56,
+    "sha256": "a391913e1beeee295df0efab8cb5016a68f3845ec0ccfd9123f9ab073cd6f35e",
+    "block": "def nativeAvoidMajorant (M : ℕ) : ℕ := nativeDensityMajorant M*(4*nativeInteriorMajorant M)"
+  },
+  "nativeOuterAvoidMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdInputs.lean",
+    "line": 26,
+    "sha256": "1a5cf5bfc9b42185c384bca915df107049e1161c3e9d91a4764fb1ed365ddd38",
+    "block": "def nativeOuterAvoidMajorant (M : ℕ) : ℕ := max (nativeAvoidMajorant M) (max (M*2) 2)"
+  },
+  "referenceProviderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 11,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def referenceProviderBound (M : ℕ) : ℕ :=\n  let Z := compressionPowerMajorant M * (M*2)\n  let A := 1+3*(2*M)\n  Z*(A+A^2)*(1+2*(1+3*(2*M)+3*Z))"
+  },
+  "referenceSeedBudgetBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 16,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def referenceSeedBudgetBound (M : ℕ) : ℕ :=\n  max (M*(10*compressionPowerMajorant M))\n    (max (32*M) (M*(2*(16*M+4)*(referenceProviderBound (2*M)+1))))"
+  },
+  "hingeBudgetMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryBudgets.lean",
+    "line": 17,
+    "sha256": "b73d1fc8099efed007e596f08989c1663accdcd5f46502999d540866d8650a8a",
+    "block": "def hingeBudgetMajorant (M : ℕ) : ℕ := M*(64*compressionPowerMajorant M)"
+  },
+  "geometryBudgetMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryBudgets.lean",
+    "line": 18,
+    "sha256": "b73d1fc8099efed007e596f08989c1663accdcd5f46502999d540866d8650a8a",
+    "block": "def geometryBudgetMajorant (M : ℕ) : ℕ := max (M*4) (hingeBudgetMajorant M)"
+  },
+  "latticeBudgetMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryBudgets.lean",
+    "line": 16,
+    "sha256": "b73d1fc8099efed007e596f08989c1663accdcd5f46502999d540866d8650a8a",
+    "block": "def latticeBudgetMajorant (M : ℕ) : ℕ := M*(8*compressionPowerMajorant M)"
+  },
+  "initialComplementMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdInputs.lean",
+    "line": 27,
+    "sha256": "1a5cf5bfc9b42185c384bca915df107049e1161c3e9d91a4764fb1ed365ddd38",
+    "block": "def initialComplementMajorant (M : ℕ) : ℕ :=\n  max (referenceSeedBudgetBound M) (max (geometryBudgetMajorant M) (latticeBudgetMajorant M))"
+  },
+  "referencePrecisionBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 21,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def referencePrecisionBound (M : ℕ) : ℕ := max (M*2) 2"
+  },
+  "referenceToleranceBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 22,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def referenceToleranceBound (M : ℕ) : ℕ := referencePrecisionBound M*8"
+  },
+  "referenceWeightBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 24,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def referenceWeightBound (M : ℕ) : ℕ := M+M*2"
+  },
+  "referenceAvoidBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 25,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def referenceAvoidBound (M : ℕ) : ℕ := max (M*2) (referenceToleranceBound M*(8*referenceWeightBound M))"
+  },
+  "resourceStockMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 195,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def resourceStockMajorant (M : ℕ) : ℕ := referenceAvoidBound (8*M)"
+  },
+  "supplyBudgetBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatTerminal.lean",
+    "line": 76,
+    "sha256": "e9a8447b14e33b53fa1956f7515b6b968f91d88df13fe92a55b98850834de8c1",
+    "block": "def supplyBudgetBound (M h : ℕ) : ℕ := max (max M 2) (M*(40*2^(h.choose 2)))"
+  },
+  "cellDegreeBudgetBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankBudgets.lean",
+    "line": 13,
+    "sha256": "05ec8410d220d866a3f4e2a2493924999124d840a45f26f4c05e85332e11273a",
+    "block": "def cellDegreeBudgetBound (M h : ℕ) : ℕ := max (M*8) (supplyBudgetBound (M*2) h*2)"
+  },
+  "bankProtectionBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankBudgets.lean",
+    "line": 14,
+    "sha256": "05ec8410d220d866a3f4e2a2493924999124d840a45f26f4c05e85332e11273a",
+    "block": "def bankProtectionBound (M h : ℕ) : ℕ := cellDegreeBudgetBound M h*2"
+  },
+  "cleanHingeOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdInputs.lean",
+    "line": 29,
+    "sha256": "1a5cf5bfc9b42185c384bca915df107049e1161c3e9d91a4764fb1ed365ddd38",
+    "block": "def cleanHingeOrderMajorant (M : ℕ) : ℕ := max (48*M) (8*(M+6)*compressionPowerMajorant M*M)"
+  },
+  "thresholdInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdInputs.lean",
+    "line": 30,
+    "sha256": "1a5cf5bfc9b42185c384bca915df107049e1161c3e9d91a4764fb1ed365ddd38",
+    "block": "def thresholdInputMajorant (K hOriginal : ℕ) : ℕ :=\n  let M := thresholdWorkingScale K\n  M+rawToleranceMajorant M+rawRankMajorant M+rawTorsionMajorant M+rawLengthMajorant M+\n    nativeInteriorMajorant M+nativeDensityMajorant M+nativeOuterAvoidMajorant M+\n    initialComplementMajorant M+resourceStockMajorant M+\n    bankProtectionBound M (initialHingeOrder hOriginal)+cleanHingeOrderMajorant K+1"
+  },
+  "triangleThresholdInputBase": {
+    "source": "RequestProject\\TypedTriangle\\TowerTriangleThresholdAgenda.lean",
+    "line": 26,
+    "sha256": "98f39111d06f3f7ebf1ac476dcd9b4348bddd4f7c61cfbabf2a3538dcaf42018",
+    "block": "def triangleThresholdInputBase (K h q : ℕ) : ℕ :=\n  let M := thresholdInputMajorant K h\n  M+32*M+4*K+q+1"
+  },
+  "layerComplementBudgetMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerOrders.lean",
+    "line": 19,
+    "sha256": "01d35eb44400ee7637a0e1511ad67324e3c60d3a6733e2e8e74c70a3f0ad3ed8",
+    "block": "def layerComplementBudgetMajorant (M : ℕ) : ℕ :=\n  max (referenceSeedBudgetBound M) (max (geometryBudgetMajorant M) (latticeBudgetMajorant M))"
+  },
+  "seedPointwisePlusTwoMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTrianglePacking.lean",
+    "line": 22,
+    "sha256": "8fee47e3c8617b0fa98ee73df1d3236124f443412d705e9d083ba4547522ac0f",
+    "block": "def seedPointwisePlusTwoMajorant (M : ℕ) : ℕ :=\n  (16*M+4)*referenceProviderBound (2*M)+2"
+  },
+  "triangleComplementMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTrianglePacking.lean",
+    "line": 24,
+    "sha256": "8fee47e3c8617b0fa98ee73df1d3236124f443412d705e9d083ba4547522ac0f",
+    "block": "def triangleComplementMajorant (M : ℕ) : ℕ :=\n  max (layerComplementBudgetMajorant M) (max (referenceSeedBudgetBound M)\n    (max M (M*seedPointwisePlusTwoMajorant M)))"
+  },
+  "triangleThresholdInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTriangleThresholdAgenda.lean",
+    "line": 30,
+    "sha256": "98f39111d06f3f7ebf1ac476dcd9b4348bddd4f7c61cfbabf2a3538dcaf42018",
+    "block": "def triangleThresholdInputMajorant (K h q : ℕ) : ℕ :=\n  let U := triangleThresholdInputBase K h q\n  U+triangleComplementMajorant U+1"
+  },
+  "thresholdDensityScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdAgenda.lean",
+    "line": 19,
+    "sha256": "8a6178c2c256e24381d1326fbec338a1d62cdce995f8668ab82aa76993789a71",
+    "block": "def thresholdDensityScale (M : ℕ) : ℕ := M+8*M+1"
+  },
+  "envelopeLoadBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 26,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def envelopeLoadBound (M : ℕ) : ℕ := 4*M+1"
+  },
+  "envelopeBudgetBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 28,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def envelopeBudgetBound (M : ℕ) : ℕ := M*(64*(envelopeLoadBound M+4))"
+  },
+  "referenceStockBudgetBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 20,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def referenceStockBudgetBound (M : ℕ) : ℕ := max (referenceSeedBudgetBound M) (8*M)"
+  },
+  "envelopeDegreeBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 27,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def envelopeDegreeBound (M : ℕ) : ℕ := 2+2*envelopeLoadBound M"
+  },
+  "prescribedBudgetBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 30,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def prescribedBudgetBound (M : ℕ) : ℕ :=\n  max (envelopeBudgetBound M) (referenceStockBudgetBound M*(2*(envelopeDegreeBound M+1)))"
+  },
+  "futureDensityMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceAgenda.lean",
+    "line": 14,
+    "sha256": "73647b926fdfea50aed4789eccddd80eae448236ae9330728e31eceafaab14e6",
+    "block": "def futureDensityMajorant (M : ℕ) : ℕ := prescribedBudgetBound (12*M)"
+  },
+  "thresholdGlobalScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdAgenda.lean",
+    "line": 20,
+    "sha256": "8a6178c2c256e24381d1326fbec338a1d62cdce995f8668ab82aa76993789a71",
+    "block": "def thresholdGlobalScale (M : ℕ) : ℕ :=\n  let U := thresholdDensityScale M\n  U+futureDensityMajorant U+1"
+  },
+  "pathRatioMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGlobalScalars.lean",
+    "line": 9,
+    "sha256": "4c016b233380ffac96dff0a0d8e1fe1739c33ba61912122ddd163e03e5d4ab8c",
+    "block": "def pathRatioMajorant (M k : ℕ) : ℕ := M*(k*M*2^M)"
+  },
+  "uniformInnerRateMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGlobalScalars.lean",
+    "line": 11,
+    "sha256": "4c016b233380ffac96dff0a0d8e1fe1739c33ba61912122ddd163e03e5d4ab8c",
+    "block": "def uniformInnerRateMajorant (M : ℕ) : ℕ :=\n  max 32 (max (M*4) (max (M*2) (max (M*16) (max (M*8)\n    (max (hingeRatioMajorant M 64) (pathRatioMajorant M 64))))))"
+  },
+  "adjustedBankWindowMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGlobalScalars.lean",
+    "line": 14,
+    "sha256": "4c016b233380ffac96dff0a0d8e1fe1739c33ba61912122ddd163e03e5d4ab8c",
+    "block": "def adjustedBankWindowMajorant (M : ℕ) : ℕ := max M (pathRatioMajorant M 32)"
+  },
+  "globalInnerInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGlobalScalars.lean",
+    "line": 15,
+    "sha256": "4c016b233380ffac96dff0a0d8e1fe1739c33ba61912122ddd163e03e5d4ab8c",
+    "block": "def globalInnerInputMajorant (M : ℕ) : ℕ := max M (adjustedBankWindowMajorant M)"
+  },
+  "globalInnerRateMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGlobalScalars.lean",
+    "line": 16,
+    "sha256": "4c016b233380ffac96dff0a0d8e1fe1739c33ba61912122ddd163e03e5d4ab8c",
+    "block": "def globalInnerRateMajorant (M : ℕ) : ℕ := uniformInnerRateMajorant (globalInnerInputMajorant M)"
+  },
+  "windowRouteRateMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGlobalScalars.lean",
+    "line": 17,
+    "sha256": "4c016b233380ffac96dff0a0d8e1fe1739c33ba61912122ddd163e03e5d4ab8c",
+    "block": "def windowRouteRateMajorant (M : ℕ) : ℕ := M*M*(32*(M+1)*4^M)"
+  },
+  "stateHoleCapMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGlobalScalars.lean",
+    "line": 18,
+    "sha256": "4c016b233380ffac96dff0a0d8e1fe1739c33ba61912122ddd163e03e5d4ab8c",
+    "block": "def stateHoleCapMajorant (M : ℕ) : ℕ := max (windowRouteRateMajorant M*4) (M*M*128)"
+  },
+  "assemblyStateInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGlobalScalars.lean",
+    "line": 24,
+    "sha256": "4c016b233380ffac96dff0a0d8e1fe1739c33ba61912122ddd163e03e5d4ab8c",
+    "block": "def assemblyStateInputMajorant (M : ℕ) : ℕ := max M (globalInnerRateMajorant M)"
+  },
+  "assemblyStateMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGlobalScalars.lean",
+    "line": 25,
+    "sha256": "4c016b233380ffac96dff0a0d8e1fe1739c33ba61912122ddd163e03e5d4ab8c",
+    "block": "def assemblyStateMajorant (M : ℕ) : ℕ := stateHoleCapMajorant (assemblyStateInputMajorant M)"
+  },
+  "preparationDebtMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGlobalScalars.lean",
+    "line": 19,
+    "sha256": "4c016b233380ffac96dff0a0d8e1fe1739c33ba61912122ddd163e03e5d4ab8c",
+    "block": "def preparationDebtMajorant (M : ℕ) : ℕ :=\n  max M (max M (max (hingeRatioMajorant M 4) (8*max 1 (2*M))))"
+  },
+  "globalDebtMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGlobalScalars.lean",
+    "line": 21,
+    "sha256": "4c016b233380ffac96dff0a0d8e1fe1739c33ba61912122ddd163e03e5d4ab8c",
+    "block": "def globalDebtMajorant (M : ℕ) : ℕ :=\n  max 8 (max (M*128) (max (pathRatioMajorant M 64)\n    (max (pathRatioMajorant M 128) (preparationDebtMajorant M))))"
+  },
+  "thresholdRadiusScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdAgenda.lean",
+    "line": 23,
+    "sha256": "8a6178c2c256e24381d1326fbec338a1d62cdce995f8668ab82aa76993789a71",
+    "block": "def thresholdRadiusScale (M : ℕ) : ℕ :=\n  let V := thresholdGlobalScale M\n  V+globalInnerRateMajorant V+assemblyStateMajorant V+2*globalDebtMajorant V+1"
+  },
+  "radiusNextCap": {
+    "source": "RequestProject\\TypedTriangle\\TowerRadiusBounds.lean",
+    "line": 10,
+    "sha256": "65407436546489c1b1ad7dd111f551fe8297874d858246736297f3e4d79aba50",
+    "block": "def radiusNextCap (K : ℕ) : ℕ := max (K*2) (K*(16*K*(K+1)))*2"
+  },
+  "radiusInputCap": {
+    "source": "RequestProject\\TypedTriangle\\TowerRadiusBounds.lean",
+    "line": 11,
+    "sha256": "65407436546489c1b1ad7dd111f551fe8297874d858246736297f3e4d79aba50",
+    "block": "def radiusInputCap (K : ℕ) : ℕ := K+radiusNextCap K+1"
+  },
+  "radiusMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerRadiusBounds.lean",
+    "line": 12,
+    "sha256": "65407436546489c1b1ad7dd111f551fe8297874d858246736297f3e4d79aba50",
+    "block": "def radiusMajorant (F : ℕ → ℕ) (M : ℕ) : ℕ → ℕ\n  | 0 => M+F M\n  | r+1 => let U := radiusInputCap (radiusMajorant F M r); U+F U"
+  },
+  "kernelCapMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 124,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def kernelCapMajorant (M : ℕ) : ℕ := max 1 ((compressionPowerMajorant M*2)*M)"
+  },
+  "smoothCoefficientMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 126,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def smoothCoefficientMajorant (M : ℕ) : ℕ :=\n  let D := 12*kernelCapMajorant M\n  6*M+((3*M)*2)*(14*(3*D^2+D^3*3)+36*M^2)"
+  },
+  "natKernel": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatAlgebra.lean",
+    "line": 10,
+    "sha256": "b8b2ee38a3bb4cb85ae944ffcb87f7455fe149e62cbdeb644879fcc0594fd73b",
+    "block": "def natKernel : ℕ → ℕ → ℕ\n  | 0, _ => 1\n  | d+1, R => (2*R+1)*natKernel d (R*(2*R+1))"
+  },
+  "natSolver": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatAlgebra.lean",
+    "line": 14,
+    "sha256": "b8b2ee38a3bb4cb85ae944ffcb87f7455fe149e62cbdeb644879fcc0594fd73b",
+    "block": "def natSolver : ℕ → ℕ → ℕ\n  | 0, _ => 0\n  | d+1, K => (1+2*(d+1)*(max 1 K)^2)*(natSolver d (2*(max 1 K)^2)+1)"
+  },
+  "natStep": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatAlgebra.lean",
+    "line": 92,
+    "sha256": "b8b2ee38a3bb4cb85ae944ffcb87f7455fe149e62cbdeb644879fcc0594fd73b",
+    "block": "def natStep (M : ℕ) : ℕ :=\n  (M+1)+(M+1)^2+(M+1)^(M+1)+(M+1).factorial+natKernel M M+natSolver M M"
+  },
+  "natEnvelope": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatAlgebra.lean",
+    "line": 143,
+    "sha256": "b8b2ee38a3bb4cb85ae944ffcb87f7455fe149e62cbdeb644879fcc0594fd73b",
+    "block": "def natEnvelope : ℕ → ℕ → ℕ\n  | 0, M => M+2\n  | k+1, M => natStep (natEnvelope k M)"
+  },
+  "compHMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerUniformCertificate.lean",
+    "line": 12,
+    "sha256": "dcfc192a122b6d6eb4718eb6c261b0439fdb2d7e5ca7e21882f22c2c17cfa6bc",
+    "block": "def compHMajorant (M S : ℕ) : ℕ :=\n  1+8*compL2Majorant M+5*compNMajorant M+32*(2*S+1)*compNMajorant M"
+  },
+  "uniformCertMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerUniformCertificate.lean",
+    "line": 15,
+    "sha256": "dcfc192a122b6d6eb4718eb6c261b0439fdb2d7e5ca7e21882f22c2c17cfa6bc",
+    "block": "def uniformCertMajorant (M : ℕ) : ℕ :=\n  let S := compressionSampleMajorant M\n  natEnvelope 6 (S+compHMajorant M S+compDMajorant M S)"
+  },
+  "smoothSampleMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerSmoothBounds.lean",
+    "line": 12,
+    "sha256": "40a8e62da89c887dcb2fad61680baf4e2a9d2243b8b1cce8e6ebf547cd89db46",
+    "block": "def smoothSampleMajorant (M : ℕ) : ℕ := compressionSampleMajorant (2*M)"
+  },
+  "smoothDMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerSmoothBounds.lean",
+    "line": 13,
+    "sha256": "40a8e62da89c887dcb2fad61680baf4e2a9d2243b8b1cce8e6ebf547cd89db46",
+    "block": "def smoothDMajorant (M : ℕ) : ℕ := compDMajorant (2*M) (smoothSampleMajorant M)"
+  },
+  "routingCompMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 120,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def routingCompMajorant (M : ℕ) : ℕ := M+1"
+  },
+  "routeDMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 121,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def routeDMajorant (M : ℕ) : ℕ := 12*routingCompMajorant M^2"
+  },
+  "smoothDemandMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerSmoothBounds.lean",
+    "line": 14,
+    "sha256": "40a8e62da89c887dcb2fad61680baf4e2a9d2243b8b1cce8e6ebf547cd89db46",
+    "block": "def smoothDemandMajorant (M : ℕ) : ℕ :=\n  let S := smoothSampleMajorant M\n  let D := smoothDMajorant M\n  let R := routeDMajorant (2*M)\n  3*R*natKernel ((S+1)^2) (max (D*(3*R)) (3*D))"
+  },
+  "smoothCertMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerSmoothBounds.lean",
+    "line": 19,
+    "sha256": "40a8e62da89c887dcb2fad61680baf4e2a9d2243b8b1cce8e6ebf547cd89db46",
+    "block": "def smoothCertMajorant (M : ℕ) : ℕ := uniformCertMajorant (4*M)*smoothDemandMajorant M"
+  },
+  "routeBudgetMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 122,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def routeBudgetMajorant (M : ℕ) : ℕ := max (M*(8*compressionPowerMajorant M)) (routingCompMajorant M)"
+  },
+  "congestionMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerSmoothBounds.lean",
+    "line": 21,
+    "sha256": "40a8e62da89c887dcb2fad61680baf4e2a9d2243b8b1cce8e6ebf547cd89db46",
+    "block": "def congestionMajorant (M : ℕ) : ℕ :=\n  let K := smoothCertMajorant M\n  let D := routeDMajorant (2*M)\n  let δ := routeBudgetMajorant (2*M)\n  K*(4*D+3+32*D*δ+12*K*M+2*D+2)+1"
+  },
+  "inverseCostMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerSmoothBounds.lean",
+    "line": 27,
+    "sha256": "40a8e62da89c887dcb2fad61680baf4e2a9d2243b8b1cce8e6ebf547cd89db46",
+    "block": "def inverseCostMajorant (M : ℕ) : ℕ := smoothCoefficientMajorant (M+congestionMajorant M)"
+  },
+  "paidDensityMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 89,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def paidDensityMajorant (M : ℕ) : ℕ := max (M*2) (hingeDensityMajorant M)"
+  },
+  "paidSmoothInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerSmoothBounds.lean",
+    "line": 31,
+    "sha256": "40a8e62da89c887dcb2fad61680baf4e2a9d2243b8b1cce8e6ebf547cd89db46",
+    "block": "def paidSmoothInputMajorant (M : ℕ) : ℕ :=\n  M+paidDensityMajorant M+max M 2+2*M+1"
+  },
+  "paidBudgetMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryBudgets.lean",
+    "line": 19,
+    "sha256": "b73d1fc8099efed007e596f08989c1663accdcd5f46502999d540866d8650a8a",
+    "block": "def paidBudgetMajorant (M : ℕ) : ℕ := max (geometryBudgetMajorant M*2) (latticeBudgetMajorant M*2)"
+  },
+  "paidCostMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerSmoothBounds.lean",
+    "line": 33,
+    "sha256": "40a8e62da89c887dcb2fad61680baf4e2a9d2243b8b1cce8e6ebf547cd89db46",
+    "block": "def paidCostMajorant (M : ℕ) : ℕ :=\n  max (inverseCostMajorant (paidSmoothInputMajorant M)) (paidBudgetMajorant M)"
+  },
+  "referenceLoadBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 23,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def referenceLoadBound (M : ℕ) : ℕ := max (referenceToleranceBound M*4) 4"
+  },
+  "prescribedLoadBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 32,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def prescribedLoadBound (M : ℕ) : ℕ := max (referenceLoadBound M) 2"
+  },
+  "referencePrecisionMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceAgenda.lean",
+    "line": 15,
+    "sha256": "73647b926fdfea50aed4789eccddd80eae448236ae9330728e31eceafaab14e6",
+    "block": "def referencePrecisionMajorant (M : ℕ) : ℕ :=\n  max M (max (M*(10*compressionPowerMajorant M))\n    (max (paidBudgetMajorant M*4) (512*M*M*paidCostMajorant M)))"
+  },
+  "referenceLoadMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceAgenda.lean",
+    "line": 19,
+    "sha256": "73647b926fdfea50aed4789eccddd80eae448236ae9330728e31eceafaab14e6",
+    "block": "def referenceLoadMajorant (M : ℕ) : ℕ := prescribedLoadBound (referencePrecisionMajorant M)"
+  },
+  "profileToleranceMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceAgenda.lean",
+    "line": 22,
+    "sha256": "73647b926fdfea50aed4789eccddd80eae448236ae9330728e31eceafaab14e6",
+    "block": "def profileToleranceMajorant (M : ℕ) : ℕ :=\n  max (2*M*paidCostMajorant M) (referenceLoadMajorant M)"
+  },
+  "innerRadiusInput": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceAgenda.lean",
+    "line": 24,
+    "sha256": "73647b926fdfea50aed4789eccddd80eae448236ae9330728e31eceafaab14e6",
+    "block": "def innerRadiusInput (M : ℕ) : ℕ := M+2*M+max M (M*(2*(M+1)))+1"
+  },
+  "innerRadiusMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceAgenda.lean",
+    "line": 25,
+    "sha256": "73647b926fdfea50aed4789eccddd80eae448236ae9330728e31eceafaab14e6",
+    "block": "def innerRadiusMajorant (M : ℕ) : ℕ :=\n  radiusMajorant profileToleranceMajorant (innerRadiusInput M) M"
+  },
+  "geometryOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryBudgets.lean",
+    "line": 21,
+    "sha256": "b73d1fc8099efed007e596f08989c1663accdcd5f46502999d540866d8650a8a",
+    "block": "def geometryOrderMajorant (M : ℕ) : ℕ := 128*(M+2)*compressionPowerMajorant M*M+1"
+  },
+  "latticeOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryBudgets.lean",
+    "line": 22,
+    "sha256": "b73d1fc8099efed007e596f08989c1663accdcd5f46502999d540866d8650a8a",
+    "block": "def latticeOrderMajorant (M : ℕ) : ℕ := 4*M+1"
+  },
+  "paidOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryBudgets.lean",
+    "line": 23,
+    "sha256": "b73d1fc8099efed007e596f08989c1663accdcd5f46502999d540866d8650a8a",
+    "block": "def paidOrderMajorant (M : ℕ) : ℕ := max (geometryOrderMajorant M) (latticeOrderMajorant M)"
+  },
+  "compressionOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometrySample.lean",
+    "line": 172,
+    "sha256": "69d2b1ac818ecf0b8db73296ec13b0b33de7256ba7ef5a66725bd9f61a3d5221",
+    "block": "def compressionOrderMajorant (M : ℕ) : ℕ :=\n  4*compressionClipMajorant M+4*M*compressionPowerMajorant M*compressionClipMajorant M+1"
+  },
+  "paidPreparedInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 90,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def paidPreparedInputMajorant (M : ℕ) : ℕ := paidDensityMajorant M*4+2*M+1"
+  },
+  "paidPreparedOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 91,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def paidPreparedOrderMajorant (M : ℕ) : ℕ := compressionOrderMajorant (paidPreparedInputMajorant M)"
+  },
+  "routeOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 123,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def routeOrderMajorant (M : ℕ) : ℕ := (8+4*M*compressionPowerMajorant M)*M+1"
+  },
+  "nZeroMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 125,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def nZeroMajorant (M : ℕ) : ℕ := 2*(12*M+3)*compressionPowerMajorant M*M"
+  },
+  "inverseOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerSmoothBounds.lean",
+    "line": 28,
+    "sha256": "40a8e62da89c887dcb2fad61680baf4e2a9d2243b8b1cce8e6ebf547cd89db46",
+    "block": "def inverseOrderMajorant (M : ℕ) : ℕ :=\n  max (max (compressionOrderMajorant (4*M))\n    (max (compressionOrderMajorant (2*M)) (routeOrderMajorant (2*M)))) (nZeroMajorant M)"
+  },
+  "paidInverseOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerSmoothBounds.lean",
+    "line": 35,
+    "sha256": "40a8e62da89c887dcb2fad61680baf4e2a9d2243b8b1cce8e6ebf547cd89db46",
+    "block": "def paidInverseOrderMajorant (M : ℕ) : ℕ := inverseOrderMajorant (paidSmoothInputMajorant M)"
+  },
+  "envelopeOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 29,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def envelopeOrderBound (M : ℕ) : ℕ := 32*envelopeLoadBound M*M+1"
+  },
+  "analyticCutBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerAnalyticCuts.lean",
+    "line": 14,
+    "sha256": "bb3ed4f08db85c43a7534b6edc75560c90405fa9f1aed84f3d4f80d075b7f7f7",
+    "block": "def analyticCutBound (M : ℕ) : ℕ := (2 * M * M) ^ (2 * M)"
+  },
+  "nibbleThreeBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerAnalyticPacking.lean",
+    "line": 13,
+    "sha256": "8859690e0f5f90e6150297d4b506828c8d0a220a739654a775d01c76ff2edc4a",
+    "block": "def nibbleThreeBound : ℕ := analyticCutBound 1000000"
+  },
+  "egjFourInputBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerAnalyticClone.lean",
+    "line": 52,
+    "sha256": "f07c7fab38718da6b930461816474eea31a5b99b9876a7c863d85a0f752e52fb",
+    "block": "def egjFourInputBound : ℕ := 30000000 + 2 * nibbleThreeBound"
+  },
+  "egjFourBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerAnalyticClone.lean",
+    "line": 53,
+    "sha256": "f07c7fab38718da6b930461816474eea31a5b99b9876a7c863d85a0f752e52fb",
+    "block": "def egjFourBound : ℕ := analyticCutBound egjFourInputBound"
+  },
+  "cloneInputBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerAnalyticClone.lean",
+    "line": 96,
+    "sha256": "f07c7fab38718da6b930461816474eea31a5b99b9876a7c863d85a0f752e52fb",
+    "block": "def cloneInputBound (M : ℕ) : ℕ :=\n  max 5120000 (max egjFourBound (4*M*M+2))"
+  },
+  "cloneBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerAnalyticClone.lean",
+    "line": 99,
+    "sha256": "f07c7fab38718da6b930461816474eea31a5b99b9876a7c863d85a0f752e52fb",
+    "block": "def cloneBound (M : ℕ) : ℕ := analyticCutBound (cloneInputBound M)"
+  },
+  "approxPackingBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerAnalyticClone.lean",
+    "line": 163,
+    "sha256": "f07c7fab38718da6b930461816474eea31a5b99b9876a7c863d85a0f752e52fb",
+    "block": "def approxPackingBound (M : ℕ) : ℕ := cloneBound (16*M)"
+  },
+  "referenceOrderInput": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceOrders.lean",
+    "line": 11,
+    "sha256": "172f171df0d7ff0d6e1886ef19e9ad3aff9ec1c99ecf2218f236c6d96956ee79",
+    "block": "def referenceOrderInput (M : ℕ) : ℕ := 1+referenceWeightBound M+referencePrecisionBound M"
+  },
+  "referenceOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceOrders.lean",
+    "line": 12,
+    "sha256": "172f171df0d7ff0d6e1886ef19e9ad3aff9ec1c99ecf2218f236c6d96956ee79",
+    "block": "def referenceOrderBound (M : ℕ) : ℕ :=\n  max (max (16*M+1) (approxPackingBound (referenceOrderInput M))) 1"
+  },
+  "prescribedOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceOrders.lean",
+    "line": 14,
+    "sha256": "172f171df0d7ff0d6e1886ef19e9ad3aff9ec1c99ecf2218f236c6d96956ee79",
+    "block": "def prescribedOrderBound (M : ℕ) : ℕ :=\n  max (envelopeOrderBound M) (max (referenceOrderBound M)\n    (2*envelopeDegreeBound M*referenceStockBudgetBound M))"
+  },
+  "referenceAgendaInput": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceAgenda.lean",
+    "line": 18,
+    "sha256": "73647b926fdfea50aed4789eccddd80eae448236ae9330728e31eceafaab14e6",
+    "block": "def referenceAgendaInput (M : ℕ) : ℕ := 12*M+referencePrecisionMajorant M"
+  },
+  "referenceThresholdMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceAgenda.lean",
+    "line": 21,
+    "sha256": "73647b926fdfea50aed4789eccddd80eae448236ae9330728e31eceafaab14e6",
+    "block": "def referenceThresholdMajorant (M : ℕ) : ℕ := prescribedOrderBound (referenceAgendaInput M)"
+  },
+  "innerNodeOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceAgenda.lean",
+    "line": 27,
+    "sha256": "73647b926fdfea50aed4789eccddd80eae448236ae9330728e31eceafaab14e6",
+    "block": "def innerNodeOrderMajorant (M : ℕ) : ℕ :=\n  max (max (max (paidOrderMajorant M) (paidPreparedOrderMajorant M))\n    (paidInverseOrderMajorant M)) (referenceThresholdMajorant M)"
+  },
+  "innerScheduleMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceAgenda.lean",
+    "line": 30,
+    "sha256": "73647b926fdfea50aed4789eccddd80eae448236ae9330728e31eceafaab14e6",
+    "block": "def innerScheduleMajorant (M : ℕ) : ℕ :=\n  max (paidOrderMajorant M) (innerNodeOrderMajorant (M+innerRadiusMajorant M))"
+  },
+  "thresholdProfileScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdAgenda.lean",
+    "line": 26,
+    "sha256": "8a6178c2c256e24381d1326fbec338a1d62cdce995f8668ab82aa76993789a71",
+    "block": "def thresholdProfileScale (M : ℕ) : ℕ :=\n  let W := thresholdRadiusScale M\n  W+innerRadiusMajorant W+innerScheduleMajorant W+1"
+  },
+  "prescribedAvoidBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceBudgets.lean",
+    "line": 33,
+    "sha256": "930288a59476984adcefeca741e9d2850d89003656d86a15efe94d6be3dda97e",
+    "block": "def prescribedAvoidBound (M : ℕ) : ℕ := max (referenceAvoidBound M) (envelopeBudgetBound M)"
+  },
+  "referenceAvoidMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceAgenda.lean",
+    "line": 20,
+    "sha256": "73647b926fdfea50aed4789eccddd80eae448236ae9330728e31eceafaab14e6",
+    "block": "def referenceAvoidMajorant (M : ℕ) : ℕ := prescribedAvoidBound (referenceAgendaInput M)"
+  },
+  "thresholdAgendaMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdAgenda.lean",
+    "line": 29,
+    "sha256": "8a6178c2c256e24381d1326fbec338a1d62cdce995f8668ab82aa76993789a71",
+    "block": "def thresholdAgendaMajorant (M : ℕ) : ℕ :=\n  let P := thresholdProfileScale M\n  P+paidCostMajorant P+referenceLoadMajorant P+referenceAvoidMajorant P+\n    referenceThresholdMajorant P+paidInverseOrderMajorant P+paidOrderMajorant P+1"
+  },
+  "catalogDimensionMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCatalog.lean",
+    "line": 9,
+    "sha256": "621a9098fe85f972d1f8f050570b374a2f7795f987f92339076900c985c28787",
+    "block": "def catalogDimensionMajorant (M : ℕ) : ℕ := (compressionSampleMajorant M+1)^2"
+  },
+  "catalogCoefficientMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCatalog.lean",
+    "line": 10,
+    "sha256": "621a9098fe85f972d1f8f050570b374a2f7795f987f92339076900c985c28787",
+    "block": "def catalogCoefficientMajorant (M : ℕ) : ℕ :=\n  compDMajorant (compressionClipMajorant M) (compressionSampleMajorant M)"
+  },
+  "catalogColumnMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCatalog.lean",
+    "line": 12,
+    "sha256": "621a9098fe85f972d1f8f050570b374a2f7795f987f92339076900c985c28787",
+    "block": "def catalogColumnMajorant (M : ℕ) : ℕ := 3*catalogCoefficientMajorant M"
+  },
+  "atomRadiusMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCatalog.lean",
+    "line": 13,
+    "sha256": "621a9098fe85f972d1f8f050570b374a2f7795f987f92339076900c985c28787",
+    "block": "def atomRadiusMajorant (M : ℕ) : ℕ := 3*routeDMajorant (M*2)"
+  },
+  "bankCatalogInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCatalog.lean",
+    "line": 14,
+    "sha256": "621a9098fe85f972d1f8f050570b374a2f7795f987f92339076900c985c28787",
+    "block": "def bankCatalogInputMajorant (M : ℕ) : ℕ :=\n  atomRadiusMajorant M+catalogDimensionMajorant M+catalogCoefficientMajorant M+\n    catalogColumnMajorant M+catalogDimensionMajorant (M*2)+\n    catalogCoefficientMajorant (M*2)+catalogColumnMajorant (M*2)"
+  },
+  "bankRadiusMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCatalog.lean",
+    "line": 18,
+    "sha256": "621a9098fe85f972d1f8f050570b374a2f7795f987f92339076900c985c28787",
+    "block": "def bankRadiusMajorant (M : ℕ) : ℕ := natEnvelope 5 (bankCatalogInputMajorant M)"
+  },
+  "bankCatalogSizeMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCatalog.lean",
+    "line": 19,
+    "sha256": "621a9098fe85f972d1f8f050570b374a2f7795f987f92339076900c985c28787",
+    "block": "def bankCatalogSizeMajorant (M : ℕ) : ℕ := natEnvelope 8 (bankCatalogInputMajorant M)"
+  },
+  "supplySizeBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatTerminal.lean",
+    "line": 104,
+    "sha256": "e9a8447b14e33b53fa1956f7515b6b968f91d88df13fe92a55b98850834de8c1",
+    "block": "def supplySizeBound (K h k : ℕ) : ℕ := K*k*(4*(2*h-2).choose 2+6)"
+  },
+  "boundedPieceSizeMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCells.lean",
+    "line": 11,
+    "sha256": "9e2fc53217879fb102c05f7c33b3c2631007146bba8a31fc11b1c2e60e3cbe92",
+    "block": "def boundedPieceSizeMajorant (M h k : ℕ) : ℕ := supplySizeBound (uniformCertMajorant M) h k"
+  },
+  "bankRerouteMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCatalog.lean",
+    "line": 20,
+    "sha256": "621a9098fe85f972d1f8f050570b374a2f7795f987f92339076900c985c28787",
+    "block": "def bankRerouteMajorant (M : ℕ) : ℕ := natEnvelope 9 (bankCatalogInputMajorant M)"
+  },
+  "bankCellSizeMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCells.lean",
+    "line": 14,
+    "sha256": "9e2fc53217879fb102c05f7c33b3c2631007146bba8a31fc11b1c2e60e3cbe92",
+    "block": "def bankCellSizeMajorant (M h : ℕ) : ℕ :=\n  boundedPieceSizeMajorant (M*2) h (4*bankRerouteMajorant M)+4*bankRerouteMajorant M"
+  },
+  "coreDeltaBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankBudgets.lean",
+    "line": 16,
+    "sha256": "05ec8410d220d866a3f4e2a2493924999124d840a45f26f4c05e85332e11273a",
+    "block": "def coreDeltaBound (M h : ℕ) : ℕ := max 2 (M*(2*2^(h.choose 2)))"
+  },
+  "nativeDeleteMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerOrders.lean",
+    "line": 90,
+    "sha256": "01d35eb44400ee7637a0e1511ad67324e3c60d3a6733e2e8e74c70a3f0ad3ed8",
+    "block": "def nativeDeleteMajorant (M : ℕ) : ℕ := nativeRhoMajorant M*4"
+  },
+  "bankToleranceBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankBudgets.lean",
+    "line": 15,
+    "sha256": "05ec8410d220d866a3f4e2a2493924999124d840a45f26f4c05e85332e11273a",
+    "block": "def bankToleranceBound (M h : ℕ) : ℕ := max (bankProtectionBound M h) M"
+  },
+  "quadraticRateMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCells.lean",
+    "line": 20,
+    "sha256": "9e2fc53217879fb102c05f7c33b3c2631007146bba8a31fc11b1c2e60e3cbe92",
+    "block": "def quadraticRateMajorant (M E B : ℕ) : ℕ := M*M*(32*(E*B+1))"
+  },
+  "geometricDeletionBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankBudgets.lean",
+    "line": 17,
+    "sha256": "05ec8410d220d866a3f4e2a2493924999124d840a45f26f4c05e85332e11273a",
+    "block": "def geometricDeletionBound (M h : ℕ) : ℕ := max 2 (M*(4*2^((h+1).choose 2)))"
+  },
+  "cellDeletionBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankBudgets.lean",
+    "line": 18,
+    "sha256": "05ec8410d220d866a3f4e2a2493924999124d840a45f26f4c05e85332e11273a",
+    "block": "def cellDeletionBound (M h : ℕ) : ℕ := max (geometricDeletionBound M h) (coreDeltaBound M h)"
+  },
+  "bankDeletionBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankBudgets.lean",
+    "line": 19,
+    "sha256": "05ec8410d220d866a3f4e2a2493924999124d840a45f26f4c05e85332e11273a",
+    "block": "def bankDeletionBound (M h : ℕ) : ℕ :=\n  max (geometricDeletionBound M h) (max (max (cellDeletionBound M h) (coreDeltaBound M h)) M)"
+  },
+  "bankCopiesMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCells.lean",
+    "line": 18,
+    "sha256": "9e2fc53217879fb102c05f7c33b3c2631007146bba8a31fc11b1c2e60e3cbe92",
+    "block": "def bankCopiesMajorant (M P : ℕ) : ℕ := 2*bankCatalogSizeMajorant M*P"
+  },
+  "nativeBankRateMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCells.lean",
+    "line": 22,
+    "sha256": "9e2fc53217879fb102c05f7c33b3c2631007146bba8a31fc11b1c2e60e3cbe92",
+    "block": "def nativeBankRateMajorant (M h P : ℕ) : ℕ :=\n  quadraticRateMajorant (max (bankToleranceBound M h) (bankDeletionBound M h))\n    (bankCellSizeMajorant M h) (bankCopiesMajorant M P)"
+  },
+  "preparedBankInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCells.lean",
+    "line": 30,
+    "sha256": "9e2fc53217879fb102c05f7c33b3c2631007146bba8a31fc11b1c2e60e3cbe92",
+    "block": "def preparedBankInputMajorant (M h : ℕ) : ℕ := max M (coreDeltaBound M h)"
+  },
+  "preparedBankRateMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCells.lean",
+    "line": 31,
+    "sha256": "9e2fc53217879fb102c05f7c33b3c2631007146bba8a31fc11b1c2e60e3cbe92",
+    "block": "def preparedBankRateMajorant (M h P : ℕ) : ℕ := nativeBankRateMajorant (preparedBankInputMajorant M h) h P"
+  },
+  "natExtensionCost": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatMonitors.lean",
+    "line": 191,
+    "sha256": "9d7dba3d90043b83c87df73d04d744682b9198ff0a25dbd6bd86a07c52d55447",
+    "block": "def natExtensionCost (d D E R : ℕ) : ℕ := d*natSolver d (D*R+E)*R*D"
+  },
+  "deletedExtensionMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankWeights.lean",
+    "line": 14,
+    "sha256": "c3ef0bf68927f48065b929bad9e823bfb17a85a257b3ada6cb68713a92552047",
+    "block": "def deletedExtensionMajorant (M : ℕ) : ℕ :=\n  let D := compDMajorant (M+1) (compressionSampleMajorant M)\n  natExtensionCost (physicalRankMajorant M) D (3*D) (3*routeDMajorant M)"
+  },
+  "physicalGlueMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankWeights.lean",
+    "line": 17,
+    "sha256": "c3ef0bf68927f48065b929bad9e823bfb17a85a257b3ada6cb68713a92552047",
+    "block": "def physicalGlueMajorant (M : ℕ) : ℕ := deletedExtensionMajorant M+1"
+  },
+  "physicalWeightMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankWeights.lean",
+    "line": 20,
+    "sha256": "c3ef0bf68927f48065b929bad9e823bfb17a85a257b3ada6cb68713a92552047",
+    "block": "def physicalWeightMajorant (M : ℕ) : ℕ :=\n  max ((1+4*(6*M^2+1))*physicalGlueMajorant M*(M*(M*M))) (M*(M*M))+1"
+  },
+  "bankGammaBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankBudgets.lean",
+    "line": 9,
+    "sha256": "05ec8410d220d866a3f4e2a2493924999124d840a45f26f4c05e85332e11273a",
+    "block": "def bankGammaBound (M : ℕ) : ℕ := M*M*8"
+  },
+  "bankEtaBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankBudgets.lean",
+    "line": 10,
+    "sha256": "05ec8410d220d866a3f4e2a2493924999124d840a45f26f4c05e85332e11273a",
+    "block": "def bankEtaBound (M B : ℕ) : ℕ := max (M*(M^2)*8) (bankGammaBound M*(B+1))"
+  },
+  "monitorCapBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankBudgets.lean",
+    "line": 11,
+    "sha256": "05ec8410d220d866a3f4e2a2493924999124d840a45f26f4c05e85332e11273a",
+    "block": "def monitorCapBound (M K : ℕ) : ℕ := (M*(K+1))*(2+15*M)"
+  },
+  "forkEpsilonMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 138,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def forkEpsilonMajorant (M : ℕ) : ℕ := M^2*(1024*(M+1))"
+  },
+  "withdrawalKappaMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 140,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def withdrawalKappaMajorant (M : ℕ) : ℕ := M*M*2"
+  },
+  "selectorEpsilonMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 72,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def selectorEpsilonMajorant (M B : ℕ) : ℕ := (M+1)^2*(10000*B)"
+  },
+  "selectorAMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 71,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def selectorAMajorant (M : ℕ) : ℕ := 200*M+8"
+  },
+  "paymentGammaMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 15,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def paymentGammaMajorant (M : ℕ) : ℕ := max (M*M*32) (M*8)"
+  },
+  "paymentTMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 16,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def paymentTMajorant (M : ℕ) : ℕ := M+61*M+61"
+  },
+  "paymentCostMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 17,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def paymentCostMajorant (M : ℕ) : ℕ := 2*(paymentGammaMajorant M+8)*paymentTMajorant M+4"
+  },
+  "paymentInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 18,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def paymentInputMajorant (M : ℕ) : ℕ :=\n  max (M*M*(8*paymentCostMajorant M)) (M*(12*paymentTMajorant M))"
+  },
+  "selectorQMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 73,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def selectorQMajorant (M B : ℕ) : ℕ := 4*B*(M+1)+2"
+  },
+  "selectorScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 74,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def selectorScale (M : ℕ) : ℕ :=\n  M+M*M*2+M*2+selectorAMajorant M+selectorQMajorant M (selectorAMajorant M)+1"
+  },
+  "selectorInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 78,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def selectorInputMajorant (M : ℕ) : ℕ :=\n  max (selectorEpsilonMajorant M (selectorAMajorant M)) (paymentInputMajorant (selectorScale M))"
+  },
+  "forkQMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 139,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def forkQMajorant (M : ℕ) : ℕ := 128*M+1"
+  },
+  "withdrawalKMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 141,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def withdrawalKMajorant (M : ℕ) : ℕ := forkQMajorant (withdrawalKappaMajorant M)+6"
+  },
+  "paymentForbiddenMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 14,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def paymentForbiddenMajorant (M : ℕ) : ℕ := M*M*16"
+  },
+  "selectorStockMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 76,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def selectorStockMajorant (M : ℕ) : ℕ :=\n  max (selectorEpsilonMajorant M (selectorAMajorant M)) (paymentForbiddenMajorant (selectorScale M))"
+  },
+  "withdrawalInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 144,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def withdrawalInputMajorant (M : ℕ) : ℕ :=\n  max (forkEpsilonMajorant (withdrawalKappaMajorant M))\n    (max (max (selectorInputMajorant (2*M)) (M*2)*(4*withdrawalKMajorant M))\n      (selectorStockMajorant M*(8*withdrawalKMajorant M)))"
+  },
+  "resourceOutputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 199,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def resourceOutputMajorant (M : ℕ) : ℕ := max (M*M*16) M"
+  },
+  "resourceInputScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 200,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def resourceInputScale (M : ℕ) : ℕ := M+resourceOutputMajorant M+1"
+  },
+  "resourceInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 201,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def resourceInputMajorant (M : ℕ) : ℕ :=\n  max (withdrawalInputMajorant (resourceInputScale M)*4) (max (resourceOutputMajorant M) M)"
+  },
+  "resourceCompletionMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 203,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def resourceCompletionMajorant (M : ℕ) : ℕ :=\n  M*2*(max (resourceInputMajorant M*12) 2)^2*2"
+  },
+  "samplingPrecisionMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResourceOrders.lean",
+    "line": 14,
+    "sha256": "e29e5c90abf8298d0786c53d3852db25c0c86d26558786420ecd0461fe79b9dc",
+    "block": "def samplingPrecisionMajorant (M : ℕ) : ℕ := max (M^2*4) (M*M^4*128)"
+  },
+  "basalSamplingMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResourceOrders.lean",
+    "line": 15,
+    "sha256": "e29e5c90abf8298d0786c53d3852db25c0c86d26558786420ecd0461fe79b9dc",
+    "block": "def basalSamplingMajorant (M : ℕ) : ℕ := 96*samplingPrecisionMajorant M^4+1"
+  },
+  "stockRateMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResourceOrders.lean",
+    "line": 16,
+    "sha256": "e29e5c90abf8298d0786c53d3852db25c0c86d26558786420ecd0461fe79b9dc",
+    "block": "def stockRateMajorant (M : ℕ) : ℕ := max (M*12) 2"
+  },
+  "rawStockSamplingScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResourceOrders.lean",
+    "line": 17,
+    "sha256": "e29e5c90abf8298d0786c53d3852db25c0c86d26558786420ecd0461fe79b9dc",
+    "block": "def rawStockSamplingScale (M : ℕ) : ℕ := M+stockRateMajorant M+M*2+1"
+  },
+  "rawStockOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResourceOrders.lean",
+    "line": 18,
+    "sha256": "e29e5c90abf8298d0786c53d3852db25c0c86d26558786420ecd0461fe79b9dc",
+    "block": "def rawStockOrderMajorant (M : ℕ) : ℕ :=\n  max (referenceOrderBound (8*M)) (basalSamplingMajorant (rawStockSamplingScale M))"
+  },
+  "resourceStockOrderScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResourceOrders.lean",
+    "line": 20,
+    "sha256": "e29e5c90abf8298d0786c53d3852db25c0c86d26558786420ecd0461fe79b9dc",
+    "block": "def resourceStockOrderScale (M : ℕ) : ℕ := M+resourceInputMajorant M+1"
+  },
+  "paymentOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 20,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def paymentOrderMajorant (M : ℕ) : ℕ := max (max (paymentInputMajorant M) (paymentGammaMajorant M)) 1"
+  },
+  "selectorOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 80,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def selectorOrderMajorant (M : ℕ) : ℕ :=\n  max (paymentOrderMajorant (selectorScale M)) (200*(M+1))"
+  },
+  "withdrawalOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 148,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def withdrawalOrderMajorant (M : ℕ) : ℕ :=\n  max (max (selectorOrderMajorant (2*M)) (32*withdrawalKappaMajorant M)) (withdrawalInputMajorant M)"
+  },
+  "resourceOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResourceOrders.lean",
+    "line": 21,
+    "sha256": "e29e5c90abf8298d0786c53d3852db25c0c86d26558786420ecd0461fe79b9dc",
+    "block": "def resourceOrderMajorant (M : ℕ) : ℕ :=\n  max (rawStockOrderMajorant (resourceStockOrderScale M))\n    (max (withdrawalOrderMajorant (resourceInputScale M))\n      (4*withdrawalInputMajorant (resourceInputScale M)))"
+  },
+  "stockBankResourceScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerOrders.lean",
+    "line": 26,
+    "sha256": "01d35eb44400ee7637a0e1511ad67324e3c60d3a6733e2e8e74c70a3f0ad3ed8",
+    "block": "def stockBankResourceScale (M h : ℕ) : ℕ := M+bankProtectionBound M h*2+1"
+  },
+  "catalogCompressionOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCatalog.lean",
+    "line": 21,
+    "sha256": "621a9098fe85f972d1f8f050570b374a2f7795f987f92339076900c985c28787",
+    "block": "def catalogCompressionOrderMajorant (M : ℕ) : ℕ :=\n  max (compressionOrderMajorant M) (2*compressionOrderMajorant (M*2))"
+  },
+  "deletionNumerator": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatTerminal.lean",
+    "line": 77,
+    "sha256": "e9a8447b14e33b53fa1956f7515b6b968f91d88df13fe92a55b98850834de8c1",
+    "block": "def deletionNumerator (U h : ℕ) : ℕ := 8*((U+3)+(U+1+h)*2^(h.choose 2))"
+  },
+  "deletionOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatTerminal.lean",
+    "line": 78,
+    "sha256": "e9a8447b14e33b53fa1956f7515b6b968f91d88df13fe92a55b98850834de8c1",
+    "block": "def deletionOrderBound (M U h N : ℕ) : ℕ := deletionNumerator U h*M+1+2*N"
+  },
+  "supplySupportBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatTerminal.lean",
+    "line": 105,
+    "sha256": "e9a8447b14e33b53fa1956f7515b6b968f91d88df13fe92a55b98850834de8c1",
+    "block": "def supplySupportBound (K h k : ℕ) : ℕ :=\n  2*k+3*(K*k)+K*k*(2*h-2)+3*(K*k)*(2*h-3)"
+  },
+  "supplyOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatTerminal.lean",
+    "line": 107,
+    "sha256": "e9a8447b14e33b53fa1956f7515b6b968f91d88df13fe92a55b98850834de8c1",
+    "block": "def supplyOrderBound (M K h k : ℕ) : ℕ := deletionOrderBound M (supplySupportBound K h k) h 0"
+  },
+  "boundedPieceOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCells.lean",
+    "line": 12,
+    "sha256": "9e2fc53217879fb102c05f7c33b3c2631007146bba8a31fc11b1c2e60e3cbe92",
+    "block": "def boundedPieceOrderMajorant (M h k : ℕ) : ℕ :=\n  max (compressionOrderMajorant M) (supplyOrderBound M (uniformCertMajorant M) h k)"
+  },
+  "bankCellOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCells.lean",
+    "line": 16,
+    "sha256": "9e2fc53217879fb102c05f7c33b3c2631007146bba8a31fc11b1c2e60e3cbe92",
+    "block": "def bankCellOrderMajorant (M h : ℕ) : ℕ :=\n  2*boundedPieceOrderMajorant (M*2) h (4*bankRerouteMajorant M)+40*bankRerouteMajorant M*M+1"
+  },
+  "atomCoreOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCells.lean",
+    "line": 19,
+    "sha256": "9e2fc53217879fb102c05f7c33b3c2631007146bba8a31fc11b1c2e60e3cbe92",
+    "block": "def atomCoreOrderMajorant (M : ℕ) : ℕ := 2*(routeOrderMajorant (M*2)+(3*(M*2)+1))"
+  },
+  "quadraticOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCells.lean",
+    "line": 21,
+    "sha256": "9e2fc53217879fb102c05f7c33b3c2631007146bba8a31fc11b1c2e60e3cbe92",
+    "block": "def quadraticOrderMajorant (M E B : ℕ) : ℕ := max 1 (max (4*M) (max (2*M) (2*(B*E)*M)))"
+  },
+  "nativeBankOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCells.lean",
+    "line": 25,
+    "sha256": "9e2fc53217879fb102c05f7c33b3c2631007146bba8a31fc11b1c2e60e3cbe92",
+    "block": "def nativeBankOrderMajorant (M h P : ℕ) : ℕ :=\n  max (catalogCompressionOrderMajorant M) (max (bankCellOrderMajorant M h)\n    (max (atomCoreOrderMajorant M)\n      (quadraticOrderMajorant (max (bankToleranceBound M h) (bankDeletionBound M h))\n        (bankCellSizeMajorant M h) (bankCopiesMajorant M P))))"
+  },
+  "preparedBankOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankCells.lean",
+    "line": 32,
+    "sha256": "9e2fc53217879fb102c05f7c33b3c2631007146bba8a31fc11b1c2e60e3cbe92",
+    "block": "def preparedBankOrderMajorant (M h P : ℕ) : ℕ :=\n  max (nativeBankOrderMajorant (preparedBankInputMajorant M h) h P)\n    (atomCoreOrderMajorant (preparedBankInputMajorant M h))"
+  },
+  "stockBankOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerOrders.lean",
+    "line": 27,
+    "sha256": "01d35eb44400ee7637a0e1511ad67324e3c60d3a6733e2e8e74c70a3f0ad3ed8",
+    "block": "def stockBankOrderMajorant (M h : ℕ) : ℕ :=\n  max (resourceOrderMajorant (stockBankResourceScale M h)) (2*preparedBankOrderMajorant M h M*M)"
+  },
+  "layerComplementOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerOrders.lean",
+    "line": 21,
+    "sha256": "01d35eb44400ee7637a0e1511ad67324e3c60d3a6733e2e8e74c70a3f0ad3ed8",
+    "block": "def layerComplementOrderMajorant (M : ℕ) : ℕ :=\n  max (16*M+1) (max (geometryOrderMajorant M) (latticeOrderMajorant M))"
+  },
+  "monitoredPackingOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerPackingOrders.lean",
+    "line": 10,
+    "sha256": "75339a48053543cedd1f55002a84777d9933327a96d8ade6c776e83423221484",
+    "block": "def monitoredPackingOrderBound (M : ℕ) : ℕ := max 2 (cloneBound (3*M+2))"
+  },
+  "packingSignedScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerPackingOrders.lean",
+    "line": 11,
+    "sha256": "75339a48053543cedd1f55002a84777d9933327a96d8ade6c776e83423221484",
+    "block": "def packingSignedScale (M : ℕ) : ℕ := max M (max (M*3) (max (M*(5*M)) (M+1)))"
+  },
+  "signedEnvelopeOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerPackingOrders.lean",
+    "line": 12,
+    "sha256": "75339a48053543cedd1f55002a84777d9933327a96d8ade6c776e83423221484",
+    "block": "def signedEnvelopeOrderBound (M : ℕ) : ℕ := max 2 (monitoredPackingOrderBound (packingSignedScale M))"
+  },
+  "packingLocalizedScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerPackingOrders.lean",
+    "line": 13,
+    "sha256": "75339a48053543cedd1f55002a84777d9933327a96d8ade6c776e83423221484",
+    "block": "def packingLocalizedScale (M : ℕ) : ℕ := max M (max (M*6) (max (6*M) (9*M)))"
+  },
+  "localizedSignedOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerPackingOrders.lean",
+    "line": 14,
+    "sha256": "75339a48053543cedd1f55002a84777d9933327a96d8ade6c776e83423221484",
+    "block": "def localizedSignedOrderBound (M : ℕ) : ℕ := signedEnvelopeOrderBound (packingLocalizedScale M)"
+  },
+  "packingPhysicalScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerPackingOrders.lean",
+    "line": 15,
+    "sha256": "75339a48053543cedd1f55002a84777d9933327a96d8ade6c776e83423221484",
+    "block": "def packingPhysicalScale (M : ℕ) : ℕ := max M (max (2*M) (M*2))"
+  },
+  "physicalMomentOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerPackingOrders.lean",
+    "line": 16,
+    "sha256": "75339a48053543cedd1f55002a84777d9933327a96d8ade6c776e83423221484",
+    "block": "def physicalMomentOrderBound (M : ℕ) : ℕ :=\n  max (16*M+1) (localizedSignedOrderBound (packingPhysicalScale M))"
+  },
+  "packingCoverRateBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerPackingOrders.lean",
+    "line": 19,
+    "sha256": "75339a48053543cedd1f55002a84777d9933327a96d8ade6c776e83423221484",
+    "block": "def packingCoverRateBound (M : ℕ) : ℕ := max (M*64) (max (M*64) 64)"
+  },
+  "packingCoverBudgetBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerPackingOrders.lean",
+    "line": 20,
+    "sha256": "75339a48053543cedd1f55002a84777d9933327a96d8ade6c776e83423221484",
+    "block": "def packingCoverBudgetBound (M : ℕ) : ℕ := (packingCoverRateBound M)^2"
+  },
+  "packingStockScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerPackingOrders.lean",
+    "line": 21,
+    "sha256": "75339a48053543cedd1f55002a84777d9933327a96d8ade6c776e83423221484",
+    "block": "def packingStockScale (M : ℕ) : ℕ := max M (max (packingCoverBudgetBound M*4) 4)"
+  },
+  "stockMomentOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerPackingOrders.lean",
+    "line": 22,
+    "sha256": "75339a48053543cedd1f55002a84777d9933327a96d8ade6c776e83423221484",
+    "block": "def stockMomentOrderBound (M : ℕ) : ℕ :=\n  max (physicalMomentOrderBound (packingStockScale M))\n    (max (packingCoverRateBound M) (2*packingCoverBudgetBound M))"
+  },
+  "fixedPackingOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerPackingOrders.lean",
+    "line": 25,
+    "sha256": "75339a48053543cedd1f55002a84777d9933327a96d8ade6c776e83423221484",
+    "block": "def fixedPackingOrderBound (M : ℕ) : ℕ := stockMomentOrderBound M"
+  },
+  "nativePartitionInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerOrders.lean",
+    "line": 23,
+    "sha256": "01d35eb44400ee7637a0e1511ad67324e3c60d3a6733e2e8e74c70a3f0ad3ed8",
+    "block": "def nativePartitionInputMajorant (M : ℕ) : ℕ := M+2*M+paidDensityMajorant M+1"
+  },
+  "nativePartitionOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerOrders.lean",
+    "line": 24,
+    "sha256": "01d35eb44400ee7637a0e1511ad67324e3c60d3a6733e2e8e74c70a3f0ad3ed8",
+    "block": "def nativePartitionOrderMajorant (M : ℕ) : ℕ :=\n  max (layerComplementOrderMajorant M) (fixedPackingOrderBound (nativePartitionInputMajorant M))"
+  },
+  "physicalGlueOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankWeights.lean",
+    "line": 18,
+    "sha256": "c3ef0bf68927f48065b929bad9e823bfb17a85a257b3ada6cb68713a92552047",
+    "block": "def physicalGlueOrderMajorant (M : ℕ) : ℕ :=\n  max (max (compressionOrderMajorant M) (max (routeOrderMajorant M) (3*M+1))) (3*M+1)"
+  },
+  "nativeWeightOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankWeights.lean",
+    "line": 22,
+    "sha256": "c3ef0bf68927f48065b929bad9e823bfb17a85a257b3ada6cb68713a92552047",
+    "block": "def nativeWeightOrderMajorant (M : ℕ) : ℕ := 4*physicalGlueOrderMajorant (2*M)*M+1"
+  },
+  "bankOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankBudgets.lean",
+    "line": 12,
+    "sha256": "05ec8410d220d866a3f4e2a2493924999124d840a45f26f4c05e85332e11273a",
+    "block": "def bankOrderBound (M : ℕ) : ℕ := 8*(M*(M^2))+1"
+  },
+  "bankStep": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerOrders.lean",
+    "line": 115,
+    "sha256": "01d35eb44400ee7637a0e1511ad67324e3c60d3a6733e2e8e74c70a3f0ad3ed8",
+    "block": "def bankStep (M h : ℕ) : ℕ :=\n  M+4096+128*M+64*M^2+4*M^3+(M+2)*M+\n  catalogDimensionMajorant M+catalogCoefficientMajorant M+catalogColumnMajorant M+\n  bankRadiusMajorant M+bankCatalogSizeMajorant M+bankCellSizeMajorant M h+\n  bankProtectionBound M h+coreDeltaBound M h+deletionBudgetMajorant M+nativeDeleteMajorant M+\n  natEnvelope 20 M+2*natEnvelope 4 M+bankToleranceBound M h+\n  preparedBankRateMajorant M h M+physicalWeightMajorant M+bankEtaBound M M+monitorCapBound M M+\n  resourceInputMajorant M+resourceOutputMajorant M+resourceCompletionMajorant M+\n  stockBankOrderMajorant M h+nativePartitionOrderMajorant M+nativeWeightOrderMajorant M+bankOrderBound M"
+  },
+  "bankStage": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerOrders.lean",
+    "line": 161,
+    "sha256": "01d35eb44400ee7637a0e1511ad67324e3c60d3a6733e2e8e74c70a3f0ad3ed8",
+    "block": "def bankStage (h : ℕ) : ℕ → ℕ → ℕ\n  | 0,M => M\n  | k+1,M => bankStep (bankStage h k M) h"
+  },
+  "layerThresholdMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerOrders.lean",
+    "line": 165,
+    "sha256": "01d35eb44400ee7637a0e1511ad67324e3c60d3a6733e2e8e74c70a3f0ad3ed8",
+    "block": "def layerThresholdMajorant (M h : ℕ) : ℕ := bankStage h 16 M"
+  },
+  "cleanLayerThresholdMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerOrders.lean",
+    "line": 299,
+    "sha256": "01d35eb44400ee7637a0e1511ad67324e3c60d3a6733e2e8e74c70a3f0ad3ed8",
+    "block": "def cleanLayerThresholdMajorant (M h : ℕ) : ℕ :=\n  max (layerThresholdMajorant (3*M+1) h) (2*max 1 M*M)"
+  },
+  "windowRouteMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerBudgets.lean",
+    "line": 18,
+    "sha256": "e6db1f6c04c86ef18c5e9fa4e39accaac564e7c3515a5bc70828653fb766fd01",
+    "block": "def windowRouteMajorant (M : ℕ) : ℕ := M*M*(32*(M+1)*4^M)"
+  },
+  "outerLayerParameterScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerBudgets.lean",
+    "line": 19,
+    "sha256": "e6db1f6c04c86ef18c5e9fa4e39accaac564e7c3515a5bc70828653fb766fd01",
+    "block": "def outerLayerParameterScale (M : ℕ) : ℕ :=\n  M+M*16+2*M+M*32+M*4+windowRouteMajorant (2*M)*4+(M+1)+1"
+  },
+  "scheduledPrecisionMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceAgenda.lean",
+    "line": 32,
+    "sha256": "73647b926fdfea50aed4789eccddd80eae448236ae9330728e31eceafaab14e6",
+    "block": "def scheduledPrecisionMajorant (M : ℕ) : ℕ := max (M*8) (128*M*M)"
+  },
+  "scheduledOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerReferenceAgenda.lean",
+    "line": 33,
+    "sha256": "73647b926fdfea50aed4789eccddd80eae448236ae9330728e31eceafaab14e6",
+    "block": "def scheduledOrderMajorant (M : ℕ) : ℕ := max 1 ((scheduledPrecisionMajorant M)^4)"
+  },
+  "innerLayerOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerOrders.lean",
+    "line": 301,
+    "sha256": "01d35eb44400ee7637a0e1511ad67324e3c60d3a6733e2e8e74c70a3f0ad3ed8",
+    "block": "def innerLayerOrderMajorant (M h : ℕ) : ℕ :=\n  max 1 (max (cleanLayerThresholdMajorant (outerLayerParameterScale M) h) (max (scheduledOrderMajorant M) (2*M)))"
+  },
+  "thresholdLayerScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdAssembly.lean",
+    "line": 13,
+    "sha256": "00eb8b61944190ffeaff2e7247766209a47073a6329c2987f4efb05049dfc1c5",
+    "block": "def thresholdLayerScale (A h : ℕ) : ℕ :=\n  A+innerLayerOrderMajorant A h+max 1 (scheduledOrderMajorant A)+1"
+  },
+  "rawPolynomialBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawSample.lean",
+    "line": 19,
+    "sha256": "9de010251edc078c377063159a2ac2c53cc3212baca3feb0a409c42801f6cf27",
+    "block": "def rawPolynomialBound (R : ℕ) : ℕ := max 1 ((4*Nat.factorial 14)*R^14)"
+  },
+  "rawHingeRateBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawSample.lean",
+    "line": 11,
+    "sha256": "9de010251edc078c377063159a2ac2c53cc3212baca3feb0a409c42801f6cf27",
+    "block": "def rawHingeRateBound (M : ℕ) : ℕ :=\n  (M^2 * M^(2*(M+2))) * ((4*(compressionPowerMajorant (M+6))^2)*(M+2))"
+  },
+  "rawGeometryRateBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawSample.lean",
+    "line": 13,
+    "sha256": "9de010251edc078c377063159a2ac2c53cc3212baca3feb0a409c42801f6cf27",
+    "block": "def rawGeometryRateBound (M : ℕ) : ℕ :=\n  max (M^2*4) (max ((M^2*M^2)*4) (rawHingeRateBound M))"
+  },
+  "rawTestRateBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawSample.lean",
+    "line": 17,
+    "sha256": "9de010251edc078c377063159a2ac2c53cc3212baca3feb0a409c42801f6cf27",
+    "block": "def rawTestRateBound (M T : ℕ) : ℕ :=\n  max (rawGeometryRateBound M) (max (M^2*(8*M)) T)"
+  },
+  "rawAutomaticOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawSample.lean",
+    "line": 20,
+    "sha256": "9de010251edc078c377063159a2ac2c53cc3212baca3feb0a409c42801f6cf27",
+    "block": "def rawAutomaticOrderBound (M T : ℕ) : ℕ :=\n  max 1 (max (rawPolynomialBound (rawTestRateBound M T)) 3)"
+  },
+  "rawNativeTailBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawSample.lean",
+    "line": 15,
+    "sha256": "9de010251edc078c377063159a2ac2c53cc3212baca3feb0a409c42801f6cf27",
+    "block": "def rawNativeTailBound (M : ℕ) : ℕ :=\n  (nativeDensityMajorant M * M^(2*nativeInteriorMajorant M)) * (16*(nativeInteriorMajorant M)^2)"
+  },
+  "oddPathOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPaths.lean",
+    "line": 14,
+    "sha256": "a391913e1beeee295df0efab8cb5016a68f3845ec0ccfd9123f9ab073cd6f35e",
+    "block": "def oddPathOrderMajorant (M : ℕ) : ℕ :=\n  4*(oddPathMajorant M+2)^2*((M+1)^(oddPathMajorant M+3))+1"
+  },
+  "nativeRouteOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPaths.lean",
+    "line": 57,
+    "sha256": "a391913e1beeee295df0efab8cb5016a68f3845ec0ccfd9123f9ab073cd6f35e",
+    "block": "def nativeRouteOrderMajorant (M : ℕ) : ℕ :=\n  max (oddPathOrderMajorant (nativePathInputMajorant M)) (3*M+1)"
+  },
+  "rawNativeSampleOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawSample.lean",
+    "line": 22,
+    "sha256": "9de010251edc078c377063159a2ac2c53cc3212baca3feb0a409c42801f6cf27",
+    "block": "def rawNativeSampleOrderBound (M : ℕ) : ℕ :=\n  max (rawAutomaticOrderBound M (rawNativeTailBound M)) (max (nativeRouteOrderMajorant M) 1)"
+  },
+  "rawGlobalInputBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 20,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def rawGlobalInputBound (M : ℕ) : ℕ := max M (max (M*2) (2*M))"
+  },
+  "globalRawStepOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 21,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def globalRawStepOrderBound (M : ℕ) : ℕ :=\n  max (max (rawNativeSampleOrderBound (rawGlobalInputBound M)) ((8*(M+1))^4))\n    (max (2*M*M) 1)"
+  },
+  "nestedOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryBudgets.lean",
+    "line": 24,
+    "sha256": "b73d1fc8099efed007e596f08989c1663accdcd5f46502999d540866d8650a8a",
+    "block": "def nestedOrderMajorant (M : ℕ) : ℕ := (16+16*M*compressionPowerMajorant M)*M+1"
+  },
+  "entryOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 27,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def entryOrderMajorant (M : ℕ) : ℕ := max (nestedOrderMajorant M) (2*compressionOrderMajorant (M*2))"
+  },
+  "coreOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 28,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def coreOrderMajorant (M : ℕ) : ℕ := max (nestedOrderMajorant M) (2*M)"
+  },
+  "preparationOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerGeometryPreparation.lean",
+    "line": 29,
+    "sha256": "d2890e626915e8809858698d1409fd2198788539c18335df0686128c5b99c121",
+    "block": "def preparationOrderMajorant (M : ℕ) : ℕ :=\n  max (entryOrderMajorant M) (2*max (entryOrderMajorant M) (coreOrderMajorant M))"
+  },
+  "rawGeometryShapeBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 11,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def rawGeometryShapeBound (M K A : ℕ) : ℕ :=\n  max ((A*(M+1))^4) (max (32^4) (max (4*K) (((2*(M+1))*compressionPowerMajorant M)*K)))"
+  },
+  "rawRequiredGeometryBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 13,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def rawRequiredGeometryBound (M : ℕ) : ℕ := rawGeometryShapeBound M ((M*M^M)*4) 8"
+  },
+  "rawMinimumOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 15,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def rawMinimumOrderBound (M : ℕ) : ℕ :=\n  max (max (preparationOrderMajorant (M*4)) M) (max 1 (rawRequiredGeometryBound M+1))"
+  },
+  "rawTerminalInputBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 24,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def rawTerminalInputBound (M : ℕ) : ℕ := max M (2*rawMinimumOrderBound M)"
+  },
+  "rawTerminalOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 25,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def rawTerminalOrderBound (M : ℕ) : ℕ :=\n  max (globalRawStepOrderBound (rawTerminalInputBound M)) (rawMinimumOrderBound M)"
+  },
+  "thresholdTerminalScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdAssembly.lean",
+    "line": 15,
+    "sha256": "00eb8b61944190ffeaff2e7247766209a47073a6329c2987f4efb05049dfc1c5",
+    "block": "def thresholdTerminalScale (R : ℕ) : ℕ := R+rawTerminalOrderBound R+8*R+1"
+  },
+  "placementDenBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatTerminal.lean",
+    "line": 10,
+    "sha256": "e9a8447b14e33b53fa1956f7515b6b968f91d88df13fe92a55b98850834de8c1",
+    "block": "def placementDenBound (M k s : ℕ) : ℕ := 2*(1+k+s+2*s*s*(M+1))"
+  },
+  "terminalBudgetBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatTerminal.lean",
+    "line": 12,
+    "sha256": "e9a8447b14e33b53fa1956f7515b6b968f91d88df13fe92a55b98850834de8c1",
+    "block": "def terminalBudgetBound (M t s : ℕ) : ℕ := 2*(M*placementDenBound M t s)"
+  },
+  "reserveBudgetBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatTerminal.lean",
+    "line": 128,
+    "sha256": "e9a8447b14e33b53fa1956f7515b6b968f91d88df13fe92a55b98850834de8c1",
+    "block": "def reserveBudgetBound (M K h t : ℕ) : ℕ :=\n  terminalBudgetBound (supplyBudgetBound M h) t (supplySizeBound K h (t*t))"
+  },
+  "reserveRateBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatTerminal.lean",
+    "line": 133,
+    "sha256": "e9a8447b14e33b53fa1956f7515b6b968f91d88df13fe92a55b98850834de8c1",
+    "block": "def reserveRateBound (M K h t : ℕ) : ℕ := max 64 (reserveBudgetBound M K h t*4)"
+  },
+  "terminalUniformRateMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTerminalCaps.lean",
+    "line": 25,
+    "sha256": "3398cb3c24db723ec9570a7de892c3df0f935a687e1c9af696640a8dd3a1fafe",
+    "block": "def terminalUniformRateMajorant (M h : ℕ) : ℕ := reserveRateBound M (uniformCertMajorant M) h M"
+  },
+  "placementOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatTerminal.lean",
+    "line": 11,
+    "sha256": "e9a8447b14e33b53fa1956f7515b6b968f91d88df13fe92a55b98850834de8c1",
+    "block": "def placementOrderBound (M s : ℕ) : ℕ := 2*s*M+1"
+  },
+  "terminalOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatTerminal.lean",
+    "line": 13,
+    "sha256": "e9a8447b14e33b53fa1956f7515b6b968f91d88df13fe92a55b98850834de8c1",
+    "block": "def terminalOrderBound (M t s : ℕ) : ℕ :=\n  placementOrderBound M s+2*(2^(t*t)+t)*(M*placementDenBound M t s)"
+  },
+  "reserveOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatTerminal.lean",
+    "line": 130,
+    "sha256": "e9a8447b14e33b53fa1956f7515b6b968f91d88df13fe92a55b98850834de8c1",
+    "block": "def reserveOrderBound (M K h t : ℕ) : ℕ :=\n  max (supplyOrderBound M K h (t*t))\n    (terminalOrderBound (supplyBudgetBound M h) t (supplySizeBound K h (t*t)))"
+  },
+  "terminalUniformOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTerminalCaps.lean",
+    "line": 26,
+    "sha256": "3398cb3c24db723ec9570a7de892c3df0f935a687e1c9af696640a8dd3a1fafe",
+    "block": "def terminalUniformOrderMajorant (M h : ℕ) : ℕ := reserveOrderBound M (uniformCertMajorant M) h M"
+  },
+  "reserveSizeBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerNatTerminal.lean",
+    "line": 127,
+    "sha256": "e9a8447b14e33b53fa1956f7515b6b968f91d88df13fe92a55b98850834de8c1",
+    "block": "def reserveSizeBound (K h t : ℕ) : ℕ := supplySizeBound K h (t*t)*2^(t*t)"
+  },
+  "terminalReserveSizeMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTerminalCaps.lean",
+    "line": 27,
+    "sha256": "3398cb3c24db723ec9570a7de892c3df0f935a687e1c9af696640a8dd3a1fafe",
+    "block": "def terminalReserveSizeMajorant (M h : ℕ) : ℕ := reserveSizeBound (uniformCertMajorant M) h M"
+  },
+  "thresholdReserveScale": {
+    "source": "RequestProject\\TypedTriangle\\TowerThresholdAssembly.lean",
+    "line": 16,
+    "sha256": "00eb8b61944190ffeaff2e7247766209a47073a6329c2987f4efb05049dfc1c5",
+    "block": "def thresholdReserveScale (T h : ℕ) : ℕ :=\n  T+terminalUniformRateMajorant T h+4*T+terminalUniformOrderMajorant T h+\n    compressionOrderMajorant T+terminalReserveSizeMajorant T h+1"
+  },
+  "outerRawRequiredGeometryBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 14,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def outerRawRequiredGeometryBound (M : ℕ) : ℕ := rawGeometryShapeBound M (M*M^M) 4"
+  },
+  "outerRawMinimumOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 17,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def outerRawMinimumOrderBound (M : ℕ) : ℕ :=\n  max (max (preparationOrderMajorant (M*4)) M) (max 1 (outerRawRequiredGeometryBound M+1))"
+  },
+  "outerRawAutoInputBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 27,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def outerRawAutoInputBound (M : ℕ) : ℕ := max M (max (4*M) (2*M))"
+  },
+  "outerRawRootOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 28,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def outerRawRootOrderBound (M T : ℕ) : ℕ :=\n  let B := outerRawMinimumOrderBound M\n  2*max (rawAutomaticOrderBound (outerRawAutoInputBound M) T) (max B (2*B*M))+2"
+  },
+  "rawOuterTestRateBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawSample.lean",
+    "line": 24,
+    "sha256": "9de010251edc078c377063159a2ac2c53cc3212baca3feb0a409c42801f6cf27",
+    "block": "def rawOuterTestRateBound (M : ℕ) : ℕ :=\n  max (((M*2)^2*M^2)*16)\n    (((nativeDensityMajorant M*2)*M^(2*nativeInteriorMajorant M)) * (16*(nativeInteriorMajorant M)^2))"
+  },
+  "nativeOuterInputBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 31,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def nativeOuterInputBound (M : ℕ) : ℕ := max M (8*M)"
+  },
+  "nativeOuterRootOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 32,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def nativeOuterRootOrderBound (M : ℕ) : ℕ :=\n  max (outerRawRootOrderBound M (rawOuterTestRateBound (nativeOuterInputBound M)))\n    (nativeRouteOrderMajorant (nativeOuterInputBound M))"
+  },
+  "rawRootOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 19,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def rawRootOrderBound (M : ℕ) : ℕ := 2*rawMinimumOrderBound M"
+  },
+  "outerInnerInputBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 35,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def outerInnerInputBound (M : ℕ) : ℕ := max M (max 16 (rawRootOrderBound M))"
+  },
+  "outerInnerRootOrderBound": {
+    "source": "RequestProject\\TypedTriangle\\TowerRawOrders.lean",
+    "line": 36,
+    "sha256": "65ec1ba8a87f09295e0c74d9009a0022d1284d6f60627082008176f21a0b0e19",
+    "block": "def outerInnerRootOrderBound (M : ℕ) : ℕ := nativeOuterRootOrderBound (outerInnerInputBound M)"
+  },
+  "jointTrianglePackingOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTrianglePacking.lean",
+    "line": 11,
+    "sha256": "8fee47e3c8617b0fa98ee73df1d3236124f443412d705e9d083ba4547522ac0f",
+    "block": "def jointTrianglePackingOrderMajorant (M : ℕ) : ℕ := localizedSignedOrderBound (M+1)"
+  },
+  "triangleStockInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTrianglePacking.lean",
+    "line": 12,
+    "sha256": "8fee47e3c8617b0fa98ee73df1d3236124f443412d705e9d083ba4547522ac0f",
+    "block": "def triangleStockInputMajorant (M : ℕ) : ℕ := M+packingCoverBudgetBound M*4+4+1"
+  },
+  "triangleStockOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTrianglePacking.lean",
+    "line": 13,
+    "sha256": "8fee47e3c8617b0fa98ee73df1d3236124f443412d705e9d083ba4547522ac0f",
+    "block": "def triangleStockOrderMajorant (M : ℕ) : ℕ :=\n  max (jointTrianglePackingOrderMajorant (triangleStockInputMajorant M))\n    (max (packingCoverRateBound M) (2*packingCoverBudgetBound M))"
+  },
+  "triangleFixedPackingOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTrianglePacking.lean",
+    "line": 16,
+    "sha256": "8fee47e3c8617b0fa98ee73df1d3236124f443412d705e9d083ba4547522ac0f",
+    "block": "def triangleFixedPackingOrderMajorant (M : ℕ) : ℕ := triangleStockOrderMajorant M"
+  },
+  "monitorFixedPartitionOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTrianglePacking.lean",
+    "line": 17,
+    "sha256": "8fee47e3c8617b0fa98ee73df1d3236124f443412d705e9d083ba4547522ac0f",
+    "block": "def monitorFixedPartitionOrderMajorant (M : ℕ) : ℕ :=\n  max (triangleFixedPackingOrderMajorant (M+2)) 2"
+  },
+  "triangleNativePartitionOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTrianglePacking.lean",
+    "line": 19,
+    "sha256": "8fee47e3c8617b0fa98ee73df1d3236124f443412d705e9d083ba4547522ac0f",
+    "block": "def triangleNativePartitionOrderMajorant (M : ℕ) : ℕ :=\n  max (layerComplementOrderMajorant M)\n    (max (monitorFixedPartitionOrderMajorant (nativePartitionInputMajorant M)) (max (16*M+1) 1))"
+  },
+  "triangleBankStep": {
+    "source": "RequestProject\\TypedTriangle\\TowerTriangleLayerOrders.lean",
+    "line": 44,
+    "sha256": "1d0686613ef47fba6fa423eb9e6b30b5c214eb0927c33bef001f6b61a904b0c3",
+    "block": "def triangleBankStep (M h : ℕ) : ℕ :=\n  bankStep M h + triangleNativePartitionOrderMajorant M + 1"
+  },
+  "triangleBankStage": {
+    "source": "RequestProject\\TypedTriangle\\TowerTriangleLayerOrders.lean",
+    "line": 83,
+    "sha256": "1d0686613ef47fba6fa423eb9e6b30b5c214eb0927c33bef001f6b61a904b0c3",
+    "block": "def triangleBankStage (h : ℕ) : ℕ → ℕ → ℕ\n  | 0,M => M\n  | k+1,M => triangleBankStep (triangleBankStage h k M) h"
+  },
+  "monitorLayerThresholdMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTriangleLayerOrders.lean",
+    "line": 87,
+    "sha256": "1d0686613ef47fba6fa423eb9e6b30b5c214eb0927c33bef001f6b61a904b0c3",
+    "block": "def monitorLayerThresholdMajorant (M h : ℕ) : ℕ := triangleBankStage h 16 M"
+  },
+  "monitorCleanLayerThresholdMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTriangleLayerOrders.lean",
+    "line": 223,
+    "sha256": "1d0686613ef47fba6fa423eb9e6b30b5c214eb0927c33bef001f6b61a904b0c3",
+    "block": "def monitorCleanLayerThresholdMajorant (M h : ℕ) : ℕ :=\n  max (monitorLayerThresholdMajorant (3*M+1) h) (2*max 1 M*M)"
+  },
+  "monitorOuterLayerOrderMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTriangleLayerOrders.lean",
+    "line": 225,
+    "sha256": "1d0686613ef47fba6fa423eb9e6b30b5c214eb0927c33bef001f6b61a904b0c3",
+    "block": "def monitorOuterLayerOrderMajorant (M h : ℕ) : ℕ :=\n  max 1 (max (monitorCleanLayerThresholdMajorant (outerLayerParameterScale M) h) (2*M))"
+  },
+  "rawStockBudgetMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 196,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def rawStockBudgetMajorant (M : ℕ) : ℕ := max (referenceStockBudgetBound M) (M*8)"
+  },
+  "withdrawalStockMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 142,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def withdrawalStockMajorant (M : ℕ) : ℕ :=\n  max (forkEpsilonMajorant (withdrawalKappaMajorant M)) (selectorStockMajorant M*4)"
+  },
+  "resourceTerminalMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankResources.lean",
+    "line": 197,
+    "sha256": "5d44fdd31faa296a65ccda0753a659ee26cc183dc48bc4cad517dbddf0310bf4",
+    "block": "def resourceTerminalMajorant (M : ℕ) : ℕ :=\n  max (rawStockBudgetMajorant M) (max (withdrawalStockMajorant M) (M*M*16))"
+  },
+  "layerTerminalInputMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerBudgets.lean",
+    "line": 15,
+    "sha256": "e6db1f6c04c86ef18c5e9fa4e39accaac564e7c3515a5bc70828653fb766fd01",
+    "block": "def layerTerminalInputMajorant (M : ℕ) : ℕ := M+2*M+2*bankProtectionBound M M+1"
+  },
+  "layerTerminalMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerBudgets.lean",
+    "line": 16,
+    "sha256": "e6db1f6c04c86ef18c5e9fa4e39accaac564e7c3515a5bc70828653fb766fd01",
+    "block": "def layerTerminalMajorant (M : ℕ) : ℕ :=\n  max (resourceTerminalMajorant (layerTerminalInputMajorant M)) ((M+1)*M*64)"
+  },
+  "outerLayerTerminalMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerBankLayerBudgets.lean",
+    "line": 21,
+    "sha256": "e6db1f6c04c86ef18c5e9fa4e39accaac564e7c3515a5bc70828653fb766fd01",
+    "block": "def outerLayerTerminalMajorant (M : ℕ) : ℕ := layerTerminalMajorant (outerLayerParameterScale M)"
+  },
+  "triangleThresholdFinalMajorant": {
+    "source": "RequestProject\\TypedTriangle\\TowerTriangleThresholdAssembly.lean",
+    "line": 13,
+    "sha256": "045aff81b64f0d961d56debc583ed1093418aa3f6326e2774b0a372bcc80a95c",
+    "block": "def triangleThresholdFinalMajorant (U h : ℕ) : ℕ :=\n  U+outerInnerRootOrderBound U+monitorOuterLayerOrderMajorant U h+U*outerLayerTerminalMajorant U+1"
+  },
+  "paperIIITriangleTowerHeight": {
+    "source": "RequestProject\\TypedTriangle\\TowerTriangleThresholdAssembly.lean",
+    "line": 18,
+    "sha256": "045aff81b64f0d961d56debc583ed1093418aa3f6326e2774b0a372bcc80a95c",
+    "block": "def paperIIITriangleTowerHeight (K hOriginal qStat : ℕ) : ℕ :=\n  let h := initialHingeOrder hOriginal\n  let M := triangleThresholdInputMajorant K hOriginal qStat\n  let A := thresholdAgendaMajorant M\n  let R := thresholdLayerScale A h\n  let T := thresholdTerminalScale R\n  let U := thresholdReserveScale T h\n  triangleThresholdFinalMajorant U h"
+  }
+}

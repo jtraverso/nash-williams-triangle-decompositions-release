@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "project_modules": 1141,
+  "new_comment_only_compilations": 15,
+  "unchanged_modules_reused": 1126,
+  "new_axiom_queries": [
+    {
+      "audit": "main-paper-iii-audit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "log_sha256": "3b54b4ff139f437250f9859a1c0e22187eea5c20ab9c47dc9c41d36b34612d4b",
+      "exit_code": 0
+    },
+    {
+      "audit": "main-paper-iii-pasch-audit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "log_sha256": "77b3b67c0c1812639e6871a9fc3d89f4ddcf8c78e669538322fb9ed9af741507",
+      "exit_code": 0
+    },
+    {
+      "audit": "main-paper-iii-triangle-tower-audit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "log_sha256": "9315f10f9be554ec1d020e0beac5705926619c4377487b4e031ef3d0a33d6e71",
+      "exit_code": 0
+    },
+    {
+      "audit": "paper-iii-applications-audit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "log_sha256": "1ac075ec6f335b26fd25f63d38b4168fe98d9424404c662df657807b216a6940",
+      "exit_code": 0
+    },
+    {
+      "audit": "hybrid-deficit-audit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "log_sha256": "3b486075e8beb224ca3ed173dc4b50831cf9851a7bf0b592d12934044e6d224d",
+      "exit_code": 0
+    },
+    {
+      "audit": "closure-audit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "log_sha256": "6166d3d573e627805be01554cac0da03ad4faa26d5cf89cb7c18889de03d1f11",
+      "exit_code": 0
+    }
+  ],
+  "archive": {
+    "status": "PASS",
+    "archive": "PAPER_III_LEAN_SOURCE_v1.0.zip",
+    "sha256": "a5fbd7af2d13594a894d61bde81126353bd7d186f335ad9f302a5fd7ba942d95",
+    "source_manifest_sha256": "16e579200583065b7f5ba46db2c4f8af84608c551f5c736834abcc044286dc37",
+    "entries": 1179,
+    "mathematical_source_changes": 0,
+    "comment_only_modules": 15
+  },
+  "source_changes": "comments only; exact noncomment equality",
+  "original_complete_build_report_sha256": "4bba53e99d073a9fb1654541331cac712dea80f0ad4771698aca53a3299773f7",
+  "current_verification_report_sha256": "0c5f43b2ebb8374eb2d5dc5568bee4475f7977eb202eaf3fefc99b1bd11382c5",
+  "fresh_empty_cache_build": false,
+  "external_dependencies_recompiled": false
+}

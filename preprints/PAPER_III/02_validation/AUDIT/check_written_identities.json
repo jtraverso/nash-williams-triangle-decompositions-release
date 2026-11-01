@@ -1,0 +1,13 @@
+{
+  "status": "PASS_FINITE_EXACT_REGRESSIONS",
+  "sign_expansion_exact_cases": 320,
+  "polynomial_certificate": "degree at most four in theta; five distinct exact values for every sign assignment",
+  "two_scale_exact_targets": 25,
+  "two_scale_scope": "exhaustive four coarse/fine sign types at m=4; exact finite check, not universal substitute",
+  "diagonal_bounds_checked": 4,
+  "hinge_modes": 2,
+  "fano_pasch_count": 7,
+  "fano_rooted_count": 4,
+  "grouping_recurrence_cases": 36,
+  "lean_build_executed": false
+}

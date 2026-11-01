@@ -1,0 +1,150 @@
+% Adapted from the author's public Erdos Paper IV v1.23 series_template.tex.
+% Layout provenance is recorded in 02_validation; the Markdown is semantic authority.
+\documentclass[spanish,11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf,BoldItalicFont=lmroman10-bolditalic.otf]
+\setsansfont{lmsans10-regular.otf}[BoldFont=lmsans10-bold.otf]
+\setmonofont{lmmono10-regular.otf}[Scale=MatchLowercase]
+\usepackage{amsmath,amssymb}
+\providecommand{\mathscr}{\mathcal}
+\usepackage[spanish,es-noshorthands,es-tabla]{babel}
+\usepackage{microtype,parskip}
+\usepackage{longtable,booktabs,array,calc}
+\usepackage{xcolor,xurl}
+\usepackage{hyperref,bookmark}
+\usepackage{etoolbox,needspace}
+\setcounter{secnumdepth}{-\maxdimen}
+\setlength{\emergencystretch}{3em}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\newcounter{none}
+\AtBeginEnvironment{longtable}{\Needspace{8\baselineskip}\small}
+\pretocmd{\section}{\Needspace{5\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace{4\baselineskip}}{}{}
+\pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
+\urlstyle{same}
+\usepackage{graphicx,float}
+\hypersetup{pdftitle={Paper III: Suplemento de la prueba formal},pdfauthor={Juan Pablo Traverso Gianini},pdflang={es-ES},colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\title{Paper III: Suplemento de la prueba formal}
+\author{Juan Pablo Traverso Gianini\\
+\small Investigador independiente, Santiago, Chile\\
+\small \href{mailto:jtraverso@gmail.com}{jtraverso@gmail.com}\\
+\small ORCID: 0009-0003-6068-4096}
+\date{}\begin{document}\raggedbottom\maketitle
+\small\setlength{\parskip}{3pt}
+\textbf{Preprint 1.0 --- 1 de noviembre de 2026. Verificación formal: PASS.}
+
+\subsection{1. Alcance de la prueba}\label{alcance-de-la-prueba}
+
+Las pruebas generales completas son las declaraciones Lean de la tabla siguiente. El manuscrito explica su construcción, sus condiciones cuantitativas y su ensamblaje, y demuestra las aplicaciones. Los lemas locales de bancos, empaquetamiento e inserción de Pasch se proporcionan en el suplemento formal; el artículo no pretende reproducirlos todos como una prueba autocontenida en prosa.
+
+La aplicación latina de dos escalas incluye las condiciones simultáneas sobre bloques gruesos y el corolario de separación de conteos. Su prueba formal usa la cota diagonal (8.24); la identidad finita exacta (8.23) es un cálculo escrito separado. El programa de altura tiene 312 definiciones aritméticas y una igualdad auditada con la altura utilizada en el Teorema 7.2.
+
+\subsection{2. Declaraciones auditadas}\label{declaraciones-auditadas}
+
+{\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Resultado
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Declaración
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+T & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Vortex.\allowbreak{}main\_\allowbreak{}theorem\_\allowbreak{}T} \\
+T+ & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Vortex.\allowbreak{}main\_\allowbreak{}theorem\_\allowbreak{}T\_\allowbreak{}with\_\allowbreak{}triangle\_\allowbreak{}monitors\_\allowbreak{}and\_\allowbreak{}pasch} \\
+7.2 & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Vortex.\allowbreak{}Explicit.\allowbreak{}main\_\allowbreak{}theorem\_\allowbreak{}T\_\allowbreak{}with\_\allowbreak{}triangle\_\allowbreak{}monitors\_\allowbreak{}at\_\allowbreak{}tower\_\allowbreak{}order} \\
+8.1 & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Applications.\allowbreak{}Latin.\allowbreak{}latin\_\allowbreak{}square\_\allowbreak{}with\_\allowbreak{}profile\_\allowbreak{}statistics} \\
+8.2 & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Applications.\allowbreak{}Latin.\allowbreak{}uniform\_\allowbreak{}with\_\allowbreak{}intercalates} \\
+8.3 & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Applications.\allowbreak{}Latin.\allowbreak{}signed\_\allowbreak{}profile\_\allowbreak{}with\_\allowbreak{}intercalates} \\
+8.4 & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Applications.\allowbreak{}Latin.\allowbreak{}Two\allowbreak{}Scale.\allowbreak{}latin\_\allowbreak{}two\_\allowbreak{}scale\_\allowbreak{}with\_\allowbreak{}blocks} \\
+8.4 & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Applications.\allowbreak{}Latin.\allowbreak{}Two\allowbreak{}Scale.\allowbreak{}intercalate\_\allowbreak{}gap\_\allowbreak{}of\_\allowbreak{}targets} \\
+8.5 & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Applications.\allowbreak{}Five\allowbreak{}Partite.\allowbreak{}main\_\allowbreak{}theorem} \\
+H & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Printed\allowbreak{}Height.\allowbreak{}height\_\allowbreak{}agrees} \\
+\end{longtable}
+}
+
+\subsection{3. Identidad de las fuentes y axiomas}\label{identidad-de-las-fuentes-y-axiomas}
+
+El suplemento de fuentes contiene 1.141 módulos del proyecto. La reconstrucción completada registra la compilación satisfactoria de todos ellos. Después se corrigió documentación dentro de comentarios en quince archivos: se comprobó la igualdad exacta del texto fuera de comentarios y se recompilaron esos módulos. Los otros 1.126 módulos compilados se reutilizaron tras validar sus hashes. Las seis consultas de axiomas de los resultados finales se ejecutaron de nuevo satisfactoriamente sobre esta colección de objetos. H1--H4 y el código matemático Lean no cambiaron.
+
+Solo aparecen los siguientes axiomas fundamentales: \texttt{propext}, \texttt{Classical.\allowbreak{}choice}, \texttt{Quot.\allowbreak{}sound}. Las consultas usan \texttt{pp.\allowbreak{}full\allowbreak{}Names=true}; la lista permitida no contiene axiomas propios del proyecto ni \texttt{sorry\allowbreak{}Ax}.
+
+\textbf{Archivo de fuentes:} \texttt{PAPER\_\allowbreak{}III\_\allowbreak{}LEAN\_\allowbreak{}SOURCE\_\allowbreak{}v1.\allowbreak{}0.\allowbreak{}zip}.
+
+\textbf{SHA-256:} \texttt{a5fbd7af2d13594a\allowbreak{}894d61bde8112635\allowbreak{}3bd7d186f335ad9f\allowbreak{}302a5fd7ba942d95}.
+
+\textbf{SHA-256 del manifiesto de fuentes:}\\
+\texttt{16e579200583065b\allowbreak{}7f5ba46db2c4f8af\allowbreak{}84608c551f5c7368\allowbreak{}34abcc044286dc37}.
+
+\subsection{4. Reproducción}\label{reproducciuxf3n}
+
+Use Lean 4.35.0-rc3 y la revisión de Mathlib \texttt{c55e6e786f49471c\allowbreak{}72fbddbec5415808\allowbreak{}896aec1e}. Verifique el archivo y su manifiesto interno, y compile los ocho objetivos explícitos:
+
+\begingroup\scriptsize\begin{verbatim}
+lake build RequestProject.TypedTriangle.MainPaperIII
+lake build RequestProject.TypedTriangle.MainPaperIIIPasch
+lake build RequestProject.TypedTriangle.MainPaperIIITriangleTower
+lake build RequestProject.TypedTriangle.ApplicationsLatinMain
+lake build RequestProject.TypedTriangle.ApplicationsLatinCorollaries
+lake build RequestProject.TypedTriangle.ApplicationsFivePartiteMain
+lake build RequestProject.TypedTriangle.ApplicationsTwoScaleFinal
+lake build RequestProject.TypedTriangle.PaperIIIHeightProgram
+\end{verbatim}\endgroup
+
+El objetivo predeterminado de Lake alcanza solo T; de él no se infiere la compilación de las otras entradas. Ejecute por separado los seis archivos de \texttt{audit/\allowbreak{}} con \texttt{lake\ env\ lean\ -Dpp.\allowbreak{}full\allowbreak{}Names=true}. Sus resultados y las identidades de fuentes acompañan al suplemento. Las dependencias están fijadas y no deben actualizarse durante la reproducción.
+
+La reconstrucción registrada reutilizó objetos compilados validados, incluidas las familias completas de objetos Lean. No es una compilación nueva desde un caché vacío y no recompiló las dependencias externas. El suplemento de fuentes no contiene caché binario. Su README da los comandos completos de reproducción y explica la separación de los cierres de importación compatibles de las auditorías.
+
+Los archivos \texttt{HEIGHT\_\allowbreak{}PROGRAM\_\allowbreak{}en.\allowbreak{}md} y \texttt{HEIGHT\_\allowbreak{}PROGRAM\_\allowbreak{}es.\allowbreak{}md} imprimen código aritmético idéntico. Especifican un umbral para estadísticas de triángulos; no se afirma un umbral explícito conjunto para Pasch.
+
+\subsection{5. Mapa de la construcción}\label{mapa-de-la-construcciuxf3n}
+
+Los siguientes archivos identifican la construcción técnica utilizada en las Secciones 3--6. Pertenecen al cierre de fuentes de T o T+, según corresponda. Las versiones con orden explícito pertenecen al argumento cuantitativo de la Sección 7; su uso no se infiere solo del objetivo predeterminado de compilación.
+
+{\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Paso del manuscrito
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Fuente formal
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Cociente local y persistencia bajo eliminación de vértices & \texttt{Vertex\allowbreak{}First\allowbreak{}Entry.\allowbreak{}lean}, \texttt{Prepared\allowbreak{}Core\allowbreak{}Construction.\allowbreak{}lean} \\
+Persistencia bajo eliminación dispersa de aristas & \texttt{Sparse\allowbreak{}Edge\allowbreak{}Host.\allowbreak{}lean}, \texttt{G4Reference\allowbreak{}H2Generic.\allowbreak{}lean} \\
+Inversa suave en el hijo pagado y exactificación & \texttt{Vortex\allowbreak{}Paid\allowbreak{}Child\allowbreak{}Smooth.\allowbreak{}lean}, \texttt{Smooth\allowbreak{}Exactification.\allowbreak{}lean} \\
+Perfil bruto a través de la cadena preparada & \texttt{Vortex\allowbreak{}Intrinsic\allowbreak{}Raw\allowbreak{}Paths\allowbreak{}Prepared\allowbreak{}Vortex.\allowbreak{}lean} \\
+Reserva elegida uniformemente antes del residuo & \texttt{Vortex\allowbreak{}Uniform\allowbreak{}Terminal\allowbreak{}Reserve.\allowbreak{}lean} \\
+Funciones de prueba con signo y masa inferior de la envolvente & \texttt{Signed\allowbreak{}Envelope\allowbreak{}Packing.\allowbreak{}lean} \\
+Presupuesto inicial de Pasch y tasa exterior & \texttt{Pasch\allowbreak{}Adaptive\allowbreak{}Initial\allowbreak{}State.\allowbreak{}lean}, \texttt{Pasch\allowbreak{}Final\allowbreak{}Assembly\allowbreak{}Parameters.\allowbreak{}lean} \\
+Cotas de inserción de Pasch y recurrencia interior & \texttt{Pasch\allowbreak{}Concrete\allowbreak{}Inner\allowbreak{}Adaptive\allowbreak{}Layers.\allowbreak{}lean} \\
+Ensamblaje de T y T+ & \texttt{Main\allowbreak{}Paper\allowbreak{}III.\allowbreak{}lean}, \texttt{Main\allowbreak{}Paper\allowbreak{}IIIPasch.\allowbreak{}lean} \\
+\end{longtable}
+}
+
+El certificado interno del mapa de módulos registra las dependencias de importación y las declaraciones exactas. En particular, la entrada de la exactificación debe pertenecer a la imagen real de incidencia, el teorema de la envolvente con signo requiere una masa inferior lineal y las estimaciones de Pasch usan las cotas de cogrado de la familia disponible. El manuscrito enuncia estas condiciones; los archivos fuente contienen sus construcciones locales completas.
+
+Los números de referencia {[}16{]} y {[}17{]} de la nota de herramientas que sigue remiten a la bibliografía del manuscrito adjunto.
+
+\subsection{Agradecimientos}\label{agradecimientos}
+
+El autor agradece profundamente a su esposa María Paz y a sus hijos Lucas, Juan Cristóbal, Francisca, Raimundo y Benjamín su amor, paciencia y apoyo.
+
+\subsection{Uso de inteligencia artificial y herramientas computacionales}\label{uso-de-inteligencia-artificial-y-herramientas-computacionales}
+
+Se utilizaron Claude, de Anthropic, y ChatGPT/Codex, de OpenAI, para explorar y revisar argumentos y preparar el manuscrito. Aristotle, de Harmonic, contribuyó a explorar enfoques, buscar contraejemplos, desarrollar demostraciones y formalizarlas y revisarlas en Lean. Su participación no se limitó a traducir pruebas terminadas.
+
+Certo {[}16{]} y Jacobian {[}17{]} se utilizaron para explorar casos finitos, comprobar identidades y evaluar construcciones candidatas. Estos cálculos orientaron el desarrollo de los argumentos; las comprobaciones finitas no se trataron como pruebas de enunciados universales.
+
+El autor es responsable de los argumentos, las citas, el código y la presentación. Ningún sistema de inteligencia artificial figura como autor.
+
+\end{document}

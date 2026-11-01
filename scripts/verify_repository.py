@@ -70,7 +70,13 @@ def verify():
             assert set(doc['files']) == {'pdf', 'tex', 'md'}
             assert all((ROOT/p).is_file() for p in doc['files'].values())
             text = (ROOT/doc['files']['md']).read_text(encoding='utf8')
-            assert paper['doi'] in text and 'CC BY 4.0' in text
+            if paper['id'] == 'PAPER_III':
+                # Preserve approved PDF/MD/TeX bytes; DOI and licence are in the
+                # publication sidecars, rather than inserting post-audit text.
+                assert paper['doi'] in (ROOT/'preprints/PAPER_III/CITATION.cff').read_text(encoding='utf-8')
+                assert 'CC BY 4.0' in (ROOT/'preprints/PAPER_III/LICENSE.md').read_text(encoding='utf-8')
+            else:
+                assert paper['doi'] in text and 'CC BY 4.0' in text
             assert 'nash-williams-private-review' not in text
         folder = ROOT/'preprints'/paper['id']
         audit = json.loads((folder/'02_validation/AUDIT_RESULT.json').read_text(encoding='utf8'))
@@ -102,6 +108,22 @@ def verify():
         checksum, filename = raw.decode('ascii').strip().split('  ', 1)
         assert filename == archive_path.name and digest(archive_path) == checksum
         freeze = Path(paper['source_archive']).stem
+        if paper['id'] == 'PAPER_III':
+            with zipfile.ZipFile(archive_path) as z:
+                lines = z.read('SHA256SUMS.txt').decode().splitlines()
+                for line in lines:
+                    checksum, name = line.split('  ', 1)
+                    assert hashlib.sha256(z.read(name)).hexdigest() == checksum, name
+                source_map = json.loads(z.read('source_closure.json'))
+                assert len(source_map) == 1141
+                for row in source_map.values():
+                    assert hashlib.sha256(z.read(row['path'])).hexdigest() == row['sha256']
+                evidence = json.loads(z.read('audit/VERIFICATION.json'))
+                assert evidence['status'] == 'PASS' and len(evidence['endpoint_audits']) == 6
+                assert evidence['project_modules'] == 1141
+                archive_hashes += len(lines)
+                archive_reviews.append({'paper': paper['id'], 'modules': 1141, 'hashes': len(lines)})
+            continue
         with zipfile.ZipFile(ROOT/paper['source_archive']) as z:
             lines = z.read(freeze+'/SHA256SUMS.txt').decode().splitlines()
             for line in lines:
@@ -132,7 +154,7 @@ def verify():
     selected_archives = {paper['source_archive'] for paper in idx['papers'] if paper['source_archive']}
     assert {p.relative_to(ROOT).as_posix() for p in (ROOT/'archives').glob('*.zip')} == selected_archives
     visual = json.loads((ROOT/'publication/web-qa/checks.json').read_text())
-    assert len(visual['rows']) == 6
+    assert len(visual['rows']) == 2*(1+len(idx['papers']))
     for row in visual['rows']:
         html = 'index.html' if row['page'] == '/' else row['page'].lstrip('/')
         assert digest(ROOT/html) == row['html_sha256']

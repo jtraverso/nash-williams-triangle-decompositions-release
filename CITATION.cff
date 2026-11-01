@@ -11,4 +11,6 @@ keywords:
   - triangle decompositions
   - Nash-Williams theorem
   - absorption
+  - prescribed statistics
+  - Pasch configurations
   - Lean 4

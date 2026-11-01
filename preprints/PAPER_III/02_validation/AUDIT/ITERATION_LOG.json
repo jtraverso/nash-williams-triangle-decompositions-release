@@ -1,0 +1,30 @@
+{
+  "status": "RESOLVED",
+  "items": [
+    {
+      "issue": "Partial Lean object overlay cannot fall back by module",
+      "resolution": "Complete unchanged object families linked; edited modules excluded and freshly compiled",
+      "evidence": "SOURCE_report.json"
+    },
+    {
+      "issue": "Malformed figure dash operator",
+      "resolution": "Explicit dash phase added; all six figures rerendered",
+      "evidence": "FIGURE_RENDER_CERTIFICATE.json"
+    },
+    {
+      "issue": "Companion manifest hash overflow",
+      "resolution": "Line break before full hash; all four final layouts clean",
+      "evidence": "../artifact_build.json"
+    },
+    {
+      "issue": "Declaration scanner omitted the Lean lemma keyword",
+      "resolution": "Recognize theorem, lemma and def; actual declaration verified in PreparedCoreConstruction",
+      "evidence": "MODULE_MAP_CERTIFICATE.json"
+    },
+    {
+      "issue": "Transient Windows text encoding conversion during one edit",
+      "resolution": "Exact inverse conversion applied; subsequent edits use explicit UTF-8 and protected-element checks pass",
+      "evidence": "FINAL_EDITORIAL_CHECKS.json"
+    }
+  ]
+}

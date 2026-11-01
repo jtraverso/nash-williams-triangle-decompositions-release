@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "documents": [
+    {
+      "document": "PAPER_III_preprint_v1.0_en.md",
+      "urls": [
+        "https://arxiv.org/abs/1607.04981v2",
+        "https://arxiv.org/abs/1802.05900v1",
+        "https://arxiv.org/abs/1807.05770v2",
+        "https://arxiv.org/abs/2202.05088v4",
+        "https://arxiv.org/abs/2402.17855v1",
+        "https://arxiv.org/abs/2510.19978v1",
+        "https://arxiv.org/abs/2606.11178v1",
+        "https://doi.org/10.1016/j.jcta.2017.04.005",
+        "https://doi.org/10.1017/S0963548317000165",
+        "https://doi.org/10.1017/S0963548320000280",
+        "https://doi.org/10.1112/blms.12638",
+        "https://doi.org/10.19086/da.83253",
+        "https://doi.org/10.5281/zenodo.23428173",
+        "https://doi.org/10.5281/zenodo.23502224",
+        "https://doi.org/10.5281/zenodo.23715622",
+        "https://github.com/jtraverso/certo-math",
+        "https://github.com/morluto/jacobian"
+      ],
+      "resolved_figure_references": [
+        "fig:architecture",
+        "fig:hinge"
+      ],
+      "status": "PASS"
+    },
+    {
+      "document": "PAPER_III_preprint_v1.0_es.md",
+      "urls": [
+        "https://arxiv.org/abs/1607.04981v2",
+        "https://arxiv.org/abs/1802.05900v1",
+        "https://arxiv.org/abs/1807.05770v2",
+        "https://arxiv.org/abs/2202.05088v4",
+        "https://arxiv.org/abs/2402.17855v1",
+        "https://arxiv.org/abs/2510.19978v1",
+        "https://arxiv.org/abs/2606.11178v1",
+        "https://doi.org/10.1016/j.jcta.2017.04.005",
+        "https://doi.org/10.1017/S0963548317000165",
+        "https://doi.org/10.1017/S0963548320000280",
+        "https://doi.org/10.1112/blms.12638",
+        "https://doi.org/10.19086/da.83253",
+        "https://doi.org/10.5281/zenodo.23428173",
+        "https://doi.org/10.5281/zenodo.23502224",
+        "https://doi.org/10.5281/zenodo.23715622",
+        "https://github.com/jtraverso/certo-math",
+        "https://github.com/morluto/jacobian"
+      ],
+      "resolved_figure_references": [
+        "fig:architecture",
+        "fig:hinge"
+      ],
+      "status": "PASS"
+    },
+    {
+      "document": "PAPER_III_Lean_freeze_v1.0_en.md",
+      "urls": [],
+      "resolved_figure_references": [],
+      "status": "PASS"
+    },
+    {
+      "document": "PAPER_III_Lean_freeze_v1.0_es.md",
+      "urls": [],
+      "resolved_figure_references": [],
+      "status": "PASS"
+    }
+  ]
+}

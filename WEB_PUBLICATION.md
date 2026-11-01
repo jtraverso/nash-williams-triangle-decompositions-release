@@ -24,7 +24,7 @@ This runs no Lean/Lake commands and uploads nothing.
 For the recorded browser checks, serve the same output on port 8765 and run
 `node scripts/review_site.cjs` with Playwright and its Chromium browser
 available. `BROWSER_PATH` optionally selects a local Chromium executable.
-The script writes six screenshots and their input hashes under
+The script writes eight screenshots and their input hashes under
 `publication/web-qa/`; it makes no external requests.
 
 ## Pages configuration

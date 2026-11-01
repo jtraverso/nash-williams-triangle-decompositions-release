@@ -16,7 +16,7 @@ const crypto = require('node:crypto');
   try {
     for (const [label, width, height] of [['desktop', 1280, 900], ['mobile', 390, 844]]) {
       const page = await browser.newPage({ viewport: { width, height } });
-      for (const [name, url] of [['series', '/'], ['paper-I', '/preprints/PAPER_I/index.html'], ['paper-II', '/preprints/PAPER_II/index.html']]) {
+      for (const [name, url] of [['series', '/'], ['paper-I', '/preprints/PAPER_I/index.html'], ['paper-II', '/preprints/PAPER_II/index.html'], ['paper-III', '/preprints/PAPER_III/index.html']]) {
         const response = await page.goto('http://127.0.0.1:8765' + url, { waitUntil: 'networkidle' });
         if (response.status() !== 200) throw new Error('HTTP error for ' + url);
         const dimensions = await page.evaluate(() => ({
@@ -44,5 +44,5 @@ const crypto = require('node:crypto');
     status: 'PASS_BROWSER_LAYOUT_CHECKS', browser: 'Chromium', rows,
     scope: 'HTTP, viewport overflow, missing images and screenshots; visual interpretation recorded separately.'
   }, null, 2) + '\n');
-  console.log('PASS: six desktop/mobile page checks; screenshots recorded.');
+  console.log('PASS: eight desktop/mobile page checks; screenshots recorded.');
 })();

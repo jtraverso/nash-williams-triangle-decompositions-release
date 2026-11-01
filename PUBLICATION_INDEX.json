@@ -104,6 +104,54 @@
       "doi": "10.5281/zenodo.23502224",
       "record_url": "https://zenodo.org/records/23502224",
       "concept_doi": "10.5281/zenodo.23502223"
+    },
+    {
+      "id": "PAPER_III",
+      "title": "Triangle decompositions III: Physical typed absorption and prescribed statistics",
+      "version": "1.0",
+      "status": "PUBLISHED_GITHUB_PREPRINT_1.0",
+      "manuscript_date": "2026-11-01",
+      "documents": [
+        {
+          "kind": "manuscript",
+          "language": "en",
+          "files": {
+            "pdf": "preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_en.pdf",
+            "tex": "preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_en.tex",
+            "md": "preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_en.md"
+          }
+        },
+        {
+          "kind": "manuscript",
+          "language": "es",
+          "files": {
+            "pdf": "preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_es.pdf",
+            "tex": "preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_es.tex",
+            "md": "preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_es.md"
+          }
+        },
+        {
+          "kind": "companion",
+          "language": "en",
+          "files": {
+            "pdf": "preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_en.pdf",
+            "tex": "preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_en.tex",
+            "md": "preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_en.md"
+          }
+        },
+        {
+          "kind": "companion",
+          "language": "es",
+          "files": {
+            "pdf": "preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_es.pdf",
+            "tex": "preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_es.tex",
+            "md": "preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_es.md"
+          }
+        }
+      ],
+      "source_archive": "archives/PAPER_III_LEAN_SOURCE_v1.0.zip",
+      "doi": "10.5281/zenodo.23867836",
+      "record_url": "https://zenodo.org/records/23867836"
     }
   ]
 }

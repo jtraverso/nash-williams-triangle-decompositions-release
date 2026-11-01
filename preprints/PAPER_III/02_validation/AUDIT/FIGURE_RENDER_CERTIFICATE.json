@@ -1,0 +1,38 @@
+[
+  {
+    "file": "architecture_en.pdf",
+    "sha256": "3bb61b52f243b67064990e52b3472605c808f83f2ee6ca844915c815152dc319",
+    "poppler_exit": 0,
+    "diagnostics": ""
+  },
+  {
+    "file": "architecture_es.pdf",
+    "sha256": "5d51359cdae063b18ca103ca9974b1bcddef395acad2f70c5a0e33b647f6a268",
+    "poppler_exit": 0,
+    "diagnostics": ""
+  },
+  {
+    "file": "hinge_en.pdf",
+    "sha256": "0f94f8be50a474873a744b2daad79f54133908e3cbe85619eb511ca4e6c1b581",
+    "poppler_exit": 0,
+    "diagnostics": ""
+  },
+  {
+    "file": "hinge_es.pdf",
+    "sha256": "7698201373cd9d0684d70aa1c187e38178df1339f0cbbb1a875f9722cd0fb29a",
+    "poppler_exit": 0,
+    "diagnostics": ""
+  },
+  {
+    "file": "profile_en.pdf",
+    "sha256": "e9e06c4c0031c409a2d1e585d4a78c41addcc2cf096c4e69ec39f9037fbca8f6",
+    "poppler_exit": 0,
+    "diagnostics": ""
+  },
+  {
+    "file": "profile_es.pdf",
+    "sha256": "fb15122175502fdcfe1bb0fc41e347acd85b7f4e7d141a25299f47e8809c5099",
+    "poppler_exit": 0,
+    "diagnostics": ""
+  }
+]
