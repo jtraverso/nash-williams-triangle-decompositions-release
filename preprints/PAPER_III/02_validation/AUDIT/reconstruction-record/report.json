@@ -1,0 +1,156 @@
+{
+  "status": "PASS",
+  "pid": 4544,
+  "started_utc": "2026-11-01T17:42:56.405061+00:00",
+  "compiled": 1141,
+  "total": 1141,
+  "current": null,
+  "target_results": {
+    "RequestProject.TypedTriangle.MainPaperIII": {
+      "module": "RequestProject.TypedTriangle.MainPaperIII",
+      "exit_code": 0,
+      "source_sha256": "7a49979ed8560a0963415a77df90daa182a2267b5ebb98119b8fd1bdc9cedd92",
+      "elapsed_seconds": 58.31,
+      "log": "logs\\RequestProject_TypedTriangle_MainPaperIII.log",
+      "max_heartbeats": 2000000,
+      "olean_sha256": "207c3867d16790ef212006d173a4b13b3c6fb056f76a0a5ad151dfead163a1f3"
+    },
+    "RequestProject.TypedTriangle.MainPaperIIIPasch": {
+      "module": "RequestProject.TypedTriangle.MainPaperIIIPasch",
+      "exit_code": 0,
+      "source_sha256": "6b65a4ad7d5c76885180fdf18d4442c198fbcb2fece9863fdb5d100ce76fe04c",
+      "elapsed_seconds": 114.56,
+      "log": "logs\\RequestProject_TypedTriangle_MainPaperIIIPasch.log",
+      "max_heartbeats": 2000000,
+      "olean_sha256": "a3126288a88f97822c6268d13c874540429cac0a91138a93727bb4bdbd28d9fb"
+    },
+    "RequestProject.TypedTriangle.MainPaperIIITriangleTower": {
+      "module": "RequestProject.TypedTriangle.MainPaperIIITriangleTower",
+      "exit_code": 0,
+      "source_sha256": "0614e57bed08a73d92606c512dabff3d3b0770a117e80d017e5ff6224fbab55e",
+      "elapsed_seconds": 29.0,
+      "log": "logs\\RequestProject_TypedTriangle_MainPaperIIITriangleTower.log",
+      "max_heartbeats": 2000000,
+      "olean_sha256": "a6102e49ee582881d106ae7e3bbecd53bcbe5c628e8cf7e6977dc9997da8ea4c"
+    },
+    "RequestProject.TypedTriangle.ApplicationsLatinMain": {
+      "module": "RequestProject.TypedTriangle.ApplicationsLatinMain",
+      "exit_code": 0,
+      "source_sha256": "0c2c40e99753d833abd123d6f0828d6dc1e614145121bfeab06a6ca19767038e",
+      "elapsed_seconds": 34.14,
+      "log": "logs\\RequestProject_TypedTriangle_ApplicationsLatinMain.log",
+      "max_heartbeats": 2000000,
+      "olean_sha256": "f91e5dcc16b76451d81e54ead64b87ec55be564466959ea59293b0cc464e720d"
+    },
+    "RequestProject.TypedTriangle.ApplicationsLatinCorollaries": {
+      "module": "RequestProject.TypedTriangle.ApplicationsLatinCorollaries",
+      "exit_code": 0,
+      "source_sha256": "1ba92149ecbe292f706b5e6d95787b9f70d8d7934d079e6c791688ceb7df0c47",
+      "elapsed_seconds": 30.28,
+      "log": "logs\\RequestProject_TypedTriangle_ApplicationsLatinCorollaries.log",
+      "max_heartbeats": 2000000,
+      "olean_sha256": "0492f4feb430e1a4b14d8edfc0ce1d3fe05d577520cd337dd9fb2de6e4bf96bd"
+    },
+    "RequestProject.TypedTriangle.ApplicationsFivePartiteMain": {
+      "module": "RequestProject.TypedTriangle.ApplicationsFivePartiteMain",
+      "exit_code": 0,
+      "source_sha256": "24448af2fa6116af3b3b5e040619f1e122ee181859f1d975f2870e179f133d99",
+      "elapsed_seconds": 29.62,
+      "log": "logs\\RequestProject_TypedTriangle_ApplicationsFivePartiteMain.log",
+      "max_heartbeats": 2000000,
+      "olean_sha256": "b85f8a68b78098d0179d70c2d2965c2189a948d9e3928f1be9d5b18c968a5741"
+    },
+    "RequestProject.TypedTriangle.ApplicationsTwoScaleFinal": {
+      "module": "RequestProject.TypedTriangle.ApplicationsTwoScaleFinal",
+      "exit_code": 0,
+      "source_sha256": "3eaf20f5a14fbb0a9f550f8f2487821b9ebbed208048f2a9845cacccf2cf4131",
+      "elapsed_seconds": 30.7,
+      "log": "logs\\RequestProject_TypedTriangle_ApplicationsTwoScaleFinal.log",
+      "max_heartbeats": 2000000,
+      "olean_sha256": "a7061e8cb2bcb857571a22354ca3dfdc2c04c283291038719451e49ee7bf8a5f"
+    },
+    "RequestProject.TypedTriangle.PaperIIIHeightProgram": {
+      "module": "RequestProject.TypedTriangle.PaperIIIHeightProgram",
+      "exit_code": 0,
+      "source_sha256": "e4a39df1fe24ffa81fb69ee2612f98a827a2786b0209d535b5c509e7fb65b027",
+      "elapsed_seconds": 32.23,
+      "log": "logs\\RequestProject_TypedTriangle_PaperIIIHeightProgram.log",
+      "max_heartbeats": 2000000,
+      "olean_sha256": "be2a316222d99e0db16118edddf0353e929f2ffa75875ad40df1a3d0a10aae5e"
+    }
+  },
+  "audit_results": [
+    {
+      "audit": "main-paper-iii-audit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exit_code": 0,
+      "log_sha256": "3b54b4ff139f437250f9859a1c0e22187eea5c20ab9c47dc9c41d36b34612d4b"
+    },
+    {
+      "audit": "main-paper-iii-pasch-audit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exit_code": 0,
+      "log_sha256": "77b3b67c0c1812639e6871a9fc3d89f4ddcf8c78e669538322fb9ed9af741507"
+    },
+    {
+      "audit": "main-paper-iii-triangle-tower-audit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exit_code": 0,
+      "log_sha256": "9315f10f9be554ec1d020e0beac5705926619c4377487b4e031ef3d0a33d6e71"
+    },
+    {
+      "audit": "paper-iii-applications-audit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exit_code": 0,
+      "log_sha256": "f3b308d3f9d03ae25aa358ffce75ca9842958d7e732ec695e57ceffc38b1ac9f"
+    },
+    {
+      "audit": "hybrid-deficit-audit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exit_code": 0,
+      "log_sha256": "3b486075e8beb224ca3ed173dc4b50831cf9851a7bf0b592d12934044e6d224d"
+    },
+    {
+      "audit": "closure-audit",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "exit_code": 0,
+      "log_sha256": "6166d3d573e627805be01554cac0da03ad4faa26d5cf89cb7c18889de03d1f11"
+    }
+  ],
+  "source_archive_sha256": null,
+  "fresh_project_objects": true,
+  "threads": 12,
+  "resumed_verified_prefix": 1141,
+  "memory_mb": 24576,
+  "max_heartbeats": 2000000,
+  "elapsed_seconds": 538.5,
+  "lean_pid": 28912,
+  "heartbeat_utc": "2026-11-01T17:51:46.666096+00:00",
+  "current_elapsed_seconds": 210.2,
+  "sources_unchanged": true,
+  "finished_utc": "2026-11-01T17:51:54.963096+00:00"
+}

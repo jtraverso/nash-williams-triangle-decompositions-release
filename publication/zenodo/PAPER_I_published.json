@@ -1,0 +1,91 @@
+{
+  "status": "PUBLISHED_AND_PUBLIC_DOWNLOADS_VERIFIED",
+  "id": 23428173,
+  "doi": "10.5281/zenodo.23428173",
+  "concept_doi": "10.5281/zenodo.23428172",
+  "record_url": "https://zenodo.org/records/23428173",
+  "version": "1.0",
+  "source_commit": "5c350c63fe3cf9853786d2eb6960e47a36c0a9a3",
+  "files": {
+    "PAPER_I_preprint_v1.0_en.pdf": {
+      "path": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.pdf",
+      "size": 152017,
+      "md5": "5e766e2c2494790b38440881f470dc94",
+      "sha256": "a3a0406029fcfece04d8713db06eab92901fb3591169b02e836ae21bae09df46"
+    },
+    "PAPER_I_preprint_v1.0_es.pdf": {
+      "path": "preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.pdf",
+      "size": 155317,
+      "md5": "8d6890c642ed3d36b74b79937efc08eb",
+      "sha256": "7f545bbe02f4b2e7d8bebca924e393bbfc82c71e6298e6ec2f683e754172794b"
+    },
+    "PAPER_I_companion_preprint_v1.0_en.pdf": {
+      "path": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf",
+      "size": 74864,
+      "md5": "90cc4df66a86827939c2858f8193622c",
+      "sha256": "0de79ed4d6b920d16835fd93362b1d09c944f6e5b536de223d1b21c7ee7ea08e"
+    },
+    "PAPER_I_companion_preprint_v1.0_es.pdf": {
+      "path": "preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf",
+      "size": 76514,
+      "md5": "93e09d2c871f38cdce89ab141c4f8374",
+      "sha256": "f8dfb73aa0c20dac70790c8cd85ea2f9ff8e838dcdcd1f4b7bdc32ac51c169c8"
+    }
+  },
+  "checked_utc": "2026-10-20T19:44:59.350007+00:00",
+  "metadata": {
+    "title": "Triangle decompositions I: Formalizing the Nash–Williams theorem in Lean",
+    "doi": "10.5281/zenodo.23428173",
+    "publication_date": "2026-10-20",
+    "description": "<p>Delcourt and Postle gave a proof that every sufficiently large triangle-divisible graph of minimum degree at least three quarters of its order has a triangle decomposition; their decomposition step invokes the manuscript listed as reference 17 in their paper. We give a Lean formalization that follows their extremal and non-extremal case division, together with the fractional threshold and stability results used in the proof. The decomposition inputs are supplied by typed absorption results developed in Paper II and by a protected covering construction presented here. This replaces the applications of their Theorem 13.16 without using it as an assumption. The protected construction combines simultaneous local packing, a sparse reserve, and matchings that control the resources needed by later rounds. We give its proof, including the bounded signed certificates used at the terminal step. We also state the typed inputs and check their application to the extremal residual graphs. The theorem, its attribution and its degree threshold are unchanged; the contribution is the formal proof and the explicit replacement constructions and interfaces.</p><p>Preprint 1.0. This deposit contains four individual PDFs: the mathematical article and its separate formalization companion, each in English and Spanish. The selected Lean source archive, licences, scripts and audit evidence are available in the linked immutable GitHub snapshot. The companion identifies the frozen build evidence; a separate Palomar module-system port is not the evidence for this release.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Traverso Gianini, Juan Pablo",
+        "affiliation": "Independent researcher, Santiago, Chile",
+        "orcid": "0009-0003-6068-4096"
+      }
+    ],
+    "keywords": [
+      "Nash-Williams theorem",
+      "triangle decomposition",
+      "formal verification",
+      "Lean",
+      "absorption"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/tree/5c350c63fe3cf9853786d2eb6960e47a36c0a9a3",
+        "relation": "isSupplementedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "10.5281/zenodo.23502224",
+        "relation": "references",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Preprint",
+      "type": "publication",
+      "subtype": "preprint"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "23428172"
+          }
+        }
+      ]
+    }
+  }
+}

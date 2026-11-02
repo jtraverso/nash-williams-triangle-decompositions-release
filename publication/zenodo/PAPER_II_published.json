@@ -1,0 +1,91 @@
+{
+  "status": "PUBLISHED_AND_PUBLIC_DOWNLOADS_VERIFIED",
+  "id": 23502224,
+  "doi": "10.5281/zenodo.23502224",
+  "concept_doi": "10.5281/zenodo.23502223",
+  "record_url": "https://zenodo.org/records/23502224",
+  "version": "1.0",
+  "source_commit": "5c350c63fe3cf9853786d2eb6960e47a36c0a9a3",
+  "files": {
+    "PAPER_II_preprint_v1.0_en.pdf": {
+      "path": "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.pdf",
+      "size": 398464,
+      "md5": "4bb901a2290bff90d95d2b8cb8f598c5",
+      "sha256": "5f7eef757877bd66462dff3ae1fde9df119acabcadac036d50676c3dff4f18d7"
+    },
+    "PAPER_II_preprint_v1.0_es.pdf": {
+      "path": "preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.pdf",
+      "size": 412730,
+      "md5": "4d8255cba444a7148f9c5b1ce2ce53f3",
+      "sha256": "b13bf4a5be9ce622a8d2c2346d239fa32b577931bf649e1a9a33cc5f158bc312"
+    },
+    "PAPER_II_companion_preprint_v1.0_en.pdf": {
+      "path": "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf",
+      "size": 60406,
+      "md5": "73e47b2b001d5099e15cd2edd722cab1",
+      "sha256": "c9e326cdc072f0737f0bd3998327f88bca227da3e4b3106d9b2dc7bb85bc11db"
+    },
+    "PAPER_II_companion_preprint_v1.0_es.pdf": {
+      "path": "preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf",
+      "size": 61883,
+      "md5": "7f75759a96157c45ad432e3220530a6c",
+      "sha256": "368759908fe650d82ff266938b05d4857eff50aa36e88b1de5ba748f4fb8c7e1"
+    }
+  },
+  "checked_utc": "2026-10-20T19:45:11.117892+00:00",
+  "metadata": {
+    "title": "Triangle decompositions II: Robust absorption for typed triangles",
+    "doi": "10.5281/zenodo.23502224",
+    "publication_date": "2026-10-20",
+    "description": "<p>We study triangle decompositions in which every triangle must use a prescribed multiset of part labels. The necessary divisibility conditions record both the global numbers of edge types and the degree profile at each vertex. We prove a typical-host decomposition theorem under a finite three-step condition on the links and the forbidden-partner condition (3.2), and deduce the nearly complete four-part results used in Paper I. A separate theorem handles semidense two-part graphs with mixed triangles. The proofs combine real corrections respecting local profiles, bounded integer certificates, and a fixed absorber chosen before the remainder. Vertex splitting and corrections of parity, balance, charge and torsion extend the construction beyond three-step links; a fixed cyclic catalogue handles the conserved families. Together with an exact finite classification, these constructions establish the typical-host property for all 765 admissible four-label families up to permutation. We give the construction arguments and their quantitative assembly, and separate the finite certificate data from the universal arguments that use them.</p><p>Preprint 1.0. This deposit contains four individual PDFs: the mathematical article and its separate formalization companion, each in English and Spanish. The selected Lean source archive, licences, scripts and audit evidence are available in the linked immutable GitHub snapshot. The companion identifies the frozen build evidence; a separate Palomar module-system port is not the evidence for this release.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "Traverso Gianini, Juan Pablo",
+        "affiliation": "Independent researcher, Santiago, Chile",
+        "orcid": "0009-0003-6068-4096"
+      }
+    ],
+    "keywords": [
+      "triangle decompositions",
+      "typed absorption",
+      "integer lattices",
+      "Nash-Williams theorem",
+      "Lean"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/tree/5c350c63fe3cf9853786d2eb6960e47a36c0a9a3",
+        "relation": "isSupplementedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "10.5281/zenodo.23428173",
+        "relation": "references",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1.0",
+    "language": "eng",
+    "resource_type": {
+      "title": "Preprint",
+      "type": "publication",
+      "subtype": "preprint"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "23502223"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "version": "1.0",
+  "date_utc": "2026-11-01T20:34:42.699468+00:00",
+  "authorization": "Owner requests explicit comparison and initial-codegree explanation, overwriting preprint 1.0",
+  "operations": [
+    {
+      "document": "01_manuscript/PAPER_III_preprint_v1.0_en.md",
+      "before_sha256": "df175b5d91f300570ec0c6ff91bf75b1b43169139fa30fcaf476e2777a4bc49f",
+      "after_sha256": "1e36df5e6962baa2fc28b327c49dbe88bd390b21385f91a2d677c106b0e252c8",
+      "changes": [
+        {
+          "location": "2.2",
+          "before": "explaining the normalization in (2.6) and its difference from the printed power in [14].",
+          "after": "which gives the natural normalization in (2.6) for edge sets with four fixed roots.\n\nFor comparison, [14, Definition 13.15] requires at least $\\alpha n^{i-2}$ hinges for the fixed root pair. For fixed positive $\\alpha$ and bounded i, the preceding upper bound is smaller than this requirement once n is sufficiently large. Thus the printed lower bound cannot hold in that range when such a root pair exists. In the proof of [14, Lemma 14.4], the constructed hinges have eight vertices and are counted with a lower bound of order $n^4=n^{8-4}$. These are the two counting statements being compared; we do not identify the printed conditions or assert an author-confirmed correction."
+        },
+        {
+          "location": "D.4",
+          "after_anchor": "Counts of Pasches need not add across the constituent families.",
+          "addition": " The initial family for the inner stages is the output of the exterior layer, which applies this estimate with an empty previous family: the stock, withdrawal universe, bank modes and packing give $1+63+2+1=67$. This is the bound passed to `TrackingState.initial` from `PaschConcreteOuterLayer.lean` at $j=0$; each subsequent inner layer adds at most 67, giving $L\\leq67+67j$."
+        }
+      ]
+    },
+    {
+      "document": "01_manuscript/PAPER_III_preprint_v1.0_es.md",
+      "before_sha256": "dd115877089185ab829ca9647bd99a73c6b522941cee660d72134328a4870b1e",
+      "after_sha256": "a2cd312942917f5cf55828023a6e39048b87235a80f8002f04ea49ac07878a36",
+      "changes": [
+        {
+          "location": "2.2",
+          "before": "; esto explica la normalización de (2.6) y su diferencia con la potencia impresa en [14].",
+          "after": ", lo que da la normalización natural de (2.6) para conjuntos de aristas con cuatro raíces fijadas.\n\nComo comparación, [14, Definición 13.15] exige al menos $\\alpha n^{i-2}$ bisagras para el par de raíces fijado. Para $\\alpha$ positivo fijo e i acotado, la cota superior anterior es menor que esa exigencia cuando n es suficientemente grande. Por tanto, la cota inferior impresa no puede cumplirse en ese rango cuando existe tal par de raíces. En la demostración de [14, Lema 14.4], las bisagras construidas tienen ocho vértices y se cuentan con una cota inferior de orden $n^4=n^{8-4}$. Estas son las dos afirmaciones de conteo que comparamos; no identificamos las condiciones impresas ni afirmamos una corrección confirmada por los autores."
+        },
+        {
+          "location": "D.4",
+          "after_anchor": "Los conteos de Pasch no tienen por qué sumarse entre las familias que las forman.",
+          "addition": " La familia inicial de las etapas interiores es la salida de la capa exterior, que aplica esta estimación con una familia previa vacía: la reserva de triángulos, el universo de retiros, los modos del banco y el empaquetamiento dan $1+63+2+1=67$. Esta es la cota que se pasa a `TrackingState.initial` desde `PaschConcreteOuterLayer.lean` en $j=0$; cada capa interior posterior añade a lo sumo 67, lo que da $L\\leq67+67j$."
+        }
+      ]
+    }
+  ],
+  "theorem_or_hypothesis_changes": false,
+  "lean_source_changes": false,
+  "evidence": [
+    "arXiv:2606.11178v1, Definition 13.15 and proof of Lemma 14.4",
+    "Paper I Appendix A: eight-vertex hinge count",
+    "Paper II Section 6: fixed-root normalization",
+    "PaschConcreteOuterLayer.lean: hNextCG and hNextCG'",
+    "MainPaperIIIPasch.lean: initialization with 67,67"
+  ],
+  "final_audit_sha256": "cc00c3944aab0832193650d8a727a1a35d88012e7a842547db958ee2d0c25436",
+  "visual_certificate_sha256": "78d72e90c7eda327e4e16dc398b7f30e28ae4d3e30107692573cae363674e25d",
+  "source_archive_sha256": "a5fbd7af2d13594a894d61bde81126353bd7d186f335ad9f302a5fd7ba942d95",
+  "formal_source_identical": true,
+  "final_pdf_pages": {
+    "en": 29,
+    "es": 31
+  },
+  "outstanding_observations": []
+}

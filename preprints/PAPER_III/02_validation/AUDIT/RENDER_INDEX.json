@@ -1,0 +1,121 @@
+[
+  {
+    "pdf": "05_formalization/PAPER_III_Lean_freeze_v1.0_en.pdf",
+    "sha256": "64fde8d1a2d47e4418afe6c7da7c5d6e3e746c4f580b585a1fc48cf578de4909",
+    "pages": 3,
+    "contact_sheets": [
+      "02_validation/page_review/PAPER_III_Lean_freeze_v1.0_en/contact_01_03.jpg"
+    ],
+    "rendered_pages": [
+      "02_validation/page_review/PAPER_III_Lean_freeze_v1.0_en/page_01.png",
+      "02_validation/page_review/PAPER_III_Lean_freeze_v1.0_en/page_02.png",
+      "02_validation/page_review/PAPER_III_Lean_freeze_v1.0_en/page_03.png"
+    ],
+    "poppler_status": "PASS"
+  },
+  {
+    "pdf": "05_formalization/PAPER_III_Lean_freeze_v1.0_es.pdf",
+    "sha256": "fc85503c788399adf2d80a67a9b830f339a94443887c23c6590c06e22383994e",
+    "pages": 3,
+    "contact_sheets": [
+      "02_validation/page_review/PAPER_III_Lean_freeze_v1.0_es/contact_01_03.jpg"
+    ],
+    "rendered_pages": [
+      "02_validation/page_review/PAPER_III_Lean_freeze_v1.0_es/page_01.png",
+      "02_validation/page_review/PAPER_III_Lean_freeze_v1.0_es/page_02.png",
+      "02_validation/page_review/PAPER_III_Lean_freeze_v1.0_es/page_03.png"
+    ],
+    "poppler_status": "PASS"
+  },
+  {
+    "pdf": "01_manuscript/PAPER_III_preprint_v1.0_en.pdf",
+    "sha256": "f0284f08cec075fd22b8a4301fc920c3258e43ad9b1a5e726bdd2f24662987ea",
+    "pages": 29,
+    "contact_sheets": [
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/contact_01_06.jpg",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/contact_07_12.jpg",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/contact_13_18.jpg",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/contact_19_24.jpg",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/contact_25_29.jpg"
+    ],
+    "rendered_pages": [
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_01.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_02.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_03.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_04.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_05.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_06.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_07.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_08.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_09.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_10.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_11.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_12.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_13.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_14.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_15.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_16.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_17.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_18.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_19.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_20.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_21.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_22.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_23.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_24.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_25.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_26.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_27.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_28.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_en/page_29.png"
+    ],
+    "poppler_status": "PASS"
+  },
+  {
+    "pdf": "01_manuscript/PAPER_III_preprint_v1.0_es.pdf",
+    "sha256": "677f5a48a3ce54a40e3751b0b9361f67b6644ba98bc774f934b947abdbef4a91",
+    "pages": 31,
+    "contact_sheets": [
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/contact_01_06.jpg",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/contact_07_12.jpg",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/contact_13_18.jpg",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/contact_19_24.jpg",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/contact_25_30.jpg",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/contact_31_31.jpg"
+    ],
+    "rendered_pages": [
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_01.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_02.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_03.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_04.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_05.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_06.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_07.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_08.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_09.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_10.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_11.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_12.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_13.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_14.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_15.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_16.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_17.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_18.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_19.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_20.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_21.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_22.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_23.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_24.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_25.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_26.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_27.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_28.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_29.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_30.png",
+      "02_validation/page_review/PAPER_III_preprint_v1.0_es/page_31.png"
+    ],
+    "poppler_status": "PASS"
+  }
+]

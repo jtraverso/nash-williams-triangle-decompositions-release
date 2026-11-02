@@ -1,0 +1,32 @@
+{
+  "id": "PAPER_I_LEAN_20261020_ALIGNED_v3",
+  "zip_sha256": "bfa42bd57e6d9c2ac918bbf6fe2c2ba7c01894d1d8387d92e81b090020a6aaff",
+  "zip_bytes": 4806133,
+  "files": 3241,
+  "internal_hashes": 3240,
+  "status": "PASS_HEADER_ONLY_REVISION",
+  "modules": 1070,
+  "corrected_headers": 1068,
+  "unchanged_headers": 2,
+  "historical_receipts_checked": 1070,
+  "import_hash_links": 1671,
+  "lean_build_executed": false,
+  "scope": "Current body bytes reconstruct the original compiled sources. Historical receipts are unchanged; no new compilation is asserted.",
+  "predecessor": {
+    "id": "PAPER_I_LEAN_20261020_ALIGNED_v2",
+    "zip_sha256": "c04ca7dd432322fa65eab196d58954252f8e0f377222bd57a6a0c94ee82e116e"
+  },
+  "original_evidence_files_unchanged": 2147,
+  "added_files": [
+    "attribution/source_changes.json",
+    "evidence/BUILD_README.md",
+    "tools/verify_attribution.py"
+  ],
+  "non_source_changes": [
+    "README.md",
+    "LICENSING.md",
+    "SHA256SUMS.txt"
+  ],
+  "source_body_bytes_unchanged": true,
+  "dependency_licences_unchanged": true
+}

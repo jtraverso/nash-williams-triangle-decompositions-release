@@ -1,0 +1,76 @@
+# Triangle decompositions — Nash–Williams and typed absorption
+
+**Juan Pablo Traverso Gianini · Triangle decompositions I–III · First preprints, 2026**
+
+This repository presents my Lean formalization of [*A Proof of Nash-Williams' Conjecture*](https://arxiv.org/abs/2606.11178) by **Michelle Delcourt and Luke Postle** (arXiv:2606.11178), together with the typed triangle-decomposition and absorption results developed to supply the required inputs. Paper I follows and formalizes the Nash–Williams proof; Paper II develops those typed inputs. Paper III proves a physical typed criterion and adds simultaneous prescribed statistics, Pasch counts and a quantitative triangle-statistics bound. Separate companions document the checked Lean sources and reproducibility evidence.
+
+Este repositorio presenta mi formalización en Lean de [*A Proof of Nash-Williams' Conjecture*](https://arxiv.org/abs/2606.11178), de **Michelle Delcourt y Luke Postle** (arXiv:2606.11178), junto con los resultados de descomposición triangular tipada y absorción desarrollados para aportar los insumos necesarios. El Artículo I sigue y formaliza la demostración de Nash–Williams; el Artículo II desarrolla esos insumos tipados. El Artículo III establece un criterio físico tipado con estadísticas prescritas, conteos de Pasch y una cota cuantitativa para estadísticas de triángulos. Los complementos separados documentan las fuentes Lean verificadas y las evidencias de reproducibilidad.
+
+| Paper | Mathematical role | Documents and DOI |
+|---|---|---|
+| I — Formalizing the Nash–Williams theorem in Lean | Delcourt–Postle's case division, explicit replacement constructions and the formal theorem. | [Article and companion](preprints/PAPER_I/README.md) · [10.5281/zenodo.23428173](https://doi.org/10.5281/zenodo.23428173) |
+| II — Robust absorption for typed triangles | Typed decomposition inputs, the semidense case, finite family constructions and terminal absorption. | [Article and companion](preprints/PAPER_II/README.md) · [10.5281/zenodo.23502224](https://doi.org/10.5281/zenodo.23502224) |
+| III — Physical typed absorption and prescribed statistics | Physical hypotheses H1–H4, simultaneous triangle and Pasch statistics, and an explicit triangle-statistics threshold. | [Article and companion](preprints/PAPER_III/README.md) · [10.5281/zenodo.23867836](https://doi.org/10.5281/zenodo.23867836) |
+
+## Palomar registry / Registro Palomar
+
+The Lean formalizations of Papers I and II are registered in [Palomar](https://palomar-registry.org), a registry of Lean-verified results that rebuilds the sources, checks the stated theorems against a Mathlib-only challenge file and replays the proofs in independent kernels.
+
+| Paper | Palomar | Lean source |
+|---|---|---|
+| I — Nash–Williams | **Registered** as [PALOMAR-2026-10-21-000009](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-21-000009&version=1) (version 1, 21 October 2026) · [archived copy](https://github.com/PalomarArchive/jtraverso--nash-williams-lean--252fc7828395/tree/palomar/PALOMAR-2026-10-21-000009-v1/2603197abdbf0a600ec663f6f046f70fbd209d4a) | [jtraverso/nash-williams-lean @ 2603197](https://github.com/jtraverso/nash-williams-lean/tree/2603197abdbf0a600ec663f6f046f70fbd209d4a) |
+| II — Typed absorption | **Registered** as [PALOMAR-2026-10-23-000013](https://palomar-registry.org/entry.html?id=PALOMAR-2026-10-23-000013&version=1) (version 1, 23 October 2026) · [archived copy](https://github.com/PalomarArchive/jtraverso--typed-triangle-absorption--055c1b37404f/tree/palomar/PALOMAR-2026-10-23-000013-v1/673c6d4118b5679783bafa7606fd2c611161a254) | [jtraverso/typed-triangle-absorption @ 673c6d4](https://github.com/jtraverso/typed-triangle-absorption/tree/673c6d4118b5679783bafa7606fd2c611161a254) (sources version 1.1) |
+
+Paper II version 1.1 rewrites proof scripts in 279 modules of the computer-assisted finite census to shorten the build. Statements, definitions and the challenge file are unchanged. An earlier submission of the 1.0 sources exceeded the verifier's time limit; version 1.1 passed verification and was registered on 23 October 2026.
+
+*En español:* las formalizaciones en Lean de ambos artículos están registradas en [Palomar](https://palomar-registry.org), un registro de resultados verificados en Lean. Palomar recompila las fuentes, compara los teoremas enunciados con un archivo de desafío que solo usa Mathlib y repite las pruebas en núcleos independientes. El Artículo I está **registrado** (PALOMAR-2026-10-21-000009). El Artículo II está **registrado** (PALOMAR-2026-10-23-000013, 23 de octubre de 2026). La versión 1.1 del Artículo II reescribe las pruebas de 279 módulos del censo finito asistido por computadora para acortar la compilación, sin cambiar enunciados, definiciones ni el archivo de desafío. Un envío anterior de las fuentes 1.0 superó el límite de tiempo del verificador; la versión 1.1 pasó la verificación y quedó registrada.
+
+## PDF downloads / Descargar PDF
+
+| Document | English | Español |
+|---|---|---|
+| **Paper I — Nash–Williams** | [Paper I PDF (EN)](preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.pdf) | [Paper I PDF (ES)](preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.pdf) |
+| **Paper II — Typed absorption** | [Paper II PDF (EN)](preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.pdf) | [Paper II PDF (ES)](preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.pdf) |
+| Paper I formalization companion | [Companion I PDF (EN)](preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf) | [Companion I PDF (ES)](preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf) |
+| Paper II formalization companion | [Companion II PDF (EN)](preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf) | [Companion II PDF (ES)](preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf) |
+| **Paper III — Physical typed absorption** | [Paper III PDF (EN)](preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_en.pdf) | [Paper III PDF (ES)](preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_es.pdf) |
+| Paper III formalization companion | [Companion III PDF (EN)](preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_en.pdf) | [Companion III PDF (ES)](preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_es.pdf) |
+
+## Read and cite / Leer y citar
+
+- [Bilingual website](index.html) and [paper index](preprints/README.md).
+- [Citation guide](CITATION.md) and [publication index](PUBLICATION_INDEX.json).
+- [aiXiv records / Registros en aiXiv](publication/aixiv/README.md).
+- [Selected source archives](archives/README.md), with licences, hashes and original build evidence.
+
+## Reproducibility / Reproducibilidad
+
+| Directory in each paper | Contents |
+|---|---|
+| `01_manuscript` | Mathematical article, EN/ES, PDF, TeX and Markdown |
+| `02_validation` | Review responses and validation evidence |
+| `03_reproducibility` | Reproduction instructions and source-scope notes |
+| `04_integrity` | File hashes |
+| `05_formalization` | Separate formalization companion, EN/ES |
+
+Each companion identifies its own checked dependency closure and distinguishes historical compilation, source-preserving packaging revisions and final axiom queries. No paper's build is used as evidence for the whole other development.
+
+Cada complemento distingue su clausura comprobada, los registros de compilación, las revisiones de empaquetado y las consultas de axiomas. Los registros no se presentan como reproducción independiente.
+
+Manuscripts and companions use **CC BY 4.0**. Original source and packaging materials use **Apache-2.0**, with third-party notices preserved; see [licences](LICENSE.md).
+
+[Repository audit](publication/AUDIT.md) · [Website configuration](WEB_PUBLICATION.md) · [Publication operations](publication/RELEASE_CHECKLIST.md).
+
+## arXiv endorsement
+
+I am preparing to submit this preprint series to arXiv (math.CO) and, as a first-time submitter, I
+need an endorsement. If you are an arXiv author eligible to endorse in math.CO, have looked at
+these papers, and found that they add value and are appropriate for the category, you can endorse
+me at https://arxiv.org/auth/endorse?x=N8V4R6 (endorsement code `N8V4R6`). An endorsement only confirms that the work is suitable for
+the subject area; it is not a review or an approval of its results. Thank you.
+
+*En español:* preparo el envío de esta serie de preprints a arXiv (math.CO) y, como es mi primer
+envío, necesito un endorsement. Si eres autor de arXiv habilitado para dar endorsement en math.CO,
+revisaste estos trabajos y te parece que aportan y son adecuados para la categoría, puedes dármelo
+en https://arxiv.org/auth/endorse?x=N8V4R6 (código `N8V4R6`). El endorsement solo confirma que el trabajo es adecuado para el área;
+no es una revisión ni una aprobación de sus resultados. ¡Gracias!

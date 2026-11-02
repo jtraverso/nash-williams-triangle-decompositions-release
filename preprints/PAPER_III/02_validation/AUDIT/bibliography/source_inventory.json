@@ -1,0 +1,548 @@
+[
+  {
+    "key": "arxiv-1807.05770v2",
+    "url": "https://arxiv.org/html/1807.05770v2",
+    "resolved_url": "https://arxiv.org/html/1807.05770v2",
+    "http_status": 200,
+    "file": "arxiv-1807.05770v2.html",
+    "sha256": "ab997ecf01104c214d4044769568203452f3092086d5f6793e8661663481f272"
+  },
+  {
+    "key": "arxiv-1802.05900v1",
+    "url": "https://arxiv.org/html/1802.05900v1",
+    "resolved_url": "https://arxiv.org/html/1802.05900v1",
+    "http_status": 200,
+    "file": "arxiv-1802.05900v1.html",
+    "sha256": "f18e7b80a6168c283af867ef789cec064971ff6a853162c77f4c89c539d88d12"
+  },
+  {
+    "key": "arxiv-2606.11178v1",
+    "url": "https://arxiv.org/html/2606.11178v1",
+    "resolved_url": "https://arxiv.org/html/2606.11178v1",
+    "http_status": 200,
+    "file": "arxiv-2606.11178v1.html",
+    "sha256": "00436dbd56463ff39ed447af10b245b058be2bfee59fec544f89b14ea18e1be6"
+  },
+  {
+    "key": "arxiv-1907.09946v1",
+    "url": "https://arxiv.org/html/1907.09946v1",
+    "resolved_url": "https://arxiv.org/html/1907.09946v1",
+    "http_status": 200,
+    "file": "arxiv-1907.09946v1.html",
+    "sha256": "dd00290483dfd27a63a3fd81260a66efefbcca1cee03567f34fdb8fadf43f3f6"
+  },
+  {
+    "key": "arxiv-2202.05088v4",
+    "url": "https://arxiv.org/html/2202.05088v4",
+    "resolved_url": "https://arxiv.org/html/2202.05088v4",
+    "http_status": 200,
+    "file": "arxiv-2202.05088v4.html",
+    "sha256": "d90c8c7328b0d3d684be64362ebe18c44999533109463d41f94b9e70cc86c00b"
+  },
+  {
+    "key": "arxiv-1607.04981v2",
+    "url": "https://arxiv.org/html/1607.04981v2",
+    "resolved_url": "https://arxiv.org/html/1607.04981v2",
+    "http_status": 200,
+    "file": "arxiv-1607.04981v2.html",
+    "sha256": "de573a0e980766af09dd44f5fb873d9eef770d968f64b298c025d2902b63157e"
+  },
+  {
+    "key": "arxiv-2510.19978v1",
+    "url": "https://arxiv.org/html/2510.19978v1",
+    "resolved_url": "https://arxiv.org/html/2510.19978v1",
+    "http_status": 200,
+    "file": "arxiv-2510.19978v1.html",
+    "sha256": "89031dba5a065af47a934c18a9e103820a7c01157be9085052beaf4f1dd89535"
+  },
+  {
+    "key": "arxiv-2402.17855v1",
+    "url": "https://arxiv.org/html/2402.17855v1",
+    "resolved_url": "https://arxiv.org/html/2402.17855v1",
+    "http_status": 200,
+    "file": "arxiv-2402.17855v1.html",
+    "sha256": "398d0014d519e489e69b7580ea88b41ebce16caecde38837e5faef6096fa9c30"
+  },
+  {
+    "key": "crossref-1",
+    "url": "https://api.crossref.org/works/10.1017/S0963548320000280",
+    "resolved_url": "https://api.crossref.org/works/10.1017/S0963548320000280",
+    "http_status": 200,
+    "file": "crossref-1.json",
+    "sha256": "be5894a9474a0db66649f0287973bb02a9d11bce9423831baa3e46877694c847",
+    "metadata": {
+      "title": [
+        "Pseudorandom hypergraph matchings"
+      ],
+      "author": [
+        {
+          "given": "Stefan",
+          "family": "Ehard",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Stefan",
+          "family": "Glock",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Felix",
+          "family": "Joos",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            22
+          ]
+        ]
+      },
+      "volume": "29",
+      "issue": "6",
+      "page": "868-885",
+      "container-title": [
+        "Combinatorics, Probability and Computing"
+      ],
+      "DOI": "10.1017/s0963548320000280"
+    }
+  },
+  {
+    "key": "crossref-2",
+    "url": "https://api.crossref.org/works/10.19086/da.83253",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "key": "crossref-3",
+    "url": "https://api.crossref.org/works/10.1112/blms.12638",
+    "resolved_url": "https://api.crossref.org/works/10.1112/blms.12638",
+    "http_status": 200,
+    "file": "crossref-3.json",
+    "sha256": "a19030c1c26a953869e568e7df985c746bf2e1085faaada5fc279bc6d712ba13",
+    "metadata": {
+      "title": [
+        "Large deviations in random latin squares"
+      ],
+      "author": [
+        {
+          "given": "Matthew",
+          "family": "Kwan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Institute of Science and Technology Austria (IST Austria) Klosterneuburg Austria"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ashwin",
+          "family": "Sah",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Mathematics Massachusetts Institute of Technology Cambridge Massachusetts USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mehtaab",
+          "family": "Sawhney",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Mathematics Massachusetts Institute of Technology Cambridge Massachusetts USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            10
+          ]
+        ]
+      },
+      "volume": "54",
+      "issue": "4",
+      "page": "1420-1438",
+      "container-title": [
+        "Bulletin of the London Mathematical Society"
+      ],
+      "DOI": "10.1112/blms.12638"
+    }
+  },
+  {
+    "key": "crossref-4",
+    "url": "https://api.crossref.org/works/10.1016/j.jcta.2017.04.005",
+    "resolved_url": "https://api.crossref.org/works/10.1016/j.jcta.2017.04.005",
+    "http_status": 200,
+    "file": "crossref-4.json",
+    "sha256": "12f63d74d71852bc6c2eb8f1d2d2f15d5fb04d5cccf2eb59e2b3d883bf2ff439",
+    "metadata": {
+      "title": [
+        "Clique decompositions of multipartite graphs and completion of Latin squares"
+      ],
+      "author": [
+        {
+          "given": "Ben",
+          "family": "Barber",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniela",
+          "family": "Kühn",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Allan",
+          "family": "Lo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3059-4298",
+          "authenticated-orcid": false,
+          "given": "Deryk",
+          "family": "Osthus",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Amelia",
+          "family": "Taylor",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            10
+          ]
+        ]
+      },
+      "volume": "151",
+      "issue": null,
+      "page": "146-201",
+      "container-title": [
+        "Journal of Combinatorial Theory, Series A"
+      ],
+      "DOI": "10.1016/j.jcta.2017.04.005"
+    }
+  },
+  {
+    "key": "crossref-5",
+    "url": "https://api.crossref.org/works/10.1017/S0963548317000165",
+    "resolved_url": "https://api.crossref.org/works/10.1017/S0963548317000165",
+    "http_status": 200,
+    "file": "crossref-5.json",
+    "sha256": "efb85cdfd9b02a57fcb9c55fc4bcf682f550a23bf511334f6671bc761d63b737",
+    "metadata": {
+      "title": [
+        "Fractional Clique Decompositions of Dense Partite Graphs"
+      ],
+      "author": [
+        {
+          "given": "RICHARD",
+          "family": "MONTGOMERY",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            6,
+            19
+          ]
+        ]
+      },
+      "volume": "26",
+      "issue": "6",
+      "page": "911-943",
+      "container-title": [
+        "Combinatorics, Probability and Computing"
+      ],
+      "DOI": "10.1017/s0963548317000165"
+    }
+  },
+  {
+    "key": "zenodo-23428173",
+    "url": "https://zenodo.org/api/records/23428173",
+    "resolved_url": "https://zenodo.org/api/records/23428173",
+    "http_status": 200,
+    "file": "zenodo-23428173.json",
+    "sha256": "2755c4e89f5f5c16616b1a268653e9ce745b3fc510f65021d00c912a68ea7e49",
+    "metadata": {
+      "title": "Triangle decompositions I: Formalizing the Nash–Williams theorem in Lean",
+      "doi": "10.5281/zenodo.23428173",
+      "publication_date": "2026-10-20",
+      "description": "<p>Delcourt and Postle gave a proof that every sufficiently large triangle-divisible graph of minimum degree at least three quarters of its order has a triangle decomposition; their decomposition step invokes the manuscript listed as reference 17 in their paper. We give a Lean formalization that follows their extremal and non-extremal case division, together with the fractional threshold and stability results used in the proof. The decomposition inputs are supplied by typed absorption results developed in Paper II and by a protected covering construction presented here. This replaces the applications of their Theorem 13.16 without using it as an assumption. The protected construction combines simultaneous local packing, a sparse reserve, and matchings that control the resources needed by later rounds. We give its proof, including the bounded signed certificates used at the terminal step. We also state the typed inputs and check their application to the extremal residual graphs. The theorem, its attribution and its degree threshold are unchanged; the contribution is the formal proof and the explicit replacement constructions and interfaces.</p><p>Preprint 1.0. This deposit contains four individual PDFs: the mathematical article and its separate formalization companion, each in English and Spanish. The selected Lean source archive, licences, scripts and audit evidence are available in the linked immutable GitHub snapshot. The companion identifies the frozen build evidence; a separate Palomar module-system port is not the evidence for this release.</p>",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Traverso Gianini, Juan Pablo",
+          "affiliation": "Independent researcher, Santiago, Chile",
+          "orcid": "0009-0003-6068-4096"
+        }
+      ],
+      "keywords": [
+        "Nash-Williams theorem",
+        "triangle decomposition",
+        "formal verification",
+        "Lean",
+        "absorption"
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/tree/5c350c63fe3cf9853786d2eb6960e47a36c0a9a3",
+          "relation": "isSupplementedBy",
+          "scheme": "url"
+        },
+        {
+          "identifier": "10.5281/zenodo.23502224",
+          "relation": "references",
+          "scheme": "doi"
+        }
+      ],
+      "version": "1.0",
+      "language": "eng",
+      "resource_type": {
+        "title": "Preprint",
+        "type": "publication",
+        "subtype": "preprint"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "23428172"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "key": "zenodo-23502224",
+    "url": "https://zenodo.org/api/records/23502224",
+    "resolved_url": "https://zenodo.org/api/records/23502224",
+    "http_status": 200,
+    "file": "zenodo-23502224.json",
+    "sha256": "d86a099ada838231596d3824c6ce6766c427dfd7a14a63fcc818b50c93d8d821",
+    "metadata": {
+      "title": "Triangle decompositions II: Robust absorption for typed triangles",
+      "doi": "10.5281/zenodo.23502224",
+      "publication_date": "2026-10-20",
+      "description": "<p>We study triangle decompositions in which every triangle must use a prescribed multiset of part labels. The necessary divisibility conditions record both the global numbers of edge types and the degree profile at each vertex. We prove a typical-host decomposition theorem under a finite three-step condition on the links and the forbidden-partner condition (3.2), and deduce the nearly complete four-part results used in Paper I. A separate theorem handles semidense two-part graphs with mixed triangles. The proofs combine real corrections respecting local profiles, bounded integer certificates, and a fixed absorber chosen before the remainder. Vertex splitting and corrections of parity, balance, charge and torsion extend the construction beyond three-step links; a fixed cyclic catalogue handles the conserved families. Together with an exact finite classification, these constructions establish the typical-host property for all 765 admissible four-label families up to permutation. We give the construction arguments and their quantitative assembly, and separate the finite certificate data from the universal arguments that use them.</p><p>Preprint 1.0. This deposit contains four individual PDFs: the mathematical article and its separate formalization companion, each in English and Spanish. The selected Lean source archive, licences, scripts and audit evidence are available in the linked immutable GitHub snapshot. The companion identifies the frozen build evidence; a separate Palomar module-system port is not the evidence for this release.</p>",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Traverso Gianini, Juan Pablo",
+          "affiliation": "Independent researcher, Santiago, Chile",
+          "orcid": "0009-0003-6068-4096"
+        }
+      ],
+      "keywords": [
+        "triangle decompositions",
+        "typed absorption",
+        "integer lattices",
+        "Nash-Williams theorem",
+        "Lean"
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/tree/5c350c63fe3cf9853786d2eb6960e47a36c0a9a3",
+          "relation": "isSupplementedBy",
+          "scheme": "url"
+        },
+        {
+          "identifier": "10.5281/zenodo.23428173",
+          "relation": "references",
+          "scheme": "doi"
+        }
+      ],
+      "version": "1.0",
+      "language": "eng",
+      "resource_type": {
+        "title": "Preprint",
+        "type": "publication",
+        "subtype": "preprint"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 0,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "23502223"
+            }
+          }
+        ]
+      }
+    }
+  },
+  {
+    "key": "zenodo-23715622",
+    "url": "https://zenodo.org/api/records/23715622",
+    "resolved_url": "https://zenodo.org/api/records/23715622",
+    "http_status": 200,
+    "file": "zenodo-23715622.json",
+    "sha256": "4a2a4a190bf1877e6e37c53365cdaa69f15002c5a5763b460d8fc3b0ede36714",
+    "metadata": {
+      "title": "Formalizing Delcourt–Postle's refined absorption in Lean",
+      "doi": "10.5281/zenodo.23715622",
+      "publication_date": "2026-10-27",
+      "description": "<p>We describe a Lean formalization of selected principal results from Delcourt and Postle's refined absorption paper and Postle's survey, concentrating on the interfaces between their arguments. Case studies explain reserve matching, avoidance in compatible decompositions, and compatible absorbers. Under the precise definitions discussed in the note, a finite vertex-count obstruction rules out the survey's global embedding conclusion; the proved piecewise variant is treated separately. Completion yields prescribed sparse intersections, finite exact-intersection embeddings and an initial intersection interval of polynomial order. Proved external colouring and Nash-Williams inputs give polynomial excess bounds for partial parallel classes and triangle-decomposition schedules. These are verified derivations and interface clarifications; historical priority for each consequence is not claimed.</p>\n<p>Preprint 1.0.1 is an editorial update following three rounds of feedback. It improves the English and Spanish exposition, notation, attribution and coverage statements, and restores the acknowledgements and AI disclosure used in the Nash-Williams papers. The deposit contains four PDFs: the research note and its separate formalization and reproducibility companion, each in English and Spanish.</p>\n<p>The Lean proofs, dependency pins and formal-source freeze are unchanged. This release does not formalize every statement of the source papers; the remaining high-girth and other endpoints are identified in the coverage discussion. The internal audit is an agent self-assessment, not independent human peer review, a new kernel replay or a Palomar certificate.</p>\n<p>Immutable publication source: https://github.com/jtraverso/refined-absorption-lean/tree/fd36d7d22f35946bdd38c3e092a053cecbf04b49<br>GitHub release, synchronized sources, audit evidence and checksums: https://github.com/jtraverso/refined-absorption-lean/releases/tag/preprint-v1.0.1<br>Changelog: https://github.com/jtraverso/refined-absorption-lean/blob/preprint-v1.0.1/CHANGELOG.md</p>\n<p>The joint comparison interface covers 18 selected statements. Its historical submission snapshot remains https://github.com/jtraverso/refined-absorption-lean/tree/867d1e3d5e48ef20a8f1ae68237834eb06211cbc . No new official Palomar verification or registration is claimed by this editorial deposit. Version 1.0 remains available unchanged.</p>",
+      "access_right": "open",
+      "creators": [
+        {
+          "name": "Traverso Gianini, Juan Pablo",
+          "affiliation": null,
+          "orcid": "0009-0003-6068-4096"
+        }
+      ],
+      "keywords": [
+        "refined absorption",
+        "designs",
+        "Lean",
+        "formal verification",
+        "Steiner systems",
+        "hypergraph edge colouring",
+        "Nash-Williams theorem"
+      ],
+      "related_identifiers": [
+        {
+          "identifier": "10.48550/arXiv.2402.17855",
+          "relation": "references",
+          "resource_type": "publication-preprint",
+          "scheme": "doi"
+        },
+        {
+          "identifier": "10.1137/25M1805977",
+          "relation": "references",
+          "resource_type": "publication-conferencepaper",
+          "scheme": "doi"
+        }
+      ],
+      "version": "1.0.1",
+      "language": "eng",
+      "custom": {
+        "code:codeRepository": "https://github.com/jtraverso/refined-absorption-lean"
+      },
+      "resource_type": {
+        "title": "Preprint",
+        "type": "publication",
+        "subtype": "preprint"
+      },
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "relations": {
+        "version": [
+          {
+            "index": 1,
+            "is_last": true,
+            "parent": {
+              "pid_type": "recid",
+              "pid_value": "23685653"
+            }
+          }
+        ]
+      }
+    }
+  }
+]

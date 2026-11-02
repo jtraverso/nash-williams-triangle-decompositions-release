@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Cite the individual paper and version using CITATION.md."
+title: "Triangle decompositions — Nash–Williams and typed absorption"
+version: "1.0"
+authors:
+  - family-names: "Traverso Gianini"
+    given-names: "Juan Pablo"
+    orcid: "https://orcid.org/0009-0003-6068-4096"
+repository-code: "https://github.com/jtraverso/nash-williams-triangle-decompositions-release"
+keywords:
+  - triangle decompositions
+  - Nash-Williams theorem
+  - absorption
+  - prescribed statistics
+  - Pasch configurations
+  - Lean 4

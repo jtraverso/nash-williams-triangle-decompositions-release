@@ -1,0 +1,20 @@
+{
+  "scope": "Evidence categories and report format of the coordinated first-publication audits of Papers I and II",
+  "references": [
+    {
+      "document": "AUDIT_PROTOCOL.md",
+      "source": "C:/nw/audit/audit/coordinated-preprint-1.0/AUDIT_PROTOCOL.md",
+      "sha256": "3a897ddf2ad2d3d0503a49fafeddab67fc3de188d3b55f5bf226cf30767ca02d"
+    },
+    {
+      "document": "AUDIT_RESULT.json",
+      "source": "C:/nw/audit/audit/coordinated-preprint-1.0/AUDIT_RESULT.json",
+      "sha256": "b561055a1168c817eb0a86326f7177f802bdd2c3b23b4e84e39e11c5c8e38ac2"
+    },
+    {
+      "document": "FINAL_REPORT.md",
+      "source": "C:/nw/audit/audit/coordinated-preprint-1.0/FINAL_REPORT.md",
+      "sha256": "1996d3eb875c5bab3da5e9c25acf1eb7fb861b228684336def6dcb94dc38e604"
+    }
+  ]
+}

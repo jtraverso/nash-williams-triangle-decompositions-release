@@ -1,0 +1,150 @@
+% Adapted from the author's public Erdos Paper IV v1.23 series_template.tex.
+% Layout provenance is recorded in 02_validation; the Markdown is semantic authority.
+\documentclass[english,11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{fontspec}
+\setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf,ItalicFont=lmroman10-italic.otf,BoldItalicFont=lmroman10-bolditalic.otf]
+\setsansfont{lmsans10-regular.otf}[BoldFont=lmsans10-bold.otf]
+\setmonofont{lmmono10-regular.otf}[Scale=MatchLowercase]
+\usepackage{amsmath,amssymb}
+\providecommand{\mathscr}{\mathcal}
+\usepackage[english]{babel}
+\usepackage{microtype,parskip}
+\usepackage{longtable,booktabs,array,calc}
+\usepackage{xcolor,xurl}
+\usepackage{hyperref,bookmark}
+\usepackage{etoolbox,needspace}
+\setcounter{secnumdepth}{-\maxdimen}
+\setlength{\emergencystretch}{3em}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\newcounter{none}
+\AtBeginEnvironment{longtable}{\Needspace{8\baselineskip}\small}
+\pretocmd{\section}{\Needspace{5\baselineskip}}{}{}
+\pretocmd{\subsection}{\Needspace{4\baselineskip}}{}{}
+\pretocmd{\subsubsection}{\Needspace{4\baselineskip}}{}{}
+\urlstyle{same}
+\usepackage{graphicx,float}
+\hypersetup{pdftitle={Paper III: Formal proof supplement},pdfauthor={Juan Pablo Traverso Gianini},pdflang={en-US},colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\title{Paper III: Formal proof supplement}
+\author{Juan Pablo Traverso Gianini\\
+\small Independent researcher, Santiago, Chile\\
+\small \href{mailto:jtraverso@gmail.com}{jtraverso@gmail.com}\\
+\small ORCID: 0009-0003-6068-4096}
+\date{}\begin{document}\raggedbottom\maketitle
+\small\setlength{\parskip}{3pt}
+\textbf{Preprint 1.0 --- 1 November 2026. Formal verification: PASS.}
+
+\subsection{1. Scope of the proof}\label{scope-of-the-proof}
+
+The complete general proofs are the Lean declarations below. The manuscript explains their construction, quantitative interfaces and assembly, and gives the application proofs. The local bank, packing and Pasch insertion lemmas are supplied in the formal supplement; the paper does not claim to reproduce them all as a self-contained prose proof.
+
+The two-scale Latin application includes the simultaneous coarse-block constraints and the count-gap corollary. Its formal proof uses the diagonal bound (8.24); the exact finite identity (8.23) is a separate written calculation. The height program has 312 arithmetic definitions and an audited equality with the height used in Theorem 7.2.
+
+\subsection{2. Audited declarations}\label{audited-declarations}
+
+{\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Result
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Declaration
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+T & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Vortex.\allowbreak{}main\_\allowbreak{}theorem\_\allowbreak{}T} \\
+T+ & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Vortex.\allowbreak{}main\_\allowbreak{}theorem\_\allowbreak{}T\_\allowbreak{}with\_\allowbreak{}triangle\_\allowbreak{}monitors\_\allowbreak{}and\_\allowbreak{}pasch} \\
+7.2 & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Vortex.\allowbreak{}Explicit.\allowbreak{}main\_\allowbreak{}theorem\_\allowbreak{}T\_\allowbreak{}with\_\allowbreak{}triangle\_\allowbreak{}monitors\_\allowbreak{}at\_\allowbreak{}tower\_\allowbreak{}order} \\
+8.1 & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Applications.\allowbreak{}Latin.\allowbreak{}latin\_\allowbreak{}square\_\allowbreak{}with\_\allowbreak{}profile\_\allowbreak{}statistics} \\
+8.2 & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Applications.\allowbreak{}Latin.\allowbreak{}uniform\_\allowbreak{}with\_\allowbreak{}intercalates} \\
+8.3 & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Applications.\allowbreak{}Latin.\allowbreak{}signed\_\allowbreak{}profile\_\allowbreak{}with\_\allowbreak{}intercalates} \\
+8.4 & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Applications.\allowbreak{}Latin.\allowbreak{}Two\allowbreak{}Scale.\allowbreak{}latin\_\allowbreak{}two\_\allowbreak{}scale\_\allowbreak{}with\_\allowbreak{}blocks} \\
+8.4 & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Applications.\allowbreak{}Latin.\allowbreak{}Two\allowbreak{}Scale.\allowbreak{}intercalate\_\allowbreak{}gap\_\allowbreak{}of\_\allowbreak{}targets} \\
+8.5 & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Applications.\allowbreak{}Five\allowbreak{}Partite.\allowbreak{}main\_\allowbreak{}theorem} \\
+H & \texttt{Typed\allowbreak{}Triangle.\allowbreak{}Printed\allowbreak{}Height.\allowbreak{}height\_\allowbreak{}agrees} \\
+\end{longtable}
+}
+
+\subsection{3. Source identity and axioms}\label{source-identity-and-axioms}
+
+The source supplement contains 1,141 project modules. The completed reconstruction records successful compilation of all of them. Fifteen source files then received comment-only documentation corrections: their noncomment text was checked for exact equality and those modules were recompiled. The other 1,126 compiled modules were reused after hash validation. All six endpoint axiom queries were rerun successfully against this object collection. H1--H4 and the mathematical Lean code were unchanged.
+
+Only the following foundational axioms occur: \texttt{propext}, \texttt{Classical.\allowbreak{}choice}, \texttt{Quot.\allowbreak{}sound}. The queries use \texttt{pp.\allowbreak{}full\allowbreak{}Names=true}; the permitted list contains no project-specific axioms or \texttt{sorry\allowbreak{}Ax}.
+
+\textbf{Source archive:} \texttt{PAPER\_\allowbreak{}III\_\allowbreak{}LEAN\_\allowbreak{}SOURCE\_\allowbreak{}v1.\allowbreak{}0.\allowbreak{}zip}.
+
+\textbf{SHA-256:} \texttt{a5fbd7af2d13594a\allowbreak{}894d61bde8112635\allowbreak{}3bd7d186f335ad9f\allowbreak{}302a5fd7ba942d95}.
+
+\textbf{Source manifest SHA-256:}\\
+\texttt{16e579200583065b\allowbreak{}7f5ba46db2c4f8af\allowbreak{}84608c551f5c7368\allowbreak{}34abcc044286dc37}.
+
+\subsection{4. Reproduction}\label{reproduction}
+
+Use Lean 4.35.0-rc3 and Mathlib revision \texttt{c55e6e786f49471c\allowbreak{}72fbddbec5415808\allowbreak{}896aec1e}. Verify the archive and its internal manifest, then build the eight explicit targets:
+
+\begingroup\scriptsize\begin{verbatim}
+lake build RequestProject.TypedTriangle.MainPaperIII
+lake build RequestProject.TypedTriangle.MainPaperIIIPasch
+lake build RequestProject.TypedTriangle.MainPaperIIITriangleTower
+lake build RequestProject.TypedTriangle.ApplicationsLatinMain
+lake build RequestProject.TypedTriangle.ApplicationsLatinCorollaries
+lake build RequestProject.TypedTriangle.ApplicationsFivePartiteMain
+lake build RequestProject.TypedTriangle.ApplicationsTwoScaleFinal
+lake build RequestProject.TypedTriangle.PaperIIIHeightProgram
+\end{verbatim}\endgroup
+
+The default Lake target reaches T only; compilation of the other entries is not inferred from it. Run the six files in \texttt{audit/\allowbreak{}} separately with \texttt{lake\ env\ lean\ -Dpp.\allowbreak{}full\allowbreak{}Names=true}. Their outputs and source bindings accompany the supplement. Dependencies are pinned and must not be updated during reproduction.
+
+The recorded reconstruction reused validated compiled objects, including complete Lean object families. It is not a fresh build from an empty cache and did not rebuild external dependencies. The source supplement contains no binary cache. Its README gives the full reproduction commands and explains the separation of compatible audit import closures.
+
+The files \texttt{HEIGHT\_\allowbreak{}PROGRAM\_\allowbreak{}en.\allowbreak{}md} and \texttt{HEIGHT\_\allowbreak{}PROGRAM\_\allowbreak{}es.\allowbreak{}md} print identical arithmetic code. They specify a threshold for triangle statistics; no explicit joint Pasch threshold is asserted.
+
+\subsection{5. Map of the construction}\label{map-of-the-construction}
+
+The following files identify the technical construction used in Sections 3--6. They belong to the source closure of T or T+ as appropriate. The explicit-order counterparts belong to the quantitative argument in Section 7; their use is not inferred merely from the default build target.
+
+{\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 2\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Manuscript step
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Formal source
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Local quotient and vertex-deletion persistence & \texttt{Vertex\allowbreak{}First\allowbreak{}Entry.\allowbreak{}lean}, \texttt{Prepared\allowbreak{}Core\allowbreak{}Construction.\allowbreak{}lean} \\
+Sparse edge-deletion persistence & \texttt{Sparse\allowbreak{}Edge\allowbreak{}Host.\allowbreak{}lean}, \texttt{G4Reference\allowbreak{}H2Generic.\allowbreak{}lean} \\
+Smooth inverse on the paid child and exactification & \texttt{Vortex\allowbreak{}Paid\allowbreak{}Child\allowbreak{}Smooth.\allowbreak{}lean}, \texttt{Smooth\allowbreak{}Exactification.\allowbreak{}lean} \\
+Raw profile through the prepared chain & \texttt{Vortex\allowbreak{}Intrinsic\allowbreak{}Raw\allowbreak{}Paths\allowbreak{}Prepared\allowbreak{}Vortex.\allowbreak{}lean} \\
+Reserve chosen uniformly before the residual & \texttt{Vortex\allowbreak{}Uniform\allowbreak{}Terminal\allowbreak{}Reserve.\allowbreak{}lean} \\
+Signed tests with a lower envelope mass & \texttt{Signed\allowbreak{}Envelope\allowbreak{}Packing.\allowbreak{}lean} \\
+Initial Pasch budget and outer rate & \texttt{Pasch\allowbreak{}Adaptive\allowbreak{}Initial\allowbreak{}State.\allowbreak{}lean}, \texttt{Pasch\allowbreak{}Final\allowbreak{}Assembly\allowbreak{}Parameters.\allowbreak{}lean} \\
+Pasch insertion bounds and inner recurrence & \texttt{Pasch\allowbreak{}Concrete\allowbreak{}Inner\allowbreak{}Adaptive\allowbreak{}Layers.\allowbreak{}lean} \\
+Assembly of T and T+ & \texttt{Main\allowbreak{}Paper\allowbreak{}III.\allowbreak{}lean}, \texttt{Main\allowbreak{}Paper\allowbreak{}IIIPasch.\allowbreak{}lean} \\
+\end{longtable}
+}
+
+The internal module-map certificate records import reachability and exact declarations. In particular, the exactification input must lie in the real incidence image, the signed-envelope theorem requires linear lower mass, and the Pasch estimates use the available-family codegree bounds. The manuscript states these interfaces; the source files contain their complete local constructions.
+
+The reference numbers {[}16{]} and {[}17{]} in the tool disclosure below refer to the bibliography of the accompanying manuscript.
+
+\subsection{Acknowledgments}\label{acknowledgments}
+
+The author is deeply grateful to his wife María Paz and his children Lucas, Juan Cristóbal, Francisca, Raimundo and Benjamín for their love, patience and support.
+
+\subsection{Use of artificial intelligence and computational tools}\label{use-of-artificial-intelligence-and-computational-tools}
+
+Claude, by Anthropic, and ChatGPT/Codex, by OpenAI, were used to explore and check arguments and to prepare the manuscript. Aristotle, by Harmonic, contributed to exploring approaches, searching for counterexamples, developing proofs, and formalizing and reviewing them in Lean. Its role was not limited to translating finished proofs.
+
+Certo {[}16{]} and Jacobian {[}17{]} were used to explore finite instances, check identities and assess candidate constructions. These computations informed the development of the arguments; finite checks were not treated as proofs of universal statements.
+
+The author remains responsible for the arguments, citations, code and presentation. No AI system is listed as an author.
+
+\end{document}

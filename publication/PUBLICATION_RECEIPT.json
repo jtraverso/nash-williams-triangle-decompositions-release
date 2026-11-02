@@ -1,0 +1,29 @@
+{
+  "status": "PASS_PUBLICATION",
+  "checked_utc": "2026-10-20T19:46:47.028017+00:00",
+  "repository": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release",
+  "repository_public": true,
+  "source_commit": "5c350c63fe3cf9853786d2eb6960e47a36c0a9a3",
+  "version": "1.0",
+  "papers": [
+    {
+      "paper": "PAPER_I",
+      "doi": "10.5281/zenodo.23428173",
+      "record_url": "https://zenodo.org/records/23428173",
+      "pdf_count": 4,
+      "total_pdf_bytes": 458712
+    },
+    {
+      "paper": "PAPER_II",
+      "doi": "10.5281/zenodo.23502224",
+      "record_url": "https://zenodo.org/records/23502224",
+      "pdf_count": 4,
+      "total_pdf_bytes": 933483
+    }
+  ],
+  "public_pdf_downloads_verified": 16,
+  "doi_redirects_verified": 2,
+  "mathematics_changed": false,
+  "lean_changed": false,
+  "cloudflare_deployed": false
+}

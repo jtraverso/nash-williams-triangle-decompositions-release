@@ -1,0 +1,16 @@
+{
+  "checked": "2026-11-01",
+  "method": "gh api repos/{owner}/{repo}",
+  "repositories": [
+    {
+      "full_name": "jtraverso/certo-math",
+      "private": false,
+      "url": "https://github.com/jtraverso/certo-math"
+    },
+    {
+      "full_name": "morluto/jacobian",
+      "private": false,
+      "url": "https://github.com/morluto/jacobian"
+    }
+  ]
+}

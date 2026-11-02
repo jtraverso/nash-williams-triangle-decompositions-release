@@ -1,0 +1,22 @@
+{
+  "status": "PUBLISHED_GITHUB_AND_ZENODO",
+  "public_release_authorized": true,
+  "paper_ii_final_received": true,
+  "final_joint_audit_pass": true,
+  "public_references_reconciled": true,
+  "manuscript_licence_recorded": true,
+  "author_headers_reconciled": true,
+  "first_public_edition_only": true,
+  "cloudflare_connected": false,
+  "zenodo_published": true,
+  "authorization_date": "2026-10-20",
+  "authorization_scope": "Public GitHub series repository and both reserved Zenodo deposits, preprint 1.0.",
+  "github_public": true,
+  "publication_date": "2026-10-20",
+  "paper_iii_final_received": true,
+  "paper_iii_publication_authorized": true,
+  "paper_iii_zenodo_reserved": true,
+  "paper_iii_zenodo_published": true,
+  "paper_iii_publication_date": "2026-11-01",
+  "paper_iii_release_url": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/tag/paper-iii-preprint-1.0"
+}

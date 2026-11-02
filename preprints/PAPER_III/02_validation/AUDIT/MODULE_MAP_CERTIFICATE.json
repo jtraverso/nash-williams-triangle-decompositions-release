@@ -1,0 +1,6928 @@
+{
+  "status": "PASS",
+  "entries": [
+    {
+      "file": "VortexPaidChildSmooth.lean",
+      "module": "RequestProject.TypedTriangle.VortexPaidChildSmooth",
+      "imported_by": [
+        "MainPaperIII",
+        "MainPaperIIIPasch",
+        "MainPaperIIITriangleTower"
+      ]
+    },
+    {
+      "file": "G4ReferenceH2Generic.lean",
+      "module": "RequestProject.TypedTriangle.G4ReferenceH2Generic",
+      "imported_by": [
+        "MainPaperIII",
+        "MainPaperIIIPasch",
+        "MainPaperIIITriangleTower"
+      ]
+    },
+    {
+      "file": "VertexFirstEntry.lean",
+      "module": "RequestProject.TypedTriangle.VertexFirstEntry",
+      "imported_by": [
+        "MainPaperIII",
+        "MainPaperIIIPasch",
+        "MainPaperIIITriangleTower"
+      ]
+    },
+    {
+      "file": "SparseEdgeHost.lean",
+      "module": "RequestProject.TypedTriangle.SparseEdgeHost",
+      "imported_by": [
+        "MainPaperIII",
+        "MainPaperIIIPasch",
+        "MainPaperIIITriangleTower"
+      ]
+    },
+    {
+      "file": "SmoothExactification.lean",
+      "module": "RequestProject.TypedTriangle.SmoothExactification",
+      "imported_by": [
+        "MainPaperIII",
+        "MainPaperIIIPasch",
+        "MainPaperIIITriangleTower"
+      ]
+    },
+    {
+      "file": "PaschConcreteOuterLayer.lean",
+      "module": "RequestProject.TypedTriangle.PaschConcreteOuterLayer",
+      "imported_by": [
+        "MainPaperIIIPasch"
+      ]
+    },
+    {
+      "file": "PaschConcreteStructuredLayer.lean",
+      "module": "RequestProject.TypedTriangle.PaschConcreteStructuredLayer",
+      "imported_by": [
+        "MainPaperIIIPasch"
+      ]
+    },
+    {
+      "file": "PaschDenseWeightedWithdrawal.lean",
+      "module": "RequestProject.TypedTriangle.PaschDenseWeightedWithdrawal",
+      "imported_by": [
+        "MainPaperIIIPasch"
+      ]
+    },
+    {
+      "file": "MainPaperIIIPasch.lean",
+      "module": "RequestProject.TypedTriangle.MainPaperIIIPasch",
+      "imported_by": [
+        "MainPaperIIIPasch"
+      ]
+    },
+    {
+      "file": "PaschConcreteInnerAdaptiveLayers.lean",
+      "module": "RequestProject.TypedTriangle.PaschConcreteInnerAdaptiveLayers",
+      "imported_by": [
+        "MainPaperIIIPasch"
+      ]
+    },
+    {
+      "file": "PaschFinalAssemblyParameters.lean",
+      "module": "RequestProject.TypedTriangle.PaschFinalAssemblyParameters",
+      "imported_by": [
+        "MainPaperIIIPasch"
+      ]
+    },
+    {
+      "file": "PreparedCoreConstruction.lean",
+      "module": "RequestProject.TypedTriangle.PreparedCoreConstruction",
+      "imported_by": [
+        "MainPaperIII",
+        "MainPaperIIIPasch",
+        "MainPaperIIITriangleTower"
+      ]
+    },
+    {
+      "file": "ApplicationsTwoScaleFinal.lean",
+      "module": "RequestProject.TypedTriangle.ApplicationsTwoScaleFinal",
+      "imported_by": []
+    },
+    {
+      "file": "VortexUniformTerminalReserve.lean",
+      "module": "RequestProject.TypedTriangle.VortexUniformTerminalReserve",
+      "imported_by": [
+        "MainPaperIII",
+        "MainPaperIIIPasch",
+        "MainPaperIIITriangleTower"
+      ]
+    },
+    {
+      "file": "PaschAdaptiveInitialState.lean",
+      "module": "RequestProject.TypedTriangle.PaschAdaptiveInitialState",
+      "imported_by": [
+        "MainPaperIIIPasch"
+      ]
+    },
+    {
+      "file": "MainPaperIII.lean",
+      "module": "RequestProject.TypedTriangle.MainPaperIII",
+      "imported_by": [
+        "MainPaperIII"
+      ]
+    },
+    {
+      "file": "VortexIntrinsicRawPathsPreparedVortex.lean",
+      "module": "RequestProject.TypedTriangle.VortexIntrinsicRawPathsPreparedVortex",
+      "imported_by": [
+        "MainPaperIII",
+        "MainPaperIIIPasch",
+        "MainPaperIIITriangleTower"
+      ]
+    },
+    {
+      "file": "SignedEnvelopePacking.lean",
+      "module": "RequestProject.TypedTriangle.SignedEnvelopePacking",
+      "imported_by": [
+        "MainPaperIII",
+        "MainPaperIIIPasch",
+        "MainPaperIIITriangleTower"
+      ]
+    },
+    {
+      "declarations": {
+        "signed_envelope_sparse_packing": "SignedEnvelopePacking",
+        "signed_envelope_sparse_packing_explicit": "ExplicitMonitoredPackingCore",
+        "smooth_on_paid_prepared_child": "VortexPaidChildSmooth",
+        "exactify_of_smooth": "SmoothExactification",
+        "sparse_edge_deletion_host": "SparseEdgeHost",
+        "intrinsic_H2_of_physical_reference_and_mode": "G4ReferenceH2Generic",
+        "paid_smooth_at_explicit": "ExplicitPaidSmooth",
+        "adaptiveOuterRate_spec": "PaschFinalAssemblyParameters",
+        "TrackingState.initial": "PaschAdaptiveInitialState",
+        "physical_vertex_first_entry_lattice": "VertexFirstEntry",
+        "induced_lattice_persistence": "PreparedCoreConstruction"
+      },
+      "default_root": "MainPaperIII",
+      "target_closure_sizes": {
+        "MainPaperIII": 687,
+        "MainPaperIIIPasch": 998,
+        "MainPaperIIITriangleTower": 824
+      }
+    }
+  ],
+  "audited_endpoints": [
+    {
+      "declaration": "TypedTriangle.Vortex.main_theorem_T",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Vortex.main_theorem_T_with_triangle_monitors_and_pasch",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-pasch-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Grouping.groupBound_le_power",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.GroupingExplicit.kernelBound_le_power",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.Magnitude.add",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.Magnitude.bound_pos",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.Magnitude.ceil_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.Magnitude.ceil_pos",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.Magnitude.div",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.Magnitude.inv",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.Magnitude.lower",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.Magnitude.max",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.Magnitude.min",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.Magnitude.mono",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.Magnitude.mul",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.Magnitude.natCast",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.Magnitude.one",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.Magnitude.pow",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.ThresholdInputBounds.mono",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.add_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.add_le_natStep",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.adjustedBankWindowMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.adjustedBankWindow_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.alpha_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.analyticCutBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.approxPackingBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.approxPackingCut_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.assemblyStateCap_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.assemblyStateInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.assemblyStateMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.atomCoreOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.atomCoreOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.atomRadiusMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.atomRadius_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankCatalogInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankCatalogSizeMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankCatalog_bounds",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankCellOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankCellOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankCellSizeMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankCellSize_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankCopiesMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankCopies_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankDeletionBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankDeletion_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankEtaBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankEta_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankGamma_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankProtectionBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankProtectionBound_mono_h",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankProtection_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankRadiusMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankRerouteMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankStage",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankStage_mono_count",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankStep",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankToleranceBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankTolerance_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.basalSamplingMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.basalSampling_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.boundedPieceBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.boundedPieceOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.boundedPieceOrderMajorant_mono_size",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.boundedPieceOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.boundedPieceSizeMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.boundedPieceSizeMajorant_mono_size",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.boundedPieceSize_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.box_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.catalogCoefficientMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.catalogCoefficient_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.catalogColumnMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.catalogColumn_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.catalogCompressionOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.catalogCompressionOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.catalogDimensionMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.catalogDimension_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.catalogue_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.cellDegreeBudgetBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.cellDegreeBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.cellDeletionBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.cellDeletion_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.clamp_one_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.cleanHingeOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.cleanHingeOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.cleanLayerThresholdMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.cleanLayerThreshold_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.clipped_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.cloneBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.cloneCut_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.cloneInputBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compD_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compH_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compL2_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compN_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compressionCertCost_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compressionInitialMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compressionInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compressionKappaMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compressionOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compressionOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compressionPowerMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compressionPrecisionMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compressionSampleMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compressionSampleSize_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compressionThetaMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.congestionMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.congestion_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.coreDeltaBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.coreDelta_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.coreOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.coreOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.coreToleranceMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.coreTolerance_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.deletedExtensionCost_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.deletedExtensionMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.deletionBudgetMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.deletionBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.deletionNumerator",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.deletionOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.deletionOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.egjCut_four_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.egjCut_three_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.egjFourBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.egjFourInputBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.egjThreeBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.egjThreeInputBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.entryOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.entryOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.envelopeBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.envelopeDegree_le_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.envelopeLoad_le_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.envelopeLoad_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.envelopeOrder_le_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.envelope_lift",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.exp_le_three_pow",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.extensionCost_eq_nat",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.extensionCost_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.factorial_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.factorial_le_natStep",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.finiteImageMin_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.fixedPackingOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.fixedPackingOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.forkEpsilonMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.forkEpsilon_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.forkQ_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.futureDensityMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.futureDensity_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.gammaL_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.geometricDeletionBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.geometricDeletion_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.geometryBudgetMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.geometryBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.geometryOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.geometryOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.globalDebtMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.globalDebt_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.globalInnerInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.globalInnerRateMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.globalInnerRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.globalRawStepOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.globalRawStepOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.half_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.hingeBudgetMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.hingeBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.hingeDensityMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.hingeDensity_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.hingePower_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.hingeRatioMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.hingeRatio_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.initialComplementMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.initialComplement_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.initialDensity_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.innerLayerOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.innerLayerOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.innerNodeOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.innerNodeOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.innerRadiusMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.innerRadius_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.innerScheduleMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.innerSchedule_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.inverseCostMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.inverseCost_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.inverseOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.inverseOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.jointTrianglePackingOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.jointTrianglePackingOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.kernelCapMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.kernelCap_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.kernel_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.kernel_le_natStep",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.latticeBudgetMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.latticeBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.latticeOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.layerComplementBudgetMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.layerComplementBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.layerComplementOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.layerComplementOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.layerTerminalInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.layerTerminalMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.layerTerminal_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.layerThresholdMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.layerThreshold_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.le_natEnvelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.localizedSignedOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.localizedSignedOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.logCut_le_analyticCutBound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitorCap_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitorCleanLayerThresholdMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitorCleanLayerThreshold_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitorComplement_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitorCost_le_algebraBound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitorFixedPartitionOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitorFixedPartitionOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitorLayerThresholdMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitorLayerThreshold_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitorNativePartitionOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitorOuterLayerOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitorOuterLayerOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitor_envelope_bounds",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitoredPackingOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitoredPackingOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.mul_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.mul_le_natStep",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nZeroMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nZero_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natAlgebraBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natAlgebraBound_mono",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natEnvelope",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natEnvelope_le_algebraBound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natEnvelope_mono_depth",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natEnvelope_mono_input",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natExtensionCost",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natExtensionCost_mono",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natFactorial_mono",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natKernel_eq",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natKernel_le_succ",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natKernel_mono",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natKernel_mono_dimension",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natKernel_mono_radius",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natSolver",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natSolver_eq",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natSolver_le_succ",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natSolver_mono",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natSolver_mono_dimension",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natSolver_mono_radius",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natStep",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natStep_covers",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natStep_mono",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natStep_self",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeAvoidBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeAvoidMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeBankOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeBankOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeBankRateMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeBankRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeDeleteMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeDelete_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeDensityMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeDensity_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeInteriorCount_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeInteriorMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeKappaMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeKappa_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeOuterAvoidMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeOuterAvoid_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeOuterRootOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeOuterRootOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativePackingCut_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativePartitionInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativePartitionOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativePartitionOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativePathInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeRhoMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeRouteOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeRouteOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeWeightOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeWeightOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nestedBudgetMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nestedBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nestedOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nestedOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nibbleCut_four_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nibbleCut_three_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nibbleThreeBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.normalizedDensityMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.normalizedInputScale",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.oddPathK_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.oddPathMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.oddPathOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.oddPathOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.one_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerInnerInputBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerInnerRootOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerInnerRootOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerLayerOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerLayerOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerLayerParameterScale",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerLayerTerminalMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerLayerTerminal_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerRawMinimumOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerRawMinimumOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerRawRequiredGeometryBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerRawRequiredGeometry_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerRawRootOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerRawRootOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.packingCoverBudgetBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.packingCoverBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.packingCoverOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.packingCoverRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.packingSeedOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.packingStockScale",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paidBudgetMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paidBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paidCostMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paidCost_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paidDensityMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paidDensity_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paidInverseOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paidInverseOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paidOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paidOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paidPreparedInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paidPreparedOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paidPreparedOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paidSmoothInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paperIIIThreshold_le_naturalMajorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paperIIITowerHeight",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paperIIITriangleThreshold_le_naturalMajorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paperIIITriangleTowerHeight",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.parameterScale_bounds",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.pathDensityMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.pathDensity_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.pathRatioMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.pathRatio_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paymentCost_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paymentForbidden_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paymentGamma_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paymentInput_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paymentJ_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paymentOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalColumnMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalGlueCost_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalGlueMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalGlueOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalGlueOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalMomentBudgetBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalMomentBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalMomentOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalMomentOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalRankMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalRank_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalTorsionMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalTorsion_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalWeightMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.physicalWeight_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.placementEps_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.placementK_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.placementM_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.placementOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.placementQ_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.pow_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.pow_le_natStep",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.powerCut_le_analyticCutBound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.powerCut_le_nat_pow",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparationDebtMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparationDebt_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparationOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparationOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparationRankMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparationRank_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparationToleranceMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparationTolerance_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparationTorsionMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparationTorsion_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparedBankInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparedBankOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparedBankOrderMajorant_mono_P",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparedBankOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparedBankRateMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparedBankRateMajorant_mono_P",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.preparedBankRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.prescribedAvoidBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.prescribedBudgetBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.prescribedBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.prescribedLoadTolerance_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.prescribedOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.prescribedOrder_le_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.presentation_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.profileToleranceMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.profileTolerance_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.quadraticOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.quadraticRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.radiusMajorant_base_le",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.radiusMajorant_mono",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.radiusSequence_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.radiusState_magnitudes",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rational_example_scale",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawAutomaticOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawAutomaticOrder_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawGeometryRateBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawGeometryRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawGeometryShapeBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawHingeMinimum_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawHingeRateBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawHingeRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawLengthMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawLength_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawMinimumOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawMinimumOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawNativeSampleOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawNativeSampleOrder_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawNativeTailBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawNativeTail_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawOuterTestRateBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawOuterTestRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawPolynomialBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawPolynomial_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawRankMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawRank_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawRequiredGeometryBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawRequiredGeometry_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawRootOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawRootOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawStockBudgetMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawStockBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawStockOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawStockOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawTerminalInputBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawTerminalOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawTerminalOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawTestRateBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawTestRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawToleranceMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawTolerance_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawTorsionMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawTorsion_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceAgendaInput",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceAvoidBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceAvoidMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceAvoid_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceLoadMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceLoadTolerance_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceLoad_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceOrder_le_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referencePackingPrecision_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referencePackingTolerance_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referencePrecisionMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referencePrecision_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceProviderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceProvider_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceSeedBudgetBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceSeedBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceStockBudgetBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceStockBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceThresholdMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceThreshold_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceWeightUpper_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.relativeKernel_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.representative_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.reserveBudgetBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.reserveBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.reserveOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.reserveOrderBound_mono_t",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.reserveOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.reserveRateBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.reserveRateBound_mono_t",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.reserveRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.reserveSizeBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.reserveSizeBound_mono_t",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.reserveSize_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.resourceCompletionMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.resourceCompletion_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.resourceInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.resourceInput_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.resourceOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.resourceOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.resourceOutput_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.resourceStockOrderScale",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.resourceStock_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.resourceTerminalMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.resourceTerminal_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.routeBudgetMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.routeBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.routeDMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.routeD_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.routeOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.routeOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.routingComp_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleAMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleA_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleBMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleB_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleEtaMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleEta_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleJMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleJ_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleLMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleL_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleLc_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleQMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleQ_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleTMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleT_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.samplingPrecisionMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.scheduledOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.scheduledOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.scheduledPrecision_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.seedOrder_le_bound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.seedPointwisePlusTwoMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.seedPointwisePlusTwo_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.seed_constant_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.selectorEpsilonMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.selectorEpsilon_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.selectorInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.selectorInput_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.selectorOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.selectorQ_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.selectorStockMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.selectorStock_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.self_le_tower2",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.signedEnvelopeOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.signedEnvelopeOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.smoothCertMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.smoothCert_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.smoothCoefficientMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.smoothCoefficient_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.smoothDMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.smoothD_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.smoothDemandMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.smoothDemand_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.smoothSampleMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.smoothSample_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.solver_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.solver_le_natStep",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.stateHoleCapMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.stateHoleCap_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.stockBankOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.stockBankOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.stockBankResourceScale",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.stockMomentOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.stockMomentOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.stockRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.supplyBudgetBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.supplyBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.supplyOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.supplyOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.supplySize_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.supplySupport_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.terminalBudget_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.terminalOrderBound",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.terminalOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.terminalReserveSizeMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.terminalReserveSize_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.terminalUniformOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.terminalUniformOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.terminalUniformRateMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.terminalUniformRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdAgendaMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdAgenda_base_le",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdAgenda_bounds",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdAgenda_with_complement_bounds",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdFinalMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdGlobalScale",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdInput_bounds",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdLayerScale",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdProfileScale",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdRadiusScale",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdReserveScale",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdTerminalScale",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdWorkingScale",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.torsionBound_le_algebraBound",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.torsionBound_le_envelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.torsionBound_mono",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.torsionRadius_mono",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.tower2",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.tower2_pos",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleBankStage",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleBankStage_mono_count",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleBankStep",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleComplementMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleFixedPackingOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleFixedPackingOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleNativePartitionOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleParameterScale_base",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleStockInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleStockOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleStockOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleThresholdFinalMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleThresholdInputBase",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleThresholdInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangleThresholdInput_bounds",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.triangle_eta_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.two_le_natEnvelope",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.uniformCertCost_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.uniformCertMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.uniformInnerRateMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.uniformInnerRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.uniformReserveOrder_le",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.uniformReserveRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.windowRouteMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.windowRouteRateMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.windowRouteRate_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.windowRoute_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.withdrawalInputMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.withdrawalInput_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.withdrawalOrderMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.withdrawalOrder_le_majorant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.withdrawalStockMajorant",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.withdrawalStock_magnitude",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Vortex.Explicit.main_theorem_T_at_tower_order",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Vortex.Explicit.main_theorem_T_with_triangle_monitors_at_explicit_order",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Vortex.Explicit.main_theorem_T_with_triangle_monitors_at_tower_order",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Vortex.Explicit.paperIIIThreshold_le_towerThreshold",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Vortex.Explicit.paperIIITriangleThreshold_le_towerThreshold",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Vortex.Explicit.rational_example_tower_threshold",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.bankGammaBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compDMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compHMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compL2Majorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compNMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.compressionClipMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.envelopeBudgetBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.envelopeDegreeBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.envelopeLoadBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.envelopeOrderBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.forkQMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.initialHingeOrder",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.innerRadiusInput",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.latticeOrderMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.monitorCapBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.natKernel",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.nativeOuterInputBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.outerRawAutoInputBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.packingCoverRateBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.packingLocalizedScale",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.packingPhysicalScale",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.packingSignedScale",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paymentCostMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paymentForbiddenMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paymentGammaMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paymentInputMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paymentOrderMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.paymentTMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.placementDenBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.placementOrderBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.prescribedAvoidBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.prescribedLoadBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.quadraticOrderMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.quadraticRateMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.radiusInputCap",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.radiusMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.radiusNextCap",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawGlobalInputBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.rawStockSamplingScale",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceAvoidBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceLoadBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceOrderInput",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referencePrecisionBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceToleranceBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.referenceWeightBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.resourceInputScale",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.resourceOutputMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.resourceStockMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.routingCompMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.sampleLcMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.scheduledPrecisionMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.selectorAMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.selectorA_le_majorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.selectorOrderMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.selectorQMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.selectorScale",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.stockRateMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.supplySizeBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.supplySupportBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.terminalBudgetBound",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.thresholdDensityScale",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.withdrawalKMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.TowerBounds.withdrawalKappaMajorant",
+      "axioms": [],
+      "audit": "main-paper-iii-triangle-tower-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.Uniform.diffuse_uniformSeed",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.Uniform.edgeThirds",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.Uniform.edgeThirds_card",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.Uniform.edge_triangle_count",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.Uniform.uniformSeed",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.baseBlocks",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.baseBlocks_allowed",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.baseBlocks_card",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.baseBlocks_decomposition",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.baseBlocks_pair_count",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.baseBlocks_physical",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.block_unique",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.blocks",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.cyclic_part_card",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.decomposition",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.edge_has_block",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.main_theorem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.main_theorem_cyclic",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.physical",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.physical_cyclic",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.LatinSquare.add",
+      "axioms": [
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.LatinSquare.cyclic",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.LatinSquare.transport",
+      "axioms": [
+        "Quot.sound"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.additive_isPhysical",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.allowed_eq_image",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.allowed_iff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.balanced_distinctPairSum_first",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.balanced_distinctPairSum_product",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.balanced_distinctPairSum_product_scaled",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.balanced_distinctPairSum_scaled_product",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.balanced_distinctPairSum_second",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.balanced_signedBoxSum",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.balanced_signed_target",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.card_allowed",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.card_decomposition",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.configurations_decomposition_iff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.count_decomposition_eq_intercalates",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.cyclic_isPhysical",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.decomposition",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.decomposition_exact",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.decomposition_ofDecomposition",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.diffuse_of_marginals",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.diffuse_of_profile",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.distinctPairSum",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.distinctPairSum_add",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.distinctPairSum_const",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.distinctPairSum_mul_left",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.distinctPairSum_mul_right",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.distinctPairSum_neg",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.edge01_load",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.edge01_mem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.edge02_load",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.edge02_mem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.edge12_load",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.edge12_mem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.encodeCells",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.encodeCells_injective",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.encodeCells_mem_configurations",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.encode_intercalateCells",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.eq_symbol_of_mem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.exists_unique_symbol",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.four_mul_count_allowed",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.four_mul_signed_target",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.four_mul_target_eq_rooted",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.half_profile_with_intercalates",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.intercalateCells",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.intercalates",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.intercalatesEquivPasch",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.isDecomposition_iff_latinSquare",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.isPasch_rooted_classification",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.latinPasch",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.latinPasch_isPasch",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.latinPasch_rooted_injective",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.latinTriangle",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.latinTriangle_allowed",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.latinTriangle_card",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.latinTriangle_eq_iff",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.latinTriangle_mem_decomposition",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.latin_square_with_profile_statistics",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.latin_square_with_uniform_statistics",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.mem_decomposition",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.mem_intercalates",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.mem_latinTriangle",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.mem_rootedAlternatives",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.ofDecomposition",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.prod_latinPasch",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.profileConstant",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.profileConstant_ge_one",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.root_first_sum_eq_pair_sums",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.rootedAlternatives",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.rootedAlternatives_injective",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.rootedCount_allowed",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.rooted_configurations_eq_image",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.rooted_target_sum",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.signedBoxSum",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.signedProfile",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.signedProfile_bounds",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.signedProfile_diffuse",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.signedProfile_marginals",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.signed_parity_box_product",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.signed_profile_with_intercalates",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.sum_allowed_eq",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.sum_decomposition_eq",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.sum_rootedCount",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.symbol",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.symbol_column_bijective",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.symbol_mem",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.symbol_row_bijective",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.target_congr_on",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.target_constant_eq_count",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.types",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.uniform_target",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.uniform_target_choose",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.uniform_weight_target",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.uniform_with_intercalates",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.weight",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.weight_exact_marginals",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.weight_triangle",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Octahedron.card_support_coreImage",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Octahedron.core",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Octahedron.coreImage",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Octahedron.core_avoids",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Octahedron.core_support",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Octahedron.edge_at_one",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Octahedron.edge_at_zero",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Octahedron.hinge_of_modes",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Octahedron.mode",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Octahedron.mode_card_three",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Octahedron.mode_cover",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Octahedron.mode_pairwise",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Octahedron.support_coreImage",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Rainbow.allowed_triangle",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Rainbow.commonNbrCond",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Rainbow.commonNbrs_card",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Rainbow.hingeCond",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Rainbow.hinges_six_card_ge",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Rainbow.mem_types",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Rainbow.types",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.exists_balanced_signs",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Examples.RainbowRetention.cannot_retain_old_decomposition",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Examples.RainbowRetention.oldEdges",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.Vertex",
+      "axioms": [],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.coordinate",
+      "axioms": [],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.FivePartite.project",
+      "axioms": [],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.LatinSquare",
+      "axioms": [],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.Vertex",
+      "axioms": [],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.host",
+      "axioms": [],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Rainbow.host",
+      "axioms": [],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Rainbow.host_adj",
+      "axioms": [],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Rainbow.host_lab",
+      "axioms": [],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Examples.RainbowRetention.Vertex",
+      "axioms": [],
+      "audit": "paper-iii-applications-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Completion.HybridDeficit.aggregate_data_do_not_force_target",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "hybrid-deficit-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Completion.HybridDeficit.full_deficit_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "hybrid-deficit-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Completion.HybridDeficit.moment_identity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "hybrid-deficit-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Completion.HybridDeficit.normalization_closes_from_weighted_reserve",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "hybrid-deficit-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.TwoScale.latin_two_scale_with_blocks",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "closure-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.TwoScale.two_scale_latin_separation",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "closure-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.TwoScale.two_scale_target_error",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "closure-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.TwoScale.exists_signs_for_linear_forms",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "closure-audit"
+    },
+    {
+      "declaration": "TypedTriangle.Applications.Latin.TwoScale.intercalate_gap_of_targets",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "closure-audit"
+    },
+    {
+      "declaration": "TypedTriangle.PrintedHeight.height_agrees",
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "audit": "closure-audit"
+    }
+  ]
+}

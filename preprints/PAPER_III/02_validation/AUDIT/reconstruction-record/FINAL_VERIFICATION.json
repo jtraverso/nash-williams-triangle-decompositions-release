@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "verified_utc": "2026-11-01T17:52:12.044366+00:00",
+  "compiled_modules": 1141,
+  "reused_verified_modules": 1141,
+  "audits_passed": 6,
+  "sources_unchanged": true,
+  "source_manifest_sha256": "71d44179637d096e9a3ffb3eb4c166af363f4b0603bd89ccf64261212cde55ae",
+  "report_sha256": "4bba53e99d073a9fb1654541331cac712dea80f0ad4771698aca53a3299773f7",
+  "verifier_sha256": "5c34ed44cfc4cf30cc1a875621beaefcf90382f71af31a9abc94170d431bd477",
+  "choice_identity": "Lean pp.fullNames=true prints Classical.choice; whitelist unchanged",
+  "failed_attempt_preserved": "attempts/20261101T174252"
+}

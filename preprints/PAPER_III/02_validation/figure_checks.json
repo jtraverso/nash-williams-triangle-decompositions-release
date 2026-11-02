@@ -1,0 +1,10 @@
+{
+  "hinge_auxiliary_edges": 7,
+  "vertices": 6,
+  "edges_per_mode": 9,
+  "exact_edge_partitions": true,
+  "root_avoidance": true,
+  "rainbow_same_or_distinct_apex_labels": true,
+  "bilingual_geometry": "same generator coordinates",
+  "round_diagram": "not incorporated: redundant with section 6 and Appendix D"
+}

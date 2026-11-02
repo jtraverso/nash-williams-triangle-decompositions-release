@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "archive": "PAPER_III_LEAN_SOURCE_v1.0.zip",
+  "sha256": "a5fbd7af2d13594a894d61bde81126353bd7d186f335ad9f302a5fd7ba942d95",
+  "source_manifest_sha256": "16e579200583065b7f5ba46db2c4f8af84608c551f5c736834abcc044286dc37",
+  "entries": 1179,
+  "mathematical_source_changes": 0,
+  "comment_only_modules": 15
+}

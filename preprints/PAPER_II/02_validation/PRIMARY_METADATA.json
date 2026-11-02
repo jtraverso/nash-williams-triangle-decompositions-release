@@ -1,0 +1,520 @@
+[
+  {
+    "doi": "10.1016/j.jcta.2017.04.005",
+    "url": "https://api.crossref.org/works/10.1016%2Fj.jcta.2017.04.005",
+    "sha256": "12f63d74d71852bc6c2eb8f1d2d2f15d5fb04d5cccf2eb59e2b3d883bf2ff439",
+    "metadata": {
+      "title": [
+        "Clique decompositions of multipartite graphs and completion of Latin squares"
+      ],
+      "author": [
+        {
+          "given": "Ben",
+          "family": "Barber",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniela",
+          "family": "Kühn",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Allan",
+          "family": "Lo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3059-4298",
+          "authenticated-orcid": false,
+          "given": "Deryk",
+          "family": "Osthus",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Amelia",
+          "family": "Taylor",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Combinatorial Theory, Series A"
+      ],
+      "volume": "151",
+      "page": "146-201",
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            10
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1016/j.jcta.2017.04.005"
+    }
+  },
+  {
+    "doi": "10.1017/S0963548317000165",
+    "error": "HTTP Error 429: Too Many Requests",
+    "metadata": {
+      "title": [
+        "Fractional Clique Decompositions of Dense Partite Graphs"
+      ],
+      "author": [
+        {
+          "given": "RICHARD",
+          "family": "MONTGOMERY",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Combinatorics, Probability and Computing"
+      ],
+      "volume": "26",
+      "issue": "6",
+      "page": "911-943",
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            6,
+            19
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1017/s0963548317000165"
+    },
+    "retried_url": "https://api.crossref.org/works/10.1017%2FS0963548317000165"
+  },
+  {
+    "doi": "10.1016/j.aim.2015.09.032",
+    "url": "https://api.crossref.org/works/10.1016%2Fj.aim.2015.09.032",
+    "sha256": "3afc9f82b2231fd5288de9eb1c239d9005c11ffa574c2572dbdf0e4d8443cc6b",
+    "metadata": {
+      "title": [
+        "Edge-decompositions of graphs with high minimum degree"
+      ],
+      "author": [
+        {
+          "given": "Ben",
+          "family": "Barber",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Daniela",
+          "family": "Kühn",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Allan",
+          "family": "Lo",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Deryk",
+          "family": "Osthus",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Advances in Mathematics"
+      ],
+      "volume": "288",
+      "page": "337-385",
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            1
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1016/j.aim.2015.09.032"
+    }
+  },
+  {
+    "doi": "10.1016/S0195-6698(85)80023-8",
+    "error": "HTTP Error 429: Too Many Requests",
+    "metadata": {
+      "title": [
+        "On a Packing and Covering Problem"
+      ],
+      "author": [
+        {
+          "given": "Vojtěch",
+          "family": "Rödl",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "European Journal of Combinatorics"
+      ],
+      "volume": "6",
+      "issue": "1",
+      "page": "69-78",
+      "published": {
+        "date-parts": [
+          [
+            1985,
+            3
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1016/s0195-6698(85)80023-8"
+    },
+    "retried_url": "https://api.crossref.org/works/10.1016%2FS0195-6698%2885%2980023-8"
+  },
+  {
+    "doi": "10.1016/S0195-6698(85)80045-7",
+    "url": "https://api.crossref.org/works/10.1016%2FS0195-6698%2885%2980045-7",
+    "sha256": "a14d190663cbd9ecdcc8820a96232035fc3f8cdf084328511a9ecbd08bbe0b2f",
+    "metadata": {
+      "title": [
+        "Near Perfect Coverings in Graphs and Hypergraphs"
+      ],
+      "author": [
+        {
+          "given": "P.",
+          "family": "Frankl",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "V.",
+          "family": "Rödl",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "European Journal of Combinatorics"
+      ],
+      "volume": "6",
+      "issue": "4",
+      "page": "317-326",
+      "published": {
+        "date-parts": [
+          [
+            1985,
+            12
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1016/s0195-6698(85)80045-7"
+    }
+  },
+  {
+    "doi": "10.1016/0097-3165(89)90074-5",
+    "url": "https://api.crossref.org/works/10.1016%2F0097-3165%2889%2990074-5",
+    "sha256": "ffdce7d287a66d66bb7f1125b68086336e3159f579a2cab78aa4315daa3d4e0b",
+    "metadata": {
+      "title": [
+        "Asymptotic behavior of the chromatic index for hypergraphs"
+      ],
+      "author": [
+        {
+          "given": "Nicholas",
+          "family": "Pippenger",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Joel",
+          "family": "Spencer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Journal of Combinatorial Theory, Series A"
+      ],
+      "volume": "51",
+      "issue": "1",
+      "page": "24-42",
+      "published": {
+        "date-parts": [
+          [
+            1989,
+            5
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1016/0097-3165(89)90074-5"
+    }
+  },
+  {
+    "doi": "10.1007/s004930170003",
+    "url": "https://api.crossref.org/works/10.1007%2Fs004930170003",
+    "sha256": "09f6161aab414711b88e886e4cc013784352a2712c484a578cbbefeb02025fb1",
+    "metadata": {
+      "title": [
+        "Integer and Fractional Packings in Dense Graphs"
+      ],
+      "author": [
+        {
+          "given": "P. E.",
+          "family": "Haxell",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "V.",
+          "family": "Rödl",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Combinatorica"
+      ],
+      "volume": "21",
+      "issue": "1",
+      "page": "13-38",
+      "published": {
+        "date-parts": [
+          [
+            2001,
+            1,
+            1
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1007/s004930170003"
+    }
+  },
+  {
+    "doi": "10.1017/S0963548320000280",
+    "url": "https://api.crossref.org/works/10.1017%2FS0963548320000280",
+    "sha256": "be5894a9474a0db66649f0287973bb02a9d11bce9423831baa3e46877694c847",
+    "metadata": {
+      "title": [
+        "Pseudorandom hypergraph matchings"
+      ],
+      "author": [
+        {
+          "given": "Stefan",
+          "family": "Ehard",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Stefan",
+          "family": "Glock",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Felix",
+          "family": "Joos",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Combinatorics, Probability and Computing"
+      ],
+      "volume": "29",
+      "issue": "6",
+      "page": "868-885",
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            7,
+            22
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1017/s0963548320000280"
+    }
+  },
+  {
+    "doi": "10.1093/acprof:oso/9780199535255.001.0001",
+    "url": "https://api.crossref.org/works/10.1093%2Facprof%3Aoso%2F9780199535255.001.0001",
+    "sha256": "d8417e136ef347ffb54f89a969ba68478edec93b981bd79620879893cbdee55b",
+    "metadata": {
+      "title": [
+        "Concentration Inequalities"
+      ],
+      "author": [
+        {
+          "given": "Stéphane",
+          "family": "Boucheron",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gábor",
+          "family": "Lugosi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Pascal",
+          "family": "Massart",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [],
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            2,
+            7
+          ]
+        ]
+      },
+      "URL": "https://doi.org/10.1093/acprof:oso/9780199535255.001.0001"
+    }
+  }
+]

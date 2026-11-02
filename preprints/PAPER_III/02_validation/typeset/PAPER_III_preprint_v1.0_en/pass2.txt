@@ -1,0 +1,22 @@
+note: using only cached resource files
+note: Running TeX ...
+note: Rerunning TeX because "PAPER_III_preprint_v1.0_en.aux" changed ...
+note: Running xdvipdfmx ...
+note: Writing `C:\nw\physical-typed-absorption\preprints\PAPER_III_v1.0\02_validation\typeset\PAPER_III_preprint_v1.0_en\PAPER_III_preprint_v1.0_en.log` (25.4130859375 KiB)
+note: Writing `C:\nw\physical-typed-absorption\preprints\PAPER_III_v1.0\02_validation\typeset\PAPER_III_preprint_v1.0_en\PAPER_III_preprint_v1.0_en.aux` (12.4990234375 KiB)
+note: Writing `C:\nw\physical-typed-absorption\preprints\PAPER_III_v1.0\02_validation\typeset\PAPER_III_preprint_v1.0_en\PAPER_III_preprint_v1.0_en.pdf` (4.847710609436035 MiB)
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: PAPER_III_preprint_v1.0_en.tex:683: Underfull \hbox (badness 1112) in paragraph at lines 682--683
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: PAPER_III_preprint_v1.0_en.tex:683: Underfull \hbox (badness 1112) in paragraph at lines 682--683
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: warnings were issued by the TeX engine; use --print and/or --keep-logs for details.
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Object @figure.1 already defined.
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Object @figure.2 already defined.
+warning: Trying to include PDF file with version (1.7), which is newer than current output PDF setting (1.5).
+warning: Object @figure.3 already defined.
