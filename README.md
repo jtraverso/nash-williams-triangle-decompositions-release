@@ -6,6 +6,8 @@ This repository presents my Lean formalization of [*A Proof of Nash-Williams' Co
 
 Este repositorio presenta mi formalización en Lean de [*A Proof of Nash-Williams' Conjecture*](https://arxiv.org/abs/2606.11178), de **Michelle Delcourt y Luke Postle** (arXiv:2606.11178), junto con los resultados de descomposición triangular tipada y absorción desarrollados para aportar los insumos necesarios. El Artículo I sigue y formaliza la demostración de Nash–Williams; el Artículo II desarrolla esos insumos tipados. El Artículo III establece un criterio físico tipado con estadísticas prescritas, conteos de Pasch y una cota cuantitativa para estadísticas de triángulos. Los complementos separados documentan las fuentes Lean verificadas y las evidencias de reproducibilidad.
 
+**Research note accompanying Paper II.** Sharp bounds for typed triangle absorbers of doubled ears, preprint 1.0. [English original](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/download/doubled-ears-preprint-1.0/Doubled_ears_preprint_v1.0_en.pdf) / [Traducción al español](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/download/doubled-ears-preprint-1.0/Doubled_ears_preprint_v1.0_es.pdf).
+
 | Paper | Mathematical role | Documents and DOI |
 |---|---|---|
 | I — Formalizing the Nash–Williams theorem in Lean | Delcourt–Postle's case division, explicit replacement constructions and the formal theorem. | [Article and companion](preprints/PAPER_I/README.md) · [10.5281/zenodo.23428173](https://doi.org/10.5281/zenodo.23428173) |

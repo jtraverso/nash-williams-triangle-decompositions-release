@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "aligned_blocks": 54,
+  "math_expressions": 228,
+  "finite_minima_witnesses": [
+    18,
+    21,
+    36
+  ],
+  "charge_parameters": [
+    1,
+    2
+  ]
+}

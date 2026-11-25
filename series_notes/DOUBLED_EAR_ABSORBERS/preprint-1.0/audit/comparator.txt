@@ -1,0 +1,92 @@
+WARNING: Sandbox disabled, this run is not trustworthy.
+Resolving dependencies
+Building DoubledEarsChallenge
+✔ [766/768] Built PartitionedTriangleAbsorption.SignedCertificate.DoubledEarsData (8.1s)
+⚠ [767/768] Built DoubledEarsChallenge (6.5s)
+warning: DoubledEarsChallenge.lean:78:8: declaration uses `sorry`
+warning: DoubledEarsChallenge.lean:86:8: declaration uses `sorry`
+warning: DoubledEarsChallenge.lean:95:8: declaration uses `sorry`
+warning: DoubledEarsChallenge.lean:104:8: declaration uses `sorry`
+warning: DoubledEarsChallenge.lean:119:8: declaration uses `sorry`
+warning: DoubledEarsChallenge.lean:130:8: declaration uses `sorry`
+warning: DoubledEarsChallenge.lean:141:8: declaration uses `sorry`
+warning: DoubledEarsChallenge.lean:146:8: declaration uses `sorry`
+Build completed successfully (768 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.core_sensitive_bound, PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.protected_centres_bound, PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.optimum_iff_routing_modes, PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.twoMode_of_routing_modes, PartitionedTriangleAbsorption.SignedCertificate.TriangleFreeCore.minimum_path_absorber, PartitionedTriangleAbsorption.SignedCertificate.LabelledPathMinimum.minimum_labelled_path_absorber, PartitionedTriangleAbsorption.SignedCertificate.SubdividedClawMinimum.minimum_subdivided_claw_absorber, PartitionedTriangleAbsorption.SignedCertificate.SubdividedClawMinimum.no_connected_triple_partition, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from DoubledEarsChallenge
+Building DoubledEarsSolution
+✔ [1140/1166] Built PartitionedTriangleAbsorption.PhysicalHinge (10s)
+✔ [1141/1166] Built PartitionedTriangleAbsorption.TypedLinkArithmetic (10s)
+✔ [1142/1166] Built PartitionedTriangleAbsorption.ReturnedBasic (11s)
+✔ [1143/1166] Built PartitionedTriangleAbsorption.Transformer (16s)
+✔ [1144/1166] Built PartitionedTriangleAbsorption.ReturnedBridge (16s)
+✔ [1145/1166] Built PartitionedTriangleAbsorption.TypedLinkCoefficients (16s)
+✔ [1146/1166] Built PartitionedTriangleAbsorption.AntiEdgeSelection (16s)
+✔ [1147/1166] Built PartitionedTriangleAbsorption.TypedApplicationLinks (16s)
+✔ [1148/1166] Built PartitionedTriangleAbsorption.SignedHinge.Groups (17s)
+✔ [1149/1166] Built PartitionedTriangleAbsorption.ReturnedDivisibility (17s)
+✔ [1150/1166] Built PartitionedTriangleAbsorption.RootedEmbeddingSelection (17s)
+✔ [1151/1166] Built PartitionedTriangleAbsorption.CloneSupply.Basic (12s)
+✔ [1152/1166] Built PartitionedTriangleAbsorption.SignedCertificate.Basic (13s)
+✔ [1153/1166] Built PartitionedTriangleAbsorption.PackingRestriction (13s)
+✔ [1154/1166] Built PartitionedTriangleAbsorption.CloneSupply.InternalDegree (9.9s)
+✔ [1155/1166] Built PartitionedTriangleAbsorption.SignedCertificate.Reduction (9.3s)
+✔ [1156/1166] Built PartitionedTriangleAbsorption.SignedCertificate.Localization (9.5s)
+✔ [1157/1166] Built PartitionedTriangleAbsorption.SignedCertificate.Packing (8.7s)
+✔ [1158/1166] Built PartitionedTriangleAbsorption.SignedCertificate.DoubleHexagon (11s)
+✔ [1159/1166] Built PartitionedTriangleAbsorption.SignedCertificate.DoubleHexagonAbsorber (14s)
+ℹ [1160/1166] Built PartitionedTriangleAbsorption.SignedCertificate.DoubleHexagonMinimum (12s)
+info: PartitionedTriangleAbsorption/SignedCertificate/DoubleHexagonMinimum.lean:340:0: 'PartitionedTriangleAbsorption.SignedCertificate.DoubleHexagon.lower_bound_from_roles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PartitionedTriangleAbsorption/SignedCertificate/DoubleHexagonMinimum.lean:341:0: 'PartitionedTriangleAbsorption.SignedCertificate.DoubleHexagon.minimum_absorber_size' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PartitionedTriangleAbsorption/SignedCertificate/DoubleHexagonMinimum.lean:342:0: 'PartitionedTriangleAbsorption.SignedCertificate.DoubleHexagon.assemble_eighteen' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1161/1166] Built PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality (16s)
+info: PartitionedTriangleAbsorption/SignedCertificate/DoubledEarEquality.lean:294:0: 'PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.optimum_iff_routing_modes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PartitionedTriangleAbsorption/SignedCertificate/DoubledEarEquality.lean:295:0: 'PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.twoMode_of_routing_modes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PartitionedTriangleAbsorption/SignedCertificate/DoubledEarEquality.lean:296:0: 'PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.core_sensitive_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PartitionedTriangleAbsorption/SignedCertificate/DoubledEarEquality.lean:297:0: 'PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.protected_centres_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1162/1166] Built PartitionedTriangleAbsorption.SignedCertificate.TriangleFreeCore (16s)
+info: PartitionedTriangleAbsorption/SignedCertificate/TriangleFreeCore.lean:321:0: 'PartitionedTriangleAbsorption.SignedCertificate.TriangleFreeCore.core_triangle_free' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PartitionedTriangleAbsorption/SignedCertificate/TriangleFreeCore.lean:322:0: 'PartitionedTriangleAbsorption.SignedCertificate.TriangleFreeCore.minimum_path_absorber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PartitionedTriangleAbsorption/SignedCertificate/TriangleFreeCore.lean:323:0: 'PartitionedTriangleAbsorption.SignedCertificate.TriangleFreeCore.assemble_path_blocks' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PartitionedTriangleAbsorption/SignedCertificate/TriangleFreeCore.lean:324:0: 'PartitionedTriangleAbsorption.SignedCertificate.TriangleFreeCore.isolated_edge_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PartitionedTriangleAbsorption/SignedCertificate/TriangleFreeCore.lean:325:0: 'PartitionedTriangleAbsorption.SignedCertificate.TriangleFreeCore.labelled_leaf_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1163/1166] Built PartitionedTriangleAbsorption.SignedCertificate.LabelledPathMinimum (17s)
+info: PartitionedTriangleAbsorption/SignedCertificate/LabelledPathMinimum.lean:72:0: 'PartitionedTriangleAbsorption.SignedCertificate.LabelledPathMinimum.minimum_labelled_path_absorber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [1164/1166] Built PartitionedTriangleAbsorption.SignedCertificate.SubdividedClawMinimum (47s)
+info: PartitionedTriangleAbsorption/SignedCertificate/SubdividedClawMinimum.lean:102:0: 'PartitionedTriangleAbsorption.SignedCertificate.SubdividedClawMinimum.minimum_subdivided_claw_absorber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PartitionedTriangleAbsorption/SignedCertificate/SubdividedClawMinimum.lean:103:0: 'PartitionedTriangleAbsorption.SignedCertificate.SubdividedClawMinimum.no_connected_triple_partition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [1165/1166] Built DoubledEarsSolution (8.7s)
+Build completed successfully (1166 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.core_sensitive_bound, PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.protected_centres_bound, PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.optimum_iff_routing_modes, PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.twoMode_of_routing_modes, PartitionedTriangleAbsorption.SignedCertificate.TriangleFreeCore.minimum_path_absorber, PartitionedTriangleAbsorption.SignedCertificate.LabelledPathMinimum.minimum_labelled_path_absorber, PartitionedTriangleAbsorption.SignedCertificate.SubdividedClawMinimum.minimum_subdivided_claw_absorber, PartitionedTriangleAbsorption.SignedCertificate.SubdividedClawMinimum.no_connected_triple_partition, propext, Classical.choice, Quot.sound, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from DoubledEarsSolution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!
