@@ -15,3 +15,7 @@
 | Links and integrity | Verified the PDF link annotations, external references, local figure, Lean bundle ref and intended release asset name. The release manifest binds the deliverables, source, template, build script and audit evidence. | PASS |
 
 The protocol follows the [Paper III final audit](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/blob/63cc78185448270a04c5edc96eb38c234abae312/preprints/PAPER_III/02_validation/AUDIT/FINAL_REPORT.md). The disclosure was also compared with the [Paper VI manuscript](https://github.com/jtraverso/combinatorics-graph-theory-papers/blob/a1f4589fa6228ae7076792507d5835f83eb096e9/private-drafts/erdos81-series/preprints/PAPER_VI/01_manuscript/PAPER_VI_v0.6_review_en.md). To repeat the manuscript regressions, run the Python script in this directory. To regenerate the two editions, run build_preprints.py from the parent directory.
+
+## Publication packaging revision · 26 November 2026
+
+The [supplement verification](../formalization/VERIFICATION.md) records the public source tag, complete archive, repeated endpoint checks, revised Appendix A links and four-document review. The 25 November findings above refer to the first packaging of preprint 1.0.

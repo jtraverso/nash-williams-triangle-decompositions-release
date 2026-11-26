@@ -1,0 +1,24 @@
+'PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.core_sensitive_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.protected_centres_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.optimum_iff_routing_modes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.twoMode_of_routing_modes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PartitionedTriangleAbsorption.SignedCertificate.TriangleFreeCore.minimum_path_absorber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PartitionedTriangleAbsorption.SignedCertificate.LabelledPathMinimum.minimum_labelled_path_absorber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PartitionedTriangleAbsorption.SignedCertificate.SubdividedClawMinimum.minimum_subdivided_claw_absorber' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'PartitionedTriangleAbsorption.SignedCertificate.SubdividedClawMinimum.no_connected_triple_partition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

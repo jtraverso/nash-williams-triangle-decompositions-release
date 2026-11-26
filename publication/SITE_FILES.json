@@ -1720,6 +1720,26 @@
     "scripts/series_template.tex",
     "scripts/verify_header_revision.py",
     "scripts/verify_paper_ii_header_revision.py",
-    "scripts/verify_repository.py"
+    "scripts/verify_repository.py",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/Doubled_ears_preprint_v1.0_en.md",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/Doubled_ears_preprint_v1.0_en.pdf",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/Doubled_ears_preprint_v1.0_en.tex",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/Doubled_ears_preprint_v1.0_es.md",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/Doubled_ears_preprint_v1.0_es.pdf",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/Doubled_ears_preprint_v1.0_es.tex",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/claw-and-auxiliaries.png",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_LEAN_SOURCE_v1.0.zip",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_LEAN_SOURCE_v1.0.zip.sha256",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_Lean_freeze_v1.0_en.md",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_Lean_freeze_v1.0_en.pdf",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_Lean_freeze_v1.0_en.tex",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_Lean_freeze_v1.0_es.md",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_Lean_freeze_v1.0_es.pdf",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_Lean_freeze_v1.0_es.tex",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/VERIFICATION.md",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/comparator-replay.txt",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/comparator.windows.json",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/endpoint-axioms.lean",
+    "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/endpoint-axioms.txt"
   ]
 }

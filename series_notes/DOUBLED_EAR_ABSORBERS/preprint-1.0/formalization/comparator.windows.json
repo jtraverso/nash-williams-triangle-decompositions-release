@@ -1,0 +1,21 @@
+{
+  "challenge_module": "DoubledEarsChallenge",
+  "solution_module": "DoubledEarsSolution",
+  "theorem_names": [
+    "PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.core_sensitive_bound",
+    "PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.protected_centres_bound",
+    "PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.optimum_iff_routing_modes",
+    "PartitionedTriangleAbsorption.SignedCertificate.DoubledEarEquality.twoMode_of_routing_modes",
+    "PartitionedTriangleAbsorption.SignedCertificate.TriangleFreeCore.minimum_path_absorber",
+    "PartitionedTriangleAbsorption.SignedCertificate.LabelledPathMinimum.minimum_labelled_path_absorber",
+    "PartitionedTriangleAbsorption.SignedCertificate.SubdividedClawMinimum.minimum_subdivided_claw_absorber",
+    "PartitionedTriangleAbsorption.SignedCertificate.SubdividedClawMinimum.no_connected_triple_partition"
+  ],
+  "definition_names": [],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "enable_nanoda": false
+}
