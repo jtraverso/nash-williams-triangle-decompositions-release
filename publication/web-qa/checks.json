@@ -14,9 +14,9 @@
         "imagesMissing": 0
       },
       "screenshot": "publication/web-qa/series-desktop.png",
-      "html_sha256": "f8b0a5b1e32ca28d7cc5326bd55d245d19ea9c1025f08563555d96fff285e28e",
+      "html_sha256": "ccc37010c5474c25cd3b7576a784f353684ceef0f13212818ce8ea950f6965e1",
       "css_sha256": "8e731c15fe09281db25f8bf7c1c7808e5f5af491c078389b812a71d9e07e68e2",
-      "sha256": "ca764ab0d93636a49b7c5470f05ac74e90cfc365750c51883ed68e501b2f5ed8"
+      "sha256": "7a7c21906611f251d58fae860049c00f9d4559a90c2db74ca7589636602d69d9"
     },
     {
       "page": "/preprints/PAPER_I/index.html",
@@ -78,9 +78,9 @@
         "imagesMissing": 0
       },
       "screenshot": "publication/web-qa/series-mobile.png",
-      "html_sha256": "f8b0a5b1e32ca28d7cc5326bd55d245d19ea9c1025f08563555d96fff285e28e",
+      "html_sha256": "ccc37010c5474c25cd3b7576a784f353684ceef0f13212818ce8ea950f6965e1",
       "css_sha256": "8e731c15fe09281db25f8bf7c1c7808e5f5af491c078389b812a71d9e07e68e2",
-      "sha256": "bbe063ac6d4b8dc2f33715f7c25f7de9dea9a3e386ef300c842490a1ff571ad5"
+      "sha256": "8c41f846a91e0b82781488f3f4eac51df69d3145a4b44a29aa5b3de20a0fce91"
     },
     {
       "page": "/preprints/PAPER_I/index.html",

@@ -4,7 +4,7 @@ Juan Pablo Traverso Gianini · Preprint 1.0 · Research note accompanying [Paper
 
 DOI (reserved / reservado) · [10.5281/zenodo.24555328](https://doi.org/10.5281/zenodo.24555328).
 
-The English Markdown is the authoritative manuscript. La edición en español es la traducción del original en inglés.
+The [alphaXiv record](https://www.alphaxiv.org/abs/2611.typed-triangle-absorbers-doubled-ears) lists the official English paper. The English Markdown is the authoritative manuscript. La edición en español es la traducción del original en inglés.
 
 | Document / Documento | English | Español |
 |---|---|---|
