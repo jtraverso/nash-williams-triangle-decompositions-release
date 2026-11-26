@@ -11,6 +11,8 @@ This folder contains Paper II and its formalization companion in the triangle-de
 
 The manuscript develops the mathematics; the companion records the formal interfaces, frozen source versions, validation evidence and reproduction procedure. Both are available in full in both languages. Bibliographic titles and source identifiers retain their original spelling.
 
+The accompanying research note [Sharp bounds for typed triangle absorbers of doubled ears](../../series_notes/DOUBLED_EAR_ABSORBERS/README.md) applies the absorber predicate of Paper II and has its own manuscript, Lean supplement and source archive.
+
 ## Validation and reproducibility
 
 - [Review summary](02_validation/REVIEW_SUMMARY.md) and [response to observations](02_validation/RESPONSE_TO_REVIEW.md).

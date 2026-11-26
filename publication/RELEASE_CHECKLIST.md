@@ -22,3 +22,7 @@ The static website build is prepared and validated locally. Cloudflare Pages is 
 - [x] Desktop/mobile guide checked, including Paper III.
 - [x] Zenodo DOI reserved: 10.5281/zenodo.23867836.
 - [x] Public GitHub and Zenodo downloads verified by SHA-256; [Paper III receipts](paper-iii/PUBLICATION_RECEIPT.json).
+
+## Doubled ears · 26 November 2026
+
+The GitHub preprint includes the English and Spanish manuscripts, both Lean supplements and the pinned source archive. The [Zenodo reservation](zenodo/DOUBLED_EARS_reserved.json) assigns the note its own DOI, 10.5281/zenodo.24555328.

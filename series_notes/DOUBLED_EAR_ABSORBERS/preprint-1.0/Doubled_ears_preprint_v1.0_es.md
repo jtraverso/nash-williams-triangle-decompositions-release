@@ -5,7 +5,8 @@ Investigador independiente, Santiago, Chile
 ORCID 0009-0003-6068-4096
 
 *Descomposiciones en triángulos · Nota de investigación que acompaña al artículo II*  
-*Preprint 1.0 · 25 de noviembre de 2026 · Traducción del original inglés*
+*Preprint 1.0 · 25 de noviembre de 2026 · Traducción del original inglés*  
+DOI [10.5281/zenodo.24555328](https://doi.org/10.5281/zenodo.24555328)
 
 ## Resumen
 
@@ -153,6 +154,6 @@ La formalización usa el predicado `IsAbsorber` del artículo II. Este exige que
 
 **Alcance.** La cota inferior formal cuenta las aristas de $A$ cuyos dos extremos son centros. Bajo la hipótesis sobre el subgrafo inducido, estas aristas forman exactamente $A\cap C$. El teorema de igualdad supone que $P$ consta de aristas del grafo ambiente entre centros y orejas, que todas las aristas de ese tipo pertenecen a $P$, que todas las aristas entre centros pertenecen a $C$, que no hay aristas entre orejas y que $|P|=4|C|$. Su conclusión caracteriza la igualdad mediante dos familias de triángulos mixtos de los tipos prescritos, disjuntos en aristas dentro de cada familia, que cubren el mismo conjunto de aristas fuera de la fuente. El lema `spoke_mem_iff` identifica los vecinos auxiliares correspondientes en cada centro. Para las orejas dobles, la sección 2 deduce las permutaciones locales de estas incidencias. El teorema de transferencia requiere además un conjunto de retorno disjunto del grafo ambiente que admita una descomposición en triángulos mixtos. Para la familia de la sección 4, Lean verifica el núcleo de seis aristas, su óptimo y su obstrucción. La prueba para todo $k$ es la de identificación de centros y recuento de esa sección.
 
-**Versión de las fuentes.** Las [demostraciones](https://github.com/jtraverso/typed-triangle-absorption/tree/c7bae66dfd66370138d2f1a6ecc51d3aa29ea8e4) corresponden a la revisión `c7bae66dfd66370138d2f1a6ecc51d3aa29ea8e4`. El [suplemento de las pruebas formales](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/tree/doubled-ears-preprint-1.0-r2/series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization) contiene el archivo completo de las fuentes, las revisiones de las dependencias y las órdenes para reproducir las ocho comprobaciones.
+**Versión de las fuentes.** Las [demostraciones](https://github.com/jtraverso/typed-triangle-absorption/tree/c7bae66dfd66370138d2f1a6ecc51d3aa29ea8e4) corresponden a la revisión `c7bae66dfd66370138d2f1a6ecc51d3aa29ea8e4`. El [suplemento de las pruebas formales](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/tree/doubled-ears-preprint-1.0-r3/series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization) contiene el archivo completo de las fuentes, las revisiones de las dependencias y las órdenes para reproducir las ocho comprobaciones.
 
 **Verificación.** Comparator cotejó los ocho enunciados de la tabla y el núcleo predeterminado de Lean aceptó la solución. Para cada teorema, la consulta de axiomas devuelve `propext`, `Classical.choice` y `Quot.sound`. La comparación se ejecutó en Windows con el aislamiento y Nanoda desactivados. La configuración pública habilita Nanoda para repetir la verificación en Linux.

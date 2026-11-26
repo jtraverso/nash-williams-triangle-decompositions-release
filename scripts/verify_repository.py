@@ -64,6 +64,16 @@ def verify():
         p = ROOT/row['path']
         assert p.stat().st_size == row['bytes'] and digest(p) == row['sha256'], row['path']
     idx = json.loads((ROOT/'PUBLICATION_INDEX.json').read_text(encoding='utf-8'))
+    downloads = (ROOT/'README.md').read_text(encoding='utf-8').split('## PDF downloads', 1)[1].split('\n## ', 1)[0]
+    for work in [*idx['papers'], *idx['research_notes']]:
+        pdfs = [doc['files']['pdf'] for doc in work['documents']]
+        assert len(pdfs) == len(set(pdfs)) == 4, work['title']
+        assert any(all(f'({pdf})' in row for pdf in pdfs) and work['doi'] in row
+                   for row in downloads.splitlines()), ('missing publication or supplement', work['title'])
+    for note in idx['research_notes']:
+        for doc in note['documents']:
+            for fmt in ('md', 'tex'):
+                assert note['doi'] in (ROOT/doc['files'][fmt]).read_text(encoding='utf-8'), doc['files'][fmt]
     for paper in idx['papers']:
         assert len(paper['documents']) == 4
         for doc in paper['documents']:

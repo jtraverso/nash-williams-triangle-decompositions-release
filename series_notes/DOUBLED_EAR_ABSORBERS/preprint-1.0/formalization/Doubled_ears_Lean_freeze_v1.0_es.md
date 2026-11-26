@@ -5,7 +5,8 @@ Investigador independiente, Santiago, Chile
 ORCID 0009-0003-6068-4096
 
 *Suplemento de Cotas óptimas para absorbedores de orejas dobles por triángulos de tipos prescritos*  
-*Preprint 1.0 · 26 de noviembre de 2026*
+*Preprint 1.0 · 26 de noviembre de 2026*  
+DOI [10.5281/zenodo.24555328](https://doi.org/10.5281/zenodo.24555328)
 
 ## 1. Enunciados comprobados en Lean
 
@@ -26,7 +27,7 @@ La formalización usa el predicado `IsAbsorber` del artículo II. Este exige que
 
 ## 2. Reproducción de la verificación
 
-La [revisión de las fuentes](https://github.com/jtraverso/typed-triangle-absorption/tree/c7bae66dfd66370138d2f1a6ecc51d3aa29ea8e4) fija Lean 4.35.0-rc3 y la revisión `c55e6e786f49471c72fbddbec5415808896aec1e` de Mathlib. El [archivo ZIP](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/download/doubled-ears-preprint-1.0-r2/Doubled_ears_LEAN_SOURCE_v1.0.zip) contiene los 1.588 archivos bajo control de versiones, incluidos 1.522 archivos fuente de Lean y el manifiesto de dependencias. Lake descarga los paquetes externos en las revisiones indicadas en el manifiesto.
+La [revisión de las fuentes](https://github.com/jtraverso/typed-triangle-absorption/tree/c7bae66dfd66370138d2f1a6ecc51d3aa29ea8e4) fija Lean 4.35.0-rc3 y la revisión `c55e6e786f49471c72fbddbec5415808896aec1e` de Mathlib. El [archivo ZIP](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/download/doubled-ears-preprint-1.0-r3/Doubled_ears_LEAN_SOURCE_v1.0.zip) contiene los 1.588 archivos bajo control de versiones, incluidos 1.522 archivos fuente de Lean y el manifiesto de dependencias. Lake descarga los paquetes externos en las revisiones indicadas en el manifiesto.
 
 Tras descomprimir el archivo, se ejecutan las siguientes órdenes en la carpeta que contiene `lean-toolchain`. La primera compila los módulos de enunciados y de pruebas de esta nota. La segunda ejecuta Comparator en una instalación de Linux con aislamiento y soporte para Nanoda.
 
@@ -35,7 +36,7 @@ lake build +DoubledEarsChallenge +DoubledEarsSolution
 lake comparator --config comparator.doubled-ears.json
 ```
 
-El módulo de enunciados usa un `sorry` para cada uno de los ocho enunciados propuestos. El módulo `DoubledEarsSolution` importa las demostraciones. Al consultar cada declaración desde este módulo se obtienen exactamente los axiomas `propext`, `Classical.choice` y `Quot.sound`. La comparación en Windows utilizó el núcleo predeterminado de Lean, con el aislamiento y Nanoda desactivados. El [registro de verificación](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/tree/doubled-ears-preprint-1.0-r2/series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization) recoge la configuración y la salida para las ocho declaraciones.
+El módulo de enunciados usa un `sorry` para cada uno de los ocho enunciados propuestos. El módulo `DoubledEarsSolution` importa las demostraciones. Al consultar cada declaración desde este módulo se obtienen exactamente los axiomas `propext`, `Classical.choice` y `Quot.sound`. La comparación en Windows utilizó el núcleo predeterminado de Lean, con el aislamiento y Nanoda desactivados. El [registro de verificación](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/tree/doubled-ears-preprint-1.0-r3/series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization) recoge la configuración y la salida para las ocho declaraciones.
 
 **SHA-256 del archivo de fuentes**
 

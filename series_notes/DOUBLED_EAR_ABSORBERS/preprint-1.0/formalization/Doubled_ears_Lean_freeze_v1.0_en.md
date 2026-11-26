@@ -5,7 +5,8 @@ Independent researcher, Santiago, Chile
 ORCID 0009-0003-6068-4096
 
 *Companion to Sharp bounds for typed triangle absorbers of doubled ears*  
-*Preprint 1.0 · 26 November 2026*
+*Preprint 1.0 · 26 November 2026*  
+DOI [10.5281/zenodo.24555328](https://doi.org/10.5281/zenodo.24555328)
 
 ## 1. Statements checked in Lean
 
@@ -26,7 +27,7 @@ The formalization uses the predicate `IsAbsorber` of Paper II. It requires disjo
 
 ## 2. Reproducing the verification
 
-The [source commit](https://github.com/jtraverso/typed-triangle-absorption/tree/c7bae66dfd66370138d2f1a6ecc51d3aa29ea8e4) fixes Lean 4.35.0-rc3 and Mathlib revision `c55e6e786f49471c72fbddbec5415808896aec1e`. The [source ZIP](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/download/doubled-ears-preprint-1.0-r2/Doubled_ears_LEAN_SOURCE_v1.0.zip) contains all 1,588 tracked files, including 1,522 Lean source files and the dependency manifest. Lake obtains the external packages at the revisions recorded in that manifest.
+The [source commit](https://github.com/jtraverso/typed-triangle-absorption/tree/c7bae66dfd66370138d2f1a6ecc51d3aa29ea8e4) fixes Lean 4.35.0-rc3 and Mathlib revision `c55e6e786f49471c72fbddbec5415808896aec1e`. The [source ZIP](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/download/doubled-ears-preprint-1.0-r3/Doubled_ears_LEAN_SOURCE_v1.0.zip) contains all 1,588 tracked files, including 1,522 Lean source files and the dependency manifest. Lake obtains the external packages at the revisions recorded in that manifest.
 
 After unpacking the archive, run the following commands from the directory containing `lean-toolchain`. The first command builds the statement and proof modules for this note. The second runs Comparator on a Linux installation with sandbox and Nanoda support.
 
@@ -35,7 +36,7 @@ lake build +DoubledEarsChallenge +DoubledEarsSolution
 lake comparator --config comparator.doubled-ears.json
 ```
 
-The challenge uses one `sorry` for each of the eight proposed statements. The solution imports the proofs through `DoubledEarsSolution`. Querying each declaration from that module reports exactly `propext`, `Classical.choice` and `Quot.sound`. On Windows the comparison used Lean’s default kernel with the sandbox and Nanoda disabled. The [verification record](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/tree/doubled-ears-preprint-1.0-r2/series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization) gives the configuration and the output for all eight declarations.
+The challenge uses one `sorry` for each of the eight proposed statements. The solution imports the proofs through `DoubledEarsSolution`. Querying each declaration from that module reports exactly `propext`, `Classical.choice` and `Quot.sound`. On Windows the comparison used Lean’s default kernel with the sandbox and Nanoda disabled. The [verification record](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/tree/doubled-ears-preprint-1.0-r3/series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization) gives the configuration and the output for all eight declarations.
 
 **Source archive SHA-256**
 

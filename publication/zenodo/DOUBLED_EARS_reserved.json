@@ -1,0 +1,31 @@
+{
+  "id": 24555328,
+  "doi": "10.5281/zenodo.24555328",
+  "title": "Sharp bounds for typed triangle absorbers of doubled ears",
+  "version": "1.0",
+  "status": "RESERVED",
+  "submitted": false,
+  "created": "2026-11-26T09:29:05.240430+00:00",
+  "files": {
+    "Doubled_ears_preprint_v1.0_en.pdf": {
+      "size": 81685,
+      "sha256": "9d30948d583991bb11afa0a471bd6592c4380c6bb3be2dcbbb2a5e93adff68e9",
+      "zenodo_md5": "f33def6de65ef24f20283215a813fd92"
+    },
+    "Doubled_ears_preprint_v1.0_es.pdf": {
+      "size": 82900,
+      "sha256": "a2e61b69964b4ba7fb433f097e59d1270d7d35638028b19eae067c91052f1204",
+      "zenodo_md5": "99dbc1d2841c8d1559cc2a9bd0e4ba39"
+    },
+    "Doubled_ears_Lean_freeze_v1.0_en.pdf": {
+      "size": 31078,
+      "sha256": "d3c14a68935f0fdc5db5b7e997824b5d1551e5eb64aa41fcd3add497c02d588c",
+      "zenodo_md5": "bb86a04f5769f4e59bf9b65ccd0aa7c1"
+    },
+    "Doubled_ears_Lean_freeze_v1.0_es.pdf": {
+      "size": 31350,
+      "sha256": "f04258a4d745d58f56a5caaf78f7e332099f02e10b15cdbc96f61f96dc497c09",
+      "zenodo_md5": "29fd27c9e7838f05b6a61389ac9cb366"
+    }
+  }
+}

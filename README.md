@@ -1,27 +1,19 @@
 # Triangle decompositions — Nash–Williams and typed absorption
 
-**Juan Pablo Traverso Gianini · Triangle decompositions I–III · First preprints, 2026**
+**Juan Pablo Traverso Gianini · Triangle decompositions I–III and the research note accompanying Paper II · Preprints, 2026**
 
 This repository presents my Lean formalization of [*A Proof of Nash-Williams' Conjecture*](https://arxiv.org/abs/2606.11178) by **Michelle Delcourt and Luke Postle** (arXiv:2606.11178), together with the typed triangle-decomposition and absorption results developed to supply the required inputs. Paper I follows and formalizes the Nash–Williams proof; Paper II develops those typed inputs. Paper III proves a physical typed criterion and adds simultaneous prescribed statistics, Pasch counts and a quantitative triangle-statistics bound. Separate companions document the checked Lean sources and reproducibility evidence.
 
 Este repositorio presenta mi formalización en Lean de [*A Proof of Nash-Williams' Conjecture*](https://arxiv.org/abs/2606.11178), de **Michelle Delcourt y Luke Postle** (arXiv:2606.11178), junto con los resultados de descomposición triangular tipada y absorción desarrollados para aportar los insumos necesarios. El Artículo I sigue y formaliza la demostración de Nash–Williams; el Artículo II desarrolla esos insumos tipados. El Artículo III establece un criterio físico tipado con estadísticas prescritas, conteos de Pasch y una cota cuantitativa para estadísticas de triángulos. Los complementos separados documentan las fuentes Lean verificadas y las evidencias de reproducibilidad.
 
-## Research note accompanying Paper II / Nota del Artículo II
+## PDF downloads / Descargar PDF
 
-*Sharp bounds for typed triangle absorbers of doubled ears* · Juan Pablo Traverso Gianini · Preprint 1.0.
-
-| Document / Documento | English | Español |
-|---|---|---|
-| Mathematical note / Nota matemática | [Official manuscript](series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/Doubled_ears_preprint_v1.0_en.pdf) | [Traducción](series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/Doubled_ears_preprint_v1.0_es.pdf) |
-| Formal proof supplement / Suplemento Lean | [Proofs and reproduction](series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_Lean_freeze_v1.0_en.pdf) | [Pruebas y reproducción](series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_Lean_freeze_v1.0_es.pdf) |
-
-[Source snapshot](https://github.com/jtraverso/typed-triangle-absorption/tree/c7bae66dfd66370138d2f1a6ecc51d3aa29ea8e4) · [Complete Lean ZIP](series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_LEAN_SOURCE_v1.0.zip) · [Internal audit](series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/VERIFICATION.md) · [Release](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/tag/doubled-ears-preprint-1.0-r2).
-
-| Paper | Mathematical role | Documents and DOI |
-|---|---|---|
-| I — Formalizing the Nash–Williams theorem in Lean | Delcourt–Postle's case division, explicit replacement constructions and the formal theorem. | [Article and companion](preprints/PAPER_I/README.md) · [10.5281/zenodo.23428173](https://doi.org/10.5281/zenodo.23428173) |
-| II — Robust absorption for typed triangles | Typed decomposition inputs, the semidense case, finite family constructions and terminal absorption. | [Article and companion](preprints/PAPER_II/README.md) · [10.5281/zenodo.23502224](https://doi.org/10.5281/zenodo.23502224) |
-| III — Physical typed absorption and prescribed statistics | Physical hypotheses H1–H4, simultaneous triangle and Pasch statistics, and an explicit triangle-statistics threshold. | [Article and companion](preprints/PAPER_III/README.md) · [10.5281/zenodo.23867836](https://doi.org/10.5281/zenodo.23867836) |
+| Work / Trabajo | Manuscript PDF | Lean supplement PDF | DOI |
+|---|---|---|---|
+| **Paper I** · [Formalizing the Nash–Williams theorem in Lean](preprints/PAPER_I/README.md) | [EN](preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.pdf) · [ES](preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.pdf) | [EN](preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf) · [ES](preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf) | [10.5281/zenodo.23428173](https://doi.org/10.5281/zenodo.23428173) |
+| **Paper II** · [Robust absorption for typed triangles](preprints/PAPER_II/README.md) | [EN](preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.pdf) · [ES](preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.pdf) | [EN](preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf) · [ES](preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf) | [10.5281/zenodo.23502224](https://doi.org/10.5281/zenodo.23502224) |
+| **Research note · Paper II** · [Sharp bounds for typed triangle absorbers of doubled ears](series_notes/DOUBLED_EAR_ABSORBERS/README.md) | [EN](series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/Doubled_ears_preprint_v1.0_en.pdf) · [ES](series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/Doubled_ears_preprint_v1.0_es.pdf) | [EN](series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_Lean_freeze_v1.0_en.pdf) · [ES](series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_Lean_freeze_v1.0_es.pdf) | [10.5281/zenodo.24555328](https://doi.org/10.5281/zenodo.24555328) (reserved) |
+| **Paper III** · [Physical typed absorption and prescribed statistics](preprints/PAPER_III/README.md) | [EN](preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_en.pdf) · [ES](preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_es.pdf) | [EN](preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_en.pdf) · [ES](preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_es.pdf) | [10.5281/zenodo.23867836](https://doi.org/10.5281/zenodo.23867836) |
 
 ## Palomar registry / Registro Palomar
 
@@ -36,17 +28,6 @@ The Lean formalizations of Papers I, II and III are registered in [Palomar](http
 Paper II version 1.1 rewrites proof scripts in 279 modules of the computer-assisted finite census to shorten the build. Statements, definitions and the challenge file are unchanged. An earlier submission of the 1.0 sources exceeded the verifier's time limit; version 1.1 passed verification and was registered on 23 October 2026.
 
 *En español:* las formalizaciones en Lean de los tres artículos están registradas en [Palomar](https://palomar-registry.org), un registro de resultados verificados en Lean. Palomar recompila las fuentes, compara los teoremas enunciados con un archivo de desafío que solo usa Mathlib y repite las pruebas en núcleos independientes. El Artículo I está **registrado** (PALOMAR-2026-10-21-000009). El Artículo II está **registrado** (PALOMAR-2026-10-23-000013, 23 de octubre de 2026). La versión 1.1 del Artículo II reescribe las pruebas de 279 módulos del censo finito asistido por computadora para acortar la compilación, sin cambiar enunciados, definiciones ni el archivo de desafío. Un envío anterior de las fuentes 1.0 superó el límite de tiempo del verificador; la versión 1.1 pasó la verificación y quedó registrada. El Artículo III está **registrado** (PALOMAR-2026-11-03-000012, 3 de noviembre de 2026).
-
-## PDF downloads / Descargar PDF
-
-| Document | English | Español |
-|---|---|---|
-| **Paper I — Nash–Williams** | [Paper I PDF (EN)](preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_en.pdf) | [Paper I PDF (ES)](preprints/PAPER_I/01_manuscript/PAPER_I_preprint_v1.0_es.pdf) |
-| **Paper II — Typed absorption** | [Paper II PDF (EN)](preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_en.pdf) | [Paper II PDF (ES)](preprints/PAPER_II/01_manuscript/PAPER_II_preprint_v1.0_es.pdf) |
-| Paper I formalization companion | [Companion I PDF (EN)](preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf) | [Companion I PDF (ES)](preprints/PAPER_I/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf) |
-| Paper II formalization companion | [Companion II PDF (EN)](preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_en.pdf) | [Companion II PDF (ES)](preprints/PAPER_II/05_formalization/FORMALIZATION_COMPANION_preprint_v1.0_es.pdf) |
-| **Paper III — Physical typed absorption** | [Paper III PDF (EN)](preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_en.pdf) | [Paper III PDF (ES)](preprints/PAPER_III/01_manuscript/PAPER_III_preprint_v1.0_es.pdf) |
-| Paper III formalization companion | [Companion III PDF (EN)](preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_en.pdf) | [Companion III PDF (ES)](preprints/PAPER_III/05_formalization/PAPER_III_Lean_freeze_v1.0_es.pdf) |
 
 ## Read and cite / Leer y citar
 

@@ -19,3 +19,7 @@ The protocol follows the [Paper III final audit](https://github.com/jtraverso/na
 ## Publication packaging revision · 26 November 2026
 
 The [supplement verification](../formalization/VERIFICATION.md) records the public source tag, complete archive, repeated endpoint checks, revised Appendix A links and four-document review. The 25 November findings above refer to the first packaging of preprint 1.0.
+
+## DOI and publication guides · 26 November 2026
+
+Zenodo reserved DOI 10.5281/zenodo.24555328 for the note. Each of the four PDFs was regenerated from Markdown through the series template, and its first page was checked for the complete DOI. All sixteen pages were rendered and reviewed. The four PDF checksums were verified against the files in the Zenodo draft. Comparison with packaging revision r2 found changes only to the DOI line and the supplement links in the four Markdown sources. The repository catalogue now groups all sixteen series PDFs by work.

@@ -72,4 +72,4 @@ The selected files constitute the first public edition; no prior editions or
 `superseded` directory are included. The research repository retains the
 development record. Commit attribution uses the GitHub account `jtraverso`
 and its GitHub-provided no-reply address.
-Both papers, their bilingual companions and their selected source archives are available in this repository. Repository visibility is controlled by GitHub settings; changing visibility requires no change to the manuscripts.
+The three papers, the research note accompanying Paper II, their bilingual companions and their source archives are available in this repository. Repository visibility is controlled by GitHub settings; changing visibility requires no change to the manuscripts.

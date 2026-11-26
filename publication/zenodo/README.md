@@ -12,3 +12,7 @@ Source archives, scripts and audit evidence remain on the public GitHub reposito
 ## Paper III — 1 November 2026
 
 [Paper III — 10.5281/zenodo.23867836](https://doi.org/10.5281/zenodo.23867836). First public preprint 1.0, with four individual PDFs. All public downloads were verified by SHA-256 against the approved documents. [Publication receipt](PAPER_III_published.json).
+
+## Doubled ears · Research note accompanying Paper II
+
+Zenodo reserved [10.5281/zenodo.24555328](https://doi.org/10.5281/zenodo.24555328) for *Sharp bounds for typed triangle absorbers of doubled ears*, preprint 1.0, on 26 November 2026. The deposit is a draft. The English and Spanish manuscripts and their Lean supplements share this identifier. [Reservation receipt](DOUBLED_EARS_reserved.json) · [Documents](../../series_notes/DOUBLED_EAR_ABSORBERS/README.md).

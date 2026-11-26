@@ -5,7 +5,8 @@ Independent researcher, Santiago, Chile
 ORCID 0009-0003-6068-4096
 
 *Triangle decompositions · Research note accompanying Paper II*  
-*Preprint 1.0 · 25 November 2026*
+*Preprint 1.0 · 25 November 2026*  
+DOI [10.5281/zenodo.24555328](https://doi.org/10.5281/zenodo.24555328)
 
 ## Abstract
 
@@ -153,6 +154,6 @@ The formalization uses the predicate `IsAbsorber` of Paper II. It requires disjo
 
 **Scope.** The formal lower bound counts the edges of $A$ whose two endpoints are centres. These are exactly $A\cap C$ under the induced-host assumption. The equality theorem assumes that $P$ consists of centre–ear edges in the host, all host edges of that type belong to $P$, all centre–centre edges belong to $C$, there are no ear–ear edges, and $|P|=4|C|$. Its conclusion characterizes equality by two mixed triangle packings of the specified role types with the same non-source edge set. The lemma `spoke_mem_iff` identifies the corresponding auxiliary neighbours at each centre. Section 2 derives the local permutations from these incidences for doubled ears. The transfer theorem additionally takes a mixed-decomposable return set disjoint from the host. For the family in Section 4, Lean checks the six-edge core, its optimum and its obstruction. The argument for arbitrary $k$ is the gluing and counting proof in that section.
 
-**Pinned source.** The [proofs](https://github.com/jtraverso/typed-triangle-absorption/tree/c7bae66dfd66370138d2f1a6ecc51d3aa29ea8e4) are at commit `c7bae66dfd66370138d2f1a6ecc51d3aa29ea8e4`. The [formal proof supplement](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/tree/doubled-ears-preprint-1.0-r2/series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization) gives the complete source archive, the dependency revisions and the commands for reproducing the eight checks.
+**Pinned source.** The [proofs](https://github.com/jtraverso/typed-triangle-absorption/tree/c7bae66dfd66370138d2f1a6ecc51d3aa29ea8e4) are at commit `c7bae66dfd66370138d2f1a6ecc51d3aa29ea8e4`. The [formal proof supplement](https://github.com/jtraverso/nash-williams-triangle-decompositions-release/tree/doubled-ears-preprint-1.0-r3/series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization) gives the complete source archive, the dependency revisions and the commands for reproducing the eight checks.
 
 **Verification.** Comparator matched the eight statements above, and Lean’s default kernel accepted the solution. The axiom queries report `propext`, `Classical.choice` and `Quot.sound` for each theorem. The comparison ran on Windows with sandboxing and Nanoda disabled. The public configuration enables Nanoda for replay on Linux.

@@ -202,11 +202,13 @@
         }
       ],
       "audit": "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/audit/FINAL_REPORT.md",
-      "release_url": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/tag/doubled-ears-preprint-1.0-r2",
+      "release_url": "https://github.com/jtraverso/nash-williams-triangle-decompositions-release/releases/tag/doubled-ears-preprint-1.0-r3",
       "source_commit": "c7bae66dfd66370138d2f1a6ecc51d3aa29ea8e4",
       "source_repository": "https://github.com/jtraverso/typed-triangle-absorption",
       "source_archive": "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_LEAN_SOURCE_v1.0.zip",
-      "formal_audit": "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/VERIFICATION.md"
+      "formal_audit": "series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/VERIFICATION.md",
+      "doi": "10.5281/zenodo.24555328",
+      "doi_status": "reserved"
     }
   ]
 }

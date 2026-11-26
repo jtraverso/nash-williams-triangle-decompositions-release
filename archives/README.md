@@ -10,3 +10,5 @@ These are the source packages selected for preprint 1.0. Their package revision 
 Paper I contains 1,070 Lean modules and Paper II contains 1,510. Both preserve their own original clean-campaign evidence and reversible author-header corrections. Paper II v4 additionally corrects its README; proof sources and compilation evidence are unchanged by that correction. See the individual companions for build scope and axiom-query coverage.
 
 - **Paper III:** [PAPER_III_LEAN_SOURCE_v1.0.zip](PAPER_III_LEAN_SOURCE_v1.0.zip), SHA-256 `a5fbd7af2d13594a894d61bde81126353bd7d186f335ad9f302a5fd7ba942d95`. The first-edition archive contains 1,141 project modules and its six endpoint axiom audit groups; see [the companion](../preprints/PAPER_III/05_formalization/README.md).
+
+The [research note accompanying Paper II](../series_notes/DOUBLED_EAR_ABSORBERS/README.md) stores its [complete Lean archive](../series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/Doubled_ears_LEAN_SOURCE_v1.0.zip) with the note. Its [verification report](../series_notes/DOUBLED_EAR_ABSORBERS/preprint-1.0/formalization/VERIFICATION.md) lists the eight checked statements.
